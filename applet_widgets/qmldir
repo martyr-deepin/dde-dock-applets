@@ -1,0 +1,7 @@
+module Deepin.DockAppletWidgets
+plugin dock-applet-widgets
+AppletPlugin 1.0 AppletPlugin.qml
+AppletMenu 1.0 AppletMenu.qml
+AppletWhiteSlider 1.0 AppletWhiteSlider.qml
+AppletWaitingImage 1.0 AppletWaitingImage.qml
+SubAppletItemLoader 1.0 SubAppletItemLoader.qml

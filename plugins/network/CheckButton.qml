@@ -21,26 +21,44 @@
 **
 ****************************************************************************/
 
-#include <QQmlEngine>
-#include <QApplication>
-#include <QDBusConnection>
-#include <QDebug>
+import QtQuick 2.0
+import Deepin.Widgets 1.0
+import QtGraphicalEffects 1.0
 
-#include "qmlloader.h"
+DImageCheckButton{
+    property url onImage: ""
+    property url offImage: ""
+    property alias deviceIndex:indexText.text
 
-int main(int argc, char* argv[])
-{
-    QApplication::setAttribute(Qt::AA_X11InitThreads, true);
-    QApplication app(argc, argv);
+    anchors.verticalCenter: parent.verticalCenter
+    inactivatedNormalImage: offImage
+    inactivatedHoverImage: inactivatedNormalImage
+    inactivatedPressImage: inactivatedNormalImage
 
-    if(QDBusConnection::sessionBus().registerService("dde.dock.entry.AppletManager")){
-        QmlLoader* qmlLoader = new QmlLoader();
-        qmlLoader->rootContext->setContextProperty("mainObject", qmlLoader);
-        qmlLoader->load(QUrl("qrc:///frame/main.qml"));
+    activatedNormalImage: onImage
+    activatedHoverImage: activatedNormalImage
+    activatedPressImage: activatedNormalImage
 
-        return app.exec();
-    } else {
-        qWarning() << "dde-dock-applets is running...";
-        return 0;
+
+
+    Text {
+        id:indexText
+        anchors {right: parent.right; bottom: parent.bottom}
+        height: 9
+        width: 9
+        verticalAlignment: Text.AlignVCenter
+        horizontalAlignment: Text.AlignHCenter
+        color: "#ffffff"
+        font.bold: true
+        font.pixelSize: 9
+    }
+
+    Glow {
+        anchors.fill: indexText
+        radius: 5
+        samples: 16
+        color: "#000"
+        spread: 0.8
+        source: indexText
     }
 }

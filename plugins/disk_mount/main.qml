@@ -21,26 +21,33 @@
 **
 ****************************************************************************/
 
-#include <QQmlEngine>
-#include <QApplication>
-#include <QDBusConnection>
-#include <QDebug>
+import QtQuick 2.1
+import DBus.Com.Deepin.Daemon.DiskMount 1.0
+import Deepin.DockAppletWidgets 1.0
 
-#include "qmlloader.h"
+AppletPlugin {
+    id: appletItem
 
-int main(int argc, char* argv[])
-{
-    QApplication::setAttribute(Qt::AA_X11InitThreads, true);
-    QApplication app(argc, argv);
+    managed: false
+    show: mountDiskList.length > 0
+    name: dsTr("Disk Mount")
+    iconPath: getIconUrl("disk_mount/icon_16.png")
 
-    if(QDBusConnection::sessionBus().registerService("dde.dock.entry.AppletManager")){
-        QmlLoader* qmlLoader = new QmlLoader();
-        qmlLoader->rootContext->setContextProperty("mainObject", qmlLoader);
-        qmlLoader->load(QUrl("qrc:///frame/main.qml"));
+    // DiskMount
+    property var dbusDiskMount: DiskMount {}
+    property var mountDiskList: {
+        var diskList = dbusDiskMount.diskList
+        var mounts = new Array()
+        for(var i in dbusDiskMount.diskList){
+            if(diskList[i][2]){
+                mounts.push(diskList[i])
+            }
+        }
+        return mounts
+    }
 
-        return app.exec();
-    } else {
-        qWarning() << "dde-dock-applets is running...";
-        return 0;
+    appletTrayLoader: Loader {
+        sourceComponent: AppletTray{}
+        active: appletItem.show
     }
 }

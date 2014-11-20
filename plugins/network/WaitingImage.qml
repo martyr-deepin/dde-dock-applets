@@ -21,26 +21,19 @@
 **
 ****************************************************************************/
 
-#include <QQmlEngine>
-#include <QApplication>
-#include <QDBusConnection>
-#include <QDebug>
+import QtQuick 2.0
 
-#include "qmlloader.h"
+Image {
+    id: container
+    property bool on: false
 
-int main(int argc, char* argv[])
-{
-    QApplication::setAttribute(Qt::AA_X11InitThreads, true);
-    QApplication app(argc, argv);
-
-    if(QDBusConnection::sessionBus().registerService("dde.dock.entry.AppletManager")){
-        QmlLoader* qmlLoader = new QmlLoader();
-        qmlLoader->rootContext->setContextProperty("mainObject", qmlLoader);
-        qmlLoader->load(QUrl("qrc:///frame/main.qml"));
-
-        return app.exec();
-    } else {
-        qWarning() << "dde-dock-applets is running...";
-        return 0;
+    visible: container.on
+    source: "images/waiting.png";
+    NumberAnimation on rotation {
+        running: container.on;
+        from: 0;
+        to: 360;
+        loops: Animation.Infinite;
+        duration: 800
     }
 }

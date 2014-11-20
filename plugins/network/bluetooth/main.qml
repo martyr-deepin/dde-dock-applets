@@ -1,10 +1,10 @@
 /****************************************************************************
 **
 **  Copyright (C) 2011~2014 Deepin, Inc.
-**                2011~2014 Kaisheng Ye
+**                2011~2014 Wanqing Yang
 **
-**  Author:     Kaisheng Ye <kaisheng.ye@gmail.com>
-**  Maintainer: Kaisheng Ye <kaisheng.ye@gmail.com>
+**  Author:     Wanqing Yang <yangwanqing@linuxdeepin.com>
+**  Maintainer: Wanqing Yang <yangwanqing@linuxdeepin.com>
 **
 **  This program is free software: you can redistribute it and/or modify
 **  it under the terms of the GNU General Public License as published by
@@ -21,26 +21,30 @@
 **
 ****************************************************************************/
 
-#include <QQmlEngine>
-#include <QApplication>
-#include <QDBusConnection>
-#include <QDebug>
+import QtQuick 2.1
+import Deepin.DockAppletWidgets 1.0
+import DBus.Com.Deepin.Daemon.Bluetooth 1.0
 
-#include "qmlloader.h"
+AppletPlugin {
+    id: appletItem
 
-int main(int argc, char* argv[])
-{
-    QApplication::setAttribute(Qt::AA_X11InitThreads, true);
-    QApplication app(argc, argv);
+    managed: true
+    show: true
+    name: dsTr("Bluetooth")
+    iconPath:getIconUrl("bluetooth/bluetooth-enable.png")
 
-    if(QDBusConnection::sessionBus().registerService("dde.dock.entry.AppletManager")){
-        QmlLoader* qmlLoader = new QmlLoader();
-        qmlLoader->rootContext->setContextProperty("mainObject", qmlLoader);
-        qmlLoader->load(QUrl("qrc:///frame/main.qml"));
+    Bluetooth { id: dbus_bluetooth }
+    property var dockMode: dockDisplayMode
+    property var adapters: unmarshalJSON(dbus_bluetooth.adapters)
+    property var adaptersCount: {
+        if (adapters)
+            return adapters.length
+        else
+            return 0
+    }
 
-        return app.exec();
-    } else {
-        qWarning() << "dde-dock-applets is running...";
-        return 0;
+    appletTrayLoader: Loader {
+        sourceComponent: AppletTray{}
+        active:adaptersCount > 0 && appletItem.show && dockMode != 0//not mac mode
     }
 }

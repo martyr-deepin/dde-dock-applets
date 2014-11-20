@@ -21,8 +21,7 @@
 **
 ****************************************************************************/
 
-
-#include <QtGui/QGuiApplication>
+#include <QApplication>
 #include <QQmlEngine>
 #include <QQmlComponent>
 #include <QDBusConnection>
@@ -30,6 +29,8 @@
 #include <QDebug>
 #include <QDir>
 #include <QSettings>
+#include <QProcess>
+#include <QFile>
 
 #include "qmlloader.h"
 
@@ -50,6 +51,45 @@ QmlLoader::~QmlLoader()
     delete this->engine;
 }
 
+QString QmlLoader::getIconUrl(QString path)
+{
+    QString iconPath = "file://"DOCKAPPLETSDIR"/icons/" + path;
+    return iconPath;
+}
+
+void QmlLoader::xdgOpen(QString path)
+{
+    QProcess::execute("xdg-open " + path);
+}
+
+bool QmlLoader::isPathExist(QString path)
+{
+    if(path.startsWith("file://")){
+        path = path.replace("file://", "");
+    }
+    return QFile::exists(path);
+}
+
+QStringList QmlLoader::scanPlugins()
+{
+    QStringList result;
+    QDir pluginDir(DOCKAPPLETSDIR"/plugins");
+    QStringList dlist = pluginDir.entryList();
+    for(int i=0;i<dlist.length();i++){
+        QString pluginId = dlist[i];
+        if(pluginId == "." || pluginId == ".."){
+            continue;
+        }
+
+        QString tmpPath = DOCKAPPLETSDIR"/plugins/" + pluginId + "/main.qml";
+        if(QFile::exists(tmpPath)){
+            result.append(pluginId);
+            result.append("file://" + tmpPath);
+        }
+    }
+    return result;
+}
+
 void QmlLoader::restartDockApplet() {
     QProcess::startDetached(QCoreApplication::applicationFilePath());
     QCoreApplication::exit(0);
@@ -62,7 +102,6 @@ void QmlLoader::load(QUrl url)
     this->rootObject = this->component->beginCreate(this->rootContext);
     if ( this->component->isReady() ){
         this->component->completeCreate();
-        QObject::connect(rootObject, SIGNAL(appletInfosChanged()), this, SLOT(appletInfosChangedSlot()));
     }
     else{
         qWarning() << this->component->errorString();
@@ -74,39 +113,64 @@ QString QmlLoader::getAppletInfoListFromQml()
     QVariant returnedValue;
     QMetaObject::invokeMethod(
                 rootObject,
-                "get_applet_infos",
+                "exportAppletStates",
                 Q_RETURN_ARG(QVariant, returnedValue)
                 );
     return returnedValue.toString();
 }
 
-void QmlLoader::setAppletVisibleToConfig(QString info)
+void QmlLoader::setAppletState(int dockMode, QString appletId, bool appletVisible)
 {
     QString filePath = QDir::homePath() + "/.dde-dock-applets.ini";
     QSettings sysConfig(filePath, QSettings::IniFormat, 0);
-    sysConfig.beginWriteArray("applet");
-    sysConfig.setValue("info", info);
+
+    QString title;
+    switch (dockMode) {
+    case 1:
+        title = "win7";
+        break;
+    case 2:
+        title = "xp";
+        break;
+    default:
+        title = "applet";
+        break;
+    }
+
+    QString value = appletVisible ? "true":"false";
+
+    sysConfig.beginWriteArray(title);
+    sysConfig.setValue(appletId, value);
     sysConfig.endArray();
+
+    Q_EMIT m_dbus_proxyer->appletInfosChanged();
 }
 
-QString QmlLoader::getAppletVisibleFromConfig()
+bool QmlLoader::getAppletState(int dockMode, QString appletId)
 {
     QString filePath = QDir::homePath() + "/.dde-dock-applets.ini";
-    QString strRst;
+    QString appletVisible;
     if(QFile::exists(filePath)){
+        QString title;
+        switch (dockMode) {
+        case 1:
+            title = "win7";
+            break;
+        case 2:
+            title = "xp";
+            break;
+        default:
+            title = "applet";
+            break;
+        }
         QSettings sysConfig(filePath, QSettings::IniFormat, 0);
-        strRst = sysConfig.value("/applet/info", "").toString();
+        appletVisible = sysConfig.value("/" + title + "/" + appletId, "true").toString();
     }
     else{
-        strRst = "";
+        appletVisible = "true";
     }
 
-    return strRst;
-}
-
-void QmlLoader::appletInfosChangedSlot()
-{
-    Q_EMIT m_dbus_proxyer->appletInfosChanged();
+    return appletVisible == "true" ? true : false;
 }
 
 AppletDBus::AppletDBus(QmlLoader *parent):
@@ -121,12 +185,18 @@ AppletDBus::~AppletDBus()
 
 }
 
+QString AppletDBus::appletInfoList()
+{
+    return m_parent->getAppletInfoListFromQml();
+}
+
 void AppletDBus::ShowApplet(QString id)
 {
     QMetaObject::invokeMethod(
                 m_parent->rootObject,
-                "set_show_applet",
-                Q_ARG(QVariant, QVariant::fromValue(id))
+                "setAppletState",
+                Q_ARG(QVariant, QVariant::fromValue(id)),
+                Q_ARG(QVariant, QVariant::fromValue(true))
                 );
 }
 
@@ -134,8 +204,9 @@ void AppletDBus::HideApplet(QString id)
 {
     QMetaObject::invokeMethod(
                 m_parent->rootObject,
-                "set_hide_applet",
-                Q_ARG(QVariant, QVariant::fromValue(id))
+                "setAppletState",
+                Q_ARG(QVariant, QVariant::fromValue(id)),
+                Q_ARG(QVariant, QVariant::fromValue(false))
                 );
 }
 
@@ -143,7 +214,16 @@ void AppletDBus::ToggleApplet(QString id)
 {
     QMetaObject::invokeMethod(
                 m_parent->rootObject,
-                "toggle_applet",
+                "toggleAppletState",
                 Q_ARG(QVariant, QVariant::fromValue(id))
+                );
+}
+
+void AppletDBus::ShowSettingWindow(int mouseX)
+{
+    QMetaObject::invokeMethod(
+                m_parent->rootObject,
+                "showSettingWindow",
+                Q_ARG(QVariant, QVariant::fromValue(mouseX))
                 );
 }

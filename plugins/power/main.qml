@@ -21,26 +21,24 @@
 **
 ****************************************************************************/
 
-#include <QQmlEngine>
-#include <QApplication>
-#include <QDBusConnection>
-#include <QDebug>
+import QtQuick 2.1
+import DBus.Com.Deepin.Daemon.Power 1.0
+import Deepin.DockAppletWidgets 1.0
 
-#include "qmlloader.h"
+AppletPlugin {
+    id: appletItem
 
-int main(int argc, char* argv[])
-{
-    QApplication::setAttribute(Qt::AA_X11InitThreads, true);
-    QApplication app(argc, argv);
+    managed: dbusPower.batteryIsPresent
+    show: managed && true
+    name: dsTr("Power")
+    iconPath: getIconUrl("power/small/battery-charge.png")
 
-    if(QDBusConnection::sessionBus().registerService("dde.dock.entry.AppletManager")){
-        QmlLoader* qmlLoader = new QmlLoader();
-        qmlLoader->rootContext->setContextProperty("mainObject", qmlLoader);
-        qmlLoader->load(QUrl("qrc:///frame/main.qml"));
+    // Power
+    property var dbusPower: Power{}
 
-        return app.exec();
-    } else {
-        qWarning() << "dde-dock-applets is running...";
-        return 0;
+    appletTrayLoader: Loader {
+        sourceComponent: AppletTray{}
+        active: appletItem.show
     }
+
 }

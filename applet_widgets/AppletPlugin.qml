@@ -21,26 +21,41 @@
 **
 ****************************************************************************/
 
-#include <QQmlEngine>
-#include <QApplication>
-#include <QDBusConnection>
-#include <QDebug>
+import QtQuick 2.1
 
-#include "qmlloader.h"
+Item {
+    id: appletItem
+    width: 1
+    height: 1
 
-int main(int argc, char* argv[])
-{
-    QApplication::setAttribute(Qt::AA_X11InitThreads, true);
-    QApplication app(argc, argv);
+    property bool managed: true
+    property bool show: true
+    property string name: ""
+    property string iconPath:""
+    property string appletPath:""//for sub applet
 
-    if(QDBusConnection::sessionBus().registerService("dde.dock.entry.AppletManager")){
-        QmlLoader* qmlLoader = new QmlLoader();
-        qmlLoader->rootContext->setContextProperty("mainObject", qmlLoader);
-        qmlLoader->load(QUrl("qrc:///frame/main.qml"));
+    signal subAppletStateChanged(string subAppletId,bool subAppletState)
 
-        return app.exec();
-    } else {
-        qWarning() << "dde-dock-applets is running...";
-        return 0;
+    function setAppletPath(applet_path){
+        appletItem.appletPath = applet_path
+    }
+
+    function setAppletState(applet_visible) {
+        if(managed){
+            show = applet_visible
+        }
+    }
+
+    function setSubAppletState(applet_id,new_state){
+        appletItem.subAppletStateChanged(applet_id,new_state)
+    }
+
+    property var appletTrayLoader: Loader {}
+
+    Component.onCompleted: {
+        if(managed){
+            show = root.getInitAppletSate(appletId)
+            appletInfos.update(appletId, name, show,iconPath)
+        }
     }
 }
