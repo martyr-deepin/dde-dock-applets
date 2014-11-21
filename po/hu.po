@@ -1,0 +1,1367 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Translators:
+# tejeskifly <batta.daniel91@gmail.com>, 2014
+# kdavid97 <kdavid97@gmail.hu>, 2014
+# Laszlo Espadas <kw@kardiweb.org>, 2014
+# Marcell Lévai, 2014
+# SlazO <blum1866@gmail.com>, 2014
+# vmarci21 <vmarci21@msn.com>, 2014
+msgid ""
+msgstr ""
+"Project-Id-Version: dde-control-center\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-11-21 10:55+0800\n"
+"PO-Revision-Date: 2014-11-18 03:08+0000\n"
+"Last-Translator: deepin_transifex <xiabin@linuxdeepin.com>\n"
+"Language-Team: Hungarian (http://www.transifex.com/projects/p/dde-control-"
+"center/language/hu/)\n"
+"Language: hu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../src/frame/AppletSettingWindow.qml:100
+msgid "Notice Region Setting "
+msgstr ""
+
+#: ../plugins/date_time/AppletTray.qml:80
+msgid "_Switch to analog"
+msgstr "_Váltás analógra"
+
+#: ../plugins/date_time/AppletTray.qml:81
+msgid "_Switch to digital"
+msgstr "_Váltás digitálisra"
+
+#: ../plugins/date_time/AppletTray.qml:178
+#: ../plugins/date_time/calendar_core.js:4
+msgid "Sun"
+msgstr "Va"
+
+#: ../plugins/date_time/AppletTray.qml:179
+#: ../plugins/date_time/calendar_core.js:4
+msgid "Mon"
+msgstr "Hé"
+
+#: ../plugins/date_time/AppletTray.qml:180
+#: ../plugins/date_time/calendar_core.js:4
+msgid "Tue"
+msgstr "Ke"
+
+#: ../plugins/date_time/AppletTray.qml:181
+#: ../plugins/date_time/calendar_core.js:4
+msgid "Wed"
+msgstr "Sze"
+
+#: ../plugins/date_time/AppletTray.qml:182
+#: ../plugins/date_time/calendar_core.js:4
+msgid "Thu"
+msgstr "Cs"
+
+#: ../plugins/date_time/AppletTray.qml:183
+#: ../plugins/date_time/calendar_core.js:4
+msgid "Fri"
+msgstr "Pé"
+
+#: ../plugins/date_time/AppletTray.qml:184
+#: ../plugins/date_time/calendar_core.js:4
+msgid "Sat"
+msgstr "Szo"
+
+#: ../plugins/network/AppletTray.qml:35
+msgid "Network Connected"
+msgstr ""
+
+#: ../plugins/network/AppletTray.qml:35
+msgid "Network Not Connected"
+msgstr ""
+
+#: ../plugins/network/AppletTray.qml:305
+#: ../plugins/network/bluetooth/AppletTray.qml:78
+#: ../plugins/network/vpn/AppletTray.qml:70
+#: ../plugins/network/wifi/AppletTray.qml:126
+#: ../plugins/power/AppletTray.qml:99 ../plugins/sound/AppletTray.qml:173
+msgid "_Run"
+msgstr "_Futtatás"
+
+#: ../plugins/network/AppletTray.qml:306
+#: ../plugins/network/bluetooth/AppletTray.qml:79
+#: ../plugins/network/vpn/AppletTray.qml:71
+#: ../plugins/network/wifi/AppletTray.qml:127
+#: ../plugins/power/AppletTray.qml:106 ../plugins/sound/AppletTray.qml:174
+msgid "_Undock"
+msgstr "_Rögzítés feloldása"
+
+#: ../plugins/network/bluetooth/AppletTray.qml:118
+#: ../plugins/network/bluetooth/main.qml:33
+msgid "Bluetooth"
+msgstr "Bluetooth"
+
+#: ../plugins/network/vpn/AppletTray.qml:110
+#: ../plugins/network/vpn/main.qml:33
+msgid "VPN"
+msgstr "VPN"
+
+#: ../plugins/network/wifi/AppletTray.qml:168
+#: ../plugins/network/WirelessNetwork.qml:50
+#: ../plugins/network/wifi/main.qml:33
+msgid "Wireless Network"
+msgstr "Vezeték nélküli hálózat"
+
+#: ../plugins/power/AppletTray.qml:34
+msgid "On Charging"
+msgstr "Töltődik"
+
+#: ../plugins/power/AppletTray.qml:46
+msgid "Custom"
+msgstr "Egyéni"
+
+#: ../plugins/power/AppletTray.qml:47
+msgid "Power saver"
+msgstr "Energiatakarékos"
+
+#: ../plugins/power/AppletTray.qml:48
+msgid "Balanced"
+msgstr "Kiegyensúlyozott"
+
+#: ../plugins/power/AppletTray.qml:49
+msgid "High performance"
+msgstr "Magas teljesítmény "
+
+#: ../plugins/sound/AppletTray.qml:218
+msgid "Device"
+msgstr "Eszköz"
+
+#: ../plugins/sound/AppletTray.qml:318
+msgid "Applications"
+msgstr "Alkalmazások"
+
+#: ../plugins/disk_mount/DiskItem.qml:124
+msgid "Unmount failed!"
+msgstr "Sikertelen leválasztás!"
+
+#: ../src/frame/WifiPasswordWindow.qml:150
+#, fuzzy, qt-format
+msgid "Please enter the password of  <font color=\"#faca57\">%1</font>"
+msgstr ""
+"Jelszó vagy  titkosítási kulcs szükséges ahhoz, hogy  hozzáférjen a color="
+"\"#faca57\">%1</font> WI-FI hálózathoz."
+
+#: ../src/frame/WifiPasswordWindow.qml:172
+msgid "Password"
+msgstr "Jelszó"
+
+#: ../src/frame/WifiPasswordWindow.qml:180
+#, fuzzy
+msgid "Auto-connect"
+msgstr "Automatikus csatlakozás"
+
+#: ../src/frame/WifiPasswordWindow.qml:195
+msgid "Cancel"
+msgstr "Mégsem"
+
+#: ../src/frame/WifiPasswordWindow.qml:202
+msgid "Connect"
+msgstr "Csatlakozás"
+
+#: ../plugins/network/WirelessApList.qml:95
+msgid "Scanning..."
+msgstr "Keresés..."
+
+#: ../plugins/network/WirelessNetwork.qml:50
+#, qt-format
+msgid "Wireless Network %1"
+msgstr "Vezeték nélküli internet %1"
+
+#: ../plugins/date_time/main.qml:32
+msgid "Date and Time"
+msgstr "Dátum és Idő"
+
+#: ../plugins/disk_mount/main.qml:33
+msgid "Disk Mount"
+msgstr "Lemez csatolás"
+
+#: ../plugins/network/main.qml:32
+msgid "Network"
+msgstr "Hálózat"
+
+#: ../plugins/power/main.qml:33
+msgid "Power"
+msgstr "Főkapcsoló"
+
+#: ../plugins/sound/main.qml:32
+msgid "Sound"
+msgstr "Hang"
+
+#~ msgid "New PPPoE Connection"
+#~ msgstr "Új PPPoE kapcsolat"
+
+#~ msgid "Name"
+#~ msgstr "Név"
+
+#~ msgid "Username"
+#~ msgstr "Felhasználónév"
+
+#~ msgid "Service"
+#~ msgstr "Szolgáltatás"
+
+#~ msgid "New Mobile Connection"
+#~ msgstr "Új mobil kapcsolat"
+
+#~ msgid "Service Type"
+#~ msgstr "A szolgáltatás típusa"
+
+#~ msgid "APN"
+#~ msgstr "APN"
+
+#~ msgid "Number"
+#~ msgstr "Szám"
+
+#~ msgid "Add"
+#~ msgstr "Hozzáad"
+
+#~ msgid "Invalid password"
+#~ msgstr "Érvénytelen jelszó"
+
+#~ msgid "Nothing input"
+#~ msgstr "Nincs bemenet"
+
+#~ msgid "Different password"
+#~ msgstr "Eltérő jelszó"
+
+#~ msgid "Add User"
+#~ msgstr "Felhasználó hozzáadása"
+
+#~ msgid "New User"
+#~ msgstr "Új felhasználó"
+
+#~ msgid "Standard"
+#~ msgstr "Szokásos"
+
+#~ msgid "Administrator"
+#~ msgstr "Adminisztrátor"
+
+#~ msgid "Repeat Password"
+#~ msgstr "Jelszó ismét"
+
+#~ msgid "Account Type"
+#~ msgstr "Fiók típusa"
+
+#~ msgid "Auto-login"
+#~ msgstr "Automatikus belépés"
+
+#~ msgid "Confirm"
+#~ msgstr "Megerősítés"
+
+#~ msgid "VPN Type"
+#~ msgstr "VPN típus"
+
+#~ msgid "L2TP"
+#~ msgstr "L2TP"
+
+#~ msgid "PPTP"
+#~ msgstr "PPTP"
+
+#~ msgid "OpenVPN"
+#~ msgstr "OpenVPN"
+
+#~ msgid "OpenConnect"
+#~ msgstr "OpenConnect"
+
+#~ msgid "VPNC"
+#~ msgstr "VPNC"
+
+#~ msgid "Basic Information"
+#~ msgstr "Alapvető információk"
+
+#~ msgid "Need VPN Plugin"
+#~ msgstr "VPN Plugin szükséges"
+
+#~ msgid "Gateway"
+#~ msgstr "Átjáró"
+
+#~ msgid "Ask for Pwd"
+#~ msgstr "Jelszó kérése"
+
+#~ msgid "CA Cert"
+#~ msgstr "CA tanúsítvány"
+
+#~ msgid "Proxy"
+#~ msgstr "Proxy"
+
+#~ msgid "Allow Cisco Secure Desktop Trojan"
+#~ msgstr "Cisco trójai védelem engedélyezése"
+
+#~ msgid "Customize Key Direction"
+#~ msgstr "Kulcs irány testreszabása"
+
+#~ msgid "Private Key"
+#~ msgstr "Privát kulcs"
+
+#~ msgid "Auth Type"
+#~ msgstr "Hitelesítés típusa"
+
+#~ msgid "User Cert"
+#~ msgstr "Felhasználói tanúsítvány"
+
+#~ msgid "CSD Script"
+#~ msgstr "CSD szkript"
+
+#~ msgid "Use FSID for Key Passphrase"
+#~ msgstr "FSID azonosítókulcs használata "
+
+#~ msgid "Private Pwd"
+#~ msgstr "Privát jelszó"
+
+#~ msgid "Static Key"
+#~ msgstr "Statikus kulcs"
+
+#~ msgid "Key Direction"
+#~ msgstr "Kulcs irány"
+
+#~ msgid "Remote IP"
+#~ msgstr "Távoli IP"
+
+#~ msgid "Local IP"
+#~ msgstr "Helyi IP"
+
+#~ msgid "User Pwd"
+#~ msgstr "Felhasználói jelszó "
+
+#~ msgid "Group Name"
+#~ msgstr "Csoportnév"
+
+#~ msgid "Group Pwd"
+#~ msgstr "Csoport jelszó"
+
+#~ msgid "Use Hybrid Authentication"
+#~ msgstr "Hibrid hitelesítés használata"
+
+#~ msgid "CA File"
+#~ msgstr "CA fájl"
+
+#~ msgid "Enable IPsec"
+#~ msgstr "IPsec engedélyezése"
+
+#~ msgid "Group ID"
+#~ msgstr "Csoport ID"
+
+#~ msgid "Pre-Shared Key"
+#~ msgstr "Előre megosztott kulcs "
+
+#~ msgid "Use MPPE"
+#~ msgstr "MPPE használata"
+
+#~ msgid "Connect to wireless"
+#~ msgstr "Csatlakozás vezeték nélküli hálózathoz"
+
+#~ msgid "SSID"
+#~ msgstr "SSID"
+
+#~ msgid "Security"
+#~ msgstr "Biztonság"
+
+#~ msgid "Key"
+#~ msgstr "Kulcs"
+
+#~ msgid "EAP Auth"
+#~ msgstr "Kulcs"
+
+#~ msgid "Identity"
+#~ msgstr "Identitás"
+
+#~ msgid "Anonymous ID"
+#~ msgstr "Névtelen ID"
+
+#~ msgid "Provisioning"
+#~ msgstr "Készenlét"
+
+#~ msgid "PAC file"
+#~ msgstr "PAC fájl"
+
+#~ msgid "PEAP Version"
+#~ msgstr "PEAP verzió"
+
+#~ msgid "Inner Auth"
+#~ msgstr "Belső hitelesítés"
+
+#~ msgid "Dock Applet Enabled"
+#~ msgstr "Dokk kisalkalmazás engedélyezve"
+
+#~ msgid "Choose a new picture for your Avatar"
+#~ msgstr "Válasszon egy új profilképet"
+
+#~ msgid "Recently Used"
+#~ msgstr "Legutóbb használt"
+
+#~ msgid "Avatar"
+#~ msgstr "Profilkép"
+
+#~ msgid "Webcam"
+#~ msgstr "Webkamera"
+
+#~ msgid "Left/Right Balance"
+#~ msgstr "Bal/Jobb balansz"
+
+#~ msgid "Left"
+#~ msgstr "Balra"
+
+#~ msgid "Right"
+#~ msgstr "Jobbra"
+
+#~ msgid "Today"
+#~ msgstr "Ma"
+
+#~ msgid "New Network"
+#~ msgstr "Új hálózat"
+
+#~ msgid "PPPoE"
+#~ msgstr "PPPoE"
+
+#~ msgid "Next"
+#~ msgstr "Következő"
+
+#~ msgid "Delete this network"
+#~ msgstr "Hálózat törlése"
+
+#~ msgid "Are you sure you want to delete this network?"
+#~ msgstr "Biztos benne, hogy törli ezt a hálózatot?"
+
+#~ msgid "Save"
+#~ msgstr "Mentés"
+
+#~ msgid "Close"
+#~ msgstr "Bezárás"
+
+#~ msgid "Delete"
+#~ msgstr "Törlés"
+
+#~ msgid "Command"
+#~ msgstr "Parancs"
+
+#~ msgid "Keep user's files"
+#~ msgstr " Felhasználói fájlok megtartása"
+
+#~ msgid "Delete user's files"
+#~ msgstr " Felhasználói fájlok törlése"
+
+#~ msgid "PPPoE Connections"
+#~ msgstr "PPPoE kapcsolatok"
+
+#~ msgid "Current system lacks component for %1"
+#~ msgstr "A jelenlegi rendszerben nincs %1 komponens"
+
+#~ msgid "Click to install"
+#~ msgstr "Kattintson a telepítéséhez"
+
+#~ msgid "Ethernet"
+#~ msgstr "Ethernet"
+
+#~ msgid "Device MAC Addr"
+#~ msgstr "Eszköz MAC címe"
+
+#~ msgid "Cloned MAC Addr"
+#~ msgstr "Klónozott MAC cím"
+
+#~ msgid "Customize MTU"
+#~ msgstr "MTU testreszabása"
+
+#~ msgid "MTU"
+#~ msgstr "MTU"
+
+#~ msgid "IPv4"
+#~ msgstr "IPv4"
+
+#~ msgid "Method"
+#~ msgstr "Módszer"
+
+#~ msgid "IP Address"
+#~ msgstr "IP cím"
+
+#~ msgid "Netmask"
+#~ msgstr "Hálózati maszk"
+
+#~ msgid "DNS Server"
+#~ msgstr "DNS-kiszolgáló"
+
+#~ msgid "IPv6"
+#~ msgstr "IPv6"
+
+#~ msgid "Prefix"
+#~ msgstr "Előtag"
+
+#~ msgid "Mobile"
+#~ msgstr "Mobil"
+
+#~ msgid "Network ID"
+#~ msgstr "Hálózati azonosító"
+
+#~ msgid "Type"
+#~ msgstr "Típus"
+
+#~ msgid "Home Network Only"
+#~ msgstr "Csak otthoni hálózat"
+
+#~ msgid "PIN"
+#~ msgstr "PIN"
+
+#~ msgid "PPP"
+#~ msgstr "PPP"
+
+#~ msgid "128-bit MPPE"
+#~ msgstr "128 bites MPPE"
+
+#~ msgid "Stateful MPPE"
+#~ msgstr "Állapotfüggő MPPE"
+
+#~ msgid "Refuse EAP Authentication"
+#~ msgstr "EAP hitelesítés visszautasítása"
+
+#~ msgid "Refuse PAP Authentication"
+#~ msgstr "PAP hitelesítés visszautasítása"
+
+#~ msgid "Refuse CHAP Authentication"
+#~ msgstr "CHAP hitelesítés visszautasítása"
+
+#~ msgid "Refuse MSCHAP Authentication"
+#~ msgstr "MSCHAP hitelesítés visszautasítása"
+
+#~ msgid "Refuse MSCHAPv2 Authentication"
+#~ msgstr "MSCHAPv2 hitelesítés visszautasítása"
+
+#~ msgid "No BSD Data Compression"
+#~ msgstr "Nincs BSD Adattömörítés"
+
+#~ msgid "No Deflate Data Compression"
+#~ msgstr "Nincs Delflate adattömörítés "
+
+#~ msgid "No TCP Header Compression"
+#~ msgstr "Nincs TCP fejléc tömörítés"
+
+#~ msgid "Send PPP Echo Packets"
+#~ msgstr "PPP Echo csomagok küldése"
+
+#~ msgid "Security Required"
+#~ msgstr "Szükséges biztonság"
+
+#~ msgid "NT Domain"
+#~ msgstr "NT Domain"
+
+#~ msgid "VPN IPsec"
+#~ msgstr "VPN IPsec"
+
+#~ msgid "VPN PPP"
+#~ msgstr "VPN PPP"
+
+#~ msgid "No Protocol Field Compression"
+#~ msgstr "Nincs protokoll mező tömörítés"
+
+#~ msgid "No Address/Control Compression"
+#~ msgstr "Nincs cím/vezérlés tömörítés"
+
+#~ msgid "VPN Advanced"
+#~ msgstr "Bövitett VPN"
+
+#~ msgid "Gateway Port"
+#~ msgstr "Átjáró port"
+
+#~ msgid "Customize Gateway Port"
+#~ msgstr "Átjáró Port testreszabása"
+
+#~ msgid "Customize Renegotiation Interval"
+#~ msgstr "Egyedi újratárgyalási idő használata"
+
+#~ msgid "Renegotiation Interval"
+#~ msgstr "Újratárgyalási idő"
+
+#~ msgid "Use LZO data compression"
+#~ msgstr "LZO adat tömörítés használata"
+
+#~ msgid "Use TCP connection"
+#~ msgstr "Használjon TCP kapcsolatot"
+
+#~ msgid "Use TAP device"
+#~ msgstr "TAP eszköz használata"
+
+#~ msgid "Customize Tunnel MTU"
+#~ msgstr "MTU csatorna testreszabása"
+
+#~ msgid "Customize UDP Fragment Size"
+#~ msgstr "UDP töredékméret testreszabása "
+
+#~ msgid "UDP Fragment Size"
+#~ msgstr "UDP töredék mérete"
+
+#~ msgid "Restrict Tunnel TCP MSS"
+#~ msgstr "Korlátozza a TCP MSS tunnelt "
+
+#~ msgid "Randomize Remote Hosts"
+#~ msgstr "Hostok véletlenszerű elrendezése"
+
+#~ msgid "VPN Proxies"
+#~ msgstr "VPN Proxik"
+
+#~ msgid "Proxy Type"
+#~ msgstr "Proxy típus "
+
+#~ msgid "Server IP"
+#~ msgstr "Szerver IP"
+
+#~ msgid "Port"
+#~ msgstr "Port"
+
+#~ msgid "Retry Indefinitely When Failed"
+#~ msgstr "Sikertelen próbálkozásoknál újra próbálkozás"
+
+#~ msgid "VPN Security"
+#~ msgstr "VPN biztonság"
+
+#~ msgid "Cipher"
+#~ msgstr "Titkosírás"
+
+#~ msgid "HMAC Auth"
+#~ msgstr "HMAC Hitelesítés"
+
+#~ msgid "VPN TLS Authentication"
+#~ msgstr "VPN TLS hitelesítés"
+
+#~ msgid "Subject Match"
+#~ msgstr "Téma egyezés"
+
+#~ msgid "Remote Cert Type"
+#~ msgstr "Távoli tanúsítvány típusa"
+
+#~ msgid "Key File"
+#~ msgstr "Kulcs fájl"
+
+#~ msgid "Domain"
+#~ msgstr "Domain"
+
+#~ msgid "Vendor"
+#~ msgstr "Előálltó"
+
+#~ msgid "Version"
+#~ msgstr "Verzió"
+
+#~ msgid "Encryption"
+#~ msgstr "Titkosítás"
+
+#~ msgid "NAT Traversal"
+#~ msgstr "NAT kikerülés"
+
+#~ msgid "IKE DH Group"
+#~ msgstr "IKE DH csoport"
+
+#~ msgid "Forward Secrecy"
+#~ msgstr "Elő titkosítás"
+
+#~ msgid "Local Port"
+#~ msgstr "Helyi port"
+
+#~ msgid "Disable Dead Peer Detection"
+#~ msgstr "Halott peer észlelés letiltása"
+
+#~ msgid "Wi-Fi"
+#~ msgstr "Wi-Fi"
+
+#~ msgid "Mode"
+#~ msgstr "Mód"
+
+#~ msgid "Band"
+#~ msgstr "Sáv"
+
+#~ msgid "Channel"
+#~ msgstr "Csatorna"
+
+#~ msgid "Enable"
+#~ msgstr "Engedélyezés"
+
+#~ msgid "Front/Rear Balance"
+#~ msgstr "Első/Hátsó balansz"
+
+#~ msgid "Front"
+#~ msgstr "Első"
+
+#~ msgid "Rear"
+#~ msgstr "Hátsó"
+
+#~ msgid "Size"
+#~ msgstr "Méret"
+
+#~ msgid "Font %1"
+#~ msgstr "Betűtípus %1"
+
+#~ msgid "Guest"
+#~ msgstr "Vendég"
+
+#~ msgid "Enabled"
+#~ msgstr "Engedélyezve"
+
+#~ msgid "Activated Connections"
+#~ msgstr "Aktivált kapcsolatok"
+
+#~ msgid "None Activated Connection"
+#~ msgstr "Nincs aktív kapcsolat"
+
+#~ msgid "(default)"
+#~ msgstr "(alapértelmezett)"
+
+#~ msgid "Interface"
+#~ msgstr "Felület"
+
+#~ msgid "Device Addr"
+#~ msgstr "Eszközcím"
+
+#~ msgid "Subnet Mask"
+#~ msgstr "Alhálózati maszk"
+
+#~ msgid "Route Addr"
+#~ msgstr "Útvonal cím"
+
+#~ msgid "Primary DNS"
+#~ msgstr "Elsődleges DNS"
+
+#~ msgid "Secondary DNS"
+#~ msgstr "Másodlagos DNS"
+
+#~ msgid "Third DNS"
+#~ msgstr "Harmadlagos DNS"
+
+#~ msgid "Device Speed"
+#~ msgstr "Eszköz sebesség"
+
+#~ msgid "Language"
+#~ msgstr "Nyelv"
+
+#~ msgid "Do you want to keep these display settings?"
+#~ msgstr "Megszeretné tartani a kijelző beállításokat?"
+
+#~ msgid ""
+#~ "Reverting to previous display settings in <font color='#F48914'>%1</font> "
+#~ "seconds."
+#~ msgstr ""
+#~ "Előző kijelzőbeállítások visszaállítása <font color='#F48914'>%1</font> "
+#~ "másodperc múlva."
+
+#~ msgid "Keep Changes"
+#~ msgstr "Beállítások megtartása"
+
+#~ msgid "Revert"
+#~ msgstr "visszaállítás  "
+
+#~ msgid "Power Management"
+#~ msgstr "Energiagazdálkodás"
+
+#~ msgid "More Settings"
+#~ msgstr "Egyéb beállítások"
+
+#~ msgid "Display"
+#~ msgstr "Kijelző"
+
+#~ msgid "Desktop"
+#~ msgstr "Asztal"
+
+#~ msgid "Personalization"
+#~ msgstr "Megjelenés"
+
+#~ msgid "Keyboard Shortcuts"
+#~ msgstr "Gyorsbillentyűk"
+
+#~ msgid "Keyboard and Language"
+#~ msgstr "Billentyűzet és Nyelv"
+
+#~ msgid "Tablet"
+#~ msgstr "Táblagép"
+
+#~ msgid "Mouse and Touchpad"
+#~ msgstr "Egér és touchpad"
+
+#~ msgid "Mouse"
+#~ msgstr "Egér"
+
+#~ msgid "User Accounts"
+#~ msgstr "Felhasználói fiókok"
+
+#~ msgid "Default Applications"
+#~ msgstr "Alapértelmezett alkalmazások"
+
+#~ msgid "System Information"
+#~ msgstr "Rendszerinformációk"
+
+#~ msgid "Boot Menu"
+#~ msgstr "Boot menü"
+
+#~ msgid "Home"
+#~ msgstr "Kezdőlap"
+
+#~ msgid "Split"
+#~ msgstr "Osztott"
+
+#~ msgid "Set as primary display"
+#~ msgstr "Beállítás elsődleges kijelzőként"
+
+#~ msgid "Identify"
+#~ msgstr "Azonosítás "
+
+#~ msgid "Edit"
+#~ msgstr "Szerkesztés"
+
+#~ msgid "Normal"
+#~ msgstr "Normál"
+
+#~ msgid "Rotate Right"
+#~ msgstr "Jobbra forgatni"
+
+#~ msgid "Upside Down"
+#~ msgstr "Fejjel lefelé"
+
+#~ msgid "Rotate Left"
+#~ msgstr "Balra forgatni"
+
+#~ msgid "Resolution"
+#~ msgstr "Felbontás"
+
+#~ msgid "Rotation"
+#~ msgstr "Elrendezés"
+
+#~ msgid "Brightness"
+#~ msgstr "Fényerősség"
+
+#~ msgid "Wired Connection %1"
+#~ msgstr "Vezetékes hálózat %1"
+
+#~ msgid "Wired Connection"
+#~ msgstr "Vezetékes kapcsolat"
+
+#~ msgid "not managed"
+#~ msgstr "nem sikerült"
+
+#~ msgid "Password: "
+#~ msgstr "Jelszó:"
+
+#~ msgid "New Password"
+#~ msgstr "Új jelszó"
+
+#~ msgid "Repeat"
+#~ msgstr "Ismétlés"
+
+#~ msgid "Drag and drop an image to change background."
+#~ msgstr "Húzz be ide egy képet, hogy beállítsd háttérképnek."
+
+#~ msgid "Image format not supported"
+#~ msgstr "Kép formátum nem támogatott"
+
+#~ msgid "Updating..."
+#~ msgstr "Frissítés..."
+
+#~ msgid "Successfully updated, reboot to view."
+#~ msgstr ""
+#~ "Sikeres frissítés, a változások végrehajtásához indítsd újra a rendszert."
+
+#~ msgid "None"
+#~ msgstr "Nincs"
+
+#~ msgid "Manual"
+#~ msgstr "Manuális"
+
+#~ msgid "Auto"
+#~ msgstr "Automatikus"
+
+#~ msgid "HTTP Proxy"
+#~ msgstr "HTTP Proxy"
+
+#~ msgid "HTTPS Proxy"
+#~ msgstr "HTTPS Proxy"
+
+#~ msgid "FTP Proxy"
+#~ msgstr "FTP Proxy"
+
+#~ msgid "Socks Proxy"
+#~ msgstr "Socks Proxy"
+
+#~ msgid "Configuration URL"
+#~ msgstr "Beállítások URL"
+
+#~ msgid "Apply system wide"
+#~ msgstr "Rendszerszintű alkalmazás"
+
+#~ msgid "System Proxy"
+#~ msgstr "Rendszer proxy"
+
+#~ msgid "Reset successfully"
+#~ msgstr "Sikeresen visszaállítva "
+
+#~ msgid "Reset"
+#~ msgstr "Visszaállítás"
+
+#~ msgid "Disable"
+#~ msgstr "Letíltás"
+
+#~ msgid "Please input new shortcut"
+#~ msgstr "Kérem adjon meg egy új gyorsbillentyűt"
+
+#~ msgid "Shortcut \"%1\" is invalid, please retype new shortcut."
+#~ msgstr "A gyorsbillentyű \"%1\" érvénytelen kérem adjon meg egy újat."
+
+#~ msgid "The shortcut you set "
+#~ msgstr "A beállított gyorsbillentyű"
+
+#~ msgid "conflicts with the one used for \"%2\" in the \"%1\" category."
+#~ msgstr "Konfliktusban áll a \"%2 a \"%1\"-vel a kategóriában"
+
+#~ msgid "Do you want to replace it?"
+#~ msgstr "Le szeretné cserélni?"
+
+#~ msgid "Replace"
+#~ msgstr "Javítás"
+
+#~ msgid "Preview Theme"
+#~ msgstr "Sablon előnézet"
+
+#~ msgid "Done"
+#~ msgstr "Kész"
+
+#~ msgid "Double-click the above digits to change your time."
+#~ msgstr "Kattintson duplán a fenti számokon, hogy beállítsa az időt."
+
+#~ msgid "Set"
+#~ msgstr "Használat"
+
+#~ msgid "Time zone"
+#~ msgstr "Időzóna"
+
+#~ msgid "Touchpad"
+#~ msgstr "Tapipad"
+
+#~ msgid "Primary Button"
+#~ msgstr "Elsődleges gomb"
+
+#~ msgid "Left Button"
+#~ msgstr "Bal gomb"
+
+#~ msgid "Right Button"
+#~ msgstr "Jobb gomb"
+
+#~ msgid "Pointer Speed"
+#~ msgstr "Mutató sebesség"
+
+#~ msgid "Slow"
+#~ msgstr "Lassú"
+
+#~ msgid "Fast"
+#~ msgstr "Gyors"
+
+#~ msgid "Double-click Speed"
+#~ msgstr "Dupla-klikk sebesség"
+
+#~ msgid "Drag Threshold"
+#~ msgstr "Húzza a küszöbre"
+
+#~ msgid "Short"
+#~ msgstr "Rövid"
+
+#~ msgid "Long"
+#~ msgstr "Hosszú"
+
+#~ msgid "Natural Scrolling"
+#~ msgstr "Természetes görgetés"
+
+#~ msgid "Tap to click"
+#~ msgstr "Érintésre kattint "
+
+#~ msgid "Two-finger scrolling"
+#~ msgstr "Két ujjas görgetés"
+
+#~ msgid "Edge scrolling"
+#~ msgstr "Éleken görgetés"
+
+#~ msgid "VPN Connections"
+#~ msgstr "VPN kapcsolatok"
+
+#~ msgid "Snapshot"
+#~ msgstr "Pillanatkép"
+
+#~ msgid "Again"
+#~ msgstr "ismét"
+
+#~ msgid "No camera found."
+#~ msgstr "Nem található kamera."
+
+#~ msgid "Edit Wi-Fi Hotspot"
+#~ msgstr "WI-FI pont szerkesztés"
+
+#~ msgid "Create Wi-Fi Hotspot"
+#~ msgstr "Új WI-FI pont hozzáadás"
+
+#~ msgid "Create"
+#~ msgstr "Létrehozás"
+
+#~ msgid "Authentication required by Wi-Fi network"
+#~ msgstr "Hitelesítés szükséges a WI-FI hálózathoz"
+
+#~ msgid "Password:"
+#~ msgstr "Jelszó:"
+
+#~ msgid "Wired Network"
+#~ msgstr "Vezetékes hálózat "
+
+#~ msgid ""
+#~ "Wireless network is unable to be connected maybe due to the following "
+#~ "reasons:\n"
+#~ "\n"
+#~ "1. The hardware switch of wireless network card is off\n"
+#~ "2. Incorrect network configuration in /etc/network/interface\n"
+#~ "3. Incorrect driver of network hardware"
+#~ msgstr ""
+#~ "Nem lehet csatlakozni a vezeték nélküli kapcsolathoz, a következő okok "
+#~ "miatt:\n"
+#~ "\n"
+#~ "1. A vezeték nélküli hardver kikapcsolt állapotban van.\n"
+#~ "2. Hibás hálózati konfiguráció itt: /etc/network/interface \n"
+#~ "3. Nem megfelelő hálózati hardver illesztőprogram"
+
+#~ msgid "Connect to hidden access point"
+#~ msgstr "Csatlakozás a rejtett hozzáférési ponthoz"
+
+#~ msgid "ON/OFF"
+#~ msgstr "BE/KI"
+
+#~ msgid "Devices nearby"
+#~ msgstr "Eszközök a közelben"
+
+#~ msgid "Automatic date and time"
+#~ msgstr "Automatikus idő és dátum"
+
+#~ msgid "Use 24-hour clock"
+#~ msgstr "24 órás formátum"
+
+#~ msgid "Date"
+#~ msgstr "Dátum"
+
+#~ msgid "Set Date"
+#~ msgstr "Dátum beállítása"
+
+#~ msgid "Browser"
+#~ msgstr "Böngésző"
+
+#~ msgid "Mail"
+#~ msgstr "E-mail"
+
+#~ msgid "Text"
+#~ msgstr "Szöveg"
+
+#~ msgid "Music"
+#~ msgstr "Zene"
+
+#~ msgid "Video"
+#~ msgstr "Videó"
+
+#~ msgid "Picture"
+#~ msgstr "Fénykép"
+
+#~ msgid "Terminal"
+#~ msgstr "Terminál"
+
+#~ msgid "AutoPlay"
+#~ msgstr "Automatikus lejátszás"
+
+#~ msgid "CD Audio"
+#~ msgstr "Audió CD"
+
+#~ msgid "DVD Video"
+#~ msgstr "DVD videó"
+
+#~ msgid "Music Player"
+#~ msgstr "Zenelejátszó"
+
+#~ msgid "Camera"
+#~ msgstr "Kamera"
+
+#~ msgid "Software"
+#~ msgstr "szoftver"
+
+#~ msgid "Primary Monitor: "
+#~ msgstr "Elsődleges Monitor:"
+
+#~ msgid "Monitor"
+#~ msgstr "Monitor"
+
+#~ msgid "Apply"
+#~ msgstr "Alkalmaz"
+
+#~ msgid "Default Startup"
+#~ msgstr "Alapértelmezett indítás"
+
+#~ msgid "Boot delay"
+#~ msgstr "Indítás késleltetése"
+
+#~ msgid "Text Color"
+#~ msgstr "Szöveg szín"
+
+#~ msgid "Selected Text Color"
+#~ msgstr "Kiválasztott szöveg szín"
+
+#~ msgid "Repeat Delay"
+#~ msgstr "Ismétlés késleltetése"
+
+#~ msgid "Repeat Rate"
+#~ msgstr "Ismétlés arány"
+
+#~ msgid "Cursor Blink Rate"
+#~ msgstr "Kurzor sebesség"
+
+#~ msgid "Test Area"
+#~ msgstr "Teszt mező"
+
+#~ msgid "Keyboard Layout"
+#~ msgstr "Billentyűzetkiosztás"
+
+#~ msgid "No result"
+#~ msgstr "Nincs találat"
+
+#~ msgid "Caps Lock prompt"
+#~ msgstr "Caps Lock figyelmeztető "
+
+#~ msgid "Disable the touchpad when inserting the mouse"
+#~ msgstr "Az egér használatánál érintőpad kikapcsolása"
+
+#~ msgid "Theme"
+#~ msgstr "Téma"
+
+#~ msgid "Window"
+#~ msgstr "Ablak"
+
+#~ msgid "Icon"
+#~ msgstr "Ikon"
+
+#~ msgid "Cursor"
+#~ msgstr "Kurzor"
+
+#~ msgid "Wallpaper"
+#~ msgstr "Háttérkép"
+
+#~ msgid "Fonts"
+#~ msgstr "Betűtípusok"
+
+#~ msgid "Never"
+#~ msgstr "Soha"
+
+#~ msgid "1 minute"
+#~ msgstr "1 perc"
+
+#~ msgid "5 minutes"
+#~ msgstr "5 perc"
+
+#~ msgid "10 minutes"
+#~ msgstr "10 perc"
+
+#~ msgid "15 minutes"
+#~ msgstr "15 perc"
+
+#~ msgid "30 minutes"
+#~ msgstr "30 perc"
+
+#~ msgid "1 hour"
+#~ msgstr "1 óra"
+
+#~ msgid "When I press the power button"
+#~ msgstr "Amikor a bekapcsológombot megnyomom"
+
+#~ msgid "Shutdown"
+#~ msgstr "Leállítás"
+
+#~ msgid "Suspend"
+#~ msgstr "Felfüggesztés"
+
+#~ msgid "Ask"
+#~ msgstr "Kérdés"
+
+#~ msgid "When I close the lid"
+#~ msgstr "Fedő lehajtásakor"
+
+#~ msgid "Nothing"
+#~ msgstr "Semmi"
+
+#~ msgid "Password required to wake up"
+#~ msgstr "Jelszó szükséges a felébresztéshez"
+
+#~ msgid "Plugged in"
+#~ msgstr "Csatlakoztatva"
+
+#~ msgid "On battery"
+#~ msgstr "Akkumulátoron"
+
+#~ msgid "Turn off the display"
+#~ msgstr "Kijelző kikapcsolása "
+
+#~ msgid "Custom Options"
+#~ msgstr "Egyéni beállítások"
+
+#~ msgid "System"
+#~ msgstr "Rendszer"
+
+#~ msgid "Workspace"
+#~ msgstr "Munkaterület"
+
+#~ msgid "Speaker"
+#~ msgstr "Hangszóró"
+
+#~ msgid "Output Volume"
+#~ msgstr "Kimeneti hangerő"
+
+#~ msgid "Microphone"
+#~ msgstr "Mikrofon"
+
+#~ msgid "Input Volume"
+#~ msgstr "Bemeneti hangerő"
+
+#~ msgid "Input Feedback"
+#~ msgstr "Bemeneti visszajelzés"
+
+#~ msgid "Output Port"
+#~ msgstr "Kimeneti port"
+
+#~ msgid "No port exists in this device."
+#~ msgstr "Nincs csatlakozási lehetőség ehhez az eszközhöz"
+
+#~ msgid "Output device"
+#~ msgstr "Kimeneti eszköz"
+
+#~ msgid "Input Port"
+#~ msgstr "Bemeneti port"
+
+#~ msgid "Input device"
+#~ msgstr "Bemeneti eszköz"
+
+#~ msgid "Hide Advanced..."
+#~ msgstr "További opciók elrejtése..."
+
+#~ msgid "Show Advanced..."
+#~ msgstr "További opciók..."
+
+#~ msgid "Copyright (c) 2011-2014 Wuhan Deepin Technology Co.,Ltd."
+#~ msgstr ""
+#~ "Minden jog fenntartva  (c) 2011-2014 Wuhan Deepin Technology Co.,Ltd."
+
+#~ msgid "Deepin Edition"
+#~ msgstr "Deepin verzió"
+
+#~ msgid "System Type"
+#~ msgstr "Architektúra"
+
+#~ msgid "bit"
+#~ msgstr "bit"
+
+#~ msgid "Processor"
+#~ msgstr "Processzor"
+
+#~ msgid "Memory"
+#~ msgstr "Memória"
+
+#~ msgid "Disk"
+#~ msgstr "Lemez"
+
+#~ msgid "GNU GENERAL PUBLIC LICENSE"
+#~ msgstr "GNU ÁLTALÁNOS PUBLIKUS LICENC"
+
+#~ msgid "Unknown"
+#~ msgstr "Ismeretlen"
+
+#~ msgid "Wired"
+#~ msgstr "Vezetékes"
+
+#~ msgid "Wireless"
+#~ msgstr "Vezeték nélküli"
+
+#~ msgid "Unused1"
+#~ msgstr "Nem használt1"
+
+#~ msgid "Unused2"
+#~ msgstr "Nem használt2"
+
+#~ msgid "OLPC mesh"
+#~ msgstr "OLPC háló"
+
+#~ msgid "WiMax"
+#~ msgstr "WiMax"
+
+#~ msgid "Modem"
+#~ msgstr "Modem"
+
+#~ msgid "InfiniBand"
+#~ msgstr "InfiniBand"
+
+#~ msgid "Bond"
+#~ msgstr "kapcsolat"
+
+#~ msgid "VLAN"
+#~ msgstr "VLAN"
+
+#~ msgid "ADSL"
+#~ msgstr "ADSL"
+
+#~ msgid "Bridge"
+#~ msgstr "Híd"
+
+#~ msgid "802.11 WiFi"
+#~ msgstr "802.11 WiFi"
+
+#~ msgid "802.11 WiFi AdHoc"
+#~ msgstr "802.11 WiFi AdHoc"
+
+#~ msgid "802.11 WiFi Hotspot"
+#~ msgstr "802.11 WiFi Hotspot"
+
+#~ msgid "Mobile GSM"
+#~ msgstr "Mobil GSM"
+
+#~ msgid "Mobile CDMA"
+#~ msgstr "Mobil CDMA"
+
+#~ msgid "VPN L2TP"
+#~ msgstr "VPN L2TP"
+
+#~ msgid "VPN PPTP"
+#~ msgstr "VPN PPTP"
+
+#~ msgid "VPN VPNC"
+#~ msgstr "VPN VPNC"
+
+#~ msgid "VPN OpenVPN"
+#~ msgstr "VPN OpenVPN"
+
+#~ msgid "VPN OpenConnect"
+#~ msgstr "VPN OpenConnect"
+
+#~ msgid "User List"
+#~ msgstr "Felhasználói lista"
+
+#~ msgid "Left Click"
+#~ msgstr "Bal kattintás"
+
+#~ msgid "Right Click"
+#~ msgstr "Jobb kattintás"
+
+#~ msgid "Middle Click"
+#~ msgstr "Középső kattintás"
+
+#~ msgid "Left Hand"
+#~ msgstr "Bal kéz"
+
+#~ msgid "Right Hand"
+#~ msgstr "Jobb kéz"
+
+#~ msgid "Pressure"
+#~ msgstr "Nyomás"
+
+#~ msgid "Soft"
+#~ msgstr "Soft"
+
+#~ msgid "Narrow"
+#~ msgstr "Keskeny"
+
+#~ msgid "Wide"
+#~ msgstr "Széles"

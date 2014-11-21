@@ -1,0 +1,1330 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Translators:
+# Yuval Bar-On <hyuvii@gmail.com>, 2014
+msgid ""
+msgstr ""
+"Project-Id-Version: dde-control-center\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-11-21 10:55+0800\n"
+"PO-Revision-Date: 2014-11-18 03:08+0000\n"
+"Last-Translator: deepin_transifex <xiabin@linuxdeepin.com>\n"
+"Language-Team: Hebrew (http://www.transifex.com/projects/p/dde-control-"
+"center/language/he/)\n"
+"Language: he\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../src/frame/AppletSettingWindow.qml:100
+msgid "Notice Region Setting "
+msgstr ""
+
+#: ../plugins/date_time/AppletTray.qml:80
+msgid "_Switch to analog"
+msgstr "_Switch to analog"
+
+#: ../plugins/date_time/AppletTray.qml:81
+msgid "_Switch to digital"
+msgstr "_Switch to digital"
+
+#: ../plugins/date_time/AppletTray.qml:178
+#: ../plugins/date_time/calendar_core.js:4
+msgid "Sun"
+msgstr "ראשון"
+
+#: ../plugins/date_time/AppletTray.qml:179
+#: ../plugins/date_time/calendar_core.js:4
+msgid "Mon"
+msgstr "שני"
+
+#: ../plugins/date_time/AppletTray.qml:180
+#: ../plugins/date_time/calendar_core.js:4
+msgid "Tue"
+msgstr "שלישי"
+
+#: ../plugins/date_time/AppletTray.qml:181
+#: ../plugins/date_time/calendar_core.js:4
+msgid "Wed"
+msgstr "רביעי"
+
+#: ../plugins/date_time/AppletTray.qml:182
+#: ../plugins/date_time/calendar_core.js:4
+msgid "Thu"
+msgstr "חמישי"
+
+#: ../plugins/date_time/AppletTray.qml:183
+#: ../plugins/date_time/calendar_core.js:4
+msgid "Fri"
+msgstr "שישי"
+
+#: ../plugins/date_time/AppletTray.qml:184
+#: ../plugins/date_time/calendar_core.js:4
+msgid "Sat"
+msgstr "שבת"
+
+#: ../plugins/network/AppletTray.qml:35
+msgid "Network Connected"
+msgstr ""
+
+#: ../plugins/network/AppletTray.qml:35
+msgid "Network Not Connected"
+msgstr ""
+
+#: ../plugins/network/AppletTray.qml:305
+#: ../plugins/network/bluetooth/AppletTray.qml:78
+#: ../plugins/network/vpn/AppletTray.qml:70
+#: ../plugins/network/wifi/AppletTray.qml:126
+#: ../plugins/power/AppletTray.qml:99 ../plugins/sound/AppletTray.qml:173
+msgid "_Run"
+msgstr "_Run"
+
+#: ../plugins/network/AppletTray.qml:306
+#: ../plugins/network/bluetooth/AppletTray.qml:79
+#: ../plugins/network/vpn/AppletTray.qml:71
+#: ../plugins/network/wifi/AppletTray.qml:127
+#: ../plugins/power/AppletTray.qml:106 ../plugins/sound/AppletTray.qml:174
+msgid "_Undock"
+msgstr "_Undock"
+
+#: ../plugins/network/bluetooth/AppletTray.qml:118
+#: ../plugins/network/bluetooth/main.qml:33
+msgid "Bluetooth"
+msgstr "Bluetooth"
+
+#: ../plugins/network/vpn/AppletTray.qml:110
+#: ../plugins/network/vpn/main.qml:33
+msgid "VPN"
+msgstr "VPN"
+
+#: ../plugins/network/wifi/AppletTray.qml:168
+#: ../plugins/network/WirelessNetwork.qml:50
+#: ../plugins/network/wifi/main.qml:33
+msgid "Wireless Network"
+msgstr "רשת אלחוטית"
+
+#: ../plugins/power/AppletTray.qml:34
+msgid "On Charging"
+msgstr "בזמן הטענה"
+
+#: ../plugins/power/AppletTray.qml:46
+msgid "Custom"
+msgstr "מותאם אישית"
+
+#: ../plugins/power/AppletTray.qml:47
+msgid "Power saver"
+msgstr "חיסכון בצריכת חשמל"
+
+#: ../plugins/power/AppletTray.qml:48
+msgid "Balanced"
+msgstr "מאוזן"
+
+#: ../plugins/power/AppletTray.qml:49
+msgid "High performance"
+msgstr "ביצועים ברמה גבוהה"
+
+#: ../plugins/sound/AppletTray.qml:218
+msgid "Device"
+msgstr "מכשיר"
+
+#: ../plugins/sound/AppletTray.qml:318
+msgid "Applications"
+msgstr "תוכנות"
+
+#: ../plugins/disk_mount/DiskItem.qml:124
+msgid "Unmount failed!"
+msgstr "Unmount נכשל!"
+
+#: ../src/frame/WifiPasswordWindow.qml:150
+#, fuzzy, qt-format
+msgid "Please enter the password of  <font color=\"#faca57\">%1</font>"
+msgstr ""
+"יש צורך בסיסמא או מפתחות הצפנה על מנת לגשת לרשת האלחוטית <font color="
+"\"#faca57\">%1</font> "
+
+#: ../src/frame/WifiPasswordWindow.qml:172
+msgid "Password"
+msgstr "סיסמא"
+
+#: ../src/frame/WifiPasswordWindow.qml:180
+#, fuzzy
+msgid "Auto-connect"
+msgstr "התחבר אוטומטית"
+
+#: ../src/frame/WifiPasswordWindow.qml:195
+msgid "Cancel"
+msgstr "ביטול"
+
+#: ../src/frame/WifiPasswordWindow.qml:202
+msgid "Connect"
+msgstr "התחבר"
+
+#: ../plugins/network/WirelessApList.qml:95
+msgid "Scanning..."
+msgstr "סורק..."
+
+#: ../plugins/network/WirelessNetwork.qml:50
+#, qt-format
+msgid "Wireless Network %1"
+msgstr "רשת אלחוטית %1"
+
+#: ../plugins/date_time/main.qml:32
+msgid "Date and Time"
+msgstr "תאריך ושעה"
+
+#: ../plugins/disk_mount/main.qml:33
+msgid "Disk Mount"
+msgstr "Mount של הדיסק"
+
+#: ../plugins/network/main.qml:32
+msgid "Network"
+msgstr "רשת"
+
+#: ../plugins/power/main.qml:33
+msgid "Power"
+msgstr "צריכת חשמל"
+
+#: ../plugins/sound/main.qml:32
+msgid "Sound"
+msgstr "שמע"
+
+#~ msgid "New PPPoE Connection"
+#~ msgstr "חיבור PPPoE חדש"
+
+#~ msgid "Name"
+#~ msgstr "שם"
+
+#~ msgid "Username"
+#~ msgstr "שם משתמש"
+
+#~ msgid "Service"
+#~ msgstr "שירות"
+
+#~ msgid "New Mobile Connection"
+#~ msgstr "חיבור סלולארי חדש"
+
+#~ msgid "Service Type"
+#~ msgstr "סוג שירות"
+
+#~ msgid "APN"
+#~ msgstr "APN"
+
+#~ msgid "Number"
+#~ msgstr "מספר"
+
+#~ msgid "Add"
+#~ msgstr "הוסף"
+
+#~ msgid "Invalid password"
+#~ msgstr "סיסמא לא חוקית"
+
+#~ msgid "Nothing input"
+#~ msgstr "לא הוכנס ערך"
+
+#~ msgid "Different password"
+#~ msgstr "סיסמא שונה"
+
+#~ msgid "Add User"
+#~ msgstr "הוסף משתמש"
+
+#~ msgid "New User"
+#~ msgstr "משתמש חדש"
+
+#~ msgid "Standard"
+#~ msgstr "סטנדרטי"
+
+#~ msgid "Administrator"
+#~ msgstr "מנהל"
+
+#~ msgid "Repeat Password"
+#~ msgstr "חזור שנית על הסיסמא"
+
+#~ msgid "Account Type"
+#~ msgstr "סוג חשבון"
+
+#~ msgid "Auto-login"
+#~ msgstr "התחברות-אוטומטית"
+
+#~ msgid "Confirm"
+#~ msgstr "אישור"
+
+#~ msgid "VPN Type"
+#~ msgstr "סוג VPN"
+
+#~ msgid "L2TP"
+#~ msgstr "L2TP"
+
+#~ msgid "PPTP"
+#~ msgstr "PPTP"
+
+#~ msgid "OpenVPN"
+#~ msgstr "OpenVPN"
+
+#~ msgid "OpenConnect"
+#~ msgstr "OpenConnect"
+
+#~ msgid "VPNC"
+#~ msgstr "VPNC"
+
+#~ msgid "Basic Information"
+#~ msgstr "מידע בסיסי"
+
+#~ msgid "Need VPN Plugin"
+#~ msgstr "צריך פלאגין VPN"
+
+#~ msgid "Gateway"
+#~ msgstr "Gateway"
+
+#~ msgid "Ask for Pwd"
+#~ msgstr "בקש Pwd"
+
+#~ msgid "CA Cert"
+#~ msgstr "אישור CA"
+
+#~ msgid "Proxy"
+#~ msgstr "פרוקסי"
+
+#~ msgid "Allow Cisco Secure Desktop Trojan"
+#~ msgstr "Allow Cisco Secure Desktop Trojan"
+
+#~ msgid "Customize Key Direction"
+#~ msgstr "הגדר כיוון מפתח"
+
+#~ msgid "Private Key"
+#~ msgstr "מפתח פרטי"
+
+#~ msgid "Auth Type"
+#~ msgstr "סוג אימות"
+
+#~ msgid "User Cert"
+#~ msgstr "תעודת משתמש"
+
+#~ msgid "CSD Script"
+#~ msgstr "CSD Script"
+
+#~ msgid "Use FSID for Key Passphrase"
+#~ msgstr "השתמש ב-FSID עבור מפתח סיסמא"
+
+#~ msgid "Private Pwd"
+#~ msgstr "Pwd פרטי"
+
+#~ msgid "Static Key"
+#~ msgstr "מפתח סטטי"
+
+#~ msgid "Key Direction"
+#~ msgstr "Key Direction"
+
+#~ msgid "Remote IP"
+#~ msgstr "IP מרוחק"
+
+#~ msgid "Local IP"
+#~ msgstr "IP מקומי"
+
+#~ msgid "User Pwd"
+#~ msgstr "Pwd משתמש"
+
+#~ msgid "Group Name"
+#~ msgstr "שם קבוצה"
+
+#~ msgid "Group Pwd"
+#~ msgstr "Pwd קבוצתי"
+
+#~ msgid "Use Hybrid Authentication"
+#~ msgstr "השתמש באימות היברידי"
+
+#~ msgid "CA File"
+#~ msgstr "קובץ CA"
+
+#~ msgid "Enable IPsec"
+#~ msgstr "אפשר IPsec"
+
+#~ msgid "Group ID"
+#~ msgstr "מזהה קבוצה"
+
+#~ msgid "Pre-Shared Key"
+#~ msgstr "Pre-Shared Key"
+
+#~ msgid "Use MPPE"
+#~ msgstr "השתמש ב-MPPE"
+
+#~ msgid "Connect to wireless"
+#~ msgstr "התחבר לרשת אלחוטית"
+
+#~ msgid "SSID"
+#~ msgstr "SSID"
+
+#~ msgid "Security"
+#~ msgstr "אבטחה"
+
+#~ msgid "Key"
+#~ msgstr "מפתח"
+
+#~ msgid "EAP Auth"
+#~ msgstr "אימות EAP"
+
+#~ msgid "Identity"
+#~ msgstr "זהות"
+
+#~ msgid "Anonymous ID"
+#~ msgstr "זהות אנונימית"
+
+#~ msgid "Provisioning"
+#~ msgstr "Provisioning"
+
+#~ msgid "PAC file"
+#~ msgstr "קובץ PAC"
+
+#~ msgid "PEAP Version"
+#~ msgstr "גרסאת PEAP"
+
+#~ msgid "Inner Auth"
+#~ msgstr "אימות פנימי"
+
+#~ msgid "Dock Applet Enabled"
+#~ msgstr "אפשר Dock Applet"
+
+#~ msgid "Choose a new picture for your Avatar"
+#~ msgstr "בחר תמונת פרופיל חדשה"
+
+#~ msgid "Recently Used"
+#~ msgstr "בשימוש לאחרונה"
+
+#~ msgid "Avatar"
+#~ msgstr "פרופיל"
+
+#~ msgid "Webcam"
+#~ msgstr "מצלמת רשת"
+
+#~ msgid "Left/Right Balance"
+#~ msgstr "מאזן שמאל/ימין"
+
+#~ msgid "Left"
+#~ msgstr "שמאל"
+
+#~ msgid "Right"
+#~ msgstr "ימין"
+
+#~ msgid "Today"
+#~ msgstr "היום"
+
+#~ msgid "New Network"
+#~ msgstr "רשת חדשה"
+
+#~ msgid "PPPoE"
+#~ msgstr "PPPoE"
+
+#~ msgid "Next"
+#~ msgstr "הבא"
+
+#~ msgid "Delete this network"
+#~ msgstr "מחק רשת זו"
+
+#~ msgid "Are you sure you want to delete this network?"
+#~ msgstr "האם אתה בטוח שברצונך למחוק רשת זו?"
+
+#~ msgid "Save"
+#~ msgstr "שמור"
+
+#~ msgid "Close"
+#~ msgstr "סגור"
+
+#~ msgid "Delete"
+#~ msgstr "מחיקה"
+
+#~ msgid "Command"
+#~ msgstr "פקודה"
+
+#~ msgid "Keep user's files"
+#~ msgstr "שמור קבצי משתמש"
+
+#~ msgid "Delete user's files"
+#~ msgstr "מחק קבצי משתמש"
+
+#~ msgid "PPPoE Connections"
+#~ msgstr "חיבורי PPPoE"
+
+#~ msgid "Current system lacks component for %1"
+#~ msgstr "במערכת הנוכחית חסרים רכיבים עבור %1"
+
+#~ msgid "Click to install"
+#~ msgstr "לחץ כדי להתקין"
+
+#~ msgid "Ethernet"
+#~ msgstr "Ethernet"
+
+#~ msgid "Device MAC Addr"
+#~ msgstr "כתובת MAC של המכשיר"
+
+#~ msgid "Cloned MAC Addr"
+#~ msgstr "שכפול כתובת MAC"
+
+#~ msgid "Customize MTU"
+#~ msgstr "התאם אישית MTU"
+
+#~ msgid "MTU"
+#~ msgstr "MTU"
+
+#~ msgid "IPv4"
+#~ msgstr "IPv4"
+
+#~ msgid "Method"
+#~ msgstr "שיטה"
+
+#~ msgid "IP Address"
+#~ msgstr "כתובת IP"
+
+#~ msgid "Netmask"
+#~ msgstr "מסכת רשת"
+
+#~ msgid "DNS Server"
+#~ msgstr "שרת DNS"
+
+#~ msgid "IPv6"
+#~ msgstr "IPv6"
+
+#~ msgid "Prefix"
+#~ msgstr "קידומת"
+
+#~ msgid "Mobile"
+#~ msgstr "נייד"
+
+#~ msgid "Network ID"
+#~ msgstr "מזהה רשת"
+
+#~ msgid "Type"
+#~ msgstr "סוג"
+
+#~ msgid "Home Network Only"
+#~ msgstr "רשת בית בלבד"
+
+#~ msgid "PIN"
+#~ msgstr "PIN"
+
+#~ msgid "PPP"
+#~ msgstr "PPP"
+
+#~ msgid "128-bit MPPE"
+#~ msgstr "128-bit MPPE"
+
+#~ msgid "Stateful MPPE"
+#~ msgstr "MPPE מצבי"
+
+#~ msgid "Refuse EAP Authentication"
+#~ msgstr "סרב לאימות EAP"
+
+#~ msgid "Refuse PAP Authentication"
+#~ msgstr "סרב לאימות PAP"
+
+#~ msgid "Refuse CHAP Authentication"
+#~ msgstr "סרב לאימות CHAP"
+
+#~ msgid "Refuse MSCHAP Authentication"
+#~ msgstr "סרב לאימות MSCHAP"
+
+#~ msgid "Refuse MSCHAPv2 Authentication"
+#~ msgstr "סרב לאימות MSCHAPv2"
+
+#~ msgid "No BSD Data Compression"
+#~ msgstr "No BSD Data Compression"
+
+#~ msgid "No Deflate Data Compression"
+#~ msgstr "No Deflate Data Compression"
+
+#~ msgid "No TCP Header Compression"
+#~ msgstr "No TCP Header Compression"
+
+#~ msgid "Send PPP Echo Packets"
+#~ msgstr "Send PPP Echo Packets"
+
+#~ msgid "Security Required"
+#~ msgstr "דרושה אבטחה"
+
+#~ msgid "NT Domain"
+#~ msgstr "דומיין NT"
+
+#~ msgid "VPN IPsec"
+#~ msgstr "VPN IPsec"
+
+#~ msgid "VPN PPP"
+#~ msgstr "VPN PPP"
+
+#~ msgid "No Protocol Field Compression"
+#~ msgstr "No Protocol Field Compression"
+
+#~ msgid "No Address/Control Compression"
+#~ msgstr "No Address/Control Compression"
+
+#~ msgid "VPN Advanced"
+#~ msgstr "VPN מתקדם"
+
+#~ msgid "Gateway Port"
+#~ msgstr "פורט יציאה"
+
+#~ msgid "Customize Gateway Port"
+#~ msgstr "התאם אישית את ה-Gateway Port"
+
+#~ msgid "Customize Renegotiation Interval"
+#~ msgstr "התאם אישית את ה-Renegotiation Interval"
+
+#~ msgid "Renegotiation Interval"
+#~ msgstr "Renegotiation Interval"
+
+#~ msgid "Use LZO data compression"
+#~ msgstr "השתמש בכיווץ מידע LZO"
+
+#~ msgid "Use TCP connection"
+#~ msgstr "השתמש בחיבור TCP"
+
+#~ msgid "Use TAP device"
+#~ msgstr "השתמש במכשיר TAP"
+
+#~ msgid "Customize Tunnel MTU"
+#~ msgstr "התאם אישית את ה-Tunnel MTU"
+
+#~ msgid "Customize UDP Fragment Size"
+#~ msgstr "התאם אישית את ה-UDP Fragment Size"
+
+#~ msgid "UDP Fragment Size"
+#~ msgstr "UDP Fragment Size"
+
+#~ msgid "Restrict Tunnel TCP MSS"
+#~ msgstr "הגבל Tunnel TCP MSS"
+
+#~ msgid "Randomize Remote Hosts"
+#~ msgstr "Randomize Remote Hosts"
+
+#~ msgid "VPN Proxies"
+#~ msgstr "VPN Proxies"
+
+#~ msgid "Proxy Type"
+#~ msgstr "סוג פרוקסי"
+
+#~ msgid "Server IP"
+#~ msgstr "IP של השרת"
+
+#~ msgid "Port"
+#~ msgstr "פורט"
+
+#~ msgid "Retry Indefinitely When Failed"
+#~ msgstr "Retry Indefinitely When Failed"
+
+#~ msgid "VPN Security"
+#~ msgstr "אבטחת VPN"
+
+#~ msgid "Cipher"
+#~ msgstr "צופן"
+
+#~ msgid "HMAC Auth"
+#~ msgstr "אימות HMAC"
+
+#~ msgid "VPN TLS Authentication"
+#~ msgstr "אימות VPN TLS"
+
+#~ msgid "Subject Match"
+#~ msgstr "Subject Match"
+
+#~ msgid "Remote Cert Type"
+#~ msgstr "סוג תעודה מרוחק"
+
+#~ msgid "Key File"
+#~ msgstr "קובץ מפתח"
+
+#~ msgid "Domain"
+#~ msgstr "דומיין"
+
+#~ msgid "Vendor"
+#~ msgstr "Vendor"
+
+#~ msgid "Version"
+#~ msgstr "גרסא"
+
+#~ msgid "Encryption"
+#~ msgstr "הצפנה"
+
+#~ msgid "NAT Traversal"
+#~ msgstr "NAT Traversal"
+
+#~ msgid "IKE DH Group"
+#~ msgstr "IKE DH Group"
+
+#~ msgid "Forward Secrecy"
+#~ msgstr "Forward Secrecy"
+
+#~ msgid "Local Port"
+#~ msgstr "פורט מקומי"
+
+#~ msgid "Disable Dead Peer Detection"
+#~ msgstr "Disable Dead Peer Detection"
+
+#~ msgid "Wi-Fi"
+#~ msgstr "אינטרנט אלחוטי"
+
+#~ msgid "Mode"
+#~ msgstr "מצב"
+
+#~ msgid "Band"
+#~ msgstr "פס"
+
+#~ msgid "Channel"
+#~ msgstr "ערוץ"
+
+#~ msgid "Enable"
+#~ msgstr "אפשר"
+
+#~ msgid "Front/Rear Balance"
+#~ msgstr "מאזן קדמי/אחורי"
+
+#~ msgid "Front"
+#~ msgstr "קדמי"
+
+#~ msgid "Rear"
+#~ msgstr "אחורי"
+
+#~ msgid "Size"
+#~ msgstr "גודל"
+
+#~ msgid "Font %1"
+#~ msgstr "פונט %1"
+
+#~ msgid "Guest"
+#~ msgstr "אורח"
+
+#~ msgid "Enabled"
+#~ msgstr "מופעל"
+
+#~ msgid "Activated Connections"
+#~ msgstr "חיבורים שהופעלו"
+
+#~ msgid "None Activated Connection"
+#~ msgstr "חיבורים שלא הופעלו"
+
+#~ msgid "(default)"
+#~ msgstr "(ברירת מחדל)"
+
+#~ msgid "Interface"
+#~ msgstr "ממשק"
+
+#~ msgid "Device Addr"
+#~ msgstr "כתובת מכשיר"
+
+#~ msgid "Subnet Mask"
+#~ msgstr "מסיכת Subnet"
+
+#~ msgid "Route Addr"
+#~ msgstr "כתובת Route"
+
+#~ msgid "Primary DNS"
+#~ msgstr "DNS עיקרי"
+
+#~ msgid "Secondary DNS"
+#~ msgstr "DNS משני"
+
+#~ msgid "Third DNS"
+#~ msgstr "DNS שלישי"
+
+#~ msgid "Device Speed"
+#~ msgstr "מהירות מכשיר"
+
+#~ msgid "Language"
+#~ msgstr "שפה"
+
+#~ msgid "Do you want to keep these display settings?"
+#~ msgstr "האם ברצונך להשאיר הגדרות תצוגה אלו?"
+
+#~ msgid ""
+#~ "Reverting to previous display settings in <font color='#F48914'>%1</font> "
+#~ "seconds."
+#~ msgstr "חוזר למצב תצוגה קודם בעוד <font color='#F48914'>%1</font> שניות"
+
+#~ msgid "Keep Changes"
+#~ msgstr "שמור שינויים"
+
+#~ msgid "Revert"
+#~ msgstr "החזר לקדמותו"
+
+#~ msgid "Power Management"
+#~ msgstr "ניהול צריכת חשמל"
+
+#~ msgid "More Settings"
+#~ msgstr "הגדרות נוספו"
+
+#~ msgid "Display"
+#~ msgstr "תצוגה"
+
+#~ msgid "Desktop"
+#~ msgstr "שולחן העבודה"
+
+#~ msgid "Personalization"
+#~ msgstr "התאמה אישית"
+
+#~ msgid "Keyboard Shortcuts"
+#~ msgstr "קיצורי מקלדת"
+
+#~ msgid "Keyboard and Language"
+#~ msgstr "מקלדת ושפה"
+
+#~ msgid "Mouse and Touchpad"
+#~ msgstr "עכבר ומשטח מגע"
+
+#~ msgid "Mouse"
+#~ msgstr "עכבר"
+
+#~ msgid "User Accounts"
+#~ msgstr "חשבונות משתמשים"
+
+#~ msgid "Default Applications"
+#~ msgstr "תוכנות ברירת מחדל"
+
+#~ msgid "System Information"
+#~ msgstr "מידע על המערכת"
+
+#~ msgid "Boot Menu"
+#~ msgstr "תפריט אתחול"
+
+#~ msgid "Home"
+#~ msgstr "בית"
+
+#~ msgid "Split"
+#~ msgstr "מפוצל"
+
+#~ msgid "Set as primary display"
+#~ msgstr "הגדר כתצוגה עיקרית"
+
+#~ msgid "Identify"
+#~ msgstr "זהה"
+
+#~ msgid "Edit"
+#~ msgstr "ערוך"
+
+#~ msgid "Normal"
+#~ msgstr "רגיל"
+
+#~ msgid "Rotate Right"
+#~ msgstr "סובב ימינה"
+
+#~ msgid "Upside Down"
+#~ msgstr "הפוך"
+
+#~ msgid "Rotate Left"
+#~ msgstr "סובב שמאלה"
+
+#~ msgid "Resolution"
+#~ msgstr "רזולוציה"
+
+#~ msgid "Rotation"
+#~ msgstr "סיבוב"
+
+#~ msgid "Brightness"
+#~ msgstr "בהירות"
+
+#~ msgid "Wired Connection %1"
+#~ msgstr "חיבור קווי %1"
+
+#~ msgid "Wired Connection"
+#~ msgstr "חיבור קווי"
+
+#~ msgid "not managed"
+#~ msgstr "לא מנוהל"
+
+#~ msgid "Password: "
+#~ msgstr "סיסמא:"
+
+#~ msgid "New Password"
+#~ msgstr "סיסמא חדשה:"
+
+#~ msgid "Repeat"
+#~ msgstr "חזור שנית"
+
+#~ msgid "Drag and drop an image to change background."
+#~ msgstr "גרור תמונה על מנת לשנות את הרקע"
+
+#~ msgid "Image format not supported"
+#~ msgstr "פורמט התמונה אינו נתמך"
+
+#~ msgid "Updating..."
+#~ msgstr "מעדכן..."
+
+#~ msgid "Successfully updated, reboot to view."
+#~ msgstr "העדכון הושלם בהצלחה, אנא אתחל כדי לראותו"
+
+#~ msgid "None"
+#~ msgstr "ריק"
+
+#~ msgid "Manual"
+#~ msgstr "ידני"
+
+#~ msgid "Auto"
+#~ msgstr "אוטומטי"
+
+#~ msgid "HTTP Proxy"
+#~ msgstr "פרוקסי HTTP"
+
+#~ msgid "HTTPS Proxy"
+#~ msgstr "פרוקסי HTTPS"
+
+#~ msgid "FTP Proxy"
+#~ msgstr "פרוקסי FTP"
+
+#~ msgid "Socks Proxy"
+#~ msgstr "Socks Proxy"
+
+#~ msgid "Configuration URL"
+#~ msgstr "URL הגדרות"
+
+#~ msgid "Apply system wide"
+#~ msgstr "החל על כלל המערכת"
+
+#~ msgid "System Proxy"
+#~ msgstr "פרוקסי מערכת"
+
+#~ msgid "Reset successfully"
+#~ msgstr "אופס בהצלחה"
+
+#~ msgid "Reset"
+#~ msgstr "איפוס"
+
+#~ msgid "Disable"
+#~ msgstr "כבה"
+
+#~ msgid "Please input new shortcut"
+#~ msgstr "אנא הוסף קיצור חדש"
+
+#~ msgid "Shortcut \"%1\" is invalid, please retype new shortcut."
+#~ msgstr "הקיצור \"%1\" אינו קביל, אנא הקש קיצור חדש"
+
+#~ msgid "The shortcut you set "
+#~ msgstr "הקיצור אשר הגדרת"
+
+#~ msgid "conflicts with the one used for \"%2\" in the \"%1\" category."
+#~ msgstr "ישנו קונפליקט עם האחד אשר משמש \"%2\" בקטגוריה \"%1\""
+
+#~ msgid "Do you want to replace it?"
+#~ msgstr "האם ברצונך להחליפו?"
+
+#~ msgid "Replace"
+#~ msgstr "החלף"
+
+#~ msgid "Preview Theme"
+#~ msgstr "תצוגה מקדימה של ערכת נושא"
+
+#~ msgid "Done"
+#~ msgstr "נעשה"
+
+#~ msgid "Double-click the above digits to change your time."
+#~ msgstr "לחץ פעמים על המספרים לעיל על מנת לשנות את השעה"
+
+#~ msgid "Set"
+#~ msgstr "הגדר"
+
+#~ msgid "Time zone"
+#~ msgstr "איזור זמן"
+
+#~ msgid "Touchpad"
+#~ msgstr "משטח מגע"
+
+#~ msgid "Primary Button"
+#~ msgstr "כפתור עיקרי"
+
+#~ msgid "Left Button"
+#~ msgstr "כפתור שמאלי"
+
+#~ msgid "Right Button"
+#~ msgstr "כפתור ימני"
+
+#~ msgid "Pointer Speed"
+#~ msgstr "מהירות סמן"
+
+#~ msgid "Slow"
+#~ msgstr "איטי"
+
+#~ msgid "Fast"
+#~ msgstr "מהיר"
+
+#~ msgid "Double-click Speed"
+#~ msgstr "מהירות לחיצה כפולה"
+
+#~ msgid "Drag Threshold"
+#~ msgstr "סף גרירה"
+
+#~ msgid "Short"
+#~ msgstr "קצר"
+
+#~ msgid "Long"
+#~ msgstr "ארוך"
+
+#~ msgid "Natural Scrolling"
+#~ msgstr "גלילה טבעית"
+
+#~ msgid "Tap to click"
+#~ msgstr "הקש על מנת ללחוץ"
+
+#~ msgid "Two-finger scrolling"
+#~ msgstr "גלגול עם שתי אצבעות"
+
+#~ msgid "Edge scrolling"
+#~ msgstr "גלגול קצה"
+
+#~ msgid "VPN Connections"
+#~ msgstr "חיבורי VPN"
+
+#~ msgid "Snapshot"
+#~ msgstr "תצלום בזק"
+
+#~ msgid "Again"
+#~ msgstr "שוב"
+
+#~ msgid "No camera found."
+#~ msgstr "לא נמצאה מצלמה"
+
+#~ msgid "Edit Wi-Fi Hotspot"
+#~ msgstr "ערוך נקודת גישה אלחוטית"
+
+#~ msgid "Create Wi-Fi Hotspot"
+#~ msgstr "הוסף נקודת גישה אלחוטית"
+
+#~ msgid "Create"
+#~ msgstr "הוסף"
+
+#~ msgid "Authentication required by Wi-Fi network"
+#~ msgstr "הרשת האלחוטתית זקוקה לאימות"
+
+#~ msgid "Password:"
+#~ msgstr "סיסמא:"
+
+#~ msgid "Wired Network"
+#~ msgstr "רשת קווית"
+
+#~ msgid ""
+#~ "Wireless network is unable to be connected maybe due to the following "
+#~ "reasons:\n"
+#~ "\n"
+#~ "1. The hardware switch of wireless network card is off\n"
+#~ "2. Incorrect network configuration in /etc/network/interface\n"
+#~ "3. Incorrect driver of network hardware"
+#~ msgstr ""
+#~ "הרשת האלחוטית אינה יכולה להתחבר. ייתכן ודבר זה נגרם בשל מספר סיבות:\n"
+#~ "\n"
+#~ "1. מתג החומרה של כרטיס הרשת מכובה\n"
+#~ "2. הגדרת רשת לא תקינה ב- /etc/network/interface\n"
+#~ "3.  התקן הרשת שאינו מתאים"
+
+#~ msgid "Connect to hidden access point"
+#~ msgstr "התחבר לנקודת גישה נסתרת"
+
+#~ msgid "ON/OFF"
+#~ msgstr "מופעל/כבוי"
+
+#~ msgid "Devices nearby"
+#~ msgstr "מכשירים בסביבה"
+
+#~ msgid "Automatic date and time"
+#~ msgstr "תאריך וזמן אוטומטיים"
+
+#~ msgid "Use 24-hour clock"
+#~ msgstr "השתמש בשעון 24-שעות"
+
+#~ msgid "Date"
+#~ msgstr "תאריך"
+
+#~ msgid "Set Date"
+#~ msgstr "הגדר תאריך"
+
+#~ msgid "Browser"
+#~ msgstr "דפדפן"
+
+#~ msgid "Mail"
+#~ msgstr "דוא"
+
+#~ msgid "Text"
+#~ msgstr "טקסט"
+
+#~ msgid "Music"
+#~ msgstr "מוזיקה"
+
+#~ msgid "Video"
+#~ msgstr "וידאו"
+
+#~ msgid "Picture"
+#~ msgstr "תמונות"
+
+#~ msgid "Terminal"
+#~ msgstr "מסוף"
+
+#~ msgid "AutoPlay"
+#~ msgstr "הפעלה אוטומטית"
+
+#~ msgid "CD Audio"
+#~ msgstr "דיסק מוזיקה"
+
+#~ msgid "DVD Video"
+#~ msgstr "דיסק DVD"
+
+#~ msgid "Music Player"
+#~ msgstr "נגן מוזיקה"
+
+#~ msgid "Camera"
+#~ msgstr "מצלמה"
+
+#~ msgid "Software"
+#~ msgstr "תוכנה"
+
+#~ msgid "Primary Monitor: "
+#~ msgstr "צג ראשי:"
+
+#~ msgid "Monitor"
+#~ msgstr "צג"
+
+#~ msgid "Apply"
+#~ msgstr "החל"
+
+#~ msgid "Default Startup"
+#~ msgstr "אתחול ברירת מחדל"
+
+#~ msgid "Boot delay"
+#~ msgstr "עיכוב אתחול"
+
+#~ msgid "Text Color"
+#~ msgstr "צבע טקסט"
+
+#~ msgid "Selected Text Color"
+#~ msgstr "בחר צבע טקסט"
+
+#~ msgid "Repeat Delay"
+#~ msgstr "השהייה לפני חזרה"
+
+#~ msgid "Repeat Rate"
+#~ msgstr "קצב חזרה"
+
+#~ msgid "Cursor Blink Rate"
+#~ msgstr "קצב הבהוב סמן"
+
+#~ msgid "Test Area"
+#~ msgstr "איזור בדיקה"
+
+#~ msgid "Keyboard Layout"
+#~ msgstr "פריסת מקלדת"
+
+#~ msgid "No result"
+#~ msgstr "אין תוצאות"
+
+#~ msgid "Caps Lock prompt"
+#~ msgstr "הודעת Caps Lock"
+
+#~ msgid "Disable the touchpad when inserting the mouse"
+#~ msgstr "נטרל את משטח המגע כאשר מחברים עכבר"
+
+#~ msgid "Theme"
+#~ msgstr "עיצוב"
+
+#~ msgid "Window"
+#~ msgstr "חלון"
+
+#~ msgid "Icon"
+#~ msgstr "אייקון"
+
+#~ msgid "Cursor"
+#~ msgstr "סמן"
+
+#~ msgid "Wallpaper"
+#~ msgstr "טפט"
+
+#~ msgid "Fonts"
+#~ msgstr "פונטים"
+
+#~ msgid "Never"
+#~ msgstr "אף פעם"
+
+#~ msgid "1 minute"
+#~ msgstr "דקה 1"
+
+#~ msgid "5 minutes"
+#~ msgstr "5 דקות"
+
+#~ msgid "10 minutes"
+#~ msgstr "10 דקות"
+
+#~ msgid "15 minutes"
+#~ msgstr "15 דקות"
+
+#~ msgid "30 minutes"
+#~ msgstr "30 דקות"
+
+#~ msgid "1 hour"
+#~ msgstr "שעה 1"
+
+#~ msgid "When I press the power button"
+#~ msgstr "כאשר אני לוחץ על כפתור הכיבוי"
+
+#~ msgid "Shutdown"
+#~ msgstr "כיבוי"
+
+#~ msgid "Suspend"
+#~ msgstr "השהיה"
+
+#~ msgid "Ask"
+#~ msgstr "שאל"
+
+#~ msgid "When I close the lid"
+#~ msgstr "כאשר אני סוגר את המכסה"
+
+#~ msgid "Nothing"
+#~ msgstr "כלום"
+
+#~ msgid "Password required to wake up"
+#~ msgstr "נדרשת סיסמא על מנת להתעורר"
+
+#~ msgid "Plugged in"
+#~ msgstr "מחובר לחשמל"
+
+#~ msgid "On battery"
+#~ msgstr "על בטריה"
+
+#~ msgid "Turn off the display"
+#~ msgstr "כבה את הצג"
+
+#~ msgid "Custom Options"
+#~ msgstr "אפשרויות מותאמות אישית"
+
+#~ msgid "System"
+#~ msgstr "מערכת"
+
+#~ msgid "Workspace"
+#~ msgstr "סביבת עבודה"
+
+#~ msgid "Speaker"
+#~ msgstr "רמקול"
+
+#~ msgid "Output Volume"
+#~ msgstr "עוצמת קול פלט"
+
+#~ msgid "Microphone"
+#~ msgstr "מיקרופון"
+
+#~ msgid "Input Volume"
+#~ msgstr "עוצמת קול קלט"
+
+#~ msgid "Input Feedback"
+#~ msgstr "משוב קלט"
+
+#~ msgid "Output Port"
+#~ msgstr "פורט פלט"
+
+#~ msgid "No port exists in this device."
+#~ msgstr "אין פורט במכשיר הזה"
+
+#~ msgid "Output device"
+#~ msgstr "מכשיר פלט"
+
+#~ msgid "Input Port"
+#~ msgstr "פורט קלט"
+
+#~ msgid "Input device"
+#~ msgstr "מכשיר קלט"
+
+#~ msgid "Hide Advanced..."
+#~ msgstr "הסתר מתקדם..."
+
+#~ msgid "Show Advanced..."
+#~ msgstr "הצג מתקדם..."
+
+#~ msgid "Copyright (c) 2011-2014 Wuhan Deepin Technology Co.,Ltd."
+#~ msgstr "Copyright (c) 2011-2014 Wuhan Deepin Technology Co.,Ltd."
+
+#~ msgid "Deepin Edition"
+#~ msgstr "גרסאת Deepin"
+
+#~ msgid "System Type"
+#~ msgstr "סוג מערכת"
+
+#~ msgid "bit"
+#~ msgstr "ביט"
+
+#~ msgid "Processor"
+#~ msgstr "מעבד"
+
+#~ msgid "Memory"
+#~ msgstr "זיכרון"
+
+#~ msgid "Disk"
+#~ msgstr "כונן"
+
+#~ msgid "GNU GENERAL PUBLIC LICENSE"
+#~ msgstr "GNU GENERAL PUBLIC LICENSE"
+
+#~ msgid "Unknown"
+#~ msgstr "לא ידוע"
+
+#~ msgid "Wired"
+#~ msgstr "חיבור קווי"
+
+#~ msgid "Wireless"
+#~ msgstr "אלחוטי"
+
+#~ msgid "Unused1"
+#~ msgstr "ללא שימוש1"
+
+#~ msgid "Unused2"
+#~ msgstr "ללא שימוש2"
+
+#~ msgid "OLPC mesh"
+#~ msgstr "OLPC mesh"
+
+#~ msgid "WiMax"
+#~ msgstr "WiMax"
+
+#~ msgid "Modem"
+#~ msgstr "מודם"
+
+#~ msgid "InfiniBand"
+#~ msgstr "InfiniBand"
+
+#~ msgid "Bond"
+#~ msgstr "Bond"
+
+#~ msgid "VLAN"
+#~ msgstr "VLAN"
+
+#~ msgid "ADSL"
+#~ msgstr "ADSL"
+
+#~ msgid "Bridge"
+#~ msgstr "Bridge"
+
+#~ msgid "802.11 WiFi"
+#~ msgstr "802.11 WiFi"
+
+#~ msgid "802.11 WiFi AdHoc"
+#~ msgstr "802.11 WiFi AdHoc"
+
+#~ msgid "802.11 WiFi Hotspot"
+#~ msgstr "802.11 WiFi Hotspot"
+
+#~ msgid "Mobile GSM"
+#~ msgstr "Mobile GSM"
+
+#~ msgid "Mobile CDMA"
+#~ msgstr "Mobile CDMA"
+
+#~ msgid "VPN L2TP"
+#~ msgstr "VPN L2TP"
+
+#~ msgid "VPN PPTP"
+#~ msgstr "VPN PPTP"
+
+#~ msgid "VPN VPNC"
+#~ msgstr "VPN VPNC"
+
+#~ msgid "VPN OpenVPN"
+#~ msgstr "VPN OpenVPN"
+
+#~ msgid "VPN OpenConnect"
+#~ msgstr "VPN OpenConnect"
+
+#~ msgid "User List"
+#~ msgstr "רשימת משתמשים"
+
+#~ msgid "Soft"
+#~ msgstr "רך"

@@ -1,0 +1,1396 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Translators:
+# Eduard Gotwig <eduardgotwig@gmail.com>, 2014
+# Ettore Atalan <atalanttore@googlemail.com>, 2014
+# jonnius <jonatan_zeidler@gmx.de>, 2014
+# webcrush <chris.plescher@yahoo.de>, 2014
+# xzh159357 <xiaozihanluhua@qq.com>, 2014
+msgid ""
+msgstr ""
+"Project-Id-Version: dde-control-center\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-11-21 10:55+0800\n"
+"PO-Revision-Date: 2014-11-18 09:01+0000\n"
+"Last-Translator: Ettore Atalan <atalanttore@googlemail.com>\n"
+"Language-Team: German (http://www.transifex.com/projects/p/dde-control-"
+"center/language/de/)\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../src/frame/AppletSettingWindow.qml:100
+msgid "Notice Region Setting "
+msgstr "Regionseinstellung beachten"
+
+#: ../plugins/date_time/AppletTray.qml:80
+msgid "_Switch to analog"
+msgstr "_Zu Analog wechseln"
+
+#: ../plugins/date_time/AppletTray.qml:81
+msgid "_Switch to digital"
+msgstr "_Zu Digital wechseln"
+
+#: ../plugins/date_time/AppletTray.qml:178
+#: ../plugins/date_time/calendar_core.js:4
+msgid "Sun"
+msgstr "Son"
+
+#: ../plugins/date_time/AppletTray.qml:179
+#: ../plugins/date_time/calendar_core.js:4
+msgid "Mon"
+msgstr "Mon"
+
+#: ../plugins/date_time/AppletTray.qml:180
+#: ../plugins/date_time/calendar_core.js:4
+msgid "Tue"
+msgstr "Die"
+
+#: ../plugins/date_time/AppletTray.qml:181
+#: ../plugins/date_time/calendar_core.js:4
+msgid "Wed"
+msgstr "Mit"
+
+#: ../plugins/date_time/AppletTray.qml:182
+#: ../plugins/date_time/calendar_core.js:4
+msgid "Thu"
+msgstr "Don"
+
+#: ../plugins/date_time/AppletTray.qml:183
+#: ../plugins/date_time/calendar_core.js:4
+msgid "Fri"
+msgstr "Fre"
+
+#: ../plugins/date_time/AppletTray.qml:184
+#: ../plugins/date_time/calendar_core.js:4
+msgid "Sat"
+msgstr "Sam"
+
+#: ../plugins/network/AppletTray.qml:35
+msgid "Network Connected"
+msgstr "Netzwerk verbunden"
+
+#: ../plugins/network/AppletTray.qml:35
+msgid "Network Not Connected"
+msgstr "Netzwerk nicht verbunden"
+
+#: ../plugins/network/AppletTray.qml:305
+#: ../plugins/network/bluetooth/AppletTray.qml:78
+#: ../plugins/network/vpn/AppletTray.qml:70
+#: ../plugins/network/wifi/AppletTray.qml:126
+#: ../plugins/power/AppletTray.qml:99 ../plugins/sound/AppletTray.qml:173
+msgid "_Run"
+msgstr "_Ausführen"
+
+#: ../plugins/network/AppletTray.qml:306
+#: ../plugins/network/bluetooth/AppletTray.qml:79
+#: ../plugins/network/vpn/AppletTray.qml:71
+#: ../plugins/network/wifi/AppletTray.qml:127
+#: ../plugins/power/AppletTray.qml:106 ../plugins/sound/AppletTray.qml:174
+msgid "_Undock"
+msgstr "_Undocken"
+
+#: ../plugins/network/bluetooth/AppletTray.qml:118
+#: ../plugins/network/bluetooth/main.qml:33
+msgid "Bluetooth"
+msgstr "Bluetooth"
+
+#: ../plugins/network/vpn/AppletTray.qml:110
+#: ../plugins/network/vpn/main.qml:33
+msgid "VPN"
+msgstr "VPN"
+
+#: ../plugins/network/wifi/AppletTray.qml:168
+#: ../plugins/network/WirelessNetwork.qml:50
+#: ../plugins/network/wifi/main.qml:33
+msgid "Wireless Network"
+msgstr "Kabelloses Netzwerk"
+
+#: ../plugins/power/AppletTray.qml:34
+msgid "On Charging"
+msgstr "Am Aufladen"
+
+#: ../plugins/power/AppletTray.qml:46
+msgid "Custom"
+msgstr "Benutzerdefiniert"
+
+#: ../plugins/power/AppletTray.qml:47
+msgid "Power saver"
+msgstr "Energiesparmodus"
+
+#: ../plugins/power/AppletTray.qml:48
+msgid "Balanced"
+msgstr "Ausgeglichen"
+
+#: ../plugins/power/AppletTray.qml:49
+msgid "High performance"
+msgstr "Hohe Leistung"
+
+#: ../plugins/sound/AppletTray.qml:218
+msgid "Device"
+msgstr "Gerät"
+
+#: ../plugins/sound/AppletTray.qml:318
+msgid "Applications"
+msgstr "Anwendungen"
+
+#: ../plugins/disk_mount/DiskItem.qml:124
+msgid "Unmount failed!"
+msgstr "Aushängen fehlgeschlagen!"
+
+#: ../src/frame/WifiPasswordWindow.qml:150
+#, fuzzy, qt-format
+msgid "Please enter the password of  <font color=\"#faca57\">%1</font>"
+msgstr ""
+"Passwörter oder Schlüssel zu Verschlüsselungen werden benötigt um auf das Wi-"
+"Fi Netzwerk <font color=\"#faca57\">%1</font> zuzugreifen."
+
+#: ../src/frame/WifiPasswordWindow.qml:172
+msgid "Password"
+msgstr "Passwort"
+
+#: ../src/frame/WifiPasswordWindow.qml:180
+#, fuzzy
+msgid "Auto-connect"
+msgstr "Automatisch verbinden"
+
+#: ../src/frame/WifiPasswordWindow.qml:195
+msgid "Cancel"
+msgstr "Abbrechen"
+
+#: ../src/frame/WifiPasswordWindow.qml:202
+msgid "Connect"
+msgstr "Verbinden"
+
+#: ../plugins/network/WirelessApList.qml:95
+msgid "Scanning..."
+msgstr "Suchen..."
+
+#: ../plugins/network/WirelessNetwork.qml:50
+#, qt-format
+msgid "Wireless Network %1"
+msgstr "Kabelloses Netzwerk %1"
+
+#: ../plugins/date_time/main.qml:32
+msgid "Date and Time"
+msgstr "Datum und Zeit"
+
+#: ../plugins/disk_mount/main.qml:33
+msgid "Disk Mount"
+msgstr "Eingehängter Speicher"
+
+#: ../plugins/network/main.qml:32
+msgid "Network"
+msgstr "Netzwerk"
+
+#: ../plugins/power/main.qml:33
+msgid "Power"
+msgstr "Energie"
+
+#: ../plugins/sound/main.qml:32
+msgid "Sound"
+msgstr "Klang"
+
+#~ msgid "New PPPoE Connection"
+#~ msgstr "Neue PPPoE Verbindung"
+
+#~ msgid "Name"
+#~ msgstr "Name"
+
+#~ msgid "Username"
+#~ msgstr "Benutzername"
+
+#~ msgid "Service"
+#~ msgstr "Dienst"
+
+#~ msgid "New Mobile Connection"
+#~ msgstr "Neue Mobile Verbindung"
+
+#~ msgid "Service Type"
+#~ msgstr "Diensttyp"
+
+#~ msgid "APN"
+#~ msgstr "APN"
+
+#~ msgid "Number"
+#~ msgstr "Nummer"
+
+#~ msgid "Add"
+#~ msgstr "Hinzufügen"
+
+#~ msgid "Invalid password"
+#~ msgstr "Ungültiges Passwort"
+
+#~ msgid "Nothing input"
+#~ msgstr "Kein Eingang"
+
+#~ msgid "Different password"
+#~ msgstr "unterschiedliches Passwort"
+
+#~ msgid "Add User"
+#~ msgstr "Neuen Benutzer hinzufügen"
+
+#~ msgid "New User"
+#~ msgstr "Neuer Nutzer"
+
+#~ msgid "Standard"
+#~ msgstr "Standard"
+
+#~ msgid "Administrator"
+#~ msgstr "Administrator"
+
+#~ msgid "Repeat Password"
+#~ msgstr "Passwort wiederholen"
+
+#~ msgid "Account Type"
+#~ msgstr "Kontotyp"
+
+#~ msgid "Auto-login"
+#~ msgstr "Automatische Anmeldung"
+
+#~ msgid "Confirm"
+#~ msgstr "Bestätigen"
+
+#~ msgid "VPN Type"
+#~ msgstr "VPN-Typ"
+
+#~ msgid "L2TP"
+#~ msgstr "L2TP"
+
+#~ msgid "PPTP"
+#~ msgstr "PPTP"
+
+#~ msgid "OpenVPN"
+#~ msgstr "OpenVPN"
+
+#~ msgid "OpenConnect"
+#~ msgstr "OpenConnect"
+
+#~ msgid "VPNC"
+#~ msgstr "VPNC"
+
+#~ msgid "Basic Information"
+#~ msgstr "Basis Informationen"
+
+#~ msgid "Need VPN Plugin"
+#~ msgstr "VPN Plugin benötigt"
+
+#~ msgid "Gateway"
+#~ msgstr "Gateway"
+
+#~ msgid "Ask for Pwd"
+#~ msgstr "Nach Passwort fragen"
+
+#~ msgid "CA Cert"
+#~ msgstr "CA Cert"
+
+#~ msgid "Proxy"
+#~ msgstr "Proxy"
+
+#~ msgid "Allow Cisco Secure Desktop Trojan"
+#~ msgstr "Cisco Secure Desktop Trojan erlauben"
+
+#~ msgid "Customize Key Direction"
+#~ msgstr "Schlüsselrichtung anpassen"
+
+#~ msgid "Private Key"
+#~ msgstr "Privater Schlüssel"
+
+#~ msgid "Auth Type"
+#~ msgstr "Auth Typ"
+
+#~ msgid "User Cert"
+#~ msgstr "User Cert"
+
+#~ msgid "CSD Script"
+#~ msgstr "CSD-Skript"
+
+#~ msgid "Use FSID for Key Passphrase"
+#~ msgstr "FSID für Schlüsselpassphrase verwenden"
+
+#~ msgid "Private Pwd"
+#~ msgstr "Privates Passwort"
+
+#~ msgid "Static Key"
+#~ msgstr "Statischer Schlüssel"
+
+#~ msgid "Key Direction"
+#~ msgstr "Schlüssel Richtung"
+
+#~ msgid "Remote IP"
+#~ msgstr "Online IP"
+
+#~ msgid "Local IP"
+#~ msgstr "Lokale IP"
+
+#~ msgid "User Pwd"
+#~ msgstr "Benutzerpasswort"
+
+#~ msgid "Group Name"
+#~ msgstr "Gruppenname"
+
+#~ msgid "Group Pwd"
+#~ msgstr "Gruppenpasswort"
+
+#~ msgid "Use Hybrid Authentication"
+#~ msgstr "Hybride Authentifizierung verwenden"
+
+#~ msgid "CA File"
+#~ msgstr "CA Datei"
+
+#~ msgid "Enable IPsec"
+#~ msgstr "IPsec erlauben"
+
+#~ msgid "Group ID"
+#~ msgstr "Gruppen ID"
+
+#~ msgid "Pre-Shared Key"
+#~ msgstr "vorher vereinbarter Schlüssel"
+
+#~ msgid "Use MPPE"
+#~ msgstr "MPPE verwenden"
+
+#~ msgid "Connect to wireless"
+#~ msgstr "Kabellos verbinden"
+
+#~ msgid "SSID"
+#~ msgstr "SSID"
+
+#~ msgid "Security"
+#~ msgstr "Sicherheit"
+
+#~ msgid "Key"
+#~ msgstr "Schlüssel"
+
+#~ msgid "EAP Auth"
+#~ msgstr "Schlüssel"
+
+#~ msgid "Identity"
+#~ msgstr "Identität"
+
+#~ msgid "Anonymous ID"
+#~ msgstr "Anonyme ID"
+
+#~ msgid "Provisioning"
+#~ msgstr "Bereitstellung"
+
+#~ msgid "PAC file"
+#~ msgstr "PAC Datei"
+
+#~ msgid "PEAP Version"
+#~ msgstr "PEAP Version"
+
+#~ msgid "Inner Auth"
+#~ msgstr "Innere Auth"
+
+#~ msgid "Dock Applet Enabled"
+#~ msgstr "Dock-Applet aktiviert"
+
+#~ msgid "Choose a new picture for your Avatar"
+#~ msgstr "Wählen Sie ein neues Bild für Ihren Avatar"
+
+#~ msgid "Recently Used"
+#~ msgstr "Kürzlich verwendet"
+
+#~ msgid "Avatar"
+#~ msgstr "Avatar"
+
+#~ msgid "Webcam"
+#~ msgstr "Kamera"
+
+#~ msgid "Left/Right Balance"
+#~ msgstr "Links/Rechts-Balance"
+
+#~ msgid "Left"
+#~ msgstr "Links"
+
+#~ msgid "Right"
+#~ msgstr "Rechts"
+
+#~ msgid "Today"
+#~ msgstr "Heute"
+
+#~ msgid "New Network"
+#~ msgstr "Neues Netzwerk"
+
+#~ msgid "PPPoE"
+#~ msgstr "PPPoE"
+
+#~ msgid "Next"
+#~ msgstr "Weiter"
+
+#~ msgid "Delete this network"
+#~ msgstr "Dieses Netzwerk entfernen"
+
+#~ msgid "Are you sure you want to delete this network?"
+#~ msgstr "Sind Sie sicher dass Sie dieses Netzwerk entfernen möchten?"
+
+#~ msgid "Save"
+#~ msgstr "Speichern"
+
+#~ msgid "Close"
+#~ msgstr "Schließen"
+
+#~ msgid "Delete"
+#~ msgstr "Löschen"
+
+#~ msgid "Command"
+#~ msgstr "Kommando"
+
+#~ msgid "Keep user's files"
+#~ msgstr "Benutzerdateien behalten"
+
+#~ msgid "Delete user's files"
+#~ msgstr "Benutzerdateien löschen"
+
+#~ msgid "PPPoE Connections"
+#~ msgstr "PPPoE Verbindungen"
+
+#~ msgid "Current system lacks component for %1"
+#~ msgstr "Dem aktuellen System fehlen Komponenten für %1"
+
+#~ msgid "Click to install"
+#~ msgstr "Zum Installieren klicken"
+
+#~ msgid "Ethernet"
+#~ msgstr "Ethernet"
+
+#~ msgid "Device MAC Addr"
+#~ msgstr "Geräte MAC Addr"
+
+#~ msgid "Cloned MAC Addr"
+#~ msgstr "Geklonte MAC Addr"
+
+#~ msgid "Customize MTU"
+#~ msgstr "MTU anpassen"
+
+#~ msgid "MTU"
+#~ msgstr "MTU"
+
+#~ msgid "IPv4"
+#~ msgstr "IPv4"
+
+#~ msgid "Method"
+#~ msgstr "Methode"
+
+#~ msgid "IP Address"
+#~ msgstr "IP Addresse"
+
+#~ msgid "Netmask"
+#~ msgstr "Netzwerkmaske"
+
+#~ msgid "DNS Server"
+#~ msgstr "DNS Server"
+
+#~ msgid "IPv6"
+#~ msgstr "IPv6"
+
+#~ msgid "Prefix"
+#~ msgstr "Prefix"
+
+#~ msgid "Mobile"
+#~ msgstr "Mobil"
+
+#~ msgid "Network ID"
+#~ msgstr "Netzwerk ID"
+
+#~ msgid "Type"
+#~ msgstr "Typ"
+
+#~ msgid "Home Network Only"
+#~ msgstr "Nur Heimnetzwerk"
+
+#~ msgid "PIN"
+#~ msgstr "PIN"
+
+#~ msgid "PPP"
+#~ msgstr "PPP"
+
+#~ msgid "128-bit MPPE"
+#~ msgstr "128-bit MPPE"
+
+#~ msgid "Stateful MPPE"
+#~ msgstr "MPPE mit Zuständen"
+
+#~ msgid "Refuse EAP Authentication"
+#~ msgstr "EAP Authentikation ablehnen"
+
+#~ msgid "Refuse PAP Authentication"
+#~ msgstr "PAP Authentikation ablehnen"
+
+#~ msgid "Refuse CHAP Authentication"
+#~ msgstr "CHAP Authentikation ablehnen"
+
+#~ msgid "Refuse MSCHAP Authentication"
+#~ msgstr "MSCHAP Authentikation ablehnen"
+
+#~ msgid "Refuse MSCHAPv2 Authentication"
+#~ msgstr "MSCHAPv2 Authentikation ablehnen"
+
+#~ msgid "No BSD Data Compression"
+#~ msgstr "Keine BSD Daten Kompression"
+
+#~ msgid "No Deflate Data Compression"
+#~ msgstr "Keine Deflate Daten Kompression"
+
+#~ msgid "No TCP Header Compression"
+#~ msgstr "Keine TCP Header Kompression"
+
+#~ msgid "Send PPP Echo Packets"
+#~ msgstr "PPP Echo Pakete senden"
+
+#~ msgid "Security Required"
+#~ msgstr "Erfordert Sicherheit"
+
+#~ msgid "NT Domain"
+#~ msgstr "NT Domäne"
+
+#~ msgid "VPN IPsec"
+#~ msgstr "VPN IPsec"
+
+#~ msgid "VPN PPP"
+#~ msgstr "VPN PPP"
+
+#~ msgid "No Protocol Field Compression"
+#~ msgstr "Keine Kontrollfeld Kompression"
+
+#~ msgid "No Address/Control Compression"
+#~ msgstr "Keine Adressen/Kontrollen Kompression"
+
+#~ msgid "VPN Advanced"
+#~ msgstr "Erweitertes VPN"
+
+#~ msgid "Gateway Port"
+#~ msgstr "Gateway Port"
+
+#~ msgid "Customize Gateway Port"
+#~ msgstr "Gateway-Port anpassen"
+
+#~ msgid "Customize Renegotiation Interval"
+#~ msgstr "Neuverhandlungsintervall anpassen"
+
+#~ msgid "Renegotiation Interval"
+#~ msgstr "Intervall zur Neuverhandlung"
+
+#~ msgid "Use LZO data compression"
+#~ msgstr "LZO Daten Kompression nutzen"
+
+#~ msgid "Use TCP connection"
+#~ msgstr "TCP Verbindung nutzen"
+
+#~ msgid "Use TAP device"
+#~ msgstr "TAP Gerät nutzen"
+
+#~ msgid "Customize Tunnel MTU"
+#~ msgstr "Tunnel-MTU anpassen"
+
+#~ msgid "Customize UDP Fragment Size"
+#~ msgstr "UDP-Fragmentgröße anpassen"
+
+#~ msgid "UDP Fragment Size"
+#~ msgstr "UDP Fragment Größe"
+
+#~ msgid "Restrict Tunnel TCP MSS"
+#~ msgstr "Tunnel TCP MSS beschränken"
+
+#~ msgid "Randomize Remote Hosts"
+#~ msgstr "Entferne Hosts zufällig auswählen"
+
+#~ msgid "VPN Proxies"
+#~ msgstr "VPN Proxies"
+
+#~ msgid "Proxy Type"
+#~ msgstr "Proxytyp"
+
+#~ msgid "Server IP"
+#~ msgstr "Server IP"
+
+#~ msgid "Port"
+#~ msgstr "Port"
+
+#~ msgid "Retry Indefinitely When Failed"
+#~ msgstr "Bei Fehlschlag endlos weiterversuchen"
+
+#~ msgid "VPN Security"
+#~ msgstr "VPN Sicherheit"
+
+#~ msgid "Cipher"
+#~ msgstr "Cipher"
+
+#~ msgid "HMAC Auth"
+#~ msgstr "HMAC Auth"
+
+#~ msgid "VPN TLS Authentication"
+#~ msgstr "VPN TLS Authentikation"
+
+#~ msgid "Subject Match"
+#~ msgstr "Thema Treffer"
+
+#~ msgid "Remote Cert Type"
+#~ msgstr "Entfernter Cert Typ"
+
+#~ msgid "Key File"
+#~ msgstr "Schlüsseldatei"
+
+#~ msgid "Domain"
+#~ msgstr "Domäne"
+
+#~ msgid "Vendor"
+#~ msgstr "Hersteller"
+
+#~ msgid "Version"
+#~ msgstr "Version"
+
+#~ msgid "Encryption"
+#~ msgstr "Verschlüsselung"
+
+#~ msgid "NAT Traversal"
+#~ msgstr "NAT Überquerung"
+
+#~ msgid "IKE DH Group"
+#~ msgstr "IKE DH Gruppe"
+
+#~ msgid "Forward Secrecy"
+#~ msgstr "Verschwiegenheit Weiterleiten"
+
+#~ msgid "Local Port"
+#~ msgstr "Lokaler Port"
+
+#~ msgid "Disable Dead Peer Detection"
+#~ msgstr "Inaktive Peer Erkennung Abschalten"
+
+#~ msgid "Wi-Fi"
+#~ msgstr "Wi-Fi"
+
+#~ msgid "Mode"
+#~ msgstr "modus"
+
+#~ msgid "Band"
+#~ msgstr "Band"
+
+#~ msgid "Channel"
+#~ msgstr "Kanal"
+
+#~ msgid "Enable"
+#~ msgstr "Aktivieren"
+
+#~ msgid "Front/Rear Balance"
+#~ msgstr "Vorne/Hinten-Balance"
+
+#~ msgid "Front"
+#~ msgstr "Vorne"
+
+#~ msgid "Rear"
+#~ msgstr "Hinten"
+
+#~ msgid "Monospaced"
+#~ msgstr "Konstantschrift"
+
+#~ msgid "Size"
+#~ msgstr "Größe"
+
+#~ msgid "Font %1"
+#~ msgstr "Schriftart %1"
+
+#~ msgid "Guest"
+#~ msgstr "Gast"
+
+#~ msgid "Enabled"
+#~ msgstr "Aktiviert"
+
+#~ msgid "Activated Connections"
+#~ msgstr "Aktivierte Verbindungen"
+
+#~ msgid "None Activated Connection"
+#~ msgstr "Keine aktivierte Verbindung"
+
+#~ msgid "(default)"
+#~ msgstr "(Standard)"
+
+#~ msgid "Interface"
+#~ msgstr "Schnittstelle"
+
+#~ msgid "Device Addr"
+#~ msgstr "Gerät Adre"
+
+#~ msgid "Subnet Mask"
+#~ msgstr "Subnetz Maske"
+
+#~ msgid "Route Addr"
+#~ msgstr "Route Adre"
+
+#~ msgid "Primary DNS"
+#~ msgstr "Primärer DNS"
+
+#~ msgid "Secondary DNS"
+#~ msgstr "Sekundärer DNS"
+
+#~ msgid "Third DNS"
+#~ msgstr "Dritter DNS"
+
+#~ msgid "Device Speed"
+#~ msgstr "Gerätgeschwindigkeit"
+
+#~ msgid "Language"
+#~ msgstr "Sprache"
+
+#~ msgid "Do you want to keep these display settings?"
+#~ msgstr "Möchten Sie die Bildschirmeinstellungen beibehalten?"
+
+#~ msgid ""
+#~ "Reverting to previous display settings in <font color='#F48914'>%1</font> "
+#~ "seconds."
+#~ msgstr ""
+#~ "Zurücksetzen zu den zuletzt genutzten Bildschirmeinstellungen in <font "
+#~ "color='#F48914'>%1</font> Sekunden."
+
+#~ msgid "Keep Changes"
+#~ msgstr "Änderungen Beibehalten"
+
+#~ msgid "Revert"
+#~ msgstr "Zurücksetzen"
+
+#~ msgid "Power Management"
+#~ msgstr "Energieverwaltung"
+
+#~ msgid "More Settings"
+#~ msgstr "Mehr Einstellungen"
+
+#~ msgid "Display"
+#~ msgstr "Bildschirme"
+
+#~ msgid "Desktop"
+#~ msgstr "Desktop"
+
+#~ msgid "Personalization"
+#~ msgstr "Personalisierung"
+
+#~ msgid "Keyboard Shortcuts"
+#~ msgstr "Tastenkürzel"
+
+#~ msgid "Keyboard and Language"
+#~ msgstr "Tastatur und Sprache"
+
+#~ msgid "Tablet"
+#~ msgstr "Tablet"
+
+#~ msgid "Mouse and Touchpad"
+#~ msgstr "Maus und Touchpad"
+
+#~ msgid "Mouse"
+#~ msgstr "Maus"
+
+#~ msgid "User Accounts"
+#~ msgstr "Benutzerkonten"
+
+#~ msgid "Default Applications"
+#~ msgstr "Standard Programme"
+
+#~ msgid "System Information"
+#~ msgstr "Systeminformationen"
+
+#~ msgid "Boot Menu"
+#~ msgstr "Systemstart Menü"
+
+#~ msgid "Home"
+#~ msgstr "Heimat"
+
+#~ msgid "Split"
+#~ msgstr "Aufteilung"
+
+#~ msgid "Set as primary display"
+#~ msgstr "Als primären Bildschirm festlegen"
+
+#~ msgid "Identify"
+#~ msgstr "Identifizieren"
+
+#~ msgid "Edit"
+#~ msgstr "Bearbeiten"
+
+#~ msgid "Normal"
+#~ msgstr "Normal"
+
+#~ msgid "Rotate Right"
+#~ msgstr "Nach Rechts drehen"
+
+#~ msgid "Upside Down"
+#~ msgstr "Umdrehen"
+
+#~ msgid "Rotate Left"
+#~ msgstr "Nach Links drehen"
+
+#~ msgid "Resolution"
+#~ msgstr "Auflösung"
+
+#~ msgid "Rotation"
+#~ msgstr "Rotation"
+
+#~ msgid "Brightness"
+#~ msgstr "Helligkeit"
+
+#~ msgid "Wired Connection %1"
+#~ msgstr "Kabelnetzwerk %1"
+
+#~ msgid "Wired Connection"
+#~ msgstr "Kabelgebundene Verbindung"
+
+#~ msgid "not managed"
+#~ msgstr "nicht verwaltet"
+
+#~ msgid "Password: "
+#~ msgstr "Passwort:"
+
+#~ msgid "New Password"
+#~ msgstr "Neues Passwort"
+
+#~ msgid "Repeat"
+#~ msgstr "Wiederholung"
+
+#~ msgid "Drag and drop an image to change background."
+#~ msgstr "Halten und ziehen Sie ein Bild herein um den Hintergrund zu ändern"
+
+#~ msgid "Image format not supported"
+#~ msgstr "Abbildformat nicht unterstützt"
+
+#~ msgid "Updating..."
+#~ msgstr "Aktualisierung..."
+
+#~ msgid "Successfully updated, reboot to view."
+#~ msgstr "Erfolgreich aktualisiert, neu starten um die Änderung zu sehen."
+
+#~ msgid "None"
+#~ msgstr "Niemand"
+
+#~ msgid "Manual"
+#~ msgstr "Manuell"
+
+#~ msgid "Auto"
+#~ msgstr "Automatisch"
+
+#~ msgid "HTTP Proxy"
+#~ msgstr "HTTP Proxy"
+
+#~ msgid "HTTPS Proxy"
+#~ msgstr "HTTPS Proxy"
+
+#~ msgid "FTP Proxy"
+#~ msgstr "FTP Proxy"
+
+#~ msgid "Socks Proxy"
+#~ msgstr "Socks Proxy"
+
+#~ msgid "Configuration URL"
+#~ msgstr "Konfigurationsadresse"
+
+#~ msgid "Apply system wide"
+#~ msgstr "Systemweit übernehmen"
+
+#~ msgid "System Proxy"
+#~ msgstr "System Proxy"
+
+#~ msgid "Reset successfully"
+#~ msgstr "Erfolgreich zurückgesetzt"
+
+#~ msgid "Reset"
+#~ msgstr "Zurücksetzen"
+
+#~ msgid "Disable"
+#~ msgstr "Deaktivieren"
+
+#~ msgid "Please input new shortcut"
+#~ msgstr "Bitte neues Kürzel eingeben"
+
+#~ msgid "Shortcut \"%1\" is invalid, please retype new shortcut."
+#~ msgstr ""
+#~ "Tastenkürzel \"%1\" ist ungültig, bitte geben Sie ein neues Kürzel ein."
+
+#~ msgid "The shortcut you set "
+#~ msgstr "Das festgelegte Kürzel"
+
+#~ msgid "conflicts with the one used for \"%2\" in the \"%1\" category."
+#~ msgstr ""
+#~ "steht im Konflikt mit dem das für \"%2\" in der Kategorie \"%1\" genutzt "
+#~ "wird."
+
+#~ msgid "Do you want to replace it?"
+#~ msgstr "Möchten Sie es ersetzen?"
+
+#~ msgid "Replace"
+#~ msgstr "Ersetzen"
+
+#~ msgid "Preview Theme"
+#~ msgstr "Thema Vorschau"
+
+#~ msgid "Done"
+#~ msgstr "Fertig"
+
+#~ msgid "Double-click the above digits to change your time."
+#~ msgstr ""
+#~ "Führen Sie einen Doppelklick auf die oberen Ziffern aus um die Zeit zu "
+#~ "ändern."
+
+#~ msgid "Set"
+#~ msgstr "Festlegen"
+
+#~ msgid "Time zone"
+#~ msgstr "Zeitzone"
+
+#~ msgid "Touchpad"
+#~ msgstr "Touchpad"
+
+#~ msgid "Primary Button"
+#~ msgstr "Primärtaste"
+
+#~ msgid "Left Button"
+#~ msgstr "Linke Taste"
+
+#~ msgid "Right Button"
+#~ msgstr "Rechte Taste"
+
+#~ msgid "Pointer Speed"
+#~ msgstr "Zeigergeschwindigkeit"
+
+#~ msgid "Slow"
+#~ msgstr "Langsam"
+
+#~ msgid "Fast"
+#~ msgstr "Schnell"
+
+#~ msgid "Double-click Speed"
+#~ msgstr "Doppelklick Geschwindigkeit"
+
+#~ msgid "Drag Threshold"
+#~ msgstr "Zeitfenster zum Ziehen"
+
+#~ msgid "Short"
+#~ msgstr "Kurze"
+
+#~ msgid "Long"
+#~ msgstr "lange"
+
+#~ msgid "Natural Scrolling"
+#~ msgstr "Natürliches Scrollen"
+
+#~ msgid "Tap to click"
+#~ msgstr "Zum Klicken antippen"
+
+#~ msgid "Two-finger scrolling"
+#~ msgstr "Zwei-Finger-Scrollen"
+
+#~ msgid "Edge scrolling"
+#~ msgstr "Rand Scrollen"
+
+#~ msgid "VPN Connections"
+#~ msgstr "VPN Verbindungen"
+
+#~ msgid "Snapshot"
+#~ msgstr "Schnappschuss"
+
+#~ msgid "Again"
+#~ msgstr "Nochmal"
+
+#~ msgid "No camera found."
+#~ msgstr "Keine Kamera gefunden."
+
+#~ msgid "Edit Wi-Fi Hotspot"
+#~ msgstr "Wi-Fi Hotspot bearbeiten"
+
+#~ msgid "Create Wi-Fi Hotspot"
+#~ msgstr "Wi-Fi Hotspot erstellen"
+
+#~ msgid "Create"
+#~ msgstr "Erstelle"
+
+#~ msgid "Authentication required by Wi-Fi network"
+#~ msgstr "Authentikation erforderlich für Wi-Fi Netzwerk"
+
+#~ msgid "Password:"
+#~ msgstr "Passwort:"
+
+#~ msgid "Wired Network"
+#~ msgstr "Kabelnetzwerk"
+
+#~ msgid ""
+#~ "Wireless network is unable to be connected maybe due to the following "
+#~ "reasons:\n"
+#~ "\n"
+#~ "1. The hardware switch of wireless network card is off\n"
+#~ "2. Incorrect network configuration in /etc/network/interface\n"
+#~ "3. Incorrect driver of network hardware"
+#~ msgstr ""
+#~ "Mit dem kabellosen Netzwerk kann sich nicht verbunden werden, "
+#~ "möglicherweise aus folgenden Gründen:\n"
+#~ "\n"
+#~ "1. Der Hardware-Schalter der WLAN-Karte ist aus\n"
+#~ "2. Fehlerhafte Netzwerkkonfiguration in /etc/network/interface\n"
+#~ "3. Falscher Treiber der Netzwerk-Hardware"
+
+#~ msgid "Connect to hidden access point"
+#~ msgstr "Mit verstecktem Access Point verbinden"
+
+#~ msgid "ON/OFF"
+#~ msgstr "AN/AUS"
+
+#~ msgid "Devices nearby"
+#~ msgstr "Geräte in der Nähe"
+
+#~ msgid "Automatic date and time"
+#~ msgstr "Automatisches Datum und Uhrzeit"
+
+#~ msgid "Use 24-hour clock"
+#~ msgstr "24-Stunden Uhr benutzen"
+
+#~ msgid "Date"
+#~ msgstr "Datum"
+
+#~ msgid "Set Date"
+#~ msgstr "Datum festlegen"
+
+#~ msgid "Browser"
+#~ msgstr "Browser"
+
+#~ msgid "Mail"
+#~ msgstr "Mail"
+
+#~ msgid "Text"
+#~ msgstr "Text"
+
+#~ msgid "Music"
+#~ msgstr "Musik"
+
+#~ msgid "Video"
+#~ msgstr "Video"
+
+#~ msgid "Picture"
+#~ msgstr "Bild"
+
+#~ msgid "Terminal"
+#~ msgstr "Terminal"
+
+#~ msgid "AutoPlay"
+#~ msgstr "AutoPlay"
+
+#~ msgid "CD Audio"
+#~ msgstr "CD Audio"
+
+#~ msgid "DVD Video"
+#~ msgstr "DVD Video"
+
+#~ msgid "Music Player"
+#~ msgstr "Musik Wiedergabe"
+
+#~ msgid "Camera"
+#~ msgstr "Kamera"
+
+#~ msgid "Software"
+#~ msgstr "Software"
+
+#~ msgid "Primary Monitor: "
+#~ msgstr "Primärer Monitor:"
+
+#~ msgid "Monitor"
+#~ msgstr "Bildschirm"
+
+#~ msgid "Apply"
+#~ msgstr "Übernehmen"
+
+#~ msgid "Default Startup"
+#~ msgstr "Standard Starteintrag"
+
+#~ msgid "Boot delay"
+#~ msgstr "Systemstart Verzögerung"
+
+#~ msgid "Text Color"
+#~ msgstr "Schriftfarbe"
+
+#~ msgid "Selected Text Color"
+#~ msgstr "Ausgewählte Schriftfarbe"
+
+#~ msgid "Repeat Delay"
+#~ msgstr "Wiederholungsverzögerung"
+
+#~ msgid "Repeat Rate"
+#~ msgstr "Wiederholungsrate"
+
+#~ msgid "Cursor Blink Rate"
+#~ msgstr "Cursor Blinkrate"
+
+#~ msgid "Test Area"
+#~ msgstr "Testfeld"
+
+#~ msgid "Keyboard Layout"
+#~ msgstr "Tastaturlayout"
+
+#~ msgid "No result"
+#~ msgstr "Kein Ergebnis"
+
+#~ msgid "Caps Lock prompt"
+#~ msgstr "Caps Lock Hinweis"
+
+#~ msgid "Disable the touchpad when inserting the mouse"
+#~ msgstr "Beim Nutzen der Maus, Touchpad deaktivieren"
+
+#~ msgid "Theme"
+#~ msgstr "Thema"
+
+#~ msgid "Window"
+#~ msgstr "Fenster"
+
+#~ msgid "Icon"
+#~ msgstr "Symbole"
+
+#~ msgid "Cursor"
+#~ msgstr "Cursor"
+
+#~ msgid "Wallpaper"
+#~ msgstr "Hintergrundbild"
+
+#~ msgid "Fonts"
+#~ msgstr "Schriftarten"
+
+#~ msgid "Never"
+#~ msgstr "Nie"
+
+#~ msgid "1 minute"
+#~ msgstr "1 Minute"
+
+#~ msgid "5 minutes"
+#~ msgstr "5 Minuten"
+
+#~ msgid "10 minutes"
+#~ msgstr "10 Minuten"
+
+#~ msgid "15 minutes"
+#~ msgstr "15 Minuten"
+
+#~ msgid "30 minutes"
+#~ msgstr "30 Minuten"
+
+#~ msgid "1 hour"
+#~ msgstr "1 Stunde"
+
+#~ msgid "When I press the power button"
+#~ msgstr "Wenn ich den Netzschalter drücken"
+
+#~ msgid "Shutdown"
+#~ msgstr "Herunterfahren"
+
+#~ msgid "Suspend"
+#~ msgstr "Suspend"
+
+#~ msgid "Ask"
+#~ msgstr "Fragen"
+
+#~ msgid "When I close the lid"
+#~ msgstr "Als ich den Deckel schließen"
+
+#~ msgid "Nothing"
+#~ msgstr "Nichts"
+
+#~ msgid "Password required to wake up"
+#~ msgstr "Passwort zum Aufwachen erforderlich"
+
+#~ msgid "Plugged in"
+#~ msgstr "Angeschlossen"
+
+#~ msgid "On battery"
+#~ msgstr "Bei Akkubetrieb"
+
+#~ msgid "Turn off the display"
+#~ msgstr "Bildschirm abschalten"
+
+#~ msgid "Custom Options"
+#~ msgstr "Angepasste Optionen"
+
+#~ msgid "System"
+#~ msgstr "System"
+
+#~ msgid "Workspace"
+#~ msgstr "Arbeitsfläche"
+
+#~ msgid "Speaker"
+#~ msgstr "Lautsprecher"
+
+#~ msgid "Output Volume"
+#~ msgstr "Output Volume"
+
+#~ msgid "Microphone"
+#~ msgstr "Mikrofon"
+
+#~ msgid "Input Volume"
+#~ msgstr "Input Volume"
+
+#~ msgid "Input Feedback"
+#~ msgstr "Eingabeunterstützung"
+
+#~ msgid "Output Port"
+#~ msgstr "Ausgabeport"
+
+#~ msgid "No port exists in this device."
+#~ msgstr "Es gibt keinen Anschluss für dieses Gerät."
+
+#~ msgid "Output device"
+#~ msgstr "Ausgabe Gerät"
+
+#~ msgid "Input Port"
+#~ msgstr "Input Port"
+
+#~ msgid "Input device"
+#~ msgstr "Eingabe Gerät"
+
+#~ msgid "Hide Advanced..."
+#~ msgstr "Erweiterte Optionen Anzeigen..."
+
+#~ msgid "Show Advanced..."
+#~ msgstr "Erweiterte Optionen Verstecken..."
+
+#~ msgid "Copyright (c) 2011-2014 Wuhan Deepin Technology Co.,Ltd."
+#~ msgstr "Copyright (c) 2011-2014 Wuhan Deepin Technology Co.,Ltd."
+
+#~ msgid "Deepin Edition"
+#~ msgstr "Deepin Version"
+
+#~ msgid "System Type"
+#~ msgstr "System Type"
+
+#~ msgid "bit"
+#~ msgstr "bit"
+
+#~ msgid "Processor"
+#~ msgstr "Prozessor"
+
+#~ msgid "Memory"
+#~ msgstr "Speicher"
+
+#~ msgid "Disk"
+#~ msgstr "Festplatte"
+
+#~ msgid "GNU GENERAL PUBLIC LICENSE"
+#~ msgstr "GNU GENERAL PUBLIC LICENSE"
+
+#~ msgid "Unknown"
+#~ msgstr "Unbekannt"
+
+#~ msgid "Wired"
+#~ msgstr "Verkabelt"
+
+#~ msgid "Wireless"
+#~ msgstr "Kabellos"
+
+#~ msgid "Unused1"
+#~ msgstr "Unbenutzt1"
+
+#~ msgid "Unused2"
+#~ msgstr "Unbenutzt2"
+
+#~ msgid "OLPC mesh"
+#~ msgstr "OLPC Netz"
+
+#~ msgid "WiMax"
+#~ msgstr "WiMax"
+
+#~ msgid "Modem"
+#~ msgstr "Modem"
+
+#~ msgid "InfiniBand"
+#~ msgstr "InfiniBand"
+
+#~ msgid "Bond"
+#~ msgstr "Bindung"
+
+#~ msgid "VLAN"
+#~ msgstr "VLAN"
+
+#~ msgid "ADSL"
+#~ msgstr "ADSL"
+
+#~ msgid "Bridge"
+#~ msgstr "Bridge"
+
+#~ msgid "802.11 WiFi"
+#~ msgstr "802.11 WiFi"
+
+#~ msgid "802.11 WiFi AdHoc"
+#~ msgstr "802.11 WiFi AdHoc"
+
+#~ msgid "802.11 WiFi Hotspot"
+#~ msgstr "802.11 WiFi Hotspot"
+
+#~ msgid "Mobile GSM"
+#~ msgstr "Mobile GSM"
+
+#~ msgid "Mobile CDMA"
+#~ msgstr "Mobile CDMA"
+
+#~ msgid "VPN L2TP"
+#~ msgstr "VPN L2TP"
+
+#~ msgid "VPN PPTP"
+#~ msgstr "VPN PPTP"
+
+#~ msgid "VPN VPNC"
+#~ msgstr "VPN VPNC"
+
+#~ msgid "VPN OpenVPN"
+#~ msgstr "VPN OpenVPN"
+
+#~ msgid "VPN OpenConnect"
+#~ msgstr "VPN OpenConnect"
+
+#~ msgid "User List"
+#~ msgstr "Benutzerliste"
+
+#~ msgid "Page Up"
+#~ msgstr "Bild auf"
+
+#~ msgid "Page Down"
+#~ msgstr "Bild ab"
+
+#~ msgid "Left Click"
+#~ msgstr "Linksklick"
+
+#~ msgid "Right Click"
+#~ msgstr "Rechtsklick"
+
+#~ msgid "Middle Click"
+#~ msgstr "Mittelklick"
+
+#~ msgid "Left Hand"
+#~ msgstr "Linke Hand"
+
+#~ msgid "Right Hand"
+#~ msgstr "Rechte Hand"
+
+#~ msgid "Digital Pen Modes"
+#~ msgstr "Digitalstiftmodus"
+
+#~ msgid "Pen Mode"
+#~ msgstr "Stiftmodus"
+
+#~ msgid "Mouse Mode"
+#~ msgstr "Mausmodus"
+
+#~ msgid "Down Key"
+#~ msgstr "Nach-unten-Taste"
+
+#~ msgid "Up Key"
+#~ msgstr "Nach-oben-Taste"
+
+#~ msgid "Pressure"
+#~ msgstr "Druck"
+
+#~ msgid "Soft"
+#~ msgstr "Soft"
+
+#~ msgid "Hard"
+#~ msgstr "Hart"
+
+#~ msgid "Narrow"
+#~ msgstr "Eng"
+
+#~ msgid "Wide"
+#~ msgstr "Breit"

@@ -1,0 +1,852 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Translators:
+# monzerissa169 <monzerissa169@yahoo.com>, 2014
+msgid ""
+msgstr ""
+"Project-Id-Version: dde-control-center\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-11-21 10:55+0800\n"
+"PO-Revision-Date: 2014-07-02 08:41+0000\n"
+"Last-Translator: Piotr Strębski <strebski@o2.pl>\n"
+"Language-Team: Arabic (http://www.transifex.com/projects/p/dde-control-"
+"center/language/ar/)\n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+
+#: ../src/frame/AppletSettingWindow.qml:100
+msgid "Notice Region Setting "
+msgstr ""
+
+#: ../plugins/date_time/AppletTray.qml:80
+msgid "_Switch to analog"
+msgstr ""
+
+#: ../plugins/date_time/AppletTray.qml:81
+msgid "_Switch to digital"
+msgstr ""
+
+#: ../plugins/date_time/AppletTray.qml:178
+#: ../plugins/date_time/calendar_core.js:4
+msgid "Sun"
+msgstr "الأحد"
+
+#: ../plugins/date_time/AppletTray.qml:179
+#: ../plugins/date_time/calendar_core.js:4
+msgid "Mon"
+msgstr "الأثنين"
+
+#: ../plugins/date_time/AppletTray.qml:180
+#: ../plugins/date_time/calendar_core.js:4
+msgid "Tue"
+msgstr "الثلاثاء"
+
+#: ../plugins/date_time/AppletTray.qml:181
+#: ../plugins/date_time/calendar_core.js:4
+msgid "Wed"
+msgstr "الأربعاء"
+
+#: ../plugins/date_time/AppletTray.qml:182
+#: ../plugins/date_time/calendar_core.js:4
+msgid "Thu"
+msgstr "الخميس"
+
+#: ../plugins/date_time/AppletTray.qml:183
+#: ../plugins/date_time/calendar_core.js:4
+msgid "Fri"
+msgstr "الجمعة"
+
+#: ../plugins/date_time/AppletTray.qml:184
+#: ../plugins/date_time/calendar_core.js:4
+msgid "Sat"
+msgstr "السبت"
+
+#: ../plugins/network/AppletTray.qml:35
+#, fuzzy
+msgid "Network Connected"
+msgstr "اتصال PPPoE جديد "
+
+#: ../plugins/network/AppletTray.qml:35
+#, fuzzy
+msgid "Network Not Connected"
+msgstr "اتصال PPPoE جديد "
+
+#: ../plugins/network/AppletTray.qml:305
+#: ../plugins/network/bluetooth/AppletTray.qml:78
+#: ../plugins/network/vpn/AppletTray.qml:70
+#: ../plugins/network/wifi/AppletTray.qml:126
+#: ../plugins/power/AppletTray.qml:99 ../plugins/sound/AppletTray.qml:173
+msgid "_Run"
+msgstr "_تشغيل"
+
+#: ../plugins/network/AppletTray.qml:306
+#: ../plugins/network/bluetooth/AppletTray.qml:79
+#: ../plugins/network/vpn/AppletTray.qml:71
+#: ../plugins/network/wifi/AppletTray.qml:127
+#: ../plugins/power/AppletTray.qml:106 ../plugins/sound/AppletTray.qml:174
+msgid "_Undock"
+msgstr "إلغاء الق_فل"
+
+#: ../plugins/network/bluetooth/AppletTray.qml:118
+#: ../plugins/network/bluetooth/main.qml:33
+msgid "Bluetooth"
+msgstr "البلوتوث"
+
+#: ../plugins/network/vpn/AppletTray.qml:110
+#: ../plugins/network/vpn/main.qml:33
+msgid "VPN"
+msgstr "شبكة إلكترونية خاصة"
+
+#: ../plugins/network/wifi/AppletTray.qml:168
+#: ../plugins/network/WirelessNetwork.qml:50
+#: ../plugins/network/wifi/main.qml:33
+msgid "Wireless Network"
+msgstr ""
+
+#: ../plugins/power/AppletTray.qml:34
+msgid "On Charging"
+msgstr ""
+
+#: ../plugins/power/AppletTray.qml:46
+msgid "Custom"
+msgstr "مخصص"
+
+#: ../plugins/power/AppletTray.qml:47
+msgid "Power saver"
+msgstr "توفر الطاقة"
+
+#: ../plugins/power/AppletTray.qml:48
+msgid "Balanced"
+msgstr "متوازن"
+
+#: ../plugins/power/AppletTray.qml:49
+msgid "High performance"
+msgstr "أداء عالي"
+
+#: ../plugins/sound/AppletTray.qml:218
+msgid "Device"
+msgstr "جهاز"
+
+#: ../plugins/sound/AppletTray.qml:318
+msgid "Applications"
+msgstr "تطبيقات"
+
+#: ../plugins/disk_mount/DiskItem.qml:124
+msgid "Unmount failed!"
+msgstr ""
+
+#: ../src/frame/WifiPasswordWindow.qml:150
+#, qt-format
+msgid "Please enter the password of  <font color=\"#faca57\">%1</font>"
+msgstr ""
+
+#: ../src/frame/WifiPasswordWindow.qml:172
+msgid "Password"
+msgstr "كلمة المرور"
+
+#: ../src/frame/WifiPasswordWindow.qml:180
+#, fuzzy
+msgid "Auto-connect"
+msgstr "اتصال تلقائي"
+
+#: ../src/frame/WifiPasswordWindow.qml:195
+msgid "Cancel"
+msgstr "إلغاء"
+
+#: ../src/frame/WifiPasswordWindow.qml:202
+msgid "Connect"
+msgstr "اتصل"
+
+#: ../plugins/network/WirelessApList.qml:95
+msgid "Scanning..."
+msgstr ""
+
+#: ../plugins/network/WirelessNetwork.qml:50
+#, qt-format
+msgid "Wireless Network %1"
+msgstr ""
+
+#: ../plugins/date_time/main.qml:32
+msgid "Date and Time"
+msgstr "التاريخ والوقت"
+
+#: ../plugins/disk_mount/main.qml:33
+msgid "Disk Mount"
+msgstr ""
+
+#: ../plugins/network/main.qml:32
+msgid "Network"
+msgstr "الشبكة"
+
+#: ../plugins/power/main.qml:33
+msgid "Power"
+msgstr "الطاقة"
+
+#: ../plugins/sound/main.qml:32
+msgid "Sound"
+msgstr "الصوت"
+
+#~ msgid "Name"
+#~ msgstr "أسم"
+
+#~ msgid "Username"
+#~ msgstr "اسم مستخدم"
+
+#~ msgid "Service"
+#~ msgstr "خدمة"
+
+#~ msgid "New Mobile Connection"
+#~ msgstr "اتصال جوال جديد"
+
+#~ msgid "Service Type"
+#~ msgstr "شكل الخدمة"
+
+#~ msgid "Number"
+#~ msgstr "رقم"
+
+#~ msgid "Add"
+#~ msgstr "أضف"
+
+#, fuzzy
+#~ msgid "Invalid password"
+#~ msgstr "كلمة المرور"
+
+#, fuzzy
+#~ msgid "Nothing input"
+#~ msgstr "لا شيء"
+
+#, fuzzy
+#~ msgid "Different password"
+#~ msgstr "أعد كلمة السر"
+
+#~ msgid "Add User"
+#~ msgstr "أضف مستخدم"
+
+#~ msgid "New User"
+#~ msgstr "مستخدم جديد"
+
+#~ msgid "Standard"
+#~ msgstr "قياسي"
+
+#~ msgid "Administrator"
+#~ msgstr "مسؤول"
+
+#~ msgid "Repeat Password"
+#~ msgstr "أعد كلمة السر"
+
+#~ msgid "Account Type"
+#~ msgstr "شكل الحساب"
+
+#~ msgid "Auto-login"
+#~ msgstr "دخول تلقائي"
+
+#~ msgid "Confirm"
+#~ msgstr "تأكيد"
+
+#~ msgid "VPN Type"
+#~ msgstr "نمط VPN"
+
+#~ msgid "L2TP"
+#~ msgstr "L2TP"
+
+#~ msgid "PPTP"
+#~ msgstr "PPTP"
+
+#~ msgid "OpenConnect"
+#~ msgstr "اتصال مفتوح"
+
+#~ msgid "Basic Information"
+#~ msgstr "معلومات أساسية"
+
+#~ msgid "Gateway"
+#~ msgstr "بوابة"
+
+#~ msgid "Proxy"
+#~ msgstr "الوكيل"
+
+#, fuzzy
+#~ msgid "Customize Key Direction"
+#~ msgstr "استخدم اتجاه المفتاح"
+
+#~ msgid "Private Key"
+#~ msgstr "مفتاح خاص"
+
+#~ msgid "User Cert"
+#~ msgstr "رخصة المستخدم"
+
+#~ msgid "Static Key"
+#~ msgstr "مفتاح ثابت"
+
+#~ msgid "Key Direction"
+#~ msgstr "اتجاه المفتاح"
+
+#~ msgid "Remote IP"
+#~ msgstr "IP بعيد"
+
+#~ msgid "Local IP"
+#~ msgstr "IP محلي"
+
+#, fuzzy
+#~ msgid "Pre-Shared Key"
+#~ msgstr "مفتاح خاص"
+
+#~ msgid "Connect to wireless"
+#~ msgstr "اتصل بالشبكة اللاسلكية"
+
+#~ msgid "Security"
+#~ msgstr "الأمان"
+
+#~ msgid "Key"
+#~ msgstr "المفتاح"
+
+#~ msgid "Identity"
+#~ msgstr "التحقق"
+
+#~ msgid "Recently Used"
+#~ msgstr "استخدمت حديثا"
+
+#~ msgid "Webcam"
+#~ msgstr "كامرا النت"
+
+#~ msgid "Today"
+#~ msgstr "اليوم"
+
+#~ msgid "New Network"
+#~ msgstr "شبكة جديدة"
+
+#~ msgid "Next"
+#~ msgstr "التالي"
+
+#~ msgid "Delete this network"
+#~ msgstr "احذف هذه الشبكة"
+
+#~ msgid "Are you sure you want to delete this network?"
+#~ msgstr "هل أنت متأكد أنك تريد حذف هذه الشبكة؟"
+
+#~ msgid "Save"
+#~ msgstr "حفظ"
+
+#~ msgid "Close"
+#~ msgstr "غلق"
+
+#~ msgid "Delete"
+#~ msgstr "حذف"
+
+#~ msgid "Command"
+#~ msgstr "أمر"
+
+#~ msgid "Keep user's files"
+#~ msgstr "احتفظ بملفات المستخدمين"
+
+#~ msgid "Delete user's files"
+#~ msgstr "احذف ملفات المستخدمين"
+
+#~ msgid "Click to install"
+#~ msgstr "اضغط للتنصيب"
+
+#, fuzzy
+#~ msgid "Customize MTU"
+#~ msgstr "مخصص"
+
+#~ msgid "IPv4"
+#~ msgstr "IPv4"
+
+#~ msgid "Method"
+#~ msgstr "طريقة"
+
+#~ msgid "IP Address"
+#~ msgstr "عنوان أب"
+
+#~ msgid "Netmask"
+#~ msgstr "قناع الشبكة"
+
+#~ msgid "Prefix"
+#~ msgstr "سابقة"
+
+#~ msgid "Mobile"
+#~ msgstr "جوال"
+
+#~ msgid "Type"
+#~ msgstr "النوع"
+
+#~ msgid "Home Network Only"
+#~ msgstr "شبات المنزل فقط"
+
+#~ msgid "PPP"
+#~ msgstr "البروتوكول التناظري"
+
+#~ msgid "Version"
+#~ msgstr "الإصدار"
+
+#~ msgid "Wi-Fi"
+#~ msgstr "وايفاي"
+
+#~ msgid "Mode"
+#~ msgstr "نمط"
+
+#~ msgid "Band"
+#~ msgstr "حزمة"
+
+#~ msgid "Channel"
+#~ msgstr "قناة"
+
+#~ msgid "Enable"
+#~ msgstr "تمكين"
+
+#~ msgid "Size"
+#~ msgstr "الحجم"
+
+#~ msgid "Font %1"
+#~ msgstr "الخط 1%"
+
+#~ msgid "Guest"
+#~ msgstr "ضيف"
+
+#, fuzzy
+#~ msgid "None Activated Connection"
+#~ msgstr "اتصال جوال جديد"
+
+#, fuzzy
+#~ msgid "(default)"
+#~ msgstr "الأفتراضي"
+
+#~ msgid "Subnet Mask"
+#~ msgstr "قناع الشبكة الفرعية"
+
+#~ msgid "Language"
+#~ msgstr "اللغة"
+
+#~ msgid "Keep Changes"
+#~ msgstr "احتفظ بالتغييرات"
+
+#~ msgid "Revert"
+#~ msgstr "اعكس"
+
+#~ msgid "More Settings"
+#~ msgstr "إعدادات أكثر"
+
+#~ msgid "Display"
+#~ msgstr "العرض"
+
+#~ msgid "Desktop"
+#~ msgstr "سطح المكتب"
+
+#~ msgid "Personalization"
+#~ msgstr "التخصيص"
+
+#~ msgid "Keyboard Shortcuts"
+#~ msgstr "اختصارات لوحة المفاتيح"
+
+#, fuzzy
+#~ msgid "Keyboard and Language"
+#~ msgstr "تصميم لوحة المفاتيح"
+
+#~ msgid "Mouse and Touchpad"
+#~ msgstr "الفأرة ولوح اللمس"
+
+#~ msgid "Mouse"
+#~ msgstr "الفأرة"
+
+#~ msgid "User Accounts"
+#~ msgstr "حسابات المستخدمين"
+
+#~ msgid "Default Applications"
+#~ msgstr "التطبيقات الأفتراضية"
+
+#~ msgid "System Information"
+#~ msgstr "معلومات النظام"
+
+#~ msgid "Boot Menu"
+#~ msgstr "قائمة الإقلاع"
+
+#~ msgid "Home"
+#~ msgstr "المنزل"
+
+#~ msgid "Set as primary display"
+#~ msgstr "ثبتها كشاشة رئيسة"
+
+#~ msgid "Identify"
+#~ msgstr "تمييز"
+
+#~ msgid "Edit"
+#~ msgstr "حرر"
+
+#~ msgid "Normal"
+#~ msgstr "عادي"
+
+#~ msgid "Rotate Right"
+#~ msgstr "أدر لليمين"
+
+#~ msgid "Upside Down"
+#~ msgstr "رأسا على عقب"
+
+#~ msgid "Rotate Left"
+#~ msgstr "أدؤر لليسار"
+
+#~ msgid "Resolution"
+#~ msgstr "الدقة"
+
+#~ msgid "Rotation"
+#~ msgstr "دوارن"
+
+#~ msgid "Brightness"
+#~ msgstr "السطوع"
+
+#, fuzzy
+#~ msgid "Wired Connection"
+#~ msgstr "اتصال جوال جديد"
+
+#~ msgid "Password: "
+#~ msgstr "كلمة المرور :"
+
+#~ msgid "New Password"
+#~ msgstr "كلمة سر جديدة"
+
+#~ msgid "Repeat"
+#~ msgstr "تجديد"
+
+#, fuzzy
+#~ msgid "Successfully updated, reboot to view."
+#~ msgstr "تم التغيير بنجاح, أعد التشغيل لتراها"
+
+#~ msgid "None"
+#~ msgstr "لا شيء"
+
+#~ msgid "Manual"
+#~ msgstr "يدوي"
+
+#~ msgid "Auto"
+#~ msgstr "ذاتي"
+
+#~ msgid "FTP Proxy"
+#~ msgstr "ملقم FTP"
+
+#, fuzzy
+#~ msgid "Socks Proxy"
+#~ msgstr "الوكيل"
+
+#~ msgid "Reset"
+#~ msgstr "إعادة تعيين"
+
+#~ msgid "Disable"
+#~ msgstr "الغاء"
+
+#~ msgid "Please input new shortcut"
+#~ msgstr "أدخل اختصارا آخر رجاء"
+
+#~ msgid "Do you want to replace it?"
+#~ msgstr "هل تريد استبداله؟"
+
+#~ msgid "Replace"
+#~ msgstr "إستبدل"
+
+#~ msgid "Preview Theme"
+#~ msgstr "طالع المظهر"
+
+#~ msgid "Done"
+#~ msgstr "تم"
+
+#~ msgid "Time zone"
+#~ msgstr "المنطقة الزمنية"
+
+#~ msgid "Touchpad"
+#~ msgstr "لوحة اللمس"
+
+#~ msgid "Primary Button"
+#~ msgstr "الزر الرئيسي"
+
+#~ msgid "Left Button"
+#~ msgstr "الزر الأيسر"
+
+#~ msgid "Right Button"
+#~ msgstr "الزر الأيمن"
+
+#~ msgid "Pointer Speed"
+#~ msgstr "سرعة المؤشر"
+
+#~ msgid "Slow"
+#~ msgstr "بطيء"
+
+#~ msgid "Fast"
+#~ msgstr "سريع"
+
+#~ msgid "Double-click Speed"
+#~ msgstr "سرعة الضغطة  المزدوجة"
+
+#~ msgid "Short"
+#~ msgstr "قصير"
+
+#~ msgid "Long"
+#~ msgstr "طويل"
+
+#~ msgid "Create"
+#~ msgstr "انشاء"
+
+#~ msgid "Password:"
+#~ msgstr "كلمة المرور :"
+
+#~ msgid "ON/OFF"
+#~ msgstr "تشغيل/إطفاء"
+
+#~ msgid "Date"
+#~ msgstr "تاريخ"
+
+#~ msgid "Set Date"
+#~ msgstr "ضع التاريخ"
+
+#~ msgid "Browser"
+#~ msgstr "متصفح"
+
+#~ msgid "Mail"
+#~ msgstr "الإيميل"
+
+#~ msgid "Music"
+#~ msgstr "الصوتيات"
+
+#~ msgid "Video"
+#~ msgstr "فيديو"
+
+#~ msgid "Picture"
+#~ msgstr "صورة"
+
+#~ msgid "Terminal"
+#~ msgstr "محطة"
+
+#~ msgid "AutoPlay"
+#~ msgstr "تشغيل تلقائي"
+
+#~ msgid "Camera"
+#~ msgstr "كاميرا"
+
+#~ msgid "Monitor"
+#~ msgstr "الشاشة"
+
+#~ msgid "Apply"
+#~ msgstr "تطبيق"
+
+#~ msgid "Text Color"
+#~ msgstr "لون الخط"
+
+#~ msgid "Repeat Delay"
+#~ msgstr "تأخر الإعادة"
+
+#~ msgid "Repeat Rate"
+#~ msgstr "معدل الإعادة"
+
+#~ msgid "Keyboard Layout"
+#~ msgstr "تصميم لوحة المفاتيح"
+
+#~ msgid "No result"
+#~ msgstr "لانتائج"
+
+#~ msgid "Window"
+#~ msgstr "النافذة"
+
+#~ msgid "Icon"
+#~ msgstr "أيقونة"
+
+#~ msgid "Wallpaper"
+#~ msgstr "الخلفيات"
+
+#~ msgid "Fonts"
+#~ msgstr "خطوط"
+
+#~ msgid "Never"
+#~ msgstr "أبداً"
+
+#~ msgid "1 minute"
+#~ msgstr "1 دقيقة"
+
+#~ msgid "5 minutes"
+#~ msgstr "5 دقائق"
+
+#~ msgid "10 minutes"
+#~ msgstr "10 دقائق"
+
+#~ msgid "15 minutes"
+#~ msgstr "51 دقيقة"
+
+#~ msgid "30 minutes"
+#~ msgstr "30 دقيقة"
+
+#~ msgid "1 hour"
+#~ msgstr "1 ساعة"
+
+#~ msgid "When I press the power button"
+#~ msgstr "حينما أختار زر الطاقة"
+
+#~ msgid "Shutdown"
+#~ msgstr "إطفاء"
+
+#~ msgid "Suspend"
+#~ msgstr "تأجيل"
+
+#~ msgid "Ask"
+#~ msgstr "اسأل"
+
+#~ msgid "When I close the lid"
+#~ msgstr "حينما أغلق الغطاء"
+
+#~ msgid "Nothing"
+#~ msgstr "لا شيء"
+
+#~ msgid "Turn off the display"
+#~ msgstr "أطفئ الشاشة"
+
+#~ msgid "Custom Options"
+#~ msgstr "خيارات معدلة"
+
+#~ msgid "System"
+#~ msgstr "النظام"
+
+#~ msgid "Workspace"
+#~ msgstr "ورشة العمل"
+
+#~ msgid "Speaker"
+#~ msgstr "مكبر الصوت"
+
+#~ msgid "Output Volume"
+#~ msgstr "حجم الانتاج"
+
+#~ msgid "Balance"
+#~ msgstr "ميزان"
+
+#~ msgid "Left"
+#~ msgstr "يسار"
+
+#~ msgid "Right"
+#~ msgstr "يمين"
+
+#~ msgid "Microphone"
+#~ msgstr "المايكروفون"
+
+#~ msgid "Input Volume"
+#~ msgstr "مدخل الصوت"
+
+#~ msgid "Output Port"
+#~ msgstr "منفذ الخروج"
+
+#~ msgid "Input Port"
+#~ msgstr "منفذ الدخول"
+
+#~ msgid "bit"
+#~ msgstr "بت"
+
+#~ msgid "Processor"
+#~ msgstr "معالج"
+
+#~ msgid "Memory"
+#~ msgstr "الذاكرة"
+
+#~ msgid "Disk"
+#~ msgstr "القرص الصلب"
+
+#~ msgid "GNU GENERAL PUBLIC LICENSE"
+#~ msgstr "رخصة جنو الشعبية العامة"
+
+#~ msgid "Unknown"
+#~ msgstr "غير معروف"
+
+#~ msgid "Wired"
+#~ msgstr "سلكي"
+
+#~ msgid "Wireless"
+#~ msgstr "لاسلكي"
+
+#~ msgid "Unused1"
+#~ msgstr "مهمل1"
+
+#~ msgid "Unused2"
+#~ msgstr "مهمل2"
+
+#~ msgid "Bridge"
+#~ msgstr "جسر"
+
+#, fuzzy
+#~ msgid "Mobile GSM"
+#~ msgstr "جوال"
+
+#, fuzzy
+#~ msgid "Mobile CDMA"
+#~ msgstr "جوال"
+
+#, fuzzy
+#~ msgid "VPN L2TP"
+#~ msgstr "L2TP"
+
+#, fuzzy
+#~ msgid "VPN PPTP"
+#~ msgstr "PPTP"
+
+#, fuzzy
+#~ msgid "VPN OpenVPN"
+#~ msgstr "نمط VPN"
+
+#, fuzzy
+#~ msgid "VPN OpenConnect"
+#~ msgstr "اتصال مفتوح"
+
+#~ msgid "January"
+#~ msgstr "كانون الثاني"
+
+#~ msgid "February"
+#~ msgstr "شباط"
+
+#~ msgid "March"
+#~ msgstr "آذار"
+
+#~ msgid "April"
+#~ msgstr "نيسان"
+
+#~ msgid "May"
+#~ msgstr "أيار"
+
+#~ msgid "June"
+#~ msgstr "حزيران"
+
+#~ msgid "July"
+#~ msgstr "تموز"
+
+#~ msgid "August"
+#~ msgstr "آب"
+
+#~ msgid "September"
+#~ msgstr "أيلول"
+
+#~ msgid "October"
+#~ msgstr "تشرين الأول"
+
+#~ msgid "November"
+#~ msgstr "تشرين الثاني"
+
+#~ msgid "December"
+#~ msgstr "كانون الأول"
+
+#~ msgid "Keyboard"
+#~ msgstr "لوحة المفاتيح"
+
+#, fuzzy
+#~ msgid "Advanced"
+#~ msgstr "متوازن"
+
+#, fuzzy
+#~ msgid "Custom Resolution"
+#~ msgstr "الدقة"
+
+#~ msgid "Default"
+#~ msgstr "الأفتراضي"
+
+#~ msgid "General"
+#~ msgstr "عام"
+
+#~ msgid "For All Users"
+#~ msgstr "لكل المستخدمين"
+
+#~ msgid "Device Type"
+#~ msgstr "نوع الجهاز"

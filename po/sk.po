@@ -1,0 +1,1391 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Translators:
+# Microtus <hrabosmartin@gmail.com>, 2014
+# fasier <matus.ravas@outlook.com>, 2014
+msgid ""
+msgstr ""
+"Project-Id-Version: dde-control-center\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-11-21 10:55+0800\n"
+"PO-Revision-Date: 2014-11-18 03:08+0000\n"
+"Last-Translator: deepin_transifex <xiabin@linuxdeepin.com>\n"
+"Language-Team: Slovak (http://www.transifex.com/projects/p/dde-control-"
+"center/language/sk/)\n"
+"Language: sk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+
+#: ../src/frame/AppletSettingWindow.qml:100
+msgid "Notice Region Setting "
+msgstr ""
+
+#: ../plugins/date_time/AppletTray.qml:80
+msgid "_Switch to analog"
+msgstr "_Prepnúť na analóg"
+
+#: ../plugins/date_time/AppletTray.qml:81
+msgid "_Switch to digital"
+msgstr "_Prepnúť na digitál"
+
+#: ../plugins/date_time/AppletTray.qml:178
+#: ../plugins/date_time/calendar_core.js:4
+msgid "Sun"
+msgstr "Ne"
+
+#: ../plugins/date_time/AppletTray.qml:179
+#: ../plugins/date_time/calendar_core.js:4
+msgid "Mon"
+msgstr "Po"
+
+#: ../plugins/date_time/AppletTray.qml:180
+#: ../plugins/date_time/calendar_core.js:4
+msgid "Tue"
+msgstr "Ut"
+
+#: ../plugins/date_time/AppletTray.qml:181
+#: ../plugins/date_time/calendar_core.js:4
+msgid "Wed"
+msgstr "St"
+
+#: ../plugins/date_time/AppletTray.qml:182
+#: ../plugins/date_time/calendar_core.js:4
+msgid "Thu"
+msgstr "Št"
+
+#: ../plugins/date_time/AppletTray.qml:183
+#: ../plugins/date_time/calendar_core.js:4
+msgid "Fri"
+msgstr "Pi"
+
+#: ../plugins/date_time/AppletTray.qml:184
+#: ../plugins/date_time/calendar_core.js:4
+msgid "Sat"
+msgstr "So"
+
+#: ../plugins/network/AppletTray.qml:35
+msgid "Network Connected"
+msgstr ""
+
+#: ../plugins/network/AppletTray.qml:35
+msgid "Network Not Connected"
+msgstr ""
+
+#: ../plugins/network/AppletTray.qml:305
+#: ../plugins/network/bluetooth/AppletTray.qml:78
+#: ../plugins/network/vpn/AppletTray.qml:70
+#: ../plugins/network/wifi/AppletTray.qml:126
+#: ../plugins/power/AppletTray.qml:99 ../plugins/sound/AppletTray.qml:173
+msgid "_Run"
+msgstr "_Spustiť"
+
+#: ../plugins/network/AppletTray.qml:306
+#: ../plugins/network/bluetooth/AppletTray.qml:79
+#: ../plugins/network/vpn/AppletTray.qml:71
+#: ../plugins/network/wifi/AppletTray.qml:127
+#: ../plugins/power/AppletTray.qml:106 ../plugins/sound/AppletTray.qml:174
+msgid "_Undock"
+msgstr "_Odstrániť z docku"
+
+#: ../plugins/network/bluetooth/AppletTray.qml:118
+#: ../plugins/network/bluetooth/main.qml:33
+msgid "Bluetooth"
+msgstr "Bluetooth"
+
+#: ../plugins/network/vpn/AppletTray.qml:110
+#: ../plugins/network/vpn/main.qml:33
+msgid "VPN"
+msgstr "VPN"
+
+#: ../plugins/network/wifi/AppletTray.qml:168
+#: ../plugins/network/WirelessNetwork.qml:50
+#: ../plugins/network/wifi/main.qml:33
+msgid "Wireless Network"
+msgstr "Bezdrôtová sieť"
+
+#: ../plugins/power/AppletTray.qml:34
+msgid "On Charging"
+msgstr "Nabíjanie"
+
+#: ../plugins/power/AppletTray.qml:46
+msgid "Custom"
+msgstr "Vlastný"
+
+#: ../plugins/power/AppletTray.qml:47
+msgid "Power saver"
+msgstr "Šetrič energie"
+
+#: ../plugins/power/AppletTray.qml:48
+msgid "Balanced"
+msgstr "Vyvážený"
+
+#: ../plugins/power/AppletTray.qml:49
+msgid "High performance"
+msgstr "Vysoký výkon"
+
+#: ../plugins/sound/AppletTray.qml:218
+msgid "Device"
+msgstr "Zariadenie"
+
+#: ../plugins/sound/AppletTray.qml:318
+msgid "Applications"
+msgstr "Aplikácie"
+
+#: ../plugins/disk_mount/DiskItem.qml:124
+msgid "Unmount failed!"
+msgstr "Odpojenie zlyhalo!"
+
+#: ../src/frame/WifiPasswordWindow.qml:150
+#, fuzzy, qt-format
+msgid "Please enter the password of  <font color=\"#faca57\">%1</font>"
+msgstr ""
+"Heslá alebo kódovacie kľúče sú potrebné na sprístupnenie Wi-Fi siete <font "
+"color=\"#faca57\">%1</font>"
+
+#: ../src/frame/WifiPasswordWindow.qml:172
+msgid "Password"
+msgstr "Heslo"
+
+#: ../src/frame/WifiPasswordWindow.qml:180
+#, fuzzy
+msgid "Auto-connect"
+msgstr "Automaticky pripojiť"
+
+#: ../src/frame/WifiPasswordWindow.qml:195
+msgid "Cancel"
+msgstr "Zrušiť"
+
+#: ../src/frame/WifiPasswordWindow.qml:202
+msgid "Connect"
+msgstr "Spojiť"
+
+#: ../plugins/network/WirelessApList.qml:95
+msgid "Scanning..."
+msgstr "Hľadanie..."
+
+#: ../plugins/network/WirelessNetwork.qml:50
+#, qt-format
+msgid "Wireless Network %1"
+msgstr "Bezdrôtová sieť %1"
+
+#: ../plugins/date_time/main.qml:32
+msgid "Date and Time"
+msgstr "Čas a dátum"
+
+#: ../plugins/disk_mount/main.qml:33
+msgid "Disk Mount"
+msgstr "Pripojiť disk"
+
+#: ../plugins/network/main.qml:32
+msgid "Network"
+msgstr "Sieť"
+
+#: ../plugins/power/main.qml:33
+msgid "Power"
+msgstr "Energia"
+
+#: ../plugins/sound/main.qml:32
+msgid "Sound"
+msgstr "Zvuk"
+
+#~ msgid "New PPPoE Connection"
+#~ msgstr "Nové PPPoE spojenie"
+
+#~ msgid "Name"
+#~ msgstr "Názov"
+
+#~ msgid "Username"
+#~ msgstr "Užívateľské meno"
+
+#~ msgid "Service"
+#~ msgstr "Služba"
+
+#~ msgid "New Mobile Connection"
+#~ msgstr "Nové mobilné spojenie"
+
+#~ msgid "Service Type"
+#~ msgstr "Typ služby"
+
+#~ msgid "APN"
+#~ msgstr "APN"
+
+#~ msgid "Number"
+#~ msgstr "Číslo"
+
+#~ msgid "Add"
+#~ msgstr "Pridať"
+
+#~ msgid "Invalid password"
+#~ msgstr "Neplatné heslo"
+
+#~ msgid "Nothing input"
+#~ msgstr "Nič nie je zadané"
+
+#~ msgid "Different password"
+#~ msgstr "Rozličné heslo"
+
+#~ msgid "Add User"
+#~ msgstr "Pridať užívateľa"
+
+#~ msgid "New User"
+#~ msgstr "Nový užívateľ"
+
+#~ msgid "Standard"
+#~ msgstr "Štandardný"
+
+#~ msgid "Administrator"
+#~ msgstr "Administrátor"
+
+#~ msgid "Repeat Password"
+#~ msgstr "Zopakovať heslo"
+
+#~ msgid "Account Type"
+#~ msgstr "Typ účtu"
+
+#~ msgid "Auto-login"
+#~ msgstr "Automatické prihlásenie"
+
+#~ msgid "Confirm"
+#~ msgstr "Potvrdiť"
+
+#~ msgid "VPN Type"
+#~ msgstr "VPN typ"
+
+#~ msgid "L2TP"
+#~ msgstr "L2TP"
+
+#~ msgid "PPTP"
+#~ msgstr "PPTP"
+
+#~ msgid "OpenVPN"
+#~ msgstr "OpenVPN"
+
+#~ msgid "OpenConnect"
+#~ msgstr "OpenConnect"
+
+#~ msgid "VPNC"
+#~ msgstr "VPNC"
+
+#~ msgid "Basic Information"
+#~ msgstr "Základné informácie"
+
+#~ msgid "Need VPN Plugin"
+#~ msgstr "Potrebný VPN plugin"
+
+#~ msgid "Gateway"
+#~ msgstr "Brána"
+
+#~ msgid "Ask for Pwd"
+#~ msgstr "Žiadať heslo"
+
+#~ msgid "CA Cert"
+#~ msgstr "CA certifikát"
+
+#~ msgid "Proxy"
+#~ msgstr "Proxy"
+
+#~ msgid "Allow Cisco Secure Desktop Trojan"
+#~ msgstr "Povoliť Cisco Secure Desktop Trojan"
+
+#~ msgid "Customize Key Direction"
+#~ msgstr "Upraviť Key Direction"
+
+#~ msgid "Private Key"
+#~ msgstr "Privátny kľúč"
+
+#~ msgid "Auth Type"
+#~ msgstr "Typ autentizácie"
+
+#~ msgid "User Cert"
+#~ msgstr "Užívateľský certifikát"
+
+#~ msgid "CSD Script"
+#~ msgstr "CSD Skript"
+
+#~ msgid "Use FSID for Key Passphrase"
+#~ msgstr "Použiť FSID pre Key Passphrase"
+
+#~ msgid "Private Pwd"
+#~ msgstr "Private PWD"
+
+#~ msgid "Static Key"
+#~ msgstr "Static Key"
+
+#~ msgid "Key Direction"
+#~ msgstr "Key Direction"
+
+#~ msgid "Remote IP"
+#~ msgstr "Vzdialená IP"
+
+#~ msgid "Local IP"
+#~ msgstr "Lokálna IP"
+
+#~ msgid "User Pwd"
+#~ msgstr "User Pwd"
+
+#~ msgid "Group Name"
+#~ msgstr "Group Name"
+
+#~ msgid "Group Pwd"
+#~ msgstr "Group Pwd"
+
+#~ msgid "Use Hybrid Authentication"
+#~ msgstr "Použiť Hybrid Authentication"
+
+#~ msgid "CA File"
+#~ msgstr "CA súbor"
+
+#~ msgid "Enable IPsec"
+#~ msgstr "Povoliť IPsec"
+
+#~ msgid "Group ID"
+#~ msgstr "Group ID"
+
+#~ msgid "Pre-Shared Key"
+#~ msgstr "Pre-Shared Key"
+
+#~ msgid "Use MPPE"
+#~ msgstr "Použiť MPPE"
+
+#~ msgid "Connect to wireless"
+#~ msgstr "Pripojiť bezdrôtovo"
+
+#~ msgid "SSID"
+#~ msgstr "SSID"
+
+#~ msgid "Security"
+#~ msgstr "Bezpečnosť"
+
+#~ msgid "Key"
+#~ msgstr "Kľúč"
+
+#~ msgid "EAP Auth"
+#~ msgstr "EAP autentizácia"
+
+#~ msgid "Identity"
+#~ msgstr "Identita"
+
+#~ msgid "Anonymous ID"
+#~ msgstr "Anonymné ID"
+
+#~ msgid "Provisioning"
+#~ msgstr "Provisioning"
+
+#~ msgid "PAC file"
+#~ msgstr "PAC súbor"
+
+#~ msgid "PEAP Version"
+#~ msgstr "PEAP verzia"
+
+#~ msgid "Inner Auth"
+#~ msgstr "Inner autentizácia"
+
+#~ msgid "Dock Applet Enabled"
+#~ msgstr "Povoliť v Dock Applet"
+
+#~ msgid "Choose a new picture for your Avatar"
+#~ msgstr "Vyberte nový obrázok pre Avatara"
+
+#~ msgid "Recently Used"
+#~ msgstr "Nedávno použité"
+
+#~ msgid "Avatar"
+#~ msgstr "Avatar"
+
+#~ msgid "Webcam"
+#~ msgstr "Webkamera"
+
+#~ msgid "Left/Right Balance"
+#~ msgstr "Ľavý/Pravý vyváženie"
+
+#~ msgid "Left"
+#~ msgstr "Vľavo"
+
+#~ msgid "Right"
+#~ msgstr "Vpravo"
+
+#~ msgid "Today"
+#~ msgstr "Dnes"
+
+#~ msgid "New Network"
+#~ msgstr "Nová sieť"
+
+#~ msgid "PPPoE"
+#~ msgstr "PPPoE"
+
+#~ msgid "Next"
+#~ msgstr "Ďaľšie"
+
+#~ msgid "Delete this network"
+#~ msgstr "Odstrániť túto sieť"
+
+#~ msgid "Are you sure you want to delete this network?"
+#~ msgstr "Ste si istý, že chcete odstrániť túto sieť?"
+
+#~ msgid "Save"
+#~ msgstr "Uložiť"
+
+#~ msgid "Close"
+#~ msgstr "Zavrieť"
+
+#~ msgid "Delete"
+#~ msgstr "Vymazať"
+
+#~ msgid "Command"
+#~ msgstr "Príkaz"
+
+#~ msgid "Keep user's files"
+#~ msgstr "Zachovať užívateľove súbory"
+
+#~ msgid "Delete user's files"
+#~ msgstr "Vymazať užívateľove súbory"
+
+#~ msgid "PPPoE Connections"
+#~ msgstr "PPPoE Spojenia"
+
+#~ msgid "Current system lacks component for %1"
+#~ msgstr "Aktuálny systém potrebuje komponentu pre %1"
+
+#~ msgid "Click to install"
+#~ msgstr "Kliknite pre inštaláciu"
+
+#~ msgid "Ethernet"
+#~ msgstr "Ethernet"
+
+#~ msgid "Device MAC Addr"
+#~ msgstr "Device MAC Addr"
+
+#~ msgid "Cloned MAC Addr"
+#~ msgstr "Cloned MAC Addr"
+
+#~ msgid "Customize MTU"
+#~ msgstr "Vlastné MTU"
+
+#~ msgid "MTU"
+#~ msgstr "MTU"
+
+#~ msgid "IPv4"
+#~ msgstr "IPv4"
+
+#~ msgid "Method"
+#~ msgstr "Metóda"
+
+#~ msgid "IP Address"
+#~ msgstr "IP adresa"
+
+#~ msgid "Netmask"
+#~ msgstr "Maska"
+
+#~ msgid "DNS Server"
+#~ msgstr "DNS server"
+
+#~ msgid "IPv6"
+#~ msgstr "IPv6"
+
+#~ msgid "Prefix"
+#~ msgstr "Prefix"
+
+#~ msgid "Mobile"
+#~ msgstr "Mobilná"
+
+#~ msgid "Network ID"
+#~ msgstr "Network ID"
+
+#~ msgid "Type"
+#~ msgstr "Typ"
+
+#~ msgid "Home Network Only"
+#~ msgstr "Iba domáca sieť"
+
+#~ msgid "PIN"
+#~ msgstr "PIN"
+
+#~ msgid "PPP"
+#~ msgstr "PPP"
+
+#~ msgid "128-bit MPPE"
+#~ msgstr "128-bit MPPE"
+
+#~ msgid "Stateful MPPE"
+#~ msgstr "Stateful MPPE"
+
+#~ msgid "Refuse EAP Authentication"
+#~ msgstr "Odmietnuť EAP Autentizáciu"
+
+#~ msgid "Refuse PAP Authentication"
+#~ msgstr "Odmietnuť PAP Autentizáciu"
+
+#~ msgid "Refuse CHAP Authentication"
+#~ msgstr "Odmietnuť CHAP Autentizáciu"
+
+#~ msgid "Refuse MSCHAP Authentication"
+#~ msgstr "Odmietnuť MSCHAP Autentizáciu"
+
+#~ msgid "Refuse MSCHAPv2 Authentication"
+#~ msgstr "Odmietnuť MSCHAPv2 Autentizáciu"
+
+#~ msgid "No BSD Data Compression"
+#~ msgstr "Žiadna BSD Data kompresia"
+
+#~ msgid "No Deflate Data Compression"
+#~ msgstr "Žiadna Deflate Data kompresia"
+
+#~ msgid "No TCP Header Compression"
+#~ msgstr "Žiadna TCP Header kompresia"
+
+#~ msgid "Send PPP Echo Packets"
+#~ msgstr "Odoslať PPP Echo pakety"
+
+#~ msgid "Security Required"
+#~ msgstr "Požadovaná bezpečnosť"
+
+#~ msgid "NT Domain"
+#~ msgstr "NT doména"
+
+#~ msgid "VPN IPsec"
+#~ msgstr "VPN IPsec"
+
+#~ msgid "VPN PPP"
+#~ msgstr "VPN PPP"
+
+#~ msgid "No Protocol Field Compression"
+#~ msgstr "Žiadna Protocol Field kompresia"
+
+#~ msgid "No Address/Control Compression"
+#~ msgstr "Žiadna Addres/Control kompresia"
+
+#~ msgid "VPN Advanced"
+#~ msgstr "Pokročilé VPN"
+
+#~ msgid "Gateway Port"
+#~ msgstr "Port brány"
+
+#~ msgid "Customize Gateway Port"
+#~ msgstr "Vlastný port brány"
+
+#~ msgid "Customize Renegotiation Interval"
+#~ msgstr "Vlastný Renegotiation interval"
+
+#~ msgid "Renegotiation Interval"
+#~ msgstr "Renegotiation interval"
+
+#~ msgid "Use LZO data compression"
+#~ msgstr "Použiť LZO data kompresiu"
+
+#~ msgid "Use TCP connection"
+#~ msgstr "Použiť TCP spojenie"
+
+#~ msgid "Use TAP device"
+#~ msgstr "Použiť TAP zariadenie"
+
+#~ msgid "Customize Tunnel MTU"
+#~ msgstr "Vlastné Tunnel MTU"
+
+#~ msgid "Customize UDP Fragment Size"
+#~ msgstr "Vlastná UDP veľkosť fragmentu"
+
+#~ msgid "UDP Fragment Size"
+#~ msgstr "UDP Veľkosť fragmentu"
+
+#~ msgid "Restrict Tunnel TCP MSS"
+#~ msgstr "Restrict Tunnel TCP MSS"
+
+#~ msgid "Randomize Remote Hosts"
+#~ msgstr "Náhodné vzdialené hosty"
+
+#~ msgid "VPN Proxies"
+#~ msgstr "VPN proxy"
+
+#~ msgid "Proxy Type"
+#~ msgstr "Typ proxy"
+
+#~ msgid "Server IP"
+#~ msgstr "Server IP"
+
+#~ msgid "Port"
+#~ msgstr "Port"
+
+#~ msgid "Retry Indefinitely When Failed"
+#~ msgstr "Skúsiť znovu, ak dôjde k zlyhaniu"
+
+#~ msgid "VPN Security"
+#~ msgstr "VPN bezpečnosť"
+
+#~ msgid "Cipher"
+#~ msgstr "Šifra"
+
+#~ msgid "HMAC Auth"
+#~ msgstr "HMAC autentizácia"
+
+#~ msgid "VPN TLS Authentication"
+#~ msgstr "VPN TLS autentizácia"
+
+#~ msgid "Subject Match"
+#~ msgstr "Subject Match"
+
+#~ msgid "Remote Cert Type"
+#~ msgstr "Typ vzdialeného certifikátu"
+
+#~ msgid "Key File"
+#~ msgstr "Súbor s kľúčom"
+
+#~ msgid "Domain"
+#~ msgstr "Doména"
+
+#~ msgid "Vendor"
+#~ msgstr "Vendor"
+
+#~ msgid "Version"
+#~ msgstr "Verzia"
+
+#~ msgid "Encryption"
+#~ msgstr "Kódovanie"
+
+#~ msgid "NAT Traversal"
+#~ msgstr "NAT Traversal"
+
+#~ msgid "IKE DH Group"
+#~ msgstr "IKE DH Group"
+
+#~ msgid "Forward Secrecy"
+#~ msgstr "Forward Secrecy"
+
+#~ msgid "Local Port"
+#~ msgstr "Lokálny port"
+
+#~ msgid "Disable Dead Peer Detection"
+#~ msgstr "Zakázať Dead Peer detekciu"
+
+#~ msgid "Wi-Fi"
+#~ msgstr "Wi-Fi"
+
+#~ msgid "Mode"
+#~ msgstr "Režim"
+
+#~ msgid "Band"
+#~ msgstr "Pásmo"
+
+#~ msgid "Channel"
+#~ msgstr "Kanál"
+
+#~ msgid "Enable"
+#~ msgstr "Povoliť"
+
+#~ msgid "Front/Rear Balance"
+#~ msgstr "Predný/Zadný vyváženie"
+
+#~ msgid "Front"
+#~ msgstr "Predný"
+
+#~ msgid "Rear"
+#~ msgstr "Zadný"
+
+#~ msgid "Size"
+#~ msgstr "Veľkosť"
+
+#~ msgid "Font %1"
+#~ msgstr "Font %1"
+
+#~ msgid "Guest"
+#~ msgstr "Hosť"
+
+#~ msgid "Enabled"
+#~ msgstr "Povolené"
+
+#~ msgid "Activated Connections"
+#~ msgstr "Aktivované spojenia"
+
+#~ msgid "None Activated Connection"
+#~ msgstr "Žiadne aktivované spojenia"
+
+#~ msgid "(default)"
+#~ msgstr "(predvolené)"
+
+#~ msgid "Interface"
+#~ msgstr "Rozhranie"
+
+#~ msgid "Device Addr"
+#~ msgstr "Adresa zariadenia"
+
+#~ msgid "Subnet Mask"
+#~ msgstr "Maska podsiete"
+
+#~ msgid "Route Addr"
+#~ msgstr "Adresa cesty"
+
+#~ msgid "Primary DNS"
+#~ msgstr "Primárny DNS"
+
+#~ msgid "Secondary DNS"
+#~ msgstr "Sekundárny DNS"
+
+#~ msgid "Third DNS"
+#~ msgstr "Ternárny DNS"
+
+#~ msgid "Device Speed"
+#~ msgstr "Rýchlosť zariadenia"
+
+#~ msgid "Language"
+#~ msgstr "Jazyk"
+
+#~ msgid "Do you want to keep these display settings?"
+#~ msgstr "Chcete ponechať tieto nastavenia zobrazovania?"
+
+#~ msgid ""
+#~ "Reverting to previous display settings in <font color='#F48914'>%1</font> "
+#~ "seconds."
+#~ msgstr ""
+#~ "Vrátenie k predošlému nastaveniu zobrazenia za <font color='#F48914'>%1</"
+#~ "font> sekúnd."
+
+#~ msgid "Keep Changes"
+#~ msgstr "Ponechať zmeny"
+
+#~ msgid "Revert"
+#~ msgstr "Vrátiť"
+
+#~ msgid "Power Management"
+#~ msgstr "Správa energie"
+
+#~ msgid "More Settings"
+#~ msgstr "Viac nastavení"
+
+#~ msgid "Display"
+#~ msgstr "Zobraziť"
+
+#~ msgid "Desktop"
+#~ msgstr "Pracovné prostredie"
+
+#~ msgid "Personalization"
+#~ msgstr "Personalizácia"
+
+#~ msgid "Keyboard Shortcuts"
+#~ msgstr "Klávesové skratky"
+
+#~ msgid "Keyboard and Language"
+#~ msgstr "Klávesnica a jazyk"
+
+#~ msgid "Tablet"
+#~ msgstr "Tablet"
+
+#~ msgid "Mouse and Touchpad"
+#~ msgstr "Myš a Touchpad"
+
+#~ msgid "Mouse"
+#~ msgstr "Myš"
+
+#~ msgid "User Accounts"
+#~ msgstr "Používateľské účty"
+
+#~ msgid "Default Applications"
+#~ msgstr "Predvolené programy"
+
+#~ msgid "System Information"
+#~ msgstr "Informácie o systéme"
+
+#~ msgid "Boot Menu"
+#~ msgstr "Bootovacie menu"
+
+#~ msgid "Home"
+#~ msgstr "Domov"
+
+#~ msgid "Split"
+#~ msgstr "Rozdeliť"
+
+#~ msgid "Set as primary display"
+#~ msgstr "Nastaviť ako primárny display"
+
+#~ msgid "Identify"
+#~ msgstr "Identifikovať"
+
+#~ msgid "Edit"
+#~ msgstr "Upraviť"
+
+#~ msgid "Normal"
+#~ msgstr "Normálny"
+
+#~ msgid "Rotate Right"
+#~ msgstr "Otočiť vpravo"
+
+#~ msgid "Upside Down"
+#~ msgstr "Hore nohami"
+
+#~ msgid "Rotate Left"
+#~ msgstr "Otočiť vľavo"
+
+#~ msgid "Resolution"
+#~ msgstr "Rozlíšenie"
+
+#~ msgid "Rotation"
+#~ msgstr "Otočenie"
+
+#~ msgid "Brightness"
+#~ msgstr "Jas"
+
+#~ msgid "Wired Connection %1"
+#~ msgstr "Káblové pripojenie %1"
+
+#~ msgid "Wired Connection"
+#~ msgstr "Káblové pripojenie"
+
+#~ msgid "not managed"
+#~ msgstr "nespravované"
+
+#~ msgid "Password: "
+#~ msgstr "Heslo:"
+
+#~ msgid "New Password"
+#~ msgstr "Nové heslo"
+
+#~ msgid "Repeat"
+#~ msgstr "Opakovať"
+
+#~ msgid "Drag and drop an image to change background."
+#~ msgstr "Uchop a pusti obrázok pre zmenu pozadia"
+
+#~ msgid "Image format not supported"
+#~ msgstr "Formát obrázku nie je podporovaný"
+
+#~ msgid "Updating..."
+#~ msgstr "Obnovuje sa..."
+
+#~ msgid "Successfully updated, reboot to view."
+#~ msgstr "Úspešne aktualizované, reštartujte pre zobrazenie."
+
+#~ msgid "None"
+#~ msgstr "Žiadne"
+
+#~ msgid "Manual"
+#~ msgstr "Ručné"
+
+#~ msgid "Auto"
+#~ msgstr "Automatické"
+
+#~ msgid "HTTP Proxy"
+#~ msgstr "HTTP Proxy"
+
+#~ msgid "HTTPS Proxy"
+#~ msgstr "HTTPS Proxy"
+
+#~ msgid "FTP Proxy"
+#~ msgstr "Proxy FTP"
+
+#~ msgid "Socks Proxy"
+#~ msgstr "Proxy SOCKS"
+
+#~ msgid "Configuration URL"
+#~ msgstr "Konfigurácia URL"
+
+#~ msgid "Apply system wide"
+#~ msgstr "Aplikovať na celý systém"
+
+#~ msgid "System Proxy"
+#~ msgstr "System Proxy"
+
+#~ msgid "Reset successfully"
+#~ msgstr "Reset succesfully"
+
+#~ msgid "Reset"
+#~ msgstr "Nastaviť znovu"
+
+#~ msgid "Disable"
+#~ msgstr "Zakázať"
+
+#~ msgid "Please input new shortcut"
+#~ msgstr "Prosím, vložte novú skratku"
+
+#~ msgid "Shortcut \"%1\" is invalid, please retype new shortcut."
+#~ msgstr "Skratka \"%1\" je neplatná, prosím vložte novú skratku. "
+
+#~ msgid "The shortcut you set "
+#~ msgstr "Skratka, ktorú ste nastavili"
+
+#~ msgid "conflicts with the one used for \"%2\" in the \"%1\" category."
+#~ msgstr "je v konflikte s použitou \"%2\" v \"%1\" kategórii. "
+
+#~ msgid "Do you want to replace it?"
+#~ msgstr "Chcete nahradiť?"
+
+#~ msgid "Replace"
+#~ msgstr "Premiestniť"
+
+#~ msgid "Preview Theme"
+#~ msgstr "Ukážka témy"
+
+#~ msgid "Done"
+#~ msgstr "Hotovo"
+
+#~ msgid "Double-click the above digits to change your time."
+#~ msgstr "Dvoj-klik na vyššie uvedené čísla pre zmenu času"
+
+#~ msgid "Set"
+#~ msgstr "Nastaviť"
+
+#~ msgid "Time zone"
+#~ msgstr "Časové pásmo"
+
+#~ msgid "Touchpad"
+#~ msgstr "Touchpad"
+
+#~ msgid "Primary Button"
+#~ msgstr "Primárne tlačidlo"
+
+#~ msgid "Left Button"
+#~ msgstr "Ľavé tlačidlo"
+
+#~ msgid "Right Button"
+#~ msgstr "Pravé tlačidlo"
+
+#~ msgid "Pointer Speed"
+#~ msgstr "Rýchlosť kurzora"
+
+#~ msgid "Slow"
+#~ msgstr "Pomaly"
+
+#~ msgid "Fast"
+#~ msgstr "Rýchlo"
+
+#~ msgid "Double-click Speed"
+#~ msgstr "Rýchlosť dvoj-kliku"
+
+#~ msgid "Drag Threshold"
+#~ msgstr "Prah ťahania"
+
+#~ msgid "Short"
+#~ msgstr "Krátke"
+
+#~ msgid "Long"
+#~ msgstr "Dlhé"
+
+#~ msgid "Natural Scrolling"
+#~ msgstr "Prirodzené skrolovanie"
+
+#~ msgid "Tap to click"
+#~ msgstr "Ťuknúť pre kliknutie"
+
+#~ msgid "Two-finger scrolling"
+#~ msgstr "Skrolovanie dvomi prstami"
+
+#~ msgid "Edge scrolling"
+#~ msgstr "Skrolovanie hranou"
+
+#~ msgid "VPN Connections"
+#~ msgstr "VPN spojenia"
+
+#~ msgid "Snapshot"
+#~ msgstr "Snímka"
+
+#~ msgid "Again"
+#~ msgstr "Znovu"
+
+#~ msgid "No camera found."
+#~ msgstr "Nenájdený žiadny fotoaparát"
+
+#~ msgid "Edit Wi-Fi Hotspot"
+#~ msgstr "Upraviť Wi-Fi Hotspot"
+
+#~ msgid "Create Wi-Fi Hotspot"
+#~ msgstr "Vytvoriť Wi-Fi Hotspot"
+
+#~ msgid "Create"
+#~ msgstr "Vytvoriť"
+
+#~ msgid "Authentication required by Wi-Fi network"
+#~ msgstr "Požadovaná autentizácia sieťou Wi-Fi"
+
+#~ msgid "Password:"
+#~ msgstr "Heslo:"
+
+#~ msgid "Wired Network"
+#~ msgstr "Drôtová sieť"
+
+#~ msgid ""
+#~ "Wireless network is unable to be connected maybe due to the following "
+#~ "reasons:\n"
+#~ "\n"
+#~ "1. The hardware switch of wireless network card is off\n"
+#~ "2. Incorrect network configuration in /etc/network/interface\n"
+#~ "3. Incorrect driver of network hardware"
+#~ msgstr ""
+#~ "Nie je možné sa pripojiť k bezdrôtovej sieti z nasledujúcich možných "
+#~ "dôvodov:\n"
+#~ "\n"
+#~ "1. Hardvérový vypínač bezdrôtového rozhrania je vypnutý\n"
+#~ "2. Nesprávna konfigurácia siete v /etc/network/interface\n"
+#~ "3. Nesprávny ovládač sieťového rozhrania"
+
+#~ msgid "Connect to hidden access point"
+#~ msgstr "Pripojiť k skrytému bodu prístupu"
+
+#~ msgid "ON/OFF"
+#~ msgstr "Zap/Vyp"
+
+#~ msgid "Devices nearby"
+#~ msgstr "Blízke zariadenia"
+
+#~ msgid "Automatic date and time"
+#~ msgstr "Automatický dátum a čas"
+
+#~ msgid "Use 24-hour clock"
+#~ msgstr "Použiť 24-hodinový čas"
+
+#~ msgid "Date"
+#~ msgstr "Dátum"
+
+#~ msgid "Set Date"
+#~ msgstr "Nastaviť dátum"
+
+#~ msgid "Browser"
+#~ msgstr "Prehliadač"
+
+#~ msgid "Mail"
+#~ msgstr "Pošta"
+
+#~ msgid "Text"
+#~ msgstr "Text"
+
+#~ msgid "Music"
+#~ msgstr "Hudba"
+
+#~ msgid "Video"
+#~ msgstr "Video"
+
+#~ msgid "Picture"
+#~ msgstr "Obrázok"
+
+#~ msgid "Terminal"
+#~ msgstr "Terminál"
+
+#~ msgid "AutoPlay"
+#~ msgstr "Automaticky prehrať"
+
+#~ msgid "CD Audio"
+#~ msgstr "CD Audio"
+
+#~ msgid "DVD Video"
+#~ msgstr "DVD Video"
+
+#~ msgid "Music Player"
+#~ msgstr "Hudobný prehrávač"
+
+#~ msgid "Camera"
+#~ msgstr "Kamera"
+
+#~ msgid "Software"
+#~ msgstr "Softvér"
+
+#~ msgid "Primary Monitor: "
+#~ msgstr "Primárna obrazovka:"
+
+#~ msgid "Monitor"
+#~ msgstr "Obrazovka"
+
+#~ msgid "Apply"
+#~ msgstr "Použiť"
+
+#~ msgid "Default Startup"
+#~ msgstr "Predvolené spustenie"
+
+#~ msgid "Boot delay"
+#~ msgstr "Zdržanie bootovania"
+
+#~ msgid "Text Color"
+#~ msgstr "Farba textu"
+
+#~ msgid "Selected Text Color"
+#~ msgstr "Farba vybratého textu"
+
+#~ msgid "Repeat Delay"
+#~ msgstr "Oneskorenie opakovania"
+
+#~ msgid "Repeat Rate"
+#~ msgstr "Rýchlosť opakovania"
+
+#~ msgid "Cursor Blink Rate"
+#~ msgstr "Rýchlosť blikania kurzoru"
+
+#~ msgid "Test Area"
+#~ msgstr "Testovacia plocha"
+
+#~ msgid "Keyboard Layout"
+#~ msgstr "Rozloženie klávesnice"
+
+#~ msgid "No result"
+#~ msgstr "Žiadne výsledky"
+
+#~ msgid "Caps Lock prompt"
+#~ msgstr "Caps Lock výzva"
+
+#~ msgid "Disable the touchpad when inserting the mouse"
+#~ msgstr "Zakázať touchpad keď sa pripája myš"
+
+#~ msgid "Theme"
+#~ msgstr "Téma"
+
+#~ msgid "Window"
+#~ msgstr "Okno"
+
+#~ msgid "Icon"
+#~ msgstr "Ikona"
+
+#~ msgid "Cursor"
+#~ msgstr "Kurzort"
+
+#~ msgid "Wallpaper"
+#~ msgstr "Pozadie"
+
+#~ msgid "Fonts"
+#~ msgstr "Fonty"
+
+#~ msgid "Never"
+#~ msgstr "Nikdy"
+
+#~ msgid "1 minute"
+#~ msgstr "1 minúta"
+
+#~ msgid "5 minutes"
+#~ msgstr "5 minút"
+
+#~ msgid "10 minutes"
+#~ msgstr "10 minút"
+
+#~ msgid "15 minutes"
+#~ msgstr "15 minút"
+
+#~ msgid "30 minutes"
+#~ msgstr "30 minút"
+
+#~ msgid "1 hour"
+#~ msgstr "1 hodina"
+
+#~ msgid "When I press the power button"
+#~ msgstr "Pri stlačení tlačítka energie"
+
+#~ msgid "Shutdown"
+#~ msgstr "Vypnúť"
+
+#~ msgid "Suspend"
+#~ msgstr "Uspať"
+
+#~ msgid "Ask"
+#~ msgstr "Pýtať sa"
+
+#~ msgid "When I close the lid"
+#~ msgstr "Pri zatvorení veka"
+
+#~ msgid "Nothing"
+#~ msgstr "Nič"
+
+#~ msgid "Password required to wake up"
+#~ msgstr "Žiadať heslo pri prebudení"
+
+#~ msgid "Plugged in"
+#~ msgstr "Pripojený v sieti"
+
+#~ msgid "On battery"
+#~ msgstr "Na batériu"
+
+#~ msgid "Turn off the display"
+#~ msgstr "Vypnúť display"
+
+#~ msgid "Custom Options"
+#~ msgstr "Vlastné nastavenia"
+
+#~ msgid "System"
+#~ msgstr "Systém"
+
+#~ msgid "Workspace"
+#~ msgstr "Pracovné prostredie"
+
+#~ msgid "Speaker"
+#~ msgstr "Reproduktor"
+
+#~ msgid "Output Volume"
+#~ msgstr "Výstupná hlasitosť"
+
+#~ msgid "Microphone"
+#~ msgstr "Mikrofón"
+
+#~ msgid "Input Volume"
+#~ msgstr "Vstupná hlasitosť"
+
+#~ msgid "Input Feedback"
+#~ msgstr "Vstupná väzba"
+
+#~ msgid "Output Port"
+#~ msgstr "Výstupná prípojka"
+
+#~ msgid "No port exists in this device."
+#~ msgstr "Žiadna prípojka v zariadení"
+
+#~ msgid "Output device"
+#~ msgstr "Výstupné zariadenie"
+
+#~ msgid "Input Port"
+#~ msgstr "Vstupná prípojka"
+
+#~ msgid "Input device"
+#~ msgstr "Vstupné zariadenie"
+
+#~ msgid "Hide Advanced..."
+#~ msgstr "Skryť pokročilé..."
+
+#~ msgid "Show Advanced..."
+#~ msgstr "Ukázať pokročilé"
+
+#~ msgid "Copyright (c) 2011-2014 Wuhan Deepin Technology Co.,Ltd."
+#~ msgstr "Copyright (c) 2011-2014 Wuhan Deepin Technology Co.,Ltd."
+
+#~ msgid "Deepin Edition"
+#~ msgstr "Deepin vydanie"
+
+#~ msgid "System Type"
+#~ msgstr "Typ systému"
+
+#~ msgid "bit"
+#~ msgstr "bit"
+
+#~ msgid "Processor"
+#~ msgstr "Procesor"
+
+#~ msgid "Memory"
+#~ msgstr "Pamäť"
+
+#~ msgid "Disk"
+#~ msgstr "Disk"
+
+#~ msgid "GNU GENERAL PUBLIC LICENSE"
+#~ msgstr "GNU GENERAL PUBLIC LICENSE"
+
+#~ msgid "Unknown"
+#~ msgstr "Neznámy"
+
+#~ msgid "Wired"
+#~ msgstr "Drôtové "
+
+#~ msgid "Wireless"
+#~ msgstr "Bezdrôtové"
+
+#~ msgid "Unused1"
+#~ msgstr "Nepoužitý1"
+
+#~ msgid "Unused2"
+#~ msgstr "Nepoužitý2"
+
+#~ msgid "OLPC mesh"
+#~ msgstr "OLPC mesh"
+
+#~ msgid "WiMax"
+#~ msgstr "WiMax"
+
+#~ msgid "Modem"
+#~ msgstr "Modem"
+
+#~ msgid "InfiniBand"
+#~ msgstr "InfiniBand"
+
+#~ msgid "Bond"
+#~ msgstr "Bond"
+
+#~ msgid "VLAN"
+#~ msgstr "VLAN"
+
+#~ msgid "ADSL"
+#~ msgstr "ADSL"
+
+#~ msgid "Bridge"
+#~ msgstr "Bridge"
+
+#~ msgid "802.11 WiFi"
+#~ msgstr "802.11 WiFi"
+
+#~ msgid "802.11 WiFi AdHoc"
+#~ msgstr "802.11 WiFi AdHoc"
+
+#~ msgid "802.11 WiFi Hotspot"
+#~ msgstr "802.11 WiFi Hotspot"
+
+#~ msgid "Mobile GSM"
+#~ msgstr "Mobilná GSM"
+
+#~ msgid "Mobile CDMA"
+#~ msgstr "Mobilná CDMA"
+
+#~ msgid "VPN L2TP"
+#~ msgstr "VPN L2TP"
+
+#~ msgid "VPN PPTP"
+#~ msgstr "VPN PPTP"
+
+#~ msgid "VPN VPNC"
+#~ msgstr "VPN VPNC"
+
+#~ msgid "VPN OpenVPN"
+#~ msgstr "VPN OpenVPN"
+
+#~ msgid "VPN OpenConnect"
+#~ msgstr "VPN OpenConnect"
+
+#~ msgid "User List"
+#~ msgstr "Zoznam užívateľov"
+
+#~ msgid "Page Up"
+#~ msgstr "O stranu vyššie"
+
+#~ msgid "Page Down"
+#~ msgstr "O stranu nižšie"
+
+#~ msgid "Left Click"
+#~ msgstr "Ľavý klik"
+
+#~ msgid "Right Click"
+#~ msgstr "Pravý klik"
+
+#~ msgid "Middle Click"
+#~ msgstr "Stredný kli"
+
+#~ msgid "Tablet Orientation"
+#~ msgstr "Orientácia tabletu"
+
+#~ msgid "Left Hand"
+#~ msgstr "Ľavá ruka"
+
+#~ msgid "Right Hand"
+#~ msgstr "Pravá ruka"
+
+#~ msgid "Digital Pen Modes"
+#~ msgstr "Režimy digitálneho pera"
+
+#~ msgid "Pen Mode"
+#~ msgstr "Režim pera"
+
+#~ msgid "Mouse Mode"
+#~ msgstr "Režim myši"
+
+#~ msgid "Down Key"
+#~ msgstr "Stlačený kláves"
+
+#~ msgid "Up Key"
+#~ msgstr "Uvoľnený kláves"
+
+#~ msgid "Pressure"
+#~ msgstr "Stlačenie"
+
+#~ msgid "Soft"
+#~ msgstr "Jemné"
+
+#~ msgid "Hard"
+#~ msgstr "Ťažké"
+
+#~ msgid "Double-click Space"
+#~ msgstr "Rozpätie dvoj-kliku"
+
+#~ msgid "Narrow"
+#~ msgstr "Úzky"
+
+#~ msgid "Wide"
+#~ msgstr "Široký"

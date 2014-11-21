@@ -183,11 +183,6 @@ void DockAppletDBus::ShowQuickWindow()
 {
     DockQuickWindow * window = m_parent->window();
     if (window) {
-        QScreen * pScreen = window->screen();
-        // TODO: Bugfix, remove when qt fix this bug
-        if (NULL == pScreen) {
-            return;
-        }
         window->show();
     }
 }

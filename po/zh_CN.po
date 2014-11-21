@@ -1,0 +1,1389 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Translators:
+# Catherinelin <linhongxia@linuxdeepin.com>, 2014
+# Paris Qian Sen <qiansen1386@gmail.com>, 2014
+msgid ""
+msgstr ""
+"Project-Id-Version: dde-control-center\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-11-21 10:55+0800\n"
+"PO-Revision-Date: 2014-11-18 05:21+0000\n"
+"Last-Translator: szd_liufei <liufei@linuxdeepin.com>\n"
+"Language-Team: Chinese (China) (http://www.transifex.com/projects/p/dde-"
+"control-center/language/zh_CN/)\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../src/frame/AppletSettingWindow.qml:100
+msgid "Notice Region Setting "
+msgstr "通知区域设置"
+
+#: ../plugins/date_time/AppletTray.qml:80
+msgid "_Switch to analog"
+msgstr "切换为模拟时钟(_S)"
+
+#: ../plugins/date_time/AppletTray.qml:81
+msgid "_Switch to digital"
+msgstr "切换为数字时钟(_S)"
+
+#: ../plugins/date_time/AppletTray.qml:178
+#: ../plugins/date_time/calendar_core.js:4
+msgid "Sun"
+msgstr "日"
+
+#: ../plugins/date_time/AppletTray.qml:179
+#: ../plugins/date_time/calendar_core.js:4
+msgid "Mon"
+msgstr "一"
+
+#: ../plugins/date_time/AppletTray.qml:180
+#: ../plugins/date_time/calendar_core.js:4
+msgid "Tue"
+msgstr "二"
+
+#: ../plugins/date_time/AppletTray.qml:181
+#: ../plugins/date_time/calendar_core.js:4
+msgid "Wed"
+msgstr "三"
+
+#: ../plugins/date_time/AppletTray.qml:182
+#: ../plugins/date_time/calendar_core.js:4
+msgid "Thu"
+msgstr "四"
+
+#: ../plugins/date_time/AppletTray.qml:183
+#: ../plugins/date_time/calendar_core.js:4
+msgid "Fri"
+msgstr "五"
+
+#: ../plugins/date_time/AppletTray.qml:184
+#: ../plugins/date_time/calendar_core.js:4
+msgid "Sat"
+msgstr "六"
+
+#: ../plugins/network/AppletTray.qml:35
+msgid "Network Connected"
+msgstr "网络已连接"
+
+#: ../plugins/network/AppletTray.qml:35
+msgid "Network Not Connected"
+msgstr "网络未连接"
+
+#: ../plugins/network/AppletTray.qml:305
+#: ../plugins/network/bluetooth/AppletTray.qml:78
+#: ../plugins/network/vpn/AppletTray.qml:70
+#: ../plugins/network/wifi/AppletTray.qml:126
+#: ../plugins/power/AppletTray.qml:99 ../plugins/sound/AppletTray.qml:173
+msgid "_Run"
+msgstr "运行(_R)"
+
+#: ../plugins/network/AppletTray.qml:306
+#: ../plugins/network/bluetooth/AppletTray.qml:79
+#: ../plugins/network/vpn/AppletTray.qml:71
+#: ../plugins/network/wifi/AppletTray.qml:127
+#: ../plugins/power/AppletTray.qml:106 ../plugins/sound/AppletTray.qml:174
+msgid "_Undock"
+msgstr "移除驻留(_U)"
+
+#: ../plugins/network/bluetooth/AppletTray.qml:118
+#: ../plugins/network/bluetooth/main.qml:33
+msgid "Bluetooth"
+msgstr "蓝牙"
+
+#: ../plugins/network/vpn/AppletTray.qml:110
+#: ../plugins/network/vpn/main.qml:33
+msgid "VPN"
+msgstr "VPN"
+
+#: ../plugins/network/wifi/AppletTray.qml:168
+#: ../plugins/network/WirelessNetwork.qml:50
+#: ../plugins/network/wifi/main.qml:33
+msgid "Wireless Network"
+msgstr "无线网络"
+
+#: ../plugins/power/AppletTray.qml:34
+msgid "On Charging"
+msgstr "正在充电"
+
+#: ../plugins/power/AppletTray.qml:46
+msgid "Custom"
+msgstr "自定义"
+
+#: ../plugins/power/AppletTray.qml:47
+msgid "Power saver"
+msgstr "节能"
+
+#: ../plugins/power/AppletTray.qml:48
+msgid "Balanced"
+msgstr "均衡"
+
+#: ../plugins/power/AppletTray.qml:49
+msgid "High performance"
+msgstr "高性能"
+
+#: ../plugins/sound/AppletTray.qml:218
+msgid "Device"
+msgstr "设备"
+
+#: ../plugins/sound/AppletTray.qml:318
+msgid "Applications"
+msgstr "程序"
+
+#: ../plugins/disk_mount/DiskItem.qml:124
+msgid "Unmount failed!"
+msgstr "卸载失败"
+
+#: ../src/frame/WifiPasswordWindow.qml:150
+#, fuzzy, qt-format
+msgid "Please enter the password of  <font color=\"#faca57\">%1</font>"
+msgstr "连接Wi-Fi网络所需的密码或密钥 <font color=\"#faca57\">%1</font>"
+
+#: ../src/frame/WifiPasswordWindow.qml:172
+msgid "Password"
+msgstr "密码"
+
+#: ../src/frame/WifiPasswordWindow.qml:180
+#, fuzzy
+msgid "Auto-connect"
+msgstr "自动连接"
+
+#: ../src/frame/WifiPasswordWindow.qml:195
+msgid "Cancel"
+msgstr "取消"
+
+#: ../src/frame/WifiPasswordWindow.qml:202
+msgid "Connect"
+msgstr "连接"
+
+#: ../plugins/network/WirelessApList.qml:95
+msgid "Scanning..."
+msgstr "扫描中..."
+
+#: ../plugins/network/WirelessNetwork.qml:50
+#, qt-format
+msgid "Wireless Network %1"
+msgstr "无线网络 %1"
+
+#: ../plugins/date_time/main.qml:32
+msgid "Date and Time"
+msgstr "日期和时间"
+
+#: ../plugins/disk_mount/main.qml:33
+msgid "Disk Mount"
+msgstr "磁盘挂载"
+
+#: ../plugins/network/main.qml:32
+msgid "Network"
+msgstr "网络"
+
+#: ../plugins/power/main.qml:33
+msgid "Power"
+msgstr "电源"
+
+#: ../plugins/sound/main.qml:32
+msgid "Sound"
+msgstr "声音"
+
+#~ msgid "New PPPoE Connection"
+#~ msgstr "新建PPPoE连接"
+
+#~ msgid "Name"
+#~ msgstr "名称"
+
+#~ msgid "Username"
+#~ msgstr "用户名"
+
+#~ msgid "Service"
+#~ msgstr "服务"
+
+#~ msgid "New Mobile Connection"
+#~ msgstr "新建移动网络连接"
+
+#~ msgid "Service Type"
+#~ msgstr "服务类型"
+
+#~ msgid "APN"
+#~ msgstr "APN"
+
+#~ msgid "Number"
+#~ msgstr "数字"
+
+#~ msgid "Add"
+#~ msgstr "添加"
+
+#~ msgid "Invalid password"
+#~ msgstr "无效密码"
+
+#~ msgid "Nothing input"
+#~ msgstr "未输入"
+
+#~ msgid "Different password"
+#~ msgstr "密码不一致"
+
+#~ msgid "Add User"
+#~ msgstr "添加用户"
+
+#~ msgid "New User"
+#~ msgstr "新建用户"
+
+#~ msgid "Standard"
+#~ msgstr "标准"
+
+#~ msgid "Administrator"
+#~ msgstr "管理员"
+
+#~ msgid "Repeat Password"
+#~ msgstr "重复密码"
+
+#~ msgid "Account Type"
+#~ msgstr "账户类型"
+
+#~ msgid "Auto-login"
+#~ msgstr "自动登录"
+
+#~ msgid "Confirm"
+#~ msgstr "确认"
+
+#~ msgid "VPN Type"
+#~ msgstr "VPN类型"
+
+#~ msgid "L2TP"
+#~ msgstr "L2TP"
+
+#~ msgid "PPTP"
+#~ msgstr "PPTP"
+
+#~ msgid "OpenVPN"
+#~ msgstr "OpenVPN"
+
+#~ msgid "OpenConnect"
+#~ msgstr "OpenConnect"
+
+#~ msgid "VPNC"
+#~ msgstr "VPNC"
+
+#~ msgid "Basic Information"
+#~ msgstr "基本信息"
+
+#~ msgid "Need VPN Plugin"
+#~ msgstr "需要VPN插件"
+
+#~ msgid "Gateway"
+#~ msgstr "网关"
+
+#~ msgid "Ask for Pwd"
+#~ msgstr "询问密码"
+
+#~ msgid "CA Cert"
+#~ msgstr "CA证书"
+
+#~ msgid "Proxy"
+#~ msgstr "代理"
+
+#~ msgid "Allow Cisco Secure Desktop Trojan"
+#~ msgstr "允许思科安全桌面木马"
+
+#~ msgid "Customize Key Direction"
+#~ msgstr "自定义密钥方向"
+
+#~ msgid "Private Key"
+#~ msgstr "密钥"
+
+#~ msgid "Auth Type"
+#~ msgstr "认证类型"
+
+#~ msgid "User Cert"
+#~ msgstr "用户证书"
+
+#~ msgid "CSD Script"
+#~ msgstr "CSD 脚本"
+
+#~ msgid "Use FSID for Key Passphrase"
+#~ msgstr "为密钥口令句使用FSID"
+
+#~ msgid "Private Pwd"
+#~ msgstr "密码"
+
+#~ msgid "Static Key"
+#~ msgstr "静态密钥"
+
+#~ msgid "Key Direction"
+#~ msgstr "密钥方向"
+
+#~ msgid "Remote IP"
+#~ msgstr "远程IP"
+
+#~ msgid "Local IP"
+#~ msgstr "本地IP"
+
+#~ msgid "User Pwd"
+#~ msgstr "用户密码"
+
+#~ msgid "Group Name"
+#~ msgstr "组名"
+
+#~ msgid "Group Pwd"
+#~ msgstr "组密码"
+
+#~ msgid "Use Hybrid Authentication"
+#~ msgstr "使用混合认证"
+
+#~ msgid "CA File"
+#~ msgstr "CA文件"
+
+#~ msgid "Enable IPsec"
+#~ msgstr "启用IPsec"
+
+#~ msgid "Group ID"
+#~ msgstr "组ID"
+
+#~ msgid "Pre-Shared Key"
+#~ msgstr "预共享密钥"
+
+#~ msgid "Use MPPE"
+#~ msgstr "使用MPPE点到点加密"
+
+#~ msgid "Connect to wireless"
+#~ msgstr "连接到无线网络"
+
+#~ msgid "SSID"
+#~ msgstr "SSID"
+
+#~ msgid "Security"
+#~ msgstr "安全"
+
+#~ msgid "Key"
+#~ msgstr "密码"
+
+#~ msgid "EAP Auth"
+#~ msgstr "EAP认证"
+
+#~ msgid "Identity"
+#~ msgstr "身份"
+
+#~ msgid "Anonymous ID"
+#~ msgstr "匿名身份"
+
+#~ msgid "Provisioning"
+#~ msgstr "自动PAC配置"
+
+#~ msgid "PAC file"
+#~ msgstr "PAC文件"
+
+#~ msgid "PEAP Version"
+#~ msgstr "PEAP版本"
+
+#~ msgid "Inner Auth"
+#~ msgstr "内部认证"
+
+#~ msgid "Dock Applet Enabled"
+#~ msgstr "Dock插件开启"
+
+#~ msgid "Choose a new picture for your Avatar"
+#~ msgstr "请选择一张图片作为您的头像"
+
+#~ msgid "Recently Used"
+#~ msgstr "最近使用"
+
+#~ msgid "Avatar"
+#~ msgstr "头像"
+
+#~ msgid "Webcam"
+#~ msgstr "拍照"
+
+#~ msgid "Left/Right Balance"
+#~ msgstr "左/右平衡"
+
+#~ msgid "Left"
+#~ msgstr "左"
+
+#~ msgid "Right"
+#~ msgstr "右"
+
+#~ msgid "Today"
+#~ msgstr "返回今天"
+
+#~ msgid "New Network"
+#~ msgstr "新建网络"
+
+#~ msgid "PPPoE"
+#~ msgstr "拨号"
+
+#~ msgid "Next"
+#~ msgstr "下一步"
+
+#~ msgid "Delete this network"
+#~ msgstr "删除此网络"
+
+#~ msgid "Are you sure you want to delete this network?"
+#~ msgstr "您确认要删除此网络吗？"
+
+#~ msgid "Save"
+#~ msgstr "保存"
+
+#~ msgid "Close"
+#~ msgstr "关闭"
+
+#~ msgid "Delete"
+#~ msgstr "删除"
+
+#~ msgid "Command"
+#~ msgstr "命令"
+
+#~ msgid "Keep user's files"
+#~ msgstr "保留用户文件"
+
+#~ msgid "Delete user's files"
+#~ msgstr "删除用户文件"
+
+#~ msgid "PPPoE Connections"
+#~ msgstr "拨号连接"
+
+#~ msgid "Current system lacks component for %1"
+#~ msgstr "当前系统缺少 %1 组件"
+
+#~ msgid "Click to install"
+#~ msgstr "点击安装"
+
+#~ msgid "Ethernet"
+#~ msgstr "以太网"
+
+#~ msgid "Device MAC Addr"
+#~ msgstr "设备MAC地址"
+
+#~ msgid "Cloned MAC Addr"
+#~ msgstr "克隆MAC地址"
+
+#~ msgid "Customize MTU"
+#~ msgstr "自定义MTU"
+
+#~ msgid "MTU"
+#~ msgstr "MTU"
+
+#~ msgid "IPv4"
+#~ msgstr "IPv4"
+
+#~ msgid "Method"
+#~ msgstr "方法"
+
+#~ msgid "IP Address"
+#~ msgstr "IP地址"
+
+#~ msgid "Netmask"
+#~ msgstr "子网掩码"
+
+#~ msgid "DNS Server"
+#~ msgstr "DNS 服务器"
+
+#~ msgid "IPv6"
+#~ msgstr "IPv6"
+
+#~ msgid "Prefix"
+#~ msgstr "前缀"
+
+#~ msgid "Mobile"
+#~ msgstr "移动"
+
+#~ msgid "Network ID"
+#~ msgstr "网络ID"
+
+#~ msgid "Type"
+#~ msgstr "类型"
+
+#~ msgid "Home Network Only"
+#~ msgstr "仅用于家庭网络"
+
+#~ msgid "PIN"
+#~ msgstr "PIN"
+
+#~ msgid "PPP"
+#~ msgstr "PPP"
+
+#~ msgid "128-bit MPPE"
+#~ msgstr "使用128位MPPE"
+
+#~ msgid "Stateful MPPE"
+#~ msgstr "使用带状态的MPPE"
+
+#~ msgid "Refuse EAP Authentication"
+#~ msgstr "拒绝EAP认证"
+
+#~ msgid "Refuse PAP Authentication"
+#~ msgstr "拒绝PAP认证"
+
+#~ msgid "Refuse CHAP Authentication"
+#~ msgstr "拒绝CHAP认证"
+
+#~ msgid "Refuse MSCHAP Authentication"
+#~ msgstr "拒绝MSCHAP认证"
+
+#~ msgid "Refuse MSCHAPv2 Authentication"
+#~ msgstr "拒绝MSCHAPv2认证"
+
+#~ msgid "No BSD Data Compression"
+#~ msgstr "无BSD数据压缩"
+
+#~ msgid "No Deflate Data Compression"
+#~ msgstr "无Deflate数据压缩"
+
+#~ msgid "No TCP Header Compression"
+#~ msgstr "无TCP头压缩"
+
+#~ msgid "Send PPP Echo Packets"
+#~ msgstr "发送PPP回响包"
+
+#~ msgid "Security Required"
+#~ msgstr "安全"
+
+#~ msgid "NT Domain"
+#~ msgstr "NT域"
+
+#~ msgid "VPN IPsec"
+#~ msgstr "VPN IPsec"
+
+#~ msgid "VPN PPP"
+#~ msgstr "VPN PPP"
+
+#~ msgid "No Protocol Field Compression"
+#~ msgstr "无协议字段压缩"
+
+#~ msgid "No Address/Control Compression"
+#~ msgstr "无地址/控制压缩"
+
+#~ msgid "VPN Advanced"
+#~ msgstr "VPN高级选项"
+
+#~ msgid "Gateway Port"
+#~ msgstr "网关端口"
+
+#~ msgid "Customize Gateway Port"
+#~ msgstr "自定义网关端口"
+
+#~ msgid "Customize Renegotiation Interval"
+#~ msgstr "自定义重新协商间隔"
+
+#~ msgid "Renegotiation Interval"
+#~ msgstr "重新协商间隔"
+
+#~ msgid "Use LZO data compression"
+#~ msgstr "使用LZO压缩"
+
+#~ msgid "Use TCP connection"
+#~ msgstr "使用TCP连接"
+
+#~ msgid "Use TAP device"
+#~ msgstr "使用TAP设备"
+
+#~ msgid "Customize Tunnel MTU"
+#~ msgstr "自定义最大传输单元(MTU)"
+
+#~ msgid "Customize UDP Fragment Size"
+#~ msgstr "自定义UDP数据报段长度"
+
+#~ msgid "UDP Fragment Size"
+#~ msgstr "UDP数据报段长度"
+
+#~ msgid "Restrict Tunnel TCP MSS"
+#~ msgstr "限制隧道TCP最大段长度(MSS)"
+
+#~ msgid "Randomize Remote Hosts"
+#~ msgstr "随机远程主机"
+
+#~ msgid "VPN Proxies"
+#~ msgstr "VPN代理"
+
+#~ msgid "Proxy Type"
+#~ msgstr "代理类型"
+
+#~ msgid "Server IP"
+#~ msgstr "服务器地址"
+
+#~ msgid "Port"
+#~ msgstr "端口"
+
+#~ msgid "Retry Indefinitely When Failed"
+#~ msgstr "失败时重试"
+
+#~ msgid "VPN Security"
+#~ msgstr "VPN安全"
+
+#~ msgid "Cipher"
+#~ msgstr "加密"
+
+#~ msgid "HMAC Auth"
+#~ msgstr "HMAC认证"
+
+#~ msgid "VPN TLS Authentication"
+#~ msgstr "VPN TLS 认证"
+
+#~ msgid "Subject Match"
+#~ msgstr "主题匹配"
+
+#~ msgid "Remote Cert Type"
+#~ msgstr "远程证书类型"
+
+#~ msgid "Key File"
+#~ msgstr "密钥文件"
+
+#~ msgid "Domain"
+#~ msgstr "域"
+
+#~ msgid "Vendor"
+#~ msgstr "供应商"
+
+#~ msgid "Version"
+#~ msgstr "版本"
+
+#~ msgid "Encryption"
+#~ msgstr "加密"
+
+#~ msgid "NAT Traversal"
+#~ msgstr "NAT遍历"
+
+#~ msgid "IKE DH Group"
+#~ msgstr "IKE DH 组"
+
+#~ msgid "Forward Secrecy"
+#~ msgstr "完全正向保密"
+
+#~ msgid "Local Port"
+#~ msgstr "本地端口"
+
+#~ msgid "Disable Dead Peer Detection"
+#~ msgstr "禁用死端检测"
+
+#~ msgid "Wi-Fi"
+#~ msgstr "Wi-Fi"
+
+#~ msgid "Mode"
+#~ msgstr "模式"
+
+#~ msgid "Band"
+#~ msgstr "波段"
+
+#~ msgid "Channel"
+#~ msgstr "通道"
+
+#~ msgid "Enable"
+#~ msgstr "启用"
+
+#~ msgid "Front/Rear Balance"
+#~ msgstr "前/后平衡"
+
+#~ msgid "Front"
+#~ msgstr "前"
+
+#~ msgid "Rear"
+#~ msgstr "后"
+
+#~ msgid "Monospaced"
+#~ msgstr "等宽"
+
+#~ msgid "Size"
+#~ msgstr "大小"
+
+#~ msgid "Font %1"
+#~ msgstr "字体 %1"
+
+#~ msgid "Guest"
+#~ msgstr "来宾"
+
+#~ msgid "Enabled"
+#~ msgstr "启用"
+
+#~ msgid "Activated Connections"
+#~ msgstr "激活的连接"
+
+#~ msgid "None Activated Connection"
+#~ msgstr "尚无激活的连接"
+
+#~ msgid "(default)"
+#~ msgstr "（默认）"
+
+#~ msgid "Interface"
+#~ msgstr "接口"
+
+#~ msgid "Device Addr"
+#~ msgstr "设备地址"
+
+#~ msgid "Subnet Mask"
+#~ msgstr "子网掩码"
+
+#~ msgid "Route Addr"
+#~ msgstr "网关地址"
+
+#~ msgid "Primary DNS"
+#~ msgstr "首选DNS"
+
+#~ msgid "Secondary DNS"
+#~ msgstr "第二DNS"
+
+#~ msgid "Third DNS"
+#~ msgstr "第三DNS"
+
+#~ msgid "Device Speed"
+#~ msgstr "设备速度"
+
+#~ msgid "Language"
+#~ msgstr "语言"
+
+#~ msgid "Do you want to keep these display settings?"
+#~ msgstr "是否要保留这些显示设置？"
+
+#~ msgid ""
+#~ "Reverting to previous display settings in <font color='#F48914'>%1</font> "
+#~ "seconds."
+#~ msgstr "<font color='#F48914'>%1</font>秒后恢复之前的显示设置。"
+
+#~ msgid "Keep Changes"
+#~ msgstr "保留更改"
+
+#~ msgid "Revert"
+#~ msgstr "还原"
+
+#~ msgid "Power Management"
+#~ msgstr "电源管理"
+
+#~ msgid "More Settings"
+#~ msgstr "更多设置"
+
+#~ msgid "Display"
+#~ msgstr "显示"
+
+#~ msgid "Desktop"
+#~ msgstr "桌面"
+
+#~ msgid "Personalization"
+#~ msgstr "个性化"
+
+#~ msgid "Keyboard Shortcuts"
+#~ msgstr "快捷键"
+
+#~ msgid "Keyboard and Language"
+#~ msgstr "键盘和语言"
+
+#~ msgid "Tablet"
+#~ msgstr "数位板"
+
+#~ msgid "Mouse and Touchpad"
+#~ msgstr "鼠标和触摸板"
+
+#~ msgid "Mouse"
+#~ msgstr "鼠标"
+
+#~ msgid "User Accounts"
+#~ msgstr "账户"
+
+#~ msgid "Default Applications"
+#~ msgstr "默认程序"
+
+#~ msgid "System Information"
+#~ msgstr "系统信息"
+
+#~ msgid "Boot Menu"
+#~ msgstr "启动菜单"
+
+#~ msgid "Home"
+#~ msgstr "回到主页"
+
+#~ msgid "Split"
+#~ msgstr "拆分"
+
+#~ msgid "Set as primary display"
+#~ msgstr "设置为主显示器"
+
+#~ msgid "Identify"
+#~ msgstr "识别"
+
+#~ msgid "Edit"
+#~ msgstr "编辑"
+
+#~ msgid "Normal"
+#~ msgstr "正常"
+
+#~ msgid "Rotate Right"
+#~ msgstr "向右旋转"
+
+#~ msgid "Upside Down"
+#~ msgstr "上下翻转"
+
+#~ msgid "Rotate Left"
+#~ msgstr "向左旋转"
+
+#~ msgid "Resolution"
+#~ msgstr "分辨率"
+
+#~ msgid "Rotation"
+#~ msgstr "旋转"
+
+#~ msgid "Brightness"
+#~ msgstr "亮度"
+
+#~ msgid "Wired Connection %1"
+#~ msgstr "有线连接 %1"
+
+#~ msgid "Wired Connection"
+#~ msgstr "有线连接"
+
+#~ msgid "not managed"
+#~ msgstr "未托管"
+
+#~ msgid "Password: "
+#~ msgstr "密码: "
+
+#~ msgid "New Password"
+#~ msgstr "新密码"
+
+#~ msgid "Repeat"
+#~ msgstr "重复"
+
+#~ msgid "Drag and drop an image to change background."
+#~ msgstr "拖拽图片到此以更换背景"
+
+#~ msgid "Image format not supported"
+#~ msgstr "不支持的图片格式"
+
+#~ msgid "Updating..."
+#~ msgstr "正在更新..."
+
+#~ msgid "Successfully updated, reboot to view."
+#~ msgstr "更新成功，重启可查看。"
+
+#~ msgid "None"
+#~ msgstr "无"
+
+#~ msgid "Manual"
+#~ msgstr "手动"
+
+#~ msgid "Auto"
+#~ msgstr "自动"
+
+#~ msgid "HTTP Proxy"
+#~ msgstr "HTTP代理"
+
+#~ msgid "HTTPS Proxy"
+#~ msgstr "HTTPS代理"
+
+#~ msgid "FTP Proxy"
+#~ msgstr "FTP代理"
+
+#~ msgid "Socks Proxy"
+#~ msgstr "Socks代理"
+
+#~ msgid "Configuration URL"
+#~ msgstr "配置URL"
+
+#~ msgid "Apply system wide"
+#~ msgstr "应用到整个系统"
+
+#~ msgid "System Proxy"
+#~ msgstr "系统代理"
+
+#~ msgid "Reset successfully"
+#~ msgstr "重置成功"
+
+#~ msgid "Reset"
+#~ msgstr "重置"
+
+#~ msgid "Disable"
+#~ msgstr "禁用"
+
+#~ msgid "Please input new shortcut"
+#~ msgstr "请输入新的快捷键"
+
+#~ msgid "Shortcut \"%1\" is invalid, please retype new shortcut."
+#~ msgstr "无效的快捷键\"%1\"，请重新输入。"
+
+#~ msgid "The shortcut you set "
+#~ msgstr "您设置的快捷键"
+
+#~ msgid "conflicts with the one used for \"%2\" in the \"%1\" category."
+#~ msgstr "与\"%1\"类别下的\"%2\"的快捷键冲突。"
+
+#~ msgid "Do you want to replace it?"
+#~ msgstr "是否进行替换？"
+
+#~ msgid "Replace"
+#~ msgstr "替换"
+
+#~ msgid "Preview Theme"
+#~ msgstr "预览主题"
+
+#~ msgid "Done"
+#~ msgstr "完成"
+
+#~ msgid "Double-click the above digits to change your time."
+#~ msgstr "双击上面的数字以更改时间。"
+
+#~ msgid "Set"
+#~ msgstr "保存"
+
+#~ msgid "Time zone"
+#~ msgstr "时区"
+
+#~ msgid "Touchpad"
+#~ msgstr "触摸板"
+
+#~ msgid "Primary Button"
+#~ msgstr "主按键"
+
+#~ msgid "Left Button"
+#~ msgstr "左键"
+
+#~ msgid "Right Button"
+#~ msgstr "右键"
+
+#~ msgid "Pointer Speed"
+#~ msgstr "指针移动速度"
+
+#~ msgid "Slow"
+#~ msgstr "慢"
+
+#~ msgid "Fast"
+#~ msgstr "快"
+
+#~ msgid "Double-click Speed"
+#~ msgstr "双击速度"
+
+#~ msgid "Drag Threshold"
+#~ msgstr "拖动阀值"
+
+#~ msgid "Short"
+#~ msgstr "短"
+
+#~ msgid "Long"
+#~ msgstr "长"
+
+#~ msgid "Natural Scrolling"
+#~ msgstr "自然滚动"
+
+#~ msgid "Tap to click"
+#~ msgstr "轻触以点击"
+
+#~ msgid "Two-finger scrolling"
+#~ msgstr "双指滚动"
+
+#~ msgid "Edge scrolling"
+#~ msgstr "边缘滚动"
+
+#~ msgid "VPN Connections"
+#~ msgstr "VPN连接"
+
+#~ msgid "Snapshot"
+#~ msgstr "拍照"
+
+#~ msgid "Again"
+#~ msgstr "重拍"
+
+#~ msgid "No camera found."
+#~ msgstr "未找到相机设备"
+
+#~ msgid "Edit Wi-Fi Hotspot"
+#~ msgstr "编辑无线热点"
+
+#~ msgid "Create Wi-Fi Hotspot"
+#~ msgstr "创建无线热点"
+
+#~ msgid "Create"
+#~ msgstr "创建"
+
+#~ msgid "Authentication required by Wi-Fi network"
+#~ msgstr "Wi-Fi网络所需的授权"
+
+#~ msgid "Password:"
+#~ msgstr "密码："
+
+#~ msgid "Wired Network"
+#~ msgstr "有线网络"
+
+#~ msgid ""
+#~ "Wireless network is unable to be connected maybe due to the following "
+#~ "reasons:\n"
+#~ "\n"
+#~ "1. The hardware switch of wireless network card is off\n"
+#~ "2. Incorrect network configuration in /etc/network/interface\n"
+#~ "3. Incorrect driver of network hardware"
+#~ msgstr ""
+#~ "无法连接到无线网络，有可能是以下原因造成：\n"
+#~ "\n"
+#~ "1. 您的无线网卡的硬件开关是关闭的\n"
+#~ "2. 您的网络配置 /etc/network/interface 不正确\n"
+#~ "3. 您的网络硬件没有被正确驱动"
+
+#~ msgid "Connect to hidden access point"
+#~ msgstr "连接到隐藏网络"
+
+#~ msgid "ON/OFF"
+#~ msgstr "开启/关闭"
+
+#~ msgid "Devices nearby"
+#~ msgstr "附近的设备"
+
+#~ msgid "Automatic date and time"
+#~ msgstr "自动同步时间"
+
+#~ msgid "Use 24-hour clock"
+#~ msgstr "24小时制"
+
+#~ msgid "Date"
+#~ msgstr "日期"
+
+#~ msgid "Set Date"
+#~ msgstr "设置日期"
+
+#~ msgid "Browser"
+#~ msgstr "浏览器"
+
+#~ msgid "Mail"
+#~ msgstr "邮件"
+
+#~ msgid "Text"
+#~ msgstr "文本"
+
+#~ msgid "Music"
+#~ msgstr "音乐"
+
+#~ msgid "Video"
+#~ msgstr "视频"
+
+#~ msgid "Picture"
+#~ msgstr "图片"
+
+#~ msgid "Terminal"
+#~ msgstr "终端"
+
+#~ msgid "AutoPlay"
+#~ msgstr "自动播放"
+
+#~ msgid "CD Audio"
+#~ msgstr "CD音频"
+
+#~ msgid "DVD Video"
+#~ msgstr "DVD视频"
+
+#~ msgid "Music Player"
+#~ msgstr "音乐播放器"
+
+#~ msgid "Camera"
+#~ msgstr "照相机"
+
+#~ msgid "Software"
+#~ msgstr "软件"
+
+#~ msgid "Primary Monitor: "
+#~ msgstr "主显示器："
+
+#~ msgid "Monitor"
+#~ msgstr "显示器"
+
+#~ msgid "Apply"
+#~ msgstr "应用"
+
+#~ msgid "Default Startup"
+#~ msgstr "默认启动"
+
+#~ msgid "Boot delay"
+#~ msgstr "启动延时"
+
+#~ msgid "Text Color"
+#~ msgstr "文字颜色"
+
+#~ msgid "Selected Text Color"
+#~ msgstr "选中文字颜色"
+
+#~ msgid "Repeat Delay"
+#~ msgstr "重复延迟"
+
+#~ msgid "Repeat Rate"
+#~ msgstr "重复速度"
+
+#~ msgid "Cursor Blink Rate"
+#~ msgstr "光标闪烁频率"
+
+#~ msgid "Test Area"
+#~ msgstr "测试区"
+
+#~ msgid "Keyboard Layout"
+#~ msgstr "键盘布局"
+
+#~ msgid "No result"
+#~ msgstr "无结果"
+
+#~ msgid "Caps Lock prompt"
+#~ msgstr "大写键提示"
+
+#~ msgid "Disable the touchpad when inserting the mouse"
+#~ msgstr "插入鼠标时禁用触摸板"
+
+#~ msgid "Theme"
+#~ msgstr "主题"
+
+#~ msgid "Window"
+#~ msgstr "窗口"
+
+#~ msgid "Icon"
+#~ msgstr "图标"
+
+#~ msgid "Cursor"
+#~ msgstr "光标"
+
+#~ msgid "Wallpaper"
+#~ msgstr "壁纸"
+
+#~ msgid "Fonts"
+#~ msgstr "字体"
+
+#~ msgid "Never"
+#~ msgstr "从不"
+
+#~ msgid "1 minute"
+#~ msgstr "1分钟"
+
+#~ msgid "5 minutes"
+#~ msgstr "5分钟"
+
+#~ msgid "10 minutes"
+#~ msgstr "10分钟"
+
+#~ msgid "15 minutes"
+#~ msgstr "15分钟"
+
+#~ msgid "30 minutes"
+#~ msgstr "30分钟"
+
+#~ msgid "1 hour"
+#~ msgstr "1小时"
+
+#~ msgid "When I press the power button"
+#~ msgstr "按下电源按钮"
+
+#~ msgid "Shutdown"
+#~ msgstr "关机"
+
+#~ msgid "Suspend"
+#~ msgstr "待机"
+
+#~ msgid "Ask"
+#~ msgstr "询问"
+
+#~ msgid "When I close the lid"
+#~ msgstr "合上笔记本盖子"
+
+#~ msgid "Nothing"
+#~ msgstr "无"
+
+#~ msgid "Password required to wake up"
+#~ msgstr "唤醒需要密码"
+
+#~ msgid "Plugged in"
+#~ msgstr "接通电源"
+
+#~ msgid "On battery"
+#~ msgstr "使用电池"
+
+#~ msgid "Turn off the display"
+#~ msgstr "关闭显示器"
+
+#~ msgid "Custom Options"
+#~ msgstr "自定义选项"
+
+#~ msgid "System"
+#~ msgstr "系统"
+
+#~ msgid "Workspace"
+#~ msgstr "工作区"
+
+#~ msgid "Speaker"
+#~ msgstr "扬声器"
+
+#~ msgid "Output Volume"
+#~ msgstr "输出音量"
+
+#~ msgid "Microphone"
+#~ msgstr "麦克风"
+
+#~ msgid "Input Volume"
+#~ msgstr "输入音量"
+
+#~ msgid "Input Feedback"
+#~ msgstr "输入反馈"
+
+#~ msgid "Output Port"
+#~ msgstr "输出端口"
+
+#~ msgid "No port exists in this device."
+#~ msgstr "这个设备没有端口"
+
+#~ msgid "Output device"
+#~ msgstr "输出设备"
+
+#~ msgid "Input Port"
+#~ msgstr "输入端口"
+
+#~ msgid "Input device"
+#~ msgstr "输入设备"
+
+#~ msgid "Hide Advanced..."
+#~ msgstr "隐藏高级设置..."
+
+#~ msgid "Show Advanced..."
+#~ msgstr "显示高级设置..."
+
+#~ msgid "Copyright (c) 2011-2014 Wuhan Deepin Technology Co.,Ltd."
+#~ msgstr "Copyright (c) 2011-2014 武汉深之度科技有限公司"
+
+#~ msgid "Deepin Edition"
+#~ msgstr "系统版本"
+
+#~ msgid "System Type"
+#~ msgstr "系统类型"
+
+#~ msgid "bit"
+#~ msgstr "位"
+
+#~ msgid "Processor"
+#~ msgstr "处理器"
+
+#~ msgid "Memory"
+#~ msgstr "内存"
+
+#~ msgid "Disk"
+#~ msgstr "磁盘"
+
+#~ msgid "GNU GENERAL PUBLIC LICENSE"
+#~ msgstr "GNU通用公共许可协议"
+
+#~ msgid "Unknown"
+#~ msgstr "未知的"
+
+#~ msgid "Wired"
+#~ msgstr "有线"
+
+#~ msgid "Wireless"
+#~ msgstr "无线"
+
+#~ msgid "Unused1"
+#~ msgstr "未使用1"
+
+#~ msgid "Unused2"
+#~ msgstr "未使用2"
+
+#~ msgid "OLPC mesh"
+#~ msgstr "OLPC网"
+
+#~ msgid "WiMax"
+#~ msgstr "WiMax"
+
+#~ msgid "Modem"
+#~ msgstr "调制解调器"
+
+#~ msgid "InfiniBand"
+#~ msgstr "InfiniBand"
+
+#~ msgid "Bond"
+#~ msgstr "绑定"
+
+#~ msgid "VLAN"
+#~ msgstr "VLAN"
+
+#~ msgid "ADSL"
+#~ msgstr "ADSL"
+
+#~ msgid "Bridge"
+#~ msgstr "桥接"
+
+#~ msgid "802.11 WiFi"
+#~ msgstr "802.11 WiFi"
+
+#~ msgid "802.11 WiFi AdHoc"
+#~ msgstr "802.11 WiFi热点（AdHoc模式）"
+
+#~ msgid "802.11 WiFi Hotspot"
+#~ msgstr "802.11 WiFi热点（Hotspot模式）"
+
+#~ msgid "Mobile GSM"
+#~ msgstr "移动 GSM"
+
+#~ msgid "Mobile CDMA"
+#~ msgstr "移动 CDMA"
+
+#~ msgid "VPN L2TP"
+#~ msgstr "VPN L2TP"
+
+#~ msgid "VPN PPTP"
+#~ msgstr "VPN PPTP"
+
+#~ msgid "VPN VPNC"
+#~ msgstr "VPN VPNC"
+
+#~ msgid "VPN OpenVPN"
+#~ msgstr "VPN OpenVPN"
+
+#~ msgid "VPN OpenConnect"
+#~ msgstr "VPN OpenConnect"
+
+#~ msgid "User List"
+#~ msgstr "用户列表"
+
+#~ msgid "Page Up"
+#~ msgstr "向上翻页"
+
+#~ msgid "Page Down"
+#~ msgstr "向下翻页"
+
+#~ msgid "Left Click"
+#~ msgstr "左键单击"
+
+#~ msgid "Right Click"
+#~ msgstr "右键单击"
+
+#~ msgid "Middle Click"
+#~ msgstr "中键单击"
+
+#~ msgid "Tablet Orientation"
+#~ msgstr "数位板方向"
+
+#~ msgid "Left Hand"
+#~ msgstr "左手"
+
+#~ msgid "Right Hand"
+#~ msgstr "右手"
+
+#~ msgid "Digital Pen Modes"
+#~ msgstr "数位笔模式"
+
+#~ msgid "Pen Mode"
+#~ msgstr "笔模式"
+
+#~ msgid "Mouse Mode"
+#~ msgstr "鼠标模式"
+
+#~ msgid "Down Key"
+#~ msgstr "下键"
+
+#~ msgid "Up Key"
+#~ msgstr "上键"
+
+#~ msgid "Pressure"
+#~ msgstr "压感"
+
+#~ msgid "Soft"
+#~ msgstr "轻"
+
+#~ msgid "Hard"
+#~ msgstr "重"
+
+#~ msgid "Double-click Space"
+#~ msgstr "双击间距"
+
+#~ msgid "Narrow"
+#~ msgstr "小"
+
+#~ msgid "Wide"
+#~ msgstr "大"

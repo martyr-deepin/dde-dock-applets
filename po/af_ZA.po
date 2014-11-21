@@ -1,0 +1,1324 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Translators:
+# Jacques Strydom <jacquesafro@gmail.com>, 2014
+# Jacques Strydom <jacquesafro@gmail.com>, 2014
+msgid ""
+msgstr ""
+"Project-Id-Version: dde-control-center\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-11-21 10:55+0800\n"
+"PO-Revision-Date: 2014-11-18 03:08+0000\n"
+"Last-Translator: deepin_transifex <xiabin@linuxdeepin.com>\n"
+"Language-Team: Afrikaans (South Africa) (http://www.transifex.com/projects/p/"
+"dde-control-center/language/af_ZA/)\n"
+"Language: af_ZA\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../src/frame/AppletSettingWindow.qml:100
+msgid "Notice Region Setting "
+msgstr ""
+
+#: ../plugins/date_time/AppletTray.qml:80
+msgid "_Switch to analog"
+msgstr "_Wissel na analoog"
+
+#: ../plugins/date_time/AppletTray.qml:81
+msgid "_Switch to digital"
+msgstr "_Wissel na digitaal"
+
+#: ../plugins/date_time/AppletTray.qml:178
+#: ../plugins/date_time/calendar_core.js:4
+msgid "Sun"
+msgstr "Son"
+
+#: ../plugins/date_time/AppletTray.qml:179
+#: ../plugins/date_time/calendar_core.js:4
+msgid "Mon"
+msgstr "Maa"
+
+#: ../plugins/date_time/AppletTray.qml:180
+#: ../plugins/date_time/calendar_core.js:4
+msgid "Tue"
+msgstr "Din"
+
+#: ../plugins/date_time/AppletTray.qml:181
+#: ../plugins/date_time/calendar_core.js:4
+msgid "Wed"
+msgstr "Woe"
+
+#: ../plugins/date_time/AppletTray.qml:182
+#: ../plugins/date_time/calendar_core.js:4
+msgid "Thu"
+msgstr "Don"
+
+#: ../plugins/date_time/AppletTray.qml:183
+#: ../plugins/date_time/calendar_core.js:4
+msgid "Fri"
+msgstr "Fry"
+
+#: ../plugins/date_time/AppletTray.qml:184
+#: ../plugins/date_time/calendar_core.js:4
+msgid "Sat"
+msgstr "Sat"
+
+#: ../plugins/network/AppletTray.qml:35
+msgid "Network Connected"
+msgstr ""
+
+#: ../plugins/network/AppletTray.qml:35
+msgid "Network Not Connected"
+msgstr ""
+
+#: ../plugins/network/AppletTray.qml:305
+#: ../plugins/network/bluetooth/AppletTray.qml:78
+#: ../plugins/network/vpn/AppletTray.qml:70
+#: ../plugins/network/wifi/AppletTray.qml:126
+#: ../plugins/power/AppletTray.qml:99 ../plugins/sound/AppletTray.qml:173
+msgid "_Run"
+msgstr "_Voer uit"
+
+#: ../plugins/network/AppletTray.qml:306
+#: ../plugins/network/bluetooth/AppletTray.qml:79
+#: ../plugins/network/vpn/AppletTray.qml:71
+#: ../plugins/network/wifi/AppletTray.qml:127
+#: ../plugins/power/AppletTray.qml:106 ../plugins/sound/AppletTray.qml:174
+msgid "_Undock"
+msgstr "_Loskoppel"
+
+#: ../plugins/network/bluetooth/AppletTray.qml:118
+#: ../plugins/network/bluetooth/main.qml:33
+msgid "Bluetooth"
+msgstr "Bloutand"
+
+#: ../plugins/network/vpn/AppletTray.qml:110
+#: ../plugins/network/vpn/main.qml:33
+msgid "VPN"
+msgstr "VPN"
+
+#: ../plugins/network/wifi/AppletTray.qml:168
+#: ../plugins/network/WirelessNetwork.qml:50
+#: ../plugins/network/wifi/main.qml:33
+msgid "Wireless Network"
+msgstr "Draadlose Netwerk"
+
+#: ../plugins/power/AppletTray.qml:34
+msgid "On Charging"
+msgstr "Op Laai"
+
+#: ../plugins/power/AppletTray.qml:46
+msgid "Custom"
+msgstr "Verspersoonlik"
+
+#: ../plugins/power/AppletTray.qml:47
+msgid "Power saver"
+msgstr "Krag bespaarder"
+
+#: ../plugins/power/AppletTray.qml:48
+msgid "Balanced"
+msgstr "Gebalanseerd"
+
+#: ../plugins/power/AppletTray.qml:49
+msgid "High performance"
+msgstr "Hoë spoed werkverrigting"
+
+#: ../plugins/sound/AppletTray.qml:218
+msgid "Device"
+msgstr "Toestel"
+
+#: ../plugins/sound/AppletTray.qml:318
+msgid "Applications"
+msgstr "Toepassings"
+
+#: ../plugins/disk_mount/DiskItem.qml:124
+msgid "Unmount failed!"
+msgstr "Ontheg misluk!"
+
+#: ../src/frame/WifiPasswordWindow.qml:150
+#, fuzzy, qt-format
+msgid "Please enter the password of  <font color=\"#faca57\">%1</font>"
+msgstr ""
+"Wagwoorde of enkripsie sleutels is nodig om toegang te verkry to die WiFi-"
+"netwerk <font color=\"#faca57\">%1</font>"
+
+#: ../src/frame/WifiPasswordWindow.qml:172
+msgid "Password"
+msgstr "Wagwoord"
+
+#: ../src/frame/WifiPasswordWindow.qml:180
+#, fuzzy
+msgid "Auto-connect"
+msgstr "Outomaties koppel"
+
+#: ../src/frame/WifiPasswordWindow.qml:195
+msgid "Cancel"
+msgstr "Kanselleer"
+
+#: ../src/frame/WifiPasswordWindow.qml:202
+msgid "Connect"
+msgstr "Koppel"
+
+#: ../plugins/network/WirelessApList.qml:95
+msgid "Scanning..."
+msgstr "Skandering ..."
+
+#: ../plugins/network/WirelessNetwork.qml:50
+#, qt-format
+msgid "Wireless Network %1"
+msgstr "Draadlose Netwerk %1"
+
+#: ../plugins/date_time/main.qml:32
+msgid "Date and Time"
+msgstr "Datum en Tyd"
+
+#: ../plugins/disk_mount/main.qml:33
+msgid "Disk Mount"
+msgstr "Skyf Berg"
+
+#: ../plugins/network/main.qml:32
+msgid "Network"
+msgstr "Netwerk"
+
+#: ../plugins/power/main.qml:33
+msgid "Power"
+msgstr "Krag"
+
+#: ../plugins/sound/main.qml:32
+msgid "Sound"
+msgstr "Klank"
+
+#~ msgid "New PPPoE Connection"
+#~ msgstr "Nuwe PPPoE Konneksie"
+
+#~ msgid "Name"
+#~ msgstr "Naam"
+
+#~ msgid "Username"
+#~ msgstr "Gebruikersnaam"
+
+#~ msgid "Service"
+#~ msgstr "Diens"
+
+#~ msgid "New Mobile Connection"
+#~ msgstr "Nuwe Mobiele Konneksie"
+
+#~ msgid "Service Type"
+#~ msgstr "Diens Tipe"
+
+#~ msgid "APN"
+#~ msgstr "APN"
+
+#~ msgid "Number"
+#~ msgstr "Nommer"
+
+#~ msgid "Add"
+#~ msgstr "Voeg by"
+
+#~ msgid "Invalid password"
+#~ msgstr "Ongeldige Wagwoord"
+
+#~ msgid "Nothing input"
+#~ msgstr "Geen invoer"
+
+#~ msgid "Different password"
+#~ msgstr "Verskillende Wagwoord"
+
+#~ msgid "Add User"
+#~ msgstr "Voeg Gebruiker By"
+
+#~ msgid "New User"
+#~ msgstr "Nuwe Gerbuiker"
+
+#~ msgid "Standard"
+#~ msgstr "Standaard"
+
+#~ msgid "Administrator"
+#~ msgstr "Administrateur"
+
+#~ msgid "Repeat Password"
+#~ msgstr "Herhaal Wagwoord"
+
+#~ msgid "Account Type"
+#~ msgstr "Tipe Rekening"
+
+#~ msgid "Auto-login"
+#~ msgstr "Outomaties-inteken"
+
+#~ msgid "Confirm"
+#~ msgstr "Bevestig"
+
+#~ msgid "VPN Type"
+#~ msgstr "VPN Tipe"
+
+#~ msgid "L2TP"
+#~ msgstr "L2TP"
+
+#~ msgid "PPTP"
+#~ msgstr "PPTP"
+
+#~ msgid "OpenVPN"
+#~ msgstr "OpenVPN"
+
+#~ msgid "OpenConnect"
+#~ msgstr "OpenConnect"
+
+#~ msgid "VPNC"
+#~ msgstr "VPNC"
+
+#~ msgid "Basic Information"
+#~ msgstr "Basiese Inligting"
+
+#~ msgid "Need VPN Plugin"
+#~ msgstr "Benodig VPN Inprop"
+
+#~ msgid "Gateway"
+#~ msgstr "Toeganspoort"
+
+#~ msgid "Ask for Pwd"
+#~ msgstr "Vra vir Pwd"
+
+#~ msgid "CA Cert"
+#~ msgstr "CA Sert"
+
+#~ msgid "Proxy"
+#~ msgstr "Instaanbediener"
+
+#~ msgid "Allow Cisco Secure Desktop Trojan"
+#~ msgstr "Laat \"Cisco Secure Desktop Trojan\" toe"
+
+#~ msgid "Customize Key Direction"
+#~ msgstr "Verstel Sleutel Rigting"
+
+#~ msgid "Private Key"
+#~ msgstr "Privaat Sleutel"
+
+#~ msgid "Auth Type"
+#~ msgstr "Verifikasie Tipe"
+
+#~ msgid "User Cert"
+#~ msgstr "Gebruiker Sert"
+
+#~ msgid "CSD Script"
+#~ msgstr "CSD Kodering"
+
+#~ msgid "Use FSID for Key Passphrase"
+#~ msgstr "Gebruik FSID vir Sleutel Wagwoordfrase"
+
+#~ msgid "Private Pwd"
+#~ msgstr "Privaat Pwd"
+
+#~ msgid "Static Key"
+#~ msgstr "Statiese Sleutel"
+
+#~ msgid "Key Direction"
+#~ msgstr "Sleutel Rigting"
+
+#~ msgid "Remote IP"
+#~ msgstr "Afgeleë IP"
+
+#~ msgid "Local IP"
+#~ msgstr "Plaaslike IP"
+
+#~ msgid "User Pwd"
+#~ msgstr "Gebruiker Pwd"
+
+#~ msgid "Group Name"
+#~ msgstr "Groep Naam"
+
+#~ msgid "Group Pwd"
+#~ msgstr "Groep Pwd"
+
+#~ msgid "Use Hybrid Authentication"
+#~ msgstr "Gebruik Hibriede Verifikasie"
+
+#~ msgid "CA File"
+#~ msgstr "CA Dokument"
+
+#~ msgid "Enable IPsec"
+#~ msgstr "Aktiveer IPsec"
+
+#~ msgid "Group ID"
+#~ msgstr "Groep ID"
+
+#~ msgid "Pre-Shared Key"
+#~ msgstr "Vooraf-Gedeelde Sleutel"
+
+#~ msgid "Use MPPE"
+#~ msgstr "Gebruik MPPE"
+
+#~ msgid "Connect to wireless"
+#~ msgstr "Koppel aan draadlose"
+
+#~ msgid "SSID"
+#~ msgstr "SSID"
+
+#~ msgid "Security"
+#~ msgstr "Sekuriteit"
+
+#~ msgid "Key"
+#~ msgstr "Sleutel"
+
+#~ msgid "EAP Auth"
+#~ msgstr "EAP Magtiging"
+
+#~ msgid "Identity"
+#~ msgstr "Identiteit"
+
+#~ msgid "Anonymous ID"
+#~ msgstr "Anonieme ID"
+
+#~ msgid "Provisioning"
+#~ msgstr "Bevoorrading"
+
+#~ msgid "PAC file"
+#~ msgstr "PAC Dokument"
+
+#~ msgid "PEAP Version"
+#~ msgstr "PEAP Weergawe"
+
+#~ msgid "Inner Auth"
+#~ msgstr "Interne Magtiging"
+
+#~ msgid "Dock Applet Enabled"
+#~ msgstr "Dok Miniprogram Aktiveer"
+
+#~ msgid "Choose a new picture for your Avatar"
+#~ msgstr "Kies 'n nuwe foto vir jou Profiel foto"
+
+#~ msgid "Recently Used"
+#~ msgstr "Onlangs gebruik"
+
+#~ msgid "Avatar"
+#~ msgstr "Profiel foto"
+
+#~ msgid "Webcam"
+#~ msgstr "Webkamera"
+
+#~ msgid "Left/Right Balance"
+#~ msgstr "Links/Regs Balans"
+
+#~ msgid "Left"
+#~ msgstr "Links"
+
+#~ msgid "Right"
+#~ msgstr "Regs"
+
+#~ msgid "Today"
+#~ msgstr "Vandag"
+
+#~ msgid "New Network"
+#~ msgstr "Nuwe Netwerk"
+
+#~ msgid "PPPoE"
+#~ msgstr "PPPoE"
+
+#~ msgid "Next"
+#~ msgstr "Volgende"
+
+#~ msgid "Delete this network"
+#~ msgstr "Verwyder hierdie netwerk"
+
+#~ msgid "Are you sure you want to delete this network?"
+#~ msgstr "Is jy seker jy wil die netwerk verwyder?"
+
+#~ msgid "Save"
+#~ msgstr "Stoor"
+
+#~ msgid "Close"
+#~ msgstr "Maak toe"
+
+#~ msgid "Delete"
+#~ msgstr "Verwyder"
+
+#~ msgid "Command"
+#~ msgstr "Instruksie"
+
+#~ msgid "Keep user's files"
+#~ msgstr "Hou gebruikers dokumente"
+
+#~ msgid "Delete user's files"
+#~ msgstr "Verwyder gebruikers dokumente"
+
+#~ msgid "PPPoE Connections"
+#~ msgstr "PPPoE Konneksies"
+
+#~ msgid "Current system lacks component for %1"
+#~ msgstr "Huidige stelsel ontbreek komponent vir %1"
+
+#~ msgid "Click to install"
+#~ msgstr "Druk om te installeer"
+
+#~ msgid "Ethernet"
+#~ msgstr "Ethernet"
+
+#~ msgid "Device MAC Addr"
+#~ msgstr "Toestel MAC Address"
+
+#~ msgid "Cloned MAC Addr"
+#~ msgstr "Gekloneerde MAC Address"
+
+#~ msgid "Customize MTU"
+#~ msgstr "Konfigureer MTU"
+
+#~ msgid "MTU"
+#~ msgstr "MTU"
+
+#~ msgid "IPv4"
+#~ msgstr "IPv4"
+
+#~ msgid "Method"
+#~ msgstr "Metode"
+
+#~ msgid "IP Address"
+#~ msgstr "IP Adres"
+
+#~ msgid "Netmask"
+#~ msgstr "Netmask"
+
+#~ msgid "DNS Server"
+#~ msgstr "DNS Bediener"
+
+#~ msgid "IPv6"
+#~ msgstr "IPv6"
+
+#~ msgid "Prefix"
+#~ msgstr "Voorvoegsel"
+
+#~ msgid "Mobile"
+#~ msgstr "Mobiel"
+
+#~ msgid "Network ID"
+#~ msgstr "Netwerk ID"
+
+#~ msgid "Type"
+#~ msgstr "Tipe"
+
+#~ msgid "Home Network Only"
+#~ msgstr "Net Tuis Netwerk"
+
+#~ msgid "PIN"
+#~ msgstr "PIN"
+
+#~ msgid "PPP"
+#~ msgstr "PPP"
+
+#~ msgid "128-bit MPPE"
+#~ msgstr "128-bis MPPE"
+
+#~ msgid "Stateful MPPE"
+#~ msgstr "Toestandvol MPPE"
+
+#~ msgid "Refuse EAP Authentication"
+#~ msgstr "Weier EAP Verifikasie"
+
+#~ msgid "Refuse PAP Authentication"
+#~ msgstr "Weier PAP Verifikasie"
+
+#~ msgid "Refuse CHAP Authentication"
+#~ msgstr "Weier CHAP Verifikasie"
+
+#~ msgid "Refuse MSCHAP Authentication"
+#~ msgstr "Weier MSCHAP Verifikasie"
+
+#~ msgid "Refuse MSCHAPv2 Authentication"
+#~ msgstr "Weier MSCHAPv2 Verifikasie"
+
+#~ msgid "No BSD Data Compression"
+#~ msgstr "Geen BSD Data Kompressie"
+
+#~ msgid "No Deflate Data Compression"
+#~ msgstr "Geen Afblaas Data Kompressie"
+
+#~ msgid "No TCP Header Compression"
+#~ msgstr "Geen TCP Kopstuk Kompressie"
+
+#~ msgid "Send PPP Echo Packets"
+#~ msgstr "Stuur PPP Eggo Pakkette"
+
+#~ msgid "Security Required"
+#~ msgstr "Sekuriteit Benodig"
+
+#~ msgid "NT Domain"
+#~ msgstr "NT Domein"
+
+#~ msgid "VPN IPsec"
+#~ msgstr "VPN IPsek"
+
+#~ msgid "VPN PPP"
+#~ msgstr "VPN PPP"
+
+#~ msgid "No Protocol Field Compression"
+#~ msgstr "Geen Protokol Feld Kompressie"
+
+#~ msgid "No Address/Control Compression"
+#~ msgstr "Geen Adres/Beheer Kompressie"
+
+#~ msgid "VPN Advanced"
+#~ msgstr "VPN Gevorderd"
+
+#~ msgid "Gateway Port"
+#~ msgstr "Toegang Poort"
+
+#~ msgid "Customize Gateway Port"
+#~ msgstr "Verstel Toegang Poort"
+
+#~ msgid "Customize Renegotiation Interval"
+#~ msgstr "Verstel Heronderhandeling Interval"
+
+#~ msgid "Renegotiation Interval"
+#~ msgstr "Heronderhandeling Interval"
+
+#~ msgid "Use LZO data compression"
+#~ msgstr "Gebruik LZO data kompressie"
+
+#~ msgid "Use TCP connection"
+#~ msgstr "Gebruik TCP konneksie"
+
+#~ msgid "Use TAP device"
+#~ msgstr "Gebruik TAP toestel"
+
+#~ msgid "Customize Tunnel MTU"
+#~ msgstr "Verstel Tonnel MTU"
+
+#~ msgid "Customize UDP Fragment Size"
+#~ msgstr "Verstel UDP Fragment Groote"
+
+#~ msgid "UDP Fragment Size"
+#~ msgstr "UDP Fragment Groote"
+
+#~ msgid "Restrict Tunnel TCP MSS"
+#~ msgstr "Beperk Tonnel TCP MSS"
+
+#~ msgid "Randomize Remote Hosts"
+#~ msgstr "Ewekansig Selekteer Afgeleë Gashere"
+
+#~ msgid "VPN Proxies"
+#~ msgstr "VPN Instaners"
+
+#~ msgid "Proxy Type"
+#~ msgstr "Instaanbediener Tipe"
+
+#~ msgid "Server IP"
+#~ msgstr "Bediener IP"
+
+#~ msgid "Port"
+#~ msgstr "Poort"
+
+#~ msgid "Retry Indefinitely When Failed"
+#~ msgstr "Herprobeer Onbeperk Wanneer Misluk"
+
+#~ msgid "VPN Security"
+#~ msgstr "VPN Sekuriteit"
+
+#~ msgid "Cipher"
+#~ msgstr "Geheimskrif"
+
+#~ msgid "HMAC Auth"
+#~ msgstr "HMAC Magtiging"
+
+#~ msgid "VPN TLS Authentication"
+#~ msgstr "VPN TLS Verifikasie"
+
+#~ msgid "Subject Match"
+#~ msgstr "Onderwerp Pas"
+
+#~ msgid "Remote Cert Type"
+#~ msgstr "Afgeleë Sert Tipe"
+
+#~ msgid "Key File"
+#~ msgstr "Sleutel Dokument"
+
+#~ msgid "Domain"
+#~ msgstr "Domein"
+
+#~ msgid "Vendor"
+#~ msgstr "Ondernemer"
+
+#~ msgid "Version"
+#~ msgstr "Weergawe"
+
+#~ msgid "Encryption"
+#~ msgstr "Enkripsie"
+
+#~ msgid "NAT Traversal"
+#~ msgstr "NAT Bewandeling"
+
+#~ msgid "IKE DH Group"
+#~ msgstr "IKE DH Groep"
+
+#~ msgid "Forward Secrecy"
+#~ msgstr "Uitstuur Geheimhouding"
+
+#~ msgid "Local Port"
+#~ msgstr "Lokale Poort"
+
+#~ msgid "Disable Dead Peer Detection"
+#~ msgstr "Deaktiveer Dooie Eweknie Opsporing"
+
+#~ msgid "Wi-Fi"
+#~ msgstr "Wi-Fi"
+
+#~ msgid "Mode"
+#~ msgstr "Modus"
+
+#~ msgid "Band"
+#~ msgstr "Strook"
+
+#~ msgid "Channel"
+#~ msgstr "Kanaal"
+
+#~ msgid "Enable"
+#~ msgstr "Aktiveer"
+
+#~ msgid "Front/Rear Balance"
+#~ msgstr "Voor/Agter Balans"
+
+#~ msgid "Front"
+#~ msgstr "Foor"
+
+#~ msgid "Rear"
+#~ msgstr "Agter"
+
+#~ msgid "Size"
+#~ msgstr "Grootte"
+
+#~ msgid "Font %1"
+#~ msgstr "Skrif %1"
+
+#~ msgid "Guest"
+#~ msgstr "Gas"
+
+#~ msgid "Enabled"
+#~ msgstr "Aktiveered"
+
+#~ msgid "Activated Connections"
+#~ msgstr "Aktiveerde Konneksie"
+
+#~ msgid "None Activated Connection"
+#~ msgstr "Geen Aktiveerde Konneksie"
+
+#~ msgid "(default)"
+#~ msgstr "(standaard)"
+
+#~ msgid "Interface"
+#~ msgstr "Koppelvlak"
+
+#~ msgid "Device Addr"
+#~ msgstr "Toestel Adr"
+
+#~ msgid "Subnet Mask"
+#~ msgstr "Subnet Masker"
+
+#~ msgid "Route Addr"
+#~ msgstr "Roete Adr"
+
+#~ msgid "Primary DNS"
+#~ msgstr "Primere DNS"
+
+#~ msgid "Secondary DNS"
+#~ msgstr "Sekondere DNS"
+
+#~ msgid "Third DNS"
+#~ msgstr "Derde DNS"
+
+#~ msgid "Device Speed"
+#~ msgstr "Toestel Soed"
+
+#~ msgid "Language"
+#~ msgstr "Taal"
+
+#~ msgid "Do you want to keep these display settings?"
+#~ msgstr "Wil jy hierdie vertoning instellings hou?"
+
+#~ msgid ""
+#~ "Reverting to previous display settings in <font color='#F48914'>%1</font> "
+#~ "seconds."
+#~ msgstr ""
+#~ "Keer terug na die vorige skerm instellings in <font color='#F48914'>%1</"
+#~ "font> sekondes."
+
+#~ msgid "Keep Changes"
+#~ msgstr "Hou veranderings"
+
+#~ msgid "Revert"
+#~ msgstr "Keer terug"
+
+#~ msgid "Power Management"
+#~ msgstr "Krag Bestuur"
+
+#~ msgid "More Settings"
+#~ msgstr "Meer verstellings"
+
+#~ msgid "Display"
+#~ msgstr "Vertoonskerm"
+
+#~ msgid "Desktop"
+#~ msgstr "Lessenaarblad"
+
+#~ msgid "Personalization"
+#~ msgstr "Verpersoonliking"
+
+#~ msgid "Keyboard Shortcuts"
+#~ msgstr "Sleutelbord Korpaaie"
+
+#~ msgid "Keyboard and Language"
+#~ msgstr "Sleutelbord en Taal"
+
+#~ msgid "Mouse and Touchpad"
+#~ msgstr "Muis en Voelblok"
+
+#~ msgid "Mouse"
+#~ msgstr "Muis"
+
+#~ msgid "User Accounts"
+#~ msgstr "Gebruiker Rekeninge"
+
+#~ msgid "Default Applications"
+#~ msgstr "Standaard Toepassings"
+
+#~ msgid "System Information"
+#~ msgstr "Stelsel Inligting"
+
+#~ msgid "Boot Menu"
+#~ msgstr "Selflaaikieslys"
+
+#~ msgid "Home"
+#~ msgstr "Tuis"
+
+#~ msgid "Split"
+#~ msgstr "Verdeel"
+
+#~ msgid "Set as primary display"
+#~ msgstr "Stel as primêre skerm"
+
+#~ msgid "Identify"
+#~ msgstr "Identifiseer"
+
+#~ msgid "Edit"
+#~ msgstr "Stel"
+
+#~ msgid "Normal"
+#~ msgstr "Normaal"
+
+#~ msgid "Rotate Right"
+#~ msgstr "Roteer Regs"
+
+#~ msgid "Upside Down"
+#~ msgstr "Onderstebo"
+
+#~ msgid "Rotate Left"
+#~ msgstr "Roteer Links"
+
+#~ msgid "Resolution"
+#~ msgstr "Resolusie"
+
+#~ msgid "Rotation"
+#~ msgstr "Rotasie"
+
+#~ msgid "Brightness"
+#~ msgstr "Helderheid"
+
+#~ msgid "Wired Connection %1"
+#~ msgstr "Bedrade Konneksie %1"
+
+#~ msgid "Wired Connection"
+#~ msgstr "Bedrade Konneksie"
+
+#~ msgid "not managed"
+#~ msgstr "onbeheerd"
+
+#~ msgid "Password: "
+#~ msgstr "Wagwoord:"
+
+#~ msgid "New Password"
+#~ msgstr "Nuwe Wagwoord"
+
+#~ msgid "Repeat"
+#~ msgstr "Herhaal"
+
+#~ msgid "Drag and drop an image to change background."
+#~ msgstr "Sleep en los 'n beeld om agtergrond te verander."
+
+#~ msgid "Updating..."
+#~ msgstr "Opdatering..."
+
+#~ msgid "Successfully updated, reboot to view."
+#~ msgstr "Opdatering suksesvol, herlaai om te besigtig."
+
+#~ msgid "None"
+#~ msgstr "Geen"
+
+#~ msgid "Manual"
+#~ msgstr "Handleiding"
+
+#~ msgid "Auto"
+#~ msgstr "Outo"
+
+#~ msgid "HTTP Proxy"
+#~ msgstr "HTTP Instaanbediener"
+
+#~ msgid "HTTPS Proxy"
+#~ msgstr "HTTPS Instaanbediener"
+
+#~ msgid "FTP Proxy"
+#~ msgstr "FTP Instaanbediener"
+
+#~ msgid "Socks Proxy"
+#~ msgstr "Socks Instaanbediener"
+
+#~ msgid "Configuration URL"
+#~ msgstr "Konfigurasie URL"
+
+#~ msgid "Apply system wide"
+#~ msgstr "Pas toe stelsel wyd"
+
+#~ msgid "System Proxy"
+#~ msgstr "Stelsel Instaanbediener"
+
+#~ msgid "Reset successfully"
+#~ msgstr "Terugstel Suksesvol"
+
+#~ msgid "Reset"
+#~ msgstr "Terugstel"
+
+#~ msgid "Disable"
+#~ msgstr "Deaktiveer"
+
+#~ msgid "Please input new shortcut"
+#~ msgstr "Sleutel nuwe kortpad invoer"
+
+#~ msgid "Shortcut \"%1\" is invalid, please retype new shortcut."
+#~ msgstr "Kortpad \"%1\" in ongeldig, hersleutel asseblief nuwe kortpad."
+
+#~ msgid "The shortcut you set "
+#~ msgstr "Jou gesleutelde kortpad"
+
+#~ msgid "conflicts with the one used for \"%2\" in the \"%1\" category."
+#~ msgstr ""
+#~ "konflikteer met die een wat gebruik word vir \"%2\" in die \"%1\" "
+#~ "kategorie."
+
+#~ msgid "Do you want to replace it?"
+#~ msgstr "Wil jy dit vervang?"
+
+#~ msgid "Replace"
+#~ msgstr "Vervang"
+
+#~ msgid "Preview Theme"
+#~ msgstr "Voorskou Tema"
+
+#~ msgid "Done"
+#~ msgstr "Gedoen"
+
+#~ msgid "Double-click the above digits to change your time."
+#~ msgstr "Dubbel-kliek op die bogenoemde syfers om jou tyd te verander."
+
+#~ msgid "Set"
+#~ msgstr "Stel"
+
+#~ msgid "Time zone"
+#~ msgstr "Tydsone"
+
+#~ msgid "Touchpad"
+#~ msgstr "Raakblok"
+
+#~ msgid "Primary Button"
+#~ msgstr "Primêre Knoppie"
+
+#~ msgid "Left Button"
+#~ msgstr "Linker Knoppie"
+
+#~ msgid "Right Button"
+#~ msgstr "Regter Knoppie"
+
+#~ msgid "Pointer Speed"
+#~ msgstr "Wyser Spoed"
+
+#~ msgid "Slow"
+#~ msgstr "Stadig"
+
+#~ msgid "Fast"
+#~ msgstr "Vinnag"
+
+#~ msgid "Double-click Speed"
+#~ msgstr "Dubbel-kliek Spoed"
+
+#~ msgid "Drag Threshold"
+#~ msgstr "Sleep Drempel"
+
+#~ msgid "Short"
+#~ msgstr "Kort"
+
+#~ msgid "Long"
+#~ msgstr "Lank"
+
+#~ msgid "Natural Scrolling"
+#~ msgstr "Natuurlike  Blaai"
+
+#~ msgid "Tap to click"
+#~ msgstr "Tik om te kliek"
+
+#~ msgid "Two-finger scrolling"
+#~ msgstr "Twee-finger blaai"
+
+#~ msgid "Edge scrolling"
+#~ msgstr "Kant blaai"
+
+#~ msgid "VPN Connections"
+#~ msgstr "VPN Konneksies"
+
+#~ msgid "Snapshot"
+#~ msgstr "Momentopname"
+
+#~ msgid "Again"
+#~ msgstr "Weer"
+
+#~ msgid "No camera found."
+#~ msgstr "Geen kamera gevind."
+
+#~ msgid "Edit Wi-Fi Hotspot"
+#~ msgstr "Verstel Wi-Fi Hotspot"
+
+#~ msgid "Create Wi-Fi Hotspot"
+#~ msgstr "Skep Wi-Fi Hotspot"
+
+#~ msgid "Create"
+#~ msgstr "Skep"
+
+#~ msgid "Authentication required by Wi-Fi network"
+#~ msgstr "Verifikasie vereis deur Wi-Fi netwerk"
+
+#~ msgid "Password:"
+#~ msgstr "Wagwoord:"
+
+#~ msgid "Wired Network"
+#~ msgstr "Bedrade Netwerk"
+
+#~ msgid ""
+#~ "Wireless network is unable to be connected maybe due to the following "
+#~ "reasons:\n"
+#~ "\n"
+#~ "1. The hardware switch of wireless network card is off\n"
+#~ "2. Incorrect network configuration in /etc/network/interface\n"
+#~ "3. Incorrect driver of network hardware"
+#~ msgstr ""
+#~ "Draadlose netwerk is nie in staat om te wees verbind miskien weens die "
+#~ "volgende redes:\n"
+#~ "\n"
+#~ "1. Die hardeware skakelaar van draadlose netwerk kaart is af\n"
+#~ "2. Verkeerde netwerk opset in /etc/network/interface\n"
+#~ "3. Verkeerde drywer van die netwerk hardeware"
+
+#~ msgid "Connect to hidden access point"
+#~ msgstr "Koppel aan versteekte toegang punt"
+
+#~ msgid "ON/OFF"
+#~ msgstr "AAN/AF"
+
+#~ msgid "Devices nearby"
+#~ msgstr "Toestel naby"
+
+#~ msgid "Automatic date and time"
+#~ msgstr "Outomatiese datum en tyd"
+
+#~ msgid "Use 24-hour clock"
+#~ msgstr "Gebruik 24-uur horlosie"
+
+#~ msgid "Date"
+#~ msgstr "Datum"
+
+#~ msgid "Set Date"
+#~ msgstr "Stel Datum"
+
+#~ msgid "Browser"
+#~ msgstr "Blaaier"
+
+#~ msgid "Mail"
+#~ msgstr "Pos"
+
+#~ msgid "Text"
+#~ msgstr "Teks"
+
+#~ msgid "Music"
+#~ msgstr "Musiek"
+
+#~ msgid "Video"
+#~ msgstr "Video"
+
+#~ msgid "Picture"
+#~ msgstr "Prent"
+
+#~ msgid "Terminal"
+#~ msgstr "Terminaal"
+
+#~ msgid "AutoPlay"
+#~ msgstr "AutoSpeel"
+
+#~ msgid "CD Audio"
+#~ msgstr "CD Audio"
+
+#~ msgid "DVD Video"
+#~ msgstr "DVD Video"
+
+#~ msgid "Music Player"
+#~ msgstr "Musiek Speler"
+
+#~ msgid "Camera"
+#~ msgstr "Kamera"
+
+#~ msgid "Software"
+#~ msgstr "Sagteware"
+
+#~ msgid "Primary Monitor: "
+#~ msgstr "Primêre Monitor:"
+
+#~ msgid "Monitor"
+#~ msgstr "Monitor"
+
+#~ msgid "Apply"
+#~ msgstr "Toepas"
+
+#~ msgid "Default Startup"
+#~ msgstr "Standaard Opstart"
+
+#~ msgid "Boot delay"
+#~ msgstr "Opstart vertraging"
+
+#~ msgid "Text Color"
+#~ msgstr "Tekskleur"
+
+#~ msgid "Selected Text Color"
+#~ msgstr "Geselekteerde Tekskleur"
+
+#~ msgid "Repeat Delay"
+#~ msgstr "Herhaal vertraging"
+
+#~ msgid "Repeat Rate"
+#~ msgstr "Herhaal Tempo"
+
+#~ msgid "Cursor Blink Rate"
+#~ msgstr "Wyser Vlikker Tempo"
+
+#~ msgid "Test Area"
+#~ msgstr "Toets Area"
+
+#~ msgid "Keyboard Layout"
+#~ msgstr "Sleutelbord Uitleg"
+
+#~ msgid "No result"
+#~ msgstr "Geen Resultaat"
+
+#~ msgid "Caps Lock prompt"
+#~ msgstr "Caps Lock wyser"
+
+#~ msgid "Disable the touchpad when inserting the mouse"
+#~ msgstr "Skakel die drukblok af wanneer die muis gekoppel word"
+
+#~ msgid "Theme"
+#~ msgstr "Tema"
+
+#~ msgid "Window"
+#~ msgstr "Venster"
+
+#~ msgid "Icon"
+#~ msgstr "Ikoon"
+
+#~ msgid "Wallpaper"
+#~ msgstr "Muurpapier"
+
+#~ msgid "Fonts"
+#~ msgstr "Lettertipes"
+
+#~ msgid "Never"
+#~ msgstr "Nooit"
+
+#~ msgid "1 minute"
+#~ msgstr "1 minuut"
+
+#~ msgid "5 minutes"
+#~ msgstr "5 minute"
+
+#~ msgid "10 minutes"
+#~ msgstr "10 minute"
+
+#~ msgid "15 minutes"
+#~ msgstr "15 minute"
+
+#~ msgid "30 minutes"
+#~ msgstr "30 minute"
+
+#~ msgid "1 hour"
+#~ msgstr "1 uur"
+
+#~ msgid "When I press the power button"
+#~ msgstr "As ek die kragknoppie druk"
+
+#~ msgid "Shutdown"
+#~ msgstr "Afskakel"
+
+#~ msgid "Suspend"
+#~ msgstr "Opskort"
+
+#~ msgid "Ask"
+#~ msgstr "Vra"
+
+#~ msgid "When I close the lid"
+#~ msgstr "As ek die deksel toemaak"
+
+#~ msgid "Nothing"
+#~ msgstr "Niks"
+
+#~ msgid "Password required to wake up"
+#~ msgstr "Wagwoord vereis om wakker te word"
+
+#~ msgid "Plugged in"
+#~ msgstr "Ingeprop"
+
+#~ msgid "On battery"
+#~ msgstr "Op battery"
+
+#~ msgid "Turn off the display"
+#~ msgstr "Skakel die skerm af"
+
+#~ msgid "Custom Options"
+#~ msgstr "Aangepaste Opsies"
+
+#~ msgid "System"
+#~ msgstr "Stelsel"
+
+#~ msgid "Workspace"
+#~ msgstr "Werkspasie"
+
+#~ msgid "Speaker"
+#~ msgstr "Spreker"
+
+#~ msgid "Output Volume"
+#~ msgstr "Uitset Volume"
+
+#~ msgid "Microphone"
+#~ msgstr "Mifrofoon"
+
+#~ msgid "Input Volume"
+#~ msgstr "Invoer Volume"
+
+#~ msgid "Input Feedback"
+#~ msgstr "Invoer Terugvoer"
+
+#~ msgid "Output Port"
+#~ msgstr "Uitvoer Poort"
+
+#~ msgid "No port exists in this device."
+#~ msgstr "Geen poort bestaan op die toestel nie"
+
+#~ msgid "Output device"
+#~ msgstr "Uitvoer toestel"
+
+#~ msgid "Input Port"
+#~ msgstr "Invoer Poort"
+
+#~ msgid "Input device"
+#~ msgstr "Invoer toestel"
+
+#~ msgid "Hide Advanced..."
+#~ msgstr "Versteek Gevorderde..."
+
+#~ msgid "Show Advanced..."
+#~ msgstr "Wys Gevorderde..."
+
+#~ msgid "Copyright (c) 2011-2014 Wuhan Deepin Technology Co.,Ltd."
+#~ msgstr "Kopiereg (c) 2011-2014 Wuhan Deepin Technology Co.,Ltd."
+
+#~ msgid "Deepin Edition"
+#~ msgstr "Deepin Weergawe"
+
+#~ msgid "System Type"
+#~ msgstr "Stelsel Tipe"
+
+#~ msgid "bit"
+#~ msgstr "bis"
+
+#~ msgid "Processor"
+#~ msgstr "Verwerker"
+
+#~ msgid "Memory"
+#~ msgstr "Geheue"
+
+#~ msgid "Disk"
+#~ msgstr "Skyf"
+
+#~ msgid "GNU GENERAL PUBLIC LICENSE"
+#~ msgstr "GNU ALGEMENE PUBLIEKE LISENSIE"
+
+#~ msgid "Unknown"
+#~ msgstr "Onbekend"
+
+#~ msgid "Wired"
+#~ msgstr "Bedrade"
+
+#~ msgid "Wireless"
+#~ msgstr "Draadloos"
+
+#~ msgid "Unused1"
+#~ msgstr "Ongebruik1"
+
+#~ msgid "Unused2"
+#~ msgstr "Ongebruik2"
+
+#~ msgid "OLPC mesh"
+#~ msgstr "OLPC maas"
+
+#~ msgid "WiMax"
+#~ msgstr "WiMax"
+
+#~ msgid "Modem"
+#~ msgstr "Modem"
+
+#~ msgid "InfiniBand"
+#~ msgstr "InfiniBand"
+
+#~ msgid "Bond"
+#~ msgstr "Bind"
+
+#~ msgid "VLAN"
+#~ msgstr "VLAN"
+
+#~ msgid "ADSL"
+#~ msgstr "ADSL"
+
+#~ msgid "Bridge"
+#~ msgstr "Brug"
+
+#~ msgid "802.11 WiFi"
+#~ msgstr "802.11 WiFi"
+
+#~ msgid "802.11 WiFi AdHoc"
+#~ msgstr "802.11 WiFi AdHoc"
+
+#~ msgid "802.11 WiFi Hotspot"
+#~ msgstr "802.11 WiFi Hotspot"
+
+#~ msgid "Mobile GSM"
+#~ msgstr "Mobiele GSM"
+
+#~ msgid "Mobile CDMA"
+#~ msgstr "Mobiele CDMA"
+
+#~ msgid "VPN L2TP"
+#~ msgstr "VPN L2TP"
+
+#~ msgid "VPN PPTP"
+#~ msgstr "VPN PPTP"
+
+#~ msgid "VPN VPNC"
+#~ msgstr "VPN VPNC"
+
+#~ msgid "VPN OpenVPN"
+#~ msgstr "VPN OpenVPN"
+
+#~ msgid "VPN OpenConnect"
+#~ msgstr "VPN OpenConnect"

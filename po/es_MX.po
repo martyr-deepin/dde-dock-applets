@@ -1,0 +1,557 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Translators:
+# Christopher Castro <christopherccg@hotmail.com>, 2014
+# hyuchia <hyuchia@gmail.com>, 2014
+# nrgmaster <nrgmaster@gmail.com>, 2014
+msgid ""
+msgstr ""
+"Project-Id-Version: dde-control-center\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-11-21 10:55+0800\n"
+"PO-Revision-Date: 2014-07-02 08:41+0000\n"
+"Last-Translator: Piotr Strębski <strebski@o2.pl>\n"
+"Language-Team: Spanish (Mexico) (http://www.transifex.com/projects/p/dde-"
+"control-center/language/es_MX/)\n"
+"Language: es_MX\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../src/frame/AppletSettingWindow.qml:100
+msgid "Notice Region Setting "
+msgstr ""
+
+#: ../plugins/date_time/AppletTray.qml:80
+msgid "_Switch to analog"
+msgstr ""
+
+#: ../plugins/date_time/AppletTray.qml:81
+msgid "_Switch to digital"
+msgstr ""
+
+#: ../plugins/date_time/AppletTray.qml:178
+#: ../plugins/date_time/calendar_core.js:4
+msgid "Sun"
+msgstr "Dom"
+
+#: ../plugins/date_time/AppletTray.qml:179
+#: ../plugins/date_time/calendar_core.js:4
+msgid "Mon"
+msgstr "Lun"
+
+#: ../plugins/date_time/AppletTray.qml:180
+#: ../plugins/date_time/calendar_core.js:4
+msgid "Tue"
+msgstr "Mar"
+
+#: ../plugins/date_time/AppletTray.qml:181
+#: ../plugins/date_time/calendar_core.js:4
+msgid "Wed"
+msgstr "Mie"
+
+#: ../plugins/date_time/AppletTray.qml:182
+#: ../plugins/date_time/calendar_core.js:4
+msgid "Thu"
+msgstr "Jue"
+
+#: ../plugins/date_time/AppletTray.qml:183
+#: ../plugins/date_time/calendar_core.js:4
+msgid "Fri"
+msgstr "Vie"
+
+#: ../plugins/date_time/AppletTray.qml:184
+#: ../plugins/date_time/calendar_core.js:4
+msgid "Sat"
+msgstr "Sab"
+
+#: ../plugins/network/AppletTray.qml:35
+#, fuzzy
+msgid "Network Connected"
+msgstr "Nueva Conexion PPoE"
+
+#: ../plugins/network/AppletTray.qml:35
+#, fuzzy
+msgid "Network Not Connected"
+msgstr "Nueva Conexion PPoE"
+
+#: ../plugins/network/AppletTray.qml:305
+#: ../plugins/network/bluetooth/AppletTray.qml:78
+#: ../plugins/network/vpn/AppletTray.qml:70
+#: ../plugins/network/wifi/AppletTray.qml:126
+#: ../plugins/power/AppletTray.qml:99 ../plugins/sound/AppletTray.qml:173
+msgid "_Run"
+msgstr "_Ejecutar"
+
+#: ../plugins/network/AppletTray.qml:306
+#: ../plugins/network/bluetooth/AppletTray.qml:79
+#: ../plugins/network/vpn/AppletTray.qml:71
+#: ../plugins/network/wifi/AppletTray.qml:127
+#: ../plugins/power/AppletTray.qml:106 ../plugins/sound/AppletTray.qml:174
+msgid "_Undock"
+msgstr "_Desacoplar"
+
+#: ../plugins/network/bluetooth/AppletTray.qml:118
+#: ../plugins/network/bluetooth/main.qml:33
+msgid "Bluetooth"
+msgstr "Bluetooth"
+
+#: ../plugins/network/vpn/AppletTray.qml:110
+#: ../plugins/network/vpn/main.qml:33
+msgid "VPN"
+msgstr ""
+
+#: ../plugins/network/wifi/AppletTray.qml:168
+#: ../plugins/network/WirelessNetwork.qml:50
+#: ../plugins/network/wifi/main.qml:33
+msgid "Wireless Network"
+msgstr ""
+
+#: ../plugins/power/AppletTray.qml:34
+msgid "On Charging"
+msgstr ""
+
+#: ../plugins/power/AppletTray.qml:46
+msgid "Custom"
+msgstr "Personalizado"
+
+#: ../plugins/power/AppletTray.qml:47
+msgid "Power saver"
+msgstr "Ahorrador de energía"
+
+#: ../plugins/power/AppletTray.qml:48
+msgid "Balanced"
+msgstr "Balanceado"
+
+#: ../plugins/power/AppletTray.qml:49
+msgid "High performance"
+msgstr "Alto rendimiento"
+
+#: ../plugins/sound/AppletTray.qml:218
+msgid "Device"
+msgstr "Dispositivo"
+
+#: ../plugins/sound/AppletTray.qml:318
+msgid "Applications"
+msgstr ""
+
+#: ../plugins/disk_mount/DiskItem.qml:124
+msgid "Unmount failed!"
+msgstr ""
+
+#: ../src/frame/WifiPasswordWindow.qml:150
+#, qt-format
+msgid "Please enter the password of  <font color=\"#faca57\">%1</font>"
+msgstr ""
+
+#: ../src/frame/WifiPasswordWindow.qml:172
+msgid "Password"
+msgstr "Contraseña"
+
+#: ../src/frame/WifiPasswordWindow.qml:180
+#, fuzzy
+msgid "Auto-connect"
+msgstr "Conectar"
+
+#: ../src/frame/WifiPasswordWindow.qml:195
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: ../src/frame/WifiPasswordWindow.qml:202
+msgid "Connect"
+msgstr "Conectar"
+
+#: ../plugins/network/WirelessApList.qml:95
+msgid "Scanning..."
+msgstr ""
+
+#: ../plugins/network/WirelessNetwork.qml:50
+#, qt-format
+msgid "Wireless Network %1"
+msgstr ""
+
+#: ../plugins/date_time/main.qml:32
+msgid "Date and Time"
+msgstr "Fecha y hora"
+
+#: ../plugins/disk_mount/main.qml:33
+msgid "Disk Mount"
+msgstr ""
+
+#: ../plugins/network/main.qml:32
+msgid "Network"
+msgstr "Red"
+
+#: ../plugins/power/main.qml:33
+msgid "Power"
+msgstr "Energia"
+
+#: ../plugins/sound/main.qml:32
+msgid "Sound"
+msgstr "Sonido"
+
+#~ msgid "Name"
+#~ msgstr "Nombre"
+
+#~ msgid "Username"
+#~ msgstr "Nombre de Usuario"
+
+#~ msgid "Service"
+#~ msgstr "Servicio"
+
+#~ msgid "New Mobile Connection"
+#~ msgstr "Nueva Conexión Móvil"
+
+#~ msgid "Service Type"
+#~ msgstr "Tipo de Servicio"
+
+#~ msgid "APN"
+#~ msgstr "APN"
+
+#~ msgid "Number"
+#~ msgstr "Número"
+
+#~ msgid "Add"
+#~ msgstr "Añadir"
+
+#, fuzzy
+#~ msgid "Invalid password"
+#~ msgstr "Contraseña"
+
+#, fuzzy
+#~ msgid "Nothing input"
+#~ msgstr "Nada"
+
+#, fuzzy
+#~ msgid "Different password"
+#~ msgstr "Confirmación de contraseña"
+
+#~ msgid "Add User"
+#~ msgstr "Agregar Usuario"
+
+#~ msgid "New User"
+#~ msgstr "Nuevo Usuario"
+
+#~ msgid "Standard"
+#~ msgstr "Estándar "
+
+#~ msgid "Administrator"
+#~ msgstr "Administrador"
+
+#~ msgid "Repeat Password"
+#~ msgstr "Confirmación de contraseña"
+
+#~ msgid "Account Type"
+#~ msgstr "Tipo de Cuenta"
+
+#~ msgid "Confirm"
+#~ msgstr "Confirmar"
+
+#~ msgid "VPN Type"
+#~ msgstr "Tipo de VPN"
+
+#~ msgid "L2TP"
+#~ msgstr "L2TP"
+
+#~ msgid "PPTP"
+#~ msgstr "PPTP"
+
+#~ msgid "OpenVPN"
+#~ msgstr "VPN abierta"
+
+#~ msgid "VPNC"
+#~ msgstr "VPNC"
+
+#~ msgid "Proxy"
+#~ msgstr "Proxy"
+
+#, fuzzy
+#~ msgid "Customize Key Direction"
+#~ msgstr "Opciones personalizadas"
+
+#~ msgid "Static Key"
+#~ msgstr "Clave estática "
+
+#~ msgid "Remote IP"
+#~ msgstr "IP Remota"
+
+#~ msgid "Local IP"
+#~ msgstr "IP Local"
+
+#~ msgid "Security"
+#~ msgstr "Seguridad"
+
+#~ msgid "Identity"
+#~ msgstr "Identidad"
+
+#~ msgid "Today"
+#~ msgstr "Hoy"
+
+#~ msgid "Next"
+#~ msgstr "Siguiente"
+
+#~ msgid "Save"
+#~ msgstr "Guardar"
+
+#~ msgid "Close"
+#~ msgstr "Cerrar"
+
+#~ msgid "Delete"
+#~ msgstr "Eliminar"
+
+#~ msgid "Command"
+#~ msgstr "Comando"
+
+#, fuzzy
+#~ msgid "Customize MTU"
+#~ msgstr "Personalizado"
+
+#~ msgid "Type"
+#~ msgstr "Tipo"
+
+#~ msgid "PPP"
+#~ msgstr "PPP"
+
+#~ msgid "Port"
+#~ msgstr "Puerto"
+
+#~ msgid "Domain"
+#~ msgstr "Dominio"
+
+#~ msgid "Version"
+#~ msgstr "Versión"
+
+#~ msgid "Enable"
+#~ msgstr "Activar"
+
+#~ msgid "Size"
+#~ msgstr "Tamaño"
+
+#~ msgid "Guest"
+#~ msgstr "Invitado"
+
+#~ msgid "Enabled"
+#~ msgstr "Activado"
+
+#, fuzzy
+#~ msgid "None Activated Connection"
+#~ msgstr "Nueva Conexión Móvil"
+
+#, fuzzy
+#~ msgid "(default)"
+#~ msgstr "Por Defecto "
+
+#~ msgid "Language"
+#~ msgstr "Lenguaje"
+
+#~ msgid "Keep Changes"
+#~ msgstr "Guardar Cambios"
+
+#~ msgid "Revert"
+#~ msgstr "Revertir"
+
+#~ msgid "Display"
+#~ msgstr "Pantalla"
+
+#~ msgid "Desktop"
+#~ msgstr "Escritorio"
+
+#~ msgid "Personalization"
+#~ msgstr "Personalizacion"
+
+#~ msgid "Mouse"
+#~ msgstr "Raton"
+
+#~ msgid "User Accounts"
+#~ msgstr "Cuentas de Usuario"
+
+#~ msgid "Default Applications"
+#~ msgstr "Aplicaciones Predeterminadas"
+
+#~ msgid "System Information"
+#~ msgstr "Informacion de Sistema"
+
+#~ msgid "Home"
+#~ msgstr "Local"
+
+#~ msgid "Edit"
+#~ msgstr "Editar"
+
+#~ msgid "Normal"
+#~ msgstr "Normal"
+
+#, fuzzy
+#~ msgid "Wired Connection"
+#~ msgstr "Nueva Conexión Móvil"
+
+#~ msgid "Password: "
+#~ msgstr "Contraseña:"
+
+#~ msgid "None"
+#~ msgstr "Ninguno"
+
+#~ msgid "Manual"
+#~ msgstr "Manual"
+
+#~ msgid "Auto"
+#~ msgstr "Auto"
+
+#, fuzzy
+#~ msgid "Socks Proxy"
+#~ msgstr "Proxy"
+
+#~ msgid "Reset"
+#~ msgstr "Reiniciar"
+
+#~ msgid "Replace"
+#~ msgstr "Reemplazar"
+
+#~ msgid "Touchpad"
+#~ msgstr "Panel tactil"
+
+#~ msgid "Pointer Speed"
+#~ msgstr "Velocidad del Puntero"
+
+#~ msgid "Slow"
+#~ msgstr "Lento"
+
+#~ msgid "Fast"
+#~ msgstr "Rapido"
+
+#~ msgid "Short"
+#~ msgstr "Corto"
+
+#~ msgid "Long"
+#~ msgstr "Largo"
+
+#~ msgid "Date"
+#~ msgstr "Fecha"
+
+#~ msgid "Browser"
+#~ msgstr "Navegador"
+
+#~ msgid "Music"
+#~ msgstr "Musica"
+
+#~ msgid "Terminal"
+#~ msgstr "Terminal "
+
+#~ msgid "Window"
+#~ msgstr "Ventana"
+
+#~ msgid "1 minute"
+#~ msgstr "1 minuto"
+
+#~ msgid "5 minutes"
+#~ msgstr "5 minutos"
+
+#~ msgid "10 minutes"
+#~ msgstr "10 minutos"
+
+#~ msgid "15 minutes"
+#~ msgstr "15 minutos"
+
+#~ msgid "30 minutes"
+#~ msgstr "30 minutos"
+
+#~ msgid "1 hour"
+#~ msgstr "1 hora"
+
+#~ msgid "When I press the power button"
+#~ msgstr "Cuando presione el botón de apagado"
+
+#~ msgid "Shutdown"
+#~ msgstr "Apagar"
+
+#~ msgid "Suspend"
+#~ msgstr "Suspender"
+
+#~ msgid "Ask"
+#~ msgstr "Preguntar"
+
+#~ msgid "When I close the lid"
+#~ msgstr "Cuando cierre la pantalla"
+
+#~ msgid "Nothing"
+#~ msgstr "Nada"
+
+#~ msgid "Turn off the display"
+#~ msgstr "Apagar el display"
+
+#~ msgid "Custom Options"
+#~ msgstr "Opciones personalizadas"
+
+#~ msgid "System"
+#~ msgstr "Sistema"
+
+#~ msgid "Workspace"
+#~ msgstr "Área de trabajo"
+
+#~ msgid "Speaker"
+#~ msgstr "Altavoz"
+
+#~ msgid "Left"
+#~ msgstr "Izquierda"
+
+#~ msgid "Right"
+#~ msgstr "Derecha"
+
+#~ msgid "Microphone"
+#~ msgstr "Microfono"
+
+#~ msgid "bit"
+#~ msgstr "bit"
+
+#~ msgid "Memory"
+#~ msgstr "Memoria"
+
+#~ msgid "Disk"
+#~ msgstr "Disco"
+
+#~ msgid "Unknown"
+#~ msgstr "Desconocido"
+
+#~ msgid "Wired"
+#~ msgstr "Cableado"
+
+#, fuzzy
+#~ msgid "VPN L2TP"
+#~ msgstr "L2TP"
+
+#, fuzzy
+#~ msgid "VPN PPTP"
+#~ msgstr "PPTP"
+
+#, fuzzy
+#~ msgid "VPN VPNC"
+#~ msgstr "VPNC"
+
+#, fuzzy
+#~ msgid "VPN OpenVPN"
+#~ msgstr "VPN abierta"
+
+#, fuzzy
+#~ msgid "VPN OpenConnect"
+#~ msgstr "Conectar"
+
+#~ msgid "May"
+#~ msgstr "May"
+
+#~ msgid "Keyboard"
+#~ msgstr "Teclado"
+
+#, fuzzy
+#~ msgid "Advanced"
+#~ msgstr "Balanceado"
+
+#~ msgid "Default"
+#~ msgstr "Por Defecto "
+
+#~ msgid "General"
+#~ msgstr "General"
+
+#~ msgid "For All Users"
+#~ msgstr "Para Todos Los Usuarios"

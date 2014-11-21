@@ -1,0 +1,1337 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Translators:
+# Aril Apria Susanto <awriel@gmail.com>, 2014
+# Yugo Purwanto <dedy.yugo.purwanto@gmail.com>, 2014
+# eko ikhyar <ikhyar.com@gmail.com>, 2014
+# Herwono W Wijaya <root@linuxcoding.org>, 2014
+# Muhamad Mashudi Ardi Winata <muhamadmashudiardiwinata@gmail.com>, 2014
+# Sucipto <show.cheap@gmail.com>, 2014
+# Sucipto <show.cheap@gmail.com>, 2014
+msgid ""
+msgstr ""
+"Project-Id-Version: dde-control-center\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-11-21 10:55+0800\n"
+"PO-Revision-Date: 2014-10-17 11:01+0000\n"
+"Last-Translator: Herwono W Wijaya <root@linuxcoding.org>\n"
+"Language-Team: Indonesian (Indonesia) (http://www.transifex.com/projects/p/"
+"dde-control-center/language/id_ID/)\n"
+"Language: id_ID\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../src/frame/AppletSettingWindow.qml:100
+msgid "Notice Region Setting "
+msgstr ""
+
+#: ../plugins/date_time/AppletTray.qml:80
+msgid "_Switch to analog"
+msgstr "_Ubah ke analog"
+
+#: ../plugins/date_time/AppletTray.qml:81
+msgid "_Switch to digital"
+msgstr "_Ubah ke digital"
+
+#: ../plugins/date_time/AppletTray.qml:178
+#: ../plugins/date_time/calendar_core.js:4
+msgid "Sun"
+msgstr "Ming"
+
+#: ../plugins/date_time/AppletTray.qml:179
+#: ../plugins/date_time/calendar_core.js:4
+msgid "Mon"
+msgstr "Sen"
+
+#: ../plugins/date_time/AppletTray.qml:180
+#: ../plugins/date_time/calendar_core.js:4
+msgid "Tue"
+msgstr "Sel"
+
+#: ../plugins/date_time/AppletTray.qml:181
+#: ../plugins/date_time/calendar_core.js:4
+msgid "Wed"
+msgstr "Rab"
+
+#: ../plugins/date_time/AppletTray.qml:182
+#: ../plugins/date_time/calendar_core.js:4
+msgid "Thu"
+msgstr "Kam"
+
+#: ../plugins/date_time/AppletTray.qml:183
+#: ../plugins/date_time/calendar_core.js:4
+msgid "Fri"
+msgstr "Jum"
+
+#: ../plugins/date_time/AppletTray.qml:184
+#: ../plugins/date_time/calendar_core.js:4
+msgid "Sat"
+msgstr "Sab"
+
+#: ../plugins/network/AppletTray.qml:35
+#, fuzzy
+msgid "Network Connected"
+msgstr "Koneksi PPPoE baru"
+
+#: ../plugins/network/AppletTray.qml:35
+#, fuzzy
+msgid "Network Not Connected"
+msgstr "Koneksi PPPoE baru"
+
+#: ../plugins/network/AppletTray.qml:305
+#: ../plugins/network/bluetooth/AppletTray.qml:78
+#: ../plugins/network/vpn/AppletTray.qml:70
+#: ../plugins/network/wifi/AppletTray.qml:126
+#: ../plugins/power/AppletTray.qml:99 ../plugins/sound/AppletTray.qml:173
+msgid "_Run"
+msgstr "_Jalankan"
+
+#: ../plugins/network/AppletTray.qml:306
+#: ../plugins/network/bluetooth/AppletTray.qml:79
+#: ../plugins/network/vpn/AppletTray.qml:71
+#: ../plugins/network/wifi/AppletTray.qml:127
+#: ../plugins/power/AppletTray.qml:106 ../plugins/sound/AppletTray.qml:174
+msgid "_Undock"
+msgstr "_Undock"
+
+#: ../plugins/network/bluetooth/AppletTray.qml:118
+#: ../plugins/network/bluetooth/main.qml:33
+msgid "Bluetooth"
+msgstr "Bluetooth"
+
+#: ../plugins/network/vpn/AppletTray.qml:110
+#: ../plugins/network/vpn/main.qml:33
+msgid "VPN"
+msgstr "VPN"
+
+#: ../plugins/network/wifi/AppletTray.qml:168
+#: ../plugins/network/WirelessNetwork.qml:50
+#: ../plugins/network/wifi/main.qml:33
+msgid "Wireless Network"
+msgstr "Koneksi Nirkabel"
+
+#: ../plugins/power/AppletTray.qml:34
+msgid "On Charging"
+msgstr "Sedang mengisi"
+
+#: ../plugins/power/AppletTray.qml:46
+msgid "Custom"
+msgstr "Kustom"
+
+#: ../plugins/power/AppletTray.qml:47
+msgid "Power saver"
+msgstr "Penghemat daya"
+
+#: ../plugins/power/AppletTray.qml:48
+msgid "Balanced"
+msgstr "Seimbang"
+
+#: ../plugins/power/AppletTray.qml:49
+msgid "High performance"
+msgstr "Kinerja tinggi"
+
+#: ../plugins/sound/AppletTray.qml:218
+msgid "Device"
+msgstr "Perangkat"
+
+#: ../plugins/sound/AppletTray.qml:318
+msgid "Applications"
+msgstr "Aplikasi"
+
+#: ../plugins/disk_mount/DiskItem.qml:124
+msgid "Unmount failed!"
+msgstr "Gagal melepaskan kait!"
+
+#: ../src/frame/WifiPasswordWindow.qml:150
+#, fuzzy, qt-format
+msgid "Please enter the password of  <font color=\"#faca57\">%1</font>"
+msgstr ""
+"Kata sandi atau kunci enkripsi dibutuhkan untuk untuk mengakses jaringan Wi-"
+"Fi <font color=\"#faca57\">%1</font>"
+
+#: ../src/frame/WifiPasswordWindow.qml:172
+msgid "Password"
+msgstr "Kata Sandi"
+
+#: ../src/frame/WifiPasswordWindow.qml:180
+#, fuzzy
+msgid "Auto-connect"
+msgstr "Sambung Otomatis"
+
+#: ../src/frame/WifiPasswordWindow.qml:195
+msgid "Cancel"
+msgstr "Batal"
+
+#: ../src/frame/WifiPasswordWindow.qml:202
+msgid "Connect"
+msgstr "Sambungkan"
+
+#: ../plugins/network/WirelessApList.qml:95
+msgid "Scanning..."
+msgstr "Pindai..."
+
+#: ../plugins/network/WirelessNetwork.qml:50
+#, qt-format
+msgid "Wireless Network %1"
+msgstr "Koneksi Nirkabel %1"
+
+#: ../plugins/date_time/main.qml:32
+msgid "Date and Time"
+msgstr "Tanggal dan Jam"
+
+#: ../plugins/disk_mount/main.qml:33
+msgid "Disk Mount"
+msgstr "Kaitkan Disk"
+
+#: ../plugins/network/main.qml:32
+msgid "Network"
+msgstr "Jaringan"
+
+#: ../plugins/power/main.qml:33
+msgid "Power"
+msgstr "Daya"
+
+#: ../plugins/sound/main.qml:32
+msgid "Sound"
+msgstr "Suara"
+
+#~ msgid "Name"
+#~ msgstr "Nama"
+
+#~ msgid "Username"
+#~ msgstr "Nama pengguna"
+
+#~ msgid "Service"
+#~ msgstr "Layanan"
+
+#~ msgid "New Mobile Connection"
+#~ msgstr "Koneksi Mobile baru"
+
+#~ msgid "Service Type"
+#~ msgstr "Tipe Layanan"
+
+#~ msgid "APN"
+#~ msgstr "APN"
+
+#~ msgid "Number"
+#~ msgstr "Nomor"
+
+#~ msgid "Add"
+#~ msgstr "Tambah"
+
+#~ msgid "Invalid password"
+#~ msgstr "Kata kunci Salah"
+
+#~ msgid "Nothing input"
+#~ msgstr "Tidak ada masukan"
+
+#~ msgid "Different password"
+#~ msgstr "Kata kunci berbeda"
+
+#~ msgid "Add User"
+#~ msgstr "Tambah Pengguna"
+
+#~ msgid "New User"
+#~ msgstr "Pengguna Baru"
+
+#~ msgid "Standard"
+#~ msgstr "Standar"
+
+#~ msgid "Administrator"
+#~ msgstr "Administrator"
+
+#~ msgid "Repeat Password"
+#~ msgstr "Tulis kembali Kata Sandi"
+
+#~ msgid "Account Type"
+#~ msgstr "Tipe Akun"
+
+#~ msgid "Auto-login"
+#~ msgstr "Masuk-Otomatis"
+
+#~ msgid "Confirm"
+#~ msgstr "Konfirmasi"
+
+#~ msgid "VPN Type"
+#~ msgstr "Tipe VPN"
+
+#~ msgid "L2TP"
+#~ msgstr "L2TP"
+
+#~ msgid "PPTP"
+#~ msgstr "PPTP"
+
+#~ msgid "OpenVPN"
+#~ msgstr "OpenVPN"
+
+#~ msgid "OpenConnect"
+#~ msgstr "OpenConnect"
+
+#~ msgid "VPNC"
+#~ msgstr "VPNC"
+
+#~ msgid "Basic Information"
+#~ msgstr "Informasi Dasar"
+
+#~ msgid "Need VPN Plugin"
+#~ msgstr "Memerlukan plugin VPN"
+
+#~ msgid "Gateway"
+#~ msgstr "Gateway"
+
+#~ msgid "Ask for Pwd"
+#~ msgstr "Tanya Password"
+
+#~ msgid "CA Cert"
+#~ msgstr "CA Cert"
+
+#~ msgid "Proxy"
+#~ msgstr "Proxy"
+
+#~ msgid "Allow Cisco Secure Desktop Trojan"
+#~ msgstr "Mengizinkan Cisco Secure Desktop Trojan"
+
+#~ msgid "Customize Key Direction"
+#~ msgstr "Menyesuaikan Arah Kunci"
+
+#~ msgid "Private Key"
+#~ msgstr "Kunci Privat"
+
+#~ msgid "Auth Type"
+#~ msgstr "Tipe Auth"
+
+#~ msgid "User Cert"
+#~ msgstr "Cert Pengguna"
+
+#~ msgid "CSD Script"
+#~ msgstr "Skrip CSD"
+
+#~ msgid "Use FSID for Key Passphrase"
+#~ msgstr "Gunakan FSID untuk Frasa Kunci"
+
+#~ msgid "Private Pwd"
+#~ msgstr "Privat Pwd"
+
+#~ msgid "Static Key"
+#~ msgstr "Kunci Statis"
+
+#~ msgid "Key Direction"
+#~ msgstr "Key Pengarah"
+
+#~ msgid "Remote IP"
+#~ msgstr "IP Remote"
+
+#~ msgid "Local IP"
+#~ msgstr "IP Lokal"
+
+#~ msgid "User Pwd"
+#~ msgstr "Sandi Pengguna"
+
+#~ msgid "Group Name"
+#~ msgstr "Nama Grup"
+
+#~ msgid "Group Pwd"
+#~ msgstr "Sandi Grup"
+
+#~ msgid "Use Hybrid Authentication"
+#~ msgstr "Gunakan Autentikasi Ganda"
+
+#~ msgid "CA File"
+#~ msgstr "Berkas CA"
+
+#~ msgid "Enable IPsec"
+#~ msgstr "Nyalakan IPsec"
+
+#~ msgid "Group ID"
+#~ msgstr "ID Grup"
+
+#~ msgid "Pre-Shared Key"
+#~ msgstr "Pra-Pembagian Kunci"
+
+#~ msgid "Use MPPE"
+#~ msgstr "Gunakan MPPE"
+
+#~ msgid "Connect to wireless"
+#~ msgstr "Sambungkan Ke Nirkabel"
+
+#~ msgid "SSID"
+#~ msgstr "SSID"
+
+#~ msgid "Security"
+#~ msgstr "Keamanan"
+
+#~ msgid "Key"
+#~ msgstr "Kunci"
+
+#~ msgid "EAP Auth"
+#~ msgstr "Otentikasi EAP"
+
+#~ msgid "Identity"
+#~ msgstr "Identitas"
+
+#~ msgid "Anonymous ID"
+#~ msgstr "ID Anonim"
+
+#~ msgid "Provisioning"
+#~ msgstr "Provisioning"
+
+#~ msgid "PAC file"
+#~ msgstr "Berkas PAC"
+
+#~ msgid "PEAP Version"
+#~ msgstr "Versi PEAP"
+
+#~ msgid "Inner Auth"
+#~ msgstr "Inner Auth"
+
+#~ msgid "Dock Applet Enabled"
+#~ msgstr "Dock Applet diaktifkan"
+
+#~ msgid "Choose a new picture for your Avatar"
+#~ msgstr "Pilih gambar baru untuk Avatar anda"
+
+#~ msgid "Recently Used"
+#~ msgstr "Sering digunakan"
+
+#~ msgid "Avatar"
+#~ msgstr "Avatar"
+
+#~ msgid "Webcam"
+#~ msgstr "Webcam"
+
+#~ msgid "Left/Right Balance"
+#~ msgstr "Keseimbangan Kiri/Kanan"
+
+#~ msgid "Left"
+#~ msgstr "Kiri"
+
+#~ msgid "Right"
+#~ msgstr "Kanan"
+
+#~ msgid "Today"
+#~ msgstr "Hari ini"
+
+#~ msgid "New Network"
+#~ msgstr "Jaringan baru"
+
+#~ msgid "PPPoE"
+#~ msgstr "PPPoE"
+
+#~ msgid "Next"
+#~ msgstr "Selanjutnya"
+
+#~ msgid "Delete this network"
+#~ msgstr "Hapus jaringan ini"
+
+#~ msgid "Are you sure you want to delete this network?"
+#~ msgstr "Anda yakin akan menghapus jaringan ini?"
+
+#~ msgid "Save"
+#~ msgstr "Simpan"
+
+#~ msgid "Close"
+#~ msgstr "Tutup"
+
+#~ msgid "Delete"
+#~ msgstr "Hapus"
+
+#~ msgid "Command"
+#~ msgstr "Perintah"
+
+#~ msgid "Keep user's files"
+#~ msgstr "Biarkan berkas pengguna"
+
+#~ msgid "Delete user's files"
+#~ msgstr "Hapus berkas pengguna"
+
+#~ msgid "PPPoE Connections"
+#~ msgstr "Koneksi PPoE"
+
+#~ msgid "Current system lacks component for %1"
+#~ msgstr "Sistem sekarang tidak mempunyai komponen untuk %1"
+
+#~ msgid "Click to install"
+#~ msgstr "Klik untuk memasang"
+
+#~ msgid "Ethernet"
+#~ msgstr "Ethernet"
+
+#~ msgid "Device MAC Addr"
+#~ msgstr "Alamat MAC Perangkat"
+
+#~ msgid "Cloned MAC Addr"
+#~ msgstr "Alamat MAC Tergandakan"
+
+#~ msgid "Customize MTU"
+#~ msgstr "Kustom MTU"
+
+#~ msgid "MTU"
+#~ msgstr "MTU"
+
+#~ msgid "IPv4"
+#~ msgstr "IPv4"
+
+#~ msgid "Method"
+#~ msgstr "Metode"
+
+#~ msgid "IP Address"
+#~ msgstr "Alamat IP"
+
+#~ msgid "Netmask"
+#~ msgstr "Netmask"
+
+#~ msgid "DNS Server"
+#~ msgstr "Server DNS"
+
+#~ msgid "IPv6"
+#~ msgstr "IPv6"
+
+#~ msgid "Prefix"
+#~ msgstr "Awalan"
+
+#~ msgid "Mobile"
+#~ msgstr "Mobile"
+
+#~ msgid "Network ID"
+#~ msgstr "ID Jaringan"
+
+#~ msgid "Type"
+#~ msgstr "Tipe"
+
+#~ msgid "Home Network Only"
+#~ msgstr "Hanya Jaringan Rumah"
+
+#~ msgid "PIN"
+#~ msgstr "PIN"
+
+#~ msgid "PPP"
+#~ msgstr "PPP"
+
+#~ msgid "128-bit MPPE"
+#~ msgstr "128-bit MPEE"
+
+#~ msgid "Stateful MPPE"
+#~ msgstr "Stateful MPPE"
+
+#~ msgid "Refuse EAP Authentication"
+#~ msgstr "Tolak Otentikasi EAP"
+
+#~ msgid "Refuse PAP Authentication"
+#~ msgstr "Tolak Otentikasi PAP"
+
+#~ msgid "Refuse CHAP Authentication"
+#~ msgstr "Tolak Otentikasi CHAP"
+
+#~ msgid "Refuse MSCHAP Authentication"
+#~ msgstr "Tolak Otentikasi MSCHAP"
+
+#~ msgid "Refuse MSCHAPv2 Authentication"
+#~ msgstr "Tolak Otentikasi MSCHAPv2"
+
+#~ msgid "No BSD Data Compression"
+#~ msgstr "Tidak ada kompresi data BSD"
+
+#~ msgid "No Deflate Data Compression"
+#~ msgstr "Tidak ada penurunan data kompresi"
+
+#~ msgid "No TCP Header Compression"
+#~ msgstr "Tidak ada kompresi TCP Header"
+
+#~ msgid "Send PPP Echo Packets"
+#~ msgstr "Kirim Paket PPP Echo"
+
+#~ msgid "Security Required"
+#~ msgstr "Keamanan Dibutuhkan"
+
+#~ msgid "NT Domain"
+#~ msgstr "Domain NT"
+
+#~ msgid "VPN IPsec"
+#~ msgstr "VPN IPsec"
+
+#~ msgid "VPN PPP"
+#~ msgstr "VPN PPP"
+
+#~ msgid "No Protocol Field Compression"
+#~ msgstr "Tidak ada kompresi Protokl Field"
+
+#~ msgid "No Address/Control Compression"
+#~ msgstr "Tidak ada Kompresi Alamat/Kontrol"
+
+#~ msgid "VPN Advanced"
+#~ msgstr "VPN Lanjutan"
+
+#~ msgid "Gateway Port"
+#~ msgstr "Port Gateway"
+
+#~ msgid "Customize Gateway Port"
+#~ msgstr "Kustom Gateway Port"
+
+#~ msgid "Customize Renegotiation Interval"
+#~ msgstr "Kustom Renegosiasi Interval"
+
+#~ msgid "Renegotiation Interval"
+#~ msgstr "Renegosiasi Interval"
+
+#~ msgid "Use LZO data compression"
+#~ msgstr "Gunakan LZO kompresi data"
+
+#~ msgid "Use TCP connection"
+#~ msgstr "Gunakan Koneksi TCP"
+
+#~ msgid "Use TAP device"
+#~ msgstr "Gunakan Piranti TAP"
+
+#~ msgid "Customize Tunnel MTU"
+#~ msgstr "Kustom Tunnel MTU"
+
+#~ msgid "Customize UDP Fragment Size"
+#~ msgstr "Kustom ukuran UDP Fragment"
+
+#~ msgid "UDP Fragment Size"
+#~ msgstr "Ukuran UDP Fragment"
+
+#~ msgid "Restrict Tunnel TCP MSS"
+#~ msgstr "Pembatasan Tunnel TCP MSS"
+
+#~ msgid "Randomize Remote Hosts"
+#~ msgstr "Acak Host Remote"
+
+#~ msgid "VPN Proxies"
+#~ msgstr "Proksi VPN"
+
+#~ msgid "Proxy Type"
+#~ msgstr "Jenis Proksi"
+
+#~ msgid "Server IP"
+#~ msgstr "IP Server"
+
+#~ msgid "Port"
+#~ msgstr "Port"
+
+#~ msgid "Retry Indefinitely When Failed"
+#~ msgstr "Ulangi Indefinite Ketika Gagal"
+
+#~ msgid "VPN Security"
+#~ msgstr "Keamanan VPN"
+
+#~ msgid "Cipher"
+#~ msgstr "Chiper"
+
+#~ msgid "HMAC Auth"
+#~ msgstr "HMAC Auth"
+
+#~ msgid "VPN TLS Authentication"
+#~ msgstr "Otentikasi VPN TLS"
+
+#~ msgid "Subject Match"
+#~ msgstr "Subyek Cocok"
+
+#~ msgid "Remote Cert Type"
+#~ msgstr "Tipe Remote Cert"
+
+#~ msgid "Key File"
+#~ msgstr "Berkas Kunci"
+
+#~ msgid "Domain"
+#~ msgstr "Domain"
+
+#~ msgid "Vendor"
+#~ msgstr "Vendor"
+
+#~ msgid "Version"
+#~ msgstr "Versi"
+
+#~ msgid "Encryption"
+#~ msgstr "Enkripsi"
+
+#~ msgid "NAT Traversal"
+#~ msgstr "NAT Traversal"
+
+#~ msgid "IKE DH Group"
+#~ msgstr "ID DH Group"
+
+#~ msgid "Forward Secrecy"
+#~ msgstr "Teruskan Kerahasiaan"
+
+#~ msgid "Local Port"
+#~ msgstr "Port Lokal"
+
+#~ msgid "Disable Dead Peer Detection"
+#~ msgstr "Nonaktifkan Deteksi Dead Peer "
+
+#~ msgid "Wi-Fi"
+#~ msgstr "Wi-Fi"
+
+#~ msgid "Mode"
+#~ msgstr "Mode"
+
+#~ msgid "Band"
+#~ msgstr "Pita"
+
+#~ msgid "Channel"
+#~ msgstr "Kanal"
+
+#~ msgid "Enable"
+#~ msgstr "Aktifkan"
+
+#~ msgid "Front/Rear Balance"
+#~ msgstr "Keseimbangan Depan/Belakang"
+
+#~ msgid "Front"
+#~ msgstr "Depan"
+
+#~ msgid "Rear"
+#~ msgstr "Belakang"
+
+#~ msgid "Size"
+#~ msgstr "Ukuran"
+
+#~ msgid "Font %1"
+#~ msgstr "Fonta %1"
+
+#~ msgid "Guest"
+#~ msgstr "Tamu"
+
+#~ msgid "Enabled"
+#~ msgstr "diaktifkan"
+
+#~ msgid "Activated Connections"
+#~ msgstr "Koneksi diaktifkan"
+
+#~ msgid "None Activated Connection"
+#~ msgstr "None Aktifkan Koneksi"
+
+#~ msgid "(default)"
+#~ msgstr "(baku)"
+
+#~ msgid "Interface"
+#~ msgstr "Antarmuka"
+
+#~ msgid "Device Addr"
+#~ msgstr "Alamat Perangkat"
+
+#~ msgid "Subnet Mask"
+#~ msgstr "Subnet Mask"
+
+#~ msgid "Route Addr"
+#~ msgstr "Alamat Route"
+
+#~ msgid "Primary DNS"
+#~ msgstr "DNS Primer"
+
+#~ msgid "Secondary DNS"
+#~ msgstr "DNS Kedua"
+
+#~ msgid "Third DNS"
+#~ msgstr "DNS Ketiga"
+
+#~ msgid "Device Speed"
+#~ msgstr "Kecepatan Perangkat"
+
+#~ msgid "Language"
+#~ msgstr "Bahasa"
+
+#~ msgid "Do you want to keep these display settings?"
+#~ msgstr "Apakah Anda ingin menyimpan pengaturan tampilan ini?"
+
+#~ msgid ""
+#~ "Reverting to previous display settings in <font color='#F48914'>%1</font> "
+#~ "seconds."
+#~ msgstr ""
+#~ "Kembali ke pengaturan tampilan sebelumnya dalam <font color='#F48914'>%1</"
+#~ "font> detik."
+
+#~ msgid "Keep Changes"
+#~ msgstr "Tetapkan Perubahan"
+
+#~ msgid "Revert"
+#~ msgstr "Pulihkan"
+
+#~ msgid "Power Management"
+#~ msgstr "Manajemen Daya"
+
+#~ msgid "More Settings"
+#~ msgstr "Pengaturan Lainya"
+
+#~ msgid "Display"
+#~ msgstr "Tampilan"
+
+#~ msgid "Desktop"
+#~ msgstr "Desktop"
+
+#~ msgid "Personalization"
+#~ msgstr "Personalisasi"
+
+#~ msgid "Keyboard Shortcuts"
+#~ msgstr "Jalan pintas"
+
+#~ msgid "Keyboard and Language"
+#~ msgstr "Papan ketik dan Bahasa"
+
+#~ msgid "Mouse and Touchpad"
+#~ msgstr "Tetikus dan Touchpad"
+
+#~ msgid "Mouse"
+#~ msgstr "Tetikus"
+
+#~ msgid "User Accounts"
+#~ msgstr "Akun Pengguna"
+
+#~ msgid "Default Applications"
+#~ msgstr "Aplikasi Default"
+
+#~ msgid "System Information"
+#~ msgstr "Informasi Sistem"
+
+#~ msgid "Boot Menu"
+#~ msgstr "Menu Boot"
+
+#~ msgid "Home"
+#~ msgstr "Rumah"
+
+#~ msgid "Split"
+#~ msgstr "Membagi"
+
+#~ msgid "Set as primary display"
+#~ msgstr "Atur sebagai tampilan utama"
+
+#~ msgid "Identify"
+#~ msgstr "Identifikasi"
+
+#~ msgid "Edit"
+#~ msgstr "Sunting"
+
+#~ msgid "Normal"
+#~ msgstr "Normal"
+
+#~ msgid "Rotate Right"
+#~ msgstr "Putar Kanan"
+
+#~ msgid "Upside Down"
+#~ msgstr "Terbalik"
+
+#~ msgid "Rotate Left"
+#~ msgstr "Putar kiri"
+
+#~ msgid "Resolution"
+#~ msgstr "Resolusi"
+
+#~ msgid "Rotation"
+#~ msgstr "Rotasi"
+
+#~ msgid "Brightness"
+#~ msgstr "Kecerahan"
+
+#~ msgid "Wired Connection %1"
+#~ msgstr "Koneksi Kabel %1"
+
+#~ msgid "Wired Connection"
+#~ msgstr "Koneksi Kabel"
+
+#~ msgid "not managed"
+#~ msgstr "tidak dikelola"
+
+#~ msgid "Password: "
+#~ msgstr "Kata Sandi :"
+
+#~ msgid "New Password"
+#~ msgstr "Sandi Baru"
+
+#~ msgid "Repeat"
+#~ msgstr "Ulangi"
+
+#~ msgid "Drag and drop an image to change background."
+#~ msgstr "Seret dan lepas gambar untuk mengganti gambar latar"
+
+#~ msgid "Image format not supported"
+#~ msgstr "format gambar tidak didukung"
+
+#~ msgid "Updating..."
+#~ msgstr "memutakhirkan ..."
+
+#~ msgid "Successfully updated, reboot to view."
+#~ msgstr "Pemutakhiran berhasil, nyalakan ulang untuk melihat perubahannya."
+
+#~ msgid "None"
+#~ msgstr "Tidak Ada"
+
+#~ msgid "Manual"
+#~ msgstr "Manual"
+
+#~ msgid "Auto"
+#~ msgstr "Otomatis"
+
+#~ msgid "HTTP Proxy"
+#~ msgstr "Proxy HTTP"
+
+#~ msgid "HTTPS Proxy"
+#~ msgstr "Proxy HTTPS"
+
+#~ msgid "FTP Proxy"
+#~ msgstr "Proxy FTP"
+
+#~ msgid "Socks Proxy"
+#~ msgstr "Socks Proxy"
+
+#~ msgid "Configuration URL"
+#~ msgstr "Konfigurasi URL"
+
+#~ msgid "Apply system wide"
+#~ msgstr "Terapkan untuk keseluruhan Sistem"
+
+#~ msgid "System Proxy"
+#~ msgstr "Proxy Sistem"
+
+#~ msgid "Reset successfully"
+#~ msgstr "Atur Ulang berhasil"
+
+#~ msgid "Reset"
+#~ msgstr "Atur ulang"
+
+#~ msgid "Disable"
+#~ msgstr "Non-aktifkan"
+
+#~ msgid "Please input new shortcut"
+#~ msgstr "Silakan masukkan jalan pintas"
+
+#~ msgid "Shortcut \"%1\" is invalid, please retype new shortcut."
+#~ msgstr ""
+#~ "Jalan pintas \"%1\" tidak valid, silakan masukkan jalan pintas baru."
+
+#~ msgid "The shortcut you set "
+#~ msgstr "Jalan pintas yang Anda atur"
+
+#~ msgid "conflicts with the one used for \"%2\" in the \"%1\" category."
+#~ msgstr ""
+#~ "konflik dengan salah satu yang digunakan untuk \"%2\" dalam \"%1\" "
+#~ "kategori."
+
+#~ msgid "Do you want to replace it?"
+#~ msgstr "Anda ingin menggantinya?"
+
+#~ msgid "Replace"
+#~ msgstr "Ganti"
+
+#~ msgid "Preview Theme"
+#~ msgstr "Pratampil Tema"
+
+#~ msgid "Done"
+#~ msgstr "Selesai"
+
+#~ msgid "Double-click the above digits to change your time."
+#~ msgstr "Double klik diantara angka untuk mengganti waktu"
+
+#~ msgid "Set"
+#~ msgstr "Atur"
+
+#~ msgid "Time zone"
+#~ msgstr "Zona Waktu"
+
+#~ msgid "Touchpad"
+#~ msgstr "Bantalan sentuh"
+
+#~ msgid "Primary Button"
+#~ msgstr "Tombol Utama"
+
+#~ msgid "Left Button"
+#~ msgstr "Tombol Kiri"
+
+#~ msgid "Right Button"
+#~ msgstr "Tombol Kanan"
+
+#~ msgid "Pointer Speed"
+#~ msgstr "Kecepatan Pointer"
+
+#~ msgid "Slow"
+#~ msgstr "Lambat"
+
+#~ msgid "Fast"
+#~ msgstr "Cepat"
+
+#~ msgid "Double-click Speed"
+#~ msgstr "Kecepatan Klik-ganda"
+
+#~ msgid "Drag Threshold"
+#~ msgstr "Ambang Seret"
+
+#~ msgid "Short"
+#~ msgstr "Pendek"
+
+#~ msgid "Long"
+#~ msgstr "Panjang"
+
+#~ msgid "Natural Scrolling"
+#~ msgstr "Menggulung Alami"
+
+#~ msgid "Tap to click"
+#~ msgstr "Ketuk untuk mengklik"
+
+#~ msgid "Two-finger scrolling"
+#~ msgstr "Gulir dua jari"
+
+#~ msgid "Edge scrolling"
+#~ msgstr "Gulir tepi"
+
+#~ msgid "VPN Connections"
+#~ msgstr "Koneksi VPN"
+
+#~ msgid "Snapshot"
+#~ msgstr "Potret"
+
+#~ msgid "Again"
+#~ msgstr "Lagi"
+
+#~ msgid "No camera found."
+#~ msgstr "Tidak ditemukan kamera"
+
+#~ msgid "Edit Wi-Fi Hotspot"
+#~ msgstr "Edit Hotspot Wi-Fi"
+
+#~ msgid "Create Wi-Fi Hotspot"
+#~ msgstr "Buat Hotspot Wi-Fi"
+
+#~ msgid "Create"
+#~ msgstr "Buat"
+
+#~ msgid "Authentication required by Wi-Fi network"
+#~ msgstr "Autentikasi dibutuhkan oleh jaringan Wi-Fi"
+
+#~ msgid "Password:"
+#~ msgstr "Kata sandi:"
+
+#~ msgid "Wired Network"
+#~ msgstr "Koneksi Kabel"
+
+#~ msgid ""
+#~ "Wireless network is unable to be connected maybe due to the following "
+#~ "reasons:\n"
+#~ "\n"
+#~ "1. The hardware switch of wireless network card is off\n"
+#~ "2. Incorrect network configuration in /etc/network/interface\n"
+#~ "3. Incorrect driver of network hardware"
+#~ msgstr ""
+#~ "Jarigan nirkabel tidak dapat dihubungkan mungkin karena alasan berikut:\n"
+#~ "\n"
+#~ "1. Perangkat keras kartu jaringan nirkabel tidak aktif\n"
+#~ "2. Kesalahan konfigurasi jaringan dalam /etc/network/interface\n"
+#~ "3. Kesalahan driver perangkat keras jaringan"
+
+#~ msgid "Connect to hidden access point"
+#~ msgstr "Sambungkan ke akses point tersembunyi"
+
+#~ msgid "ON/OFF"
+#~ msgstr "NYALA/MATi"
+
+#~ msgid "Devices nearby"
+#~ msgstr "Perangkat terdekat"
+
+#~ msgid "Automatic date and time"
+#~ msgstr "Tanggal dan waktu otomatis"
+
+#~ msgid "Use 24-hour clock"
+#~ msgstr "Gunakan format 24-jam"
+
+#~ msgid "Date"
+#~ msgstr "Tanggal"
+
+#~ msgid "Set Date"
+#~ msgstr "Atur Tanggal"
+
+#~ msgid "Browser"
+#~ msgstr "Peramban"
+
+#~ msgid "Mail"
+#~ msgstr "Surat"
+
+#~ msgid "Text"
+#~ msgstr "Teks"
+
+#~ msgid "Music"
+#~ msgstr "Musik"
+
+#~ msgid "Video"
+#~ msgstr "Video"
+
+#~ msgid "Picture"
+#~ msgstr "Gambar"
+
+#~ msgid "Terminal"
+#~ msgstr "Terminal"
+
+#~ msgid "AutoPlay"
+#~ msgstr "AutoPlay"
+
+#~ msgid "CD Audio"
+#~ msgstr "CD Audio"
+
+#~ msgid "DVD Video"
+#~ msgstr "DVD Video"
+
+#~ msgid "Music Player"
+#~ msgstr "Pemutar Musik"
+
+#~ msgid "Camera"
+#~ msgstr "Kamera"
+
+#~ msgid "Software"
+#~ msgstr "Perangkat lunak"
+
+#~ msgid "Primary Monitor: "
+#~ msgstr "Monitor Primer:"
+
+#~ msgid "Monitor"
+#~ msgstr "Monitor"
+
+#~ msgid "Apply"
+#~ msgstr "Terapkan"
+
+#~ msgid "Default Startup"
+#~ msgstr "Startup Bawaan"
+
+#~ msgid "Boot delay"
+#~ msgstr "Jeda boot"
+
+#~ msgid "Text Color"
+#~ msgstr "Warna Teks"
+
+#~ msgid "Selected Text Color"
+#~ msgstr "Warna Teks yang dipilih"
+
+#~ msgid "Repeat Delay"
+#~ msgstr "Ulangi Delay"
+
+#~ msgid "Repeat Rate"
+#~ msgstr "Ulangi Rating"
+
+#~ msgid "Cursor Blink Rate"
+#~ msgstr "Tingkat kedip kursor"
+
+#~ msgid "Test Area"
+#~ msgstr "Area Tes"
+
+#~ msgid "Keyboard Layout"
+#~ msgstr "Tata letak Papan Ketik"
+
+#~ msgid "No result"
+#~ msgstr "Tidak ada hasil"
+
+#~ msgid "Caps Lock prompt"
+#~ msgstr "Konfirmasi Caps Lock"
+
+#~ msgid "Disable the touchpad when inserting the mouse"
+#~ msgstr "Non-aktifkan touchpad ketika tetikus terpasang"
+
+#~ msgid "Theme"
+#~ msgstr "Tema"
+
+#~ msgid "Window"
+#~ msgstr "Jendela"
+
+#~ msgid "Icon"
+#~ msgstr "Ikon"
+
+#~ msgid "Cursor"
+#~ msgstr "Kursor"
+
+#~ msgid "Wallpaper"
+#~ msgstr "Wallpaper"
+
+#~ msgid "Fonts"
+#~ msgstr "Fonta"
+
+#~ msgid "Never"
+#~ msgstr "Tidak pernah"
+
+#~ msgid "1 minute"
+#~ msgstr "1 menit"
+
+#~ msgid "5 minutes"
+#~ msgstr "5 menit"
+
+#~ msgid "10 minutes"
+#~ msgstr "10 menit"
+
+#~ msgid "15 minutes"
+#~ msgstr "15 menit"
+
+#~ msgid "30 minutes"
+#~ msgstr "30 menit"
+
+#~ msgid "1 hour"
+#~ msgstr "1 jam"
+
+#~ msgid "When I press the power button"
+#~ msgstr "Ketika ditekan tombol power"
+
+#~ msgid "Shutdown"
+#~ msgstr "Matikan"
+
+#~ msgid "Suspend"
+#~ msgstr "Tangguhkan"
+
+#~ msgid "Ask"
+#~ msgstr "Tanya"
+
+#~ msgid "When I close the lid"
+#~ msgstr "Ketika Saya menutup lid"
+
+#~ msgid "Nothing"
+#~ msgstr "Tidak ada apa-apa"
+
+#~ msgid "Password required to wake up"
+#~ msgstr "Kata sandi dibutuhkan untung membangunkan"
+
+#~ msgid "Plugged in"
+#~ msgstr "Plugged in"
+
+#~ msgid "On battery"
+#~ msgstr "Pada baterai"
+
+#~ msgid "Turn off the display"
+#~ msgstr "Matikan layar"
+
+#~ msgid "Custom Options"
+#~ msgstr "Opsi Kustom"
+
+#~ msgid "System"
+#~ msgstr "Sistem"
+
+#~ msgid "Workspace"
+#~ msgstr "Ruang kerja"
+
+#~ msgid "Speaker"
+#~ msgstr "Speaker"
+
+#~ msgid "Output Volume"
+#~ msgstr "Volume Keluaran"
+
+#~ msgid "Microphone"
+#~ msgstr "Mikropon"
+
+#~ msgid "Input Volume"
+#~ msgstr "Volume Masukan"
+
+#~ msgid "Input Feedback"
+#~ msgstr "Masukkan Umpan Balik"
+
+#~ msgid "Output Port"
+#~ msgstr "Port Keluaran"
+
+#~ msgid "No port exists in this device."
+#~ msgstr "Tidak ada port tersedia pada perangkat ini."
+
+#~ msgid "Output device"
+#~ msgstr "Perangkat keluaran"
+
+#~ msgid "Input Port"
+#~ msgstr "Port masukan"
+
+#~ msgid "Input device"
+#~ msgstr "Perangkat masukan"
+
+#~ msgid "Hide Advanced..."
+#~ msgstr "Sembunyikan lanjutan ..."
+
+#~ msgid "Show Advanced..."
+#~ msgstr "Tampilkan Lanjutan ..."
+
+#~ msgid "Copyright (c) 2011-2014 Wuhan Deepin Technology Co.,Ltd."
+#~ msgstr "Hak cipta (c) 2011-2014 Wuhan Deepin Technology Co., Ltd."
+
+#~ msgid "Deepin Edition"
+#~ msgstr "Edisi Deepin"
+
+#~ msgid "System Type"
+#~ msgstr "Tipe Sistem"
+
+#~ msgid "bit"
+#~ msgstr "bit"
+
+#~ msgid "Processor"
+#~ msgstr "Prosesor"
+
+#~ msgid "Memory"
+#~ msgstr "Memori"
+
+#~ msgid "Disk"
+#~ msgstr "Diska"
+
+#~ msgid "GNU GENERAL PUBLIC LICENSE"
+#~ msgstr "LISENSI GNU GENERAL PUBLIC"
+
+#~ msgid "Unknown"
+#~ msgstr "Tidak diketahui"
+
+#~ msgid "Wired"
+#~ msgstr "Kabel"
+
+#~ msgid "Wireless"
+#~ msgstr "Nirkabel"
+
+#~ msgid "Unused1"
+#~ msgstr "Tidak digunakan 1"
+
+#~ msgid "Unused2"
+#~ msgstr "Tidak digunakan 2"
+
+#~ msgid "OLPC mesh"
+#~ msgstr "OLPC mesh"
+
+#~ msgid "WiMax"
+#~ msgstr "WiMax"
+
+#~ msgid "Modem"
+#~ msgstr "Modem"
+
+#~ msgid "InfiniBand"
+#~ msgstr "InfiniBand"
+
+#~ msgid "Bond"
+#~ msgstr "Bond"
+
+#~ msgid "VLAN"
+#~ msgstr "VLAN"
+
+#~ msgid "ADSL"
+#~ msgstr "ADSL"
+
+#~ msgid "Bridge"
+#~ msgstr "Bridge"
+
+#~ msgid "802.11 WiFi"
+#~ msgstr "802.11 WiFi"
+
+#~ msgid "802.11 WiFi AdHoc"
+#~ msgstr "802.11 WiFi AdHoc"
+
+#~ msgid "802.11 WiFi Hotspot"
+#~ msgstr "802.11 WiFi Hotspot"
+
+#~ msgid "Mobile GSM"
+#~ msgstr "Mobile GSM"
+
+#~ msgid "Mobile CDMA"
+#~ msgstr "Mobile CDMA"
+
+#~ msgid "VPN L2TP"
+#~ msgstr "VPN L2TP"
+
+#~ msgid "VPN PPTP"
+#~ msgstr "VPN PPTP"
+
+#~ msgid "VPN VPNC"
+#~ msgstr "VPN VPNC"
+
+#~ msgid "VPN OpenVPN"
+#~ msgstr "VPN OpenVPN"
+
+#~ msgid "VPN OpenConnect"
+#~ msgstr "VPN OpenConnect"
+
+#~ msgid "User List"
+#~ msgstr "Daftar Pengguna"

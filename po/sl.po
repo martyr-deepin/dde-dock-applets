@@ -1,0 +1,1159 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Translators:
+# andrej55 <andrej.marsetic@gmail.com>, 2014
+msgid ""
+msgstr ""
+"Project-Id-Version: dde-control-center\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-11-21 10:55+0800\n"
+"PO-Revision-Date: 2014-07-02 11:40+0000\n"
+"Last-Translator: andrej55 <andrej.marsetic@gmail.com>\n"
+"Language-Team: Slovenian (http://www.transifex.com/projects/p/dde-control-"
+"center/language/sl/)\n"
+"Language: sl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n"
+"%100==4 ? 2 : 3);\n"
+
+#: ../src/frame/AppletSettingWindow.qml:100
+msgid "Notice Region Setting "
+msgstr ""
+
+#: ../plugins/date_time/AppletTray.qml:80
+msgid "_Switch to analog"
+msgstr ""
+
+#: ../plugins/date_time/AppletTray.qml:81
+msgid "_Switch to digital"
+msgstr ""
+
+#: ../plugins/date_time/AppletTray.qml:178
+#: ../plugins/date_time/calendar_core.js:4
+msgid "Sun"
+msgstr "Ned"
+
+#: ../plugins/date_time/AppletTray.qml:179
+#: ../plugins/date_time/calendar_core.js:4
+msgid "Mon"
+msgstr "Pon"
+
+#: ../plugins/date_time/AppletTray.qml:180
+#: ../plugins/date_time/calendar_core.js:4
+msgid "Tue"
+msgstr "Tor"
+
+#: ../plugins/date_time/AppletTray.qml:181
+#: ../plugins/date_time/calendar_core.js:4
+msgid "Wed"
+msgstr "Sre"
+
+#: ../plugins/date_time/AppletTray.qml:182
+#: ../plugins/date_time/calendar_core.js:4
+msgid "Thu"
+msgstr "Čet"
+
+#: ../plugins/date_time/AppletTray.qml:183
+#: ../plugins/date_time/calendar_core.js:4
+msgid "Fri"
+msgstr "Pet"
+
+#: ../plugins/date_time/AppletTray.qml:184
+#: ../plugins/date_time/calendar_core.js:4
+msgid "Sat"
+msgstr "Sob"
+
+#: ../plugins/network/AppletTray.qml:35
+#, fuzzy
+msgid "Network Connected"
+msgstr "Nova PPPoE povezava"
+
+#: ../plugins/network/AppletTray.qml:35
+#, fuzzy
+msgid "Network Not Connected"
+msgstr "Nova PPPoE povezava"
+
+#: ../plugins/network/AppletTray.qml:305
+#: ../plugins/network/bluetooth/AppletTray.qml:78
+#: ../plugins/network/vpn/AppletTray.qml:70
+#: ../plugins/network/wifi/AppletTray.qml:126
+#: ../plugins/power/AppletTray.qml:99 ../plugins/sound/AppletTray.qml:173
+msgid "_Run"
+msgstr "_Zaženi"
+
+#: ../plugins/network/AppletTray.qml:306
+#: ../plugins/network/bluetooth/AppletTray.qml:79
+#: ../plugins/network/vpn/AppletTray.qml:71
+#: ../plugins/network/wifi/AppletTray.qml:127
+#: ../plugins/power/AppletTray.qml:106 ../plugins/sound/AppletTray.qml:174
+msgid "_Undock"
+msgstr "_Odpni iz pulta"
+
+#: ../plugins/network/bluetooth/AppletTray.qml:118
+#: ../plugins/network/bluetooth/main.qml:33
+msgid "Bluetooth"
+msgstr "Bluetooth"
+
+#: ../plugins/network/vpn/AppletTray.qml:110
+#: ../plugins/network/vpn/main.qml:33
+msgid "VPN"
+msgstr "VPN"
+
+#: ../plugins/network/wifi/AppletTray.qml:168
+#: ../plugins/network/WirelessNetwork.qml:50
+#: ../plugins/network/wifi/main.qml:33
+msgid "Wireless Network"
+msgstr "Brezžično omrežje"
+
+#: ../plugins/power/AppletTray.qml:34
+msgid "On Charging"
+msgstr "Polnjenje "
+
+#: ../plugins/power/AppletTray.qml:46
+msgid "Custom"
+msgstr "Po meri"
+
+#: ../plugins/power/AppletTray.qml:47
+msgid "Power saver"
+msgstr "Varčevanje z energijo"
+
+#: ../plugins/power/AppletTray.qml:48
+msgid "Balanced"
+msgstr "Uravnoteženo"
+
+#: ../plugins/power/AppletTray.qml:49
+msgid "High performance"
+msgstr "Visoka zmogljivost"
+
+#: ../plugins/sound/AppletTray.qml:218
+msgid "Device"
+msgstr "Naprava"
+
+#: ../plugins/sound/AppletTray.qml:318
+msgid "Applications"
+msgstr "Programje"
+
+#: ../plugins/disk_mount/DiskItem.qml:124
+msgid "Unmount failed!"
+msgstr "Izpenjanje ni uspelo!"
+
+#: ../src/frame/WifiPasswordWindow.qml:150
+#, qt-format
+msgid "Please enter the password of  <font color=\"#faca57\">%1</font>"
+msgstr ""
+
+#: ../src/frame/WifiPasswordWindow.qml:172
+msgid "Password"
+msgstr "Geslo"
+
+#: ../src/frame/WifiPasswordWindow.qml:180
+#, fuzzy
+msgid "Auto-connect"
+msgstr "Samodejna povezava"
+
+#: ../src/frame/WifiPasswordWindow.qml:195
+msgid "Cancel"
+msgstr "Prekliči"
+
+#: ../src/frame/WifiPasswordWindow.qml:202
+msgid "Connect"
+msgstr "Povezi "
+
+#: ../plugins/network/WirelessApList.qml:95
+msgid "Scanning..."
+msgstr "Skeniranje..."
+
+#: ../plugins/network/WirelessNetwork.qml:50
+#, qt-format
+msgid "Wireless Network %1"
+msgstr "Brezžično omrežje %1"
+
+#: ../plugins/date_time/main.qml:32
+msgid "Date and Time"
+msgstr "Datum in čas"
+
+#: ../plugins/disk_mount/main.qml:33
+msgid "Disk Mount"
+msgstr ""
+
+#: ../plugins/network/main.qml:32
+msgid "Network"
+msgstr "Omrežje"
+
+#: ../plugins/power/main.qml:33
+msgid "Power"
+msgstr "Napajanje"
+
+#: ../plugins/sound/main.qml:32
+msgid "Sound"
+msgstr "Zvok"
+
+#~ msgid "Name"
+#~ msgstr "Ime"
+
+#~ msgid "Username"
+#~ msgstr "Uporabniško ime"
+
+#~ msgid "Service"
+#~ msgstr "Storitev"
+
+#~ msgid "New Mobile Connection"
+#~ msgstr "Nova mobilna povezava"
+
+#~ msgid "Service Type"
+#~ msgstr "Vrsta storitve"
+
+#~ msgid "APN"
+#~ msgstr "APN"
+
+#~ msgid "Number"
+#~ msgstr "Število"
+
+#~ msgid "Add"
+#~ msgstr "Dodaj"
+
+#, fuzzy
+#~ msgid "Invalid password"
+#~ msgstr "Geslo"
+
+#, fuzzy
+#~ msgid "Nothing input"
+#~ msgstr "Nič"
+
+#, fuzzy
+#~ msgid "Different password"
+#~ msgstr "Ponovi geslo"
+
+#~ msgid "Add User"
+#~ msgstr "Dodaj uporabnika"
+
+#~ msgid "New User"
+#~ msgstr "Nov uporabnik"
+
+#~ msgid "Standard"
+#~ msgstr "Obi;ajen"
+
+#~ msgid "Administrator"
+#~ msgstr "Skrbnik"
+
+#~ msgid "Repeat Password"
+#~ msgstr "Ponovi geslo"
+
+#~ msgid "Account Type"
+#~ msgstr "Vrsta računa"
+
+#~ msgid "Auto-login"
+#~ msgstr "Samodejna prijava"
+
+#~ msgid "Confirm"
+#~ msgstr "Potrdi"
+
+#~ msgid "VPN Type"
+#~ msgstr "VPN vrsta"
+
+#~ msgid "L2TP"
+#~ msgstr "L2TP"
+
+#~ msgid "PPTP"
+#~ msgstr "PPTP"
+
+#~ msgid "OpenVPN"
+#~ msgstr "OdprtiVPN"
+
+#~ msgid "OpenConnect"
+#~ msgstr "OpenConnect"
+
+#~ msgid "VPNC"
+#~ msgstr "VPNC"
+
+#~ msgid "Basic Information"
+#~ msgstr "Osnovne informacije"
+
+#~ msgid "Need VPN Plugin"
+#~ msgstr "Potreben VPN Plugin"
+
+#~ msgid "Gateway"
+#~ msgstr "Prehod"
+
+#~ msgid "Ask for Pwd"
+#~ msgstr "Vprašaj za Pwd"
+
+#~ msgid "CA Cert"
+#~ msgstr "CA cefikat"
+
+#~ msgid "Proxy"
+#~ msgstr "Proxy"
+
+#, fuzzy
+#~ msgid "Customize Key Direction"
+#~ msgstr "Uporabi ključ imenika"
+
+#~ msgid "Private Key"
+#~ msgstr "Zasebni ključ"
+
+#~ msgid "User Cert"
+#~ msgstr "Uporabniški Cert"
+
+#~ msgid "Remote IP"
+#~ msgstr "Oddaljen IP "
+
+#~ msgid "Local IP"
+#~ msgstr "Lokalni IP"
+
+#~ msgid "User Pwd"
+#~ msgstr "Uporabniški Pwd"
+
+#~ msgid "Group Name"
+#~ msgstr "Ime skupine"
+
+#~ msgid "Group Pwd"
+#~ msgstr "Skupinski Pwd"
+
+#~ msgid "CA File"
+#~ msgstr "CA datoteka"
+
+#~ msgid "Group ID"
+#~ msgstr "Skupinski ID"
+
+#, fuzzy
+#~ msgid "Pre-Shared Key"
+#~ msgstr "Zasebni ključ"
+
+#~ msgid "Use MPPE"
+#~ msgstr "Uporabite MPPE"
+
+#~ msgid "Connect to wireless"
+#~ msgstr "Poveži se na brezžično omrežje  "
+
+#~ msgid "SSID"
+#~ msgstr "SSID"
+
+#~ msgid "Security"
+#~ msgstr "Varnost"
+
+#~ msgid "Key"
+#~ msgstr "Ključ"
+
+#~ msgid "Identity"
+#~ msgstr "Indediteta "
+
+#~ msgid "Anonymous ID"
+#~ msgstr "Anonimni ID"
+
+#~ msgid "PAC file"
+#~ msgstr "PAC datoteka"
+
+#, fuzzy
+#~ msgid "Choose a new picture for your Avatar"
+#~ msgstr "Izberi novo sliko"
+
+#~ msgid "Recently Used"
+#~ msgstr "Pred kratkim uporabljeno"
+
+#~ msgid "Webcam"
+#~ msgstr "Spletna kamera"
+
+#~ msgid "Today"
+#~ msgstr "Danes"
+
+#~ msgid "New Network"
+#~ msgstr "Novo omrežje "
+
+#~ msgid "PPPoE"
+#~ msgstr "PPPoE"
+
+#~ msgid "Next"
+#~ msgstr "Naprej"
+
+#~ msgid "Delete this network"
+#~ msgstr "Izbriši to omrežje "
+
+#~ msgid "Are you sure you want to delete this network?"
+#~ msgstr "Ali ste prepričani,da želite izbrisati to omrežje?"
+
+#~ msgid "Save"
+#~ msgstr "Shrani"
+
+#~ msgid "Close"
+#~ msgstr "Zapri"
+
+#~ msgid "Delete"
+#~ msgstr "Izbriši"
+
+#~ msgid "Command"
+#~ msgstr "Ukaz"
+
+#~ msgid "Keep user's files"
+#~ msgstr "Obdrži uporabniške datoteke "
+
+#~ msgid "Delete user's files"
+#~ msgstr "Izbriši uporabniške datoteke"
+
+#~ msgid "PPPoE Connections"
+#~ msgstr " PPPoE povezava"
+
+#~ msgid "Current system lacks component for %1"
+#~ msgstr "Sedanji sistem nima komponento za %1"
+
+#~ msgid "Click to install"
+#~ msgstr "Klikni za namestitev"
+
+#~ msgid "Ethernet"
+#~ msgstr "Internet"
+
+#~ msgid "Cloned MAC Addr"
+#~ msgstr "kloniranje MAC Nasl."
+
+#, fuzzy
+#~ msgid "Customize MTU"
+#~ msgstr "MTU po meri"
+
+#~ msgid "MTU"
+#~ msgstr "MTU"
+
+#~ msgid "IPv4"
+#~ msgstr "IPv4"
+
+#~ msgid "Method"
+#~ msgstr "Metoda"
+
+#~ msgid "IP Address"
+#~ msgstr "IP naslov"
+
+#~ msgid "Netmask"
+#~ msgstr "Netmask"
+
+#~ msgid "DNS Server"
+#~ msgstr "DNS strežnik "
+
+#~ msgid "IPv6"
+#~ msgstr "IPv6"
+
+#~ msgid "Prefix"
+#~ msgstr "Predpona"
+
+#~ msgid "Mobile"
+#~ msgstr "Mobilno"
+
+#~ msgid "Network ID"
+#~ msgstr "ID omrežja "
+
+#~ msgid "Type"
+#~ msgstr "Vrsta"
+
+#~ msgid "Home Network Only"
+#~ msgstr "Samo domače omrežje"
+
+#~ msgid "PIN"
+#~ msgstr "PIN"
+
+#~ msgid "PPP"
+#~ msgstr "PPP"
+
+#~ msgid "128-bit MPPE"
+#~ msgstr "128-bitni MPPE"
+
+#~ msgid "No BSD Data Compression"
+#~ msgstr "Ni BSD stiskanja podatkov"
+
+#~ msgid "Security Required"
+#~ msgstr "Varnost zahtevana"
+
+#~ msgid "NT Domain"
+#~ msgstr "NT domena"
+
+#~ msgid "No Address/Control Compression"
+#~ msgstr "Ni naslova/Control Compression"
+
+#~ msgid "VPN Advanced"
+#~ msgstr "VPN Napredno"
+
+#~ msgid "Use TAP device"
+#~ msgstr "Uporabi TAP napravo"
+
+#, fuzzy
+#~ msgid "Customize Tunnel MTU"
+#~ msgstr "MTU po meri"
+
+#~ msgid "Proxy Type"
+#~ msgstr "Proxy vrsta "
+
+#~ msgid "Server IP"
+#~ msgstr "IP strežnika"
+
+#~ msgid "Port"
+#~ msgstr "Vrata"
+
+#~ msgid "VPN Security"
+#~ msgstr "VPN Varnost"
+
+#~ msgid "Key File"
+#~ msgstr "Zaklenjena datoteka"
+
+#~ msgid "Domain"
+#~ msgstr "Domena"
+
+#~ msgid "Vendor"
+#~ msgstr "Prodajalec"
+
+#~ msgid "Version"
+#~ msgstr "Različica"
+
+#~ msgid "Local Port"
+#~ msgstr "Lokalna vrata"
+
+#~ msgid "Disable Dead Peer Detection"
+#~ msgstr "Onemogoči Dead Peer zaznavanje"
+
+#~ msgid "Wi-Fi"
+#~ msgstr "Wi-Fi"
+
+#~ msgid "Mode"
+#~ msgstr "Način"
+
+#~ msgid "Channel"
+#~ msgstr "Kanal"
+
+#~ msgid "Enable"
+#~ msgstr "Omogoči"
+
+#~ msgid "Size"
+#~ msgstr "Velikost "
+
+#~ msgid "Font %1"
+#~ msgstr "Pisava %1"
+
+#~ msgid "Guest"
+#~ msgstr "Gost"
+
+#~ msgid "Enabled"
+#~ msgstr "Omogoči"
+
+#~ msgid "Activated Connections"
+#~ msgstr "Aktiviraj povezavo"
+
+#, fuzzy
+#~ msgid "None Activated Connection"
+#~ msgstr "Aktiviraj povezavo"
+
+#, fuzzy
+#~ msgid "(default)"
+#~ msgstr "Privzeto"
+
+#~ msgid "Device Addr"
+#~ msgstr "Nasl. naprave"
+
+#~ msgid "Subnet Mask"
+#~ msgstr "Maska podmrežja"
+
+#~ msgid "Primary DNS"
+#~ msgstr "Prednostni DNS"
+
+#, fuzzy
+#~ msgid "Third DNS"
+#~ msgstr "Prednostni DNS"
+
+#~ msgid "Device Speed"
+#~ msgstr "Hitrost naprave"
+
+#~ msgid "Language"
+#~ msgstr "Jezik"
+
+#~ msgid "Do you want to keep these display settings?"
+#~ msgstr "Ali hočeš obdržati te nastavitve prikaza?"
+
+#~ msgid ""
+#~ "Reverting to previous display settings in <font color='#F48914'>%1</font> "
+#~ "seconds."
+#~ msgstr ""
+#~ "Vrnitev v prejšnje nastavitve zaslona v <font color='#F48914'>%1</ font> "
+#~ "sekunde."
+
+#~ msgid "Keep Changes"
+#~ msgstr "Obdrži spremenbe"
+
+#~ msgid "Revert"
+#~ msgstr "Povrni"
+
+#~ msgid "More Settings"
+#~ msgstr "Več nastavitev"
+
+#~ msgid "Display"
+#~ msgstr "Zaslon"
+
+#~ msgid "Desktop"
+#~ msgstr "Namizje"
+
+#~ msgid "Personalization"
+#~ msgstr "Prilagoditev"
+
+#~ msgid "Keyboard Shortcuts"
+#~ msgstr "Bližnjice na tipkovnici "
+
+#, fuzzy
+#~ msgid "Keyboard and Language"
+#~ msgstr "Tipkovnični razpored"
+
+#~ msgid "Mouse and Touchpad"
+#~ msgstr "Miška in Touchpad"
+
+#~ msgid "Mouse"
+#~ msgstr "Miška"
+
+#~ msgid "User Accounts"
+#~ msgstr "Uporabniški računi"
+
+#~ msgid "Default Applications"
+#~ msgstr "Privzete aplikacije"
+
+#~ msgid "System Information"
+#~ msgstr "Sistemske informacije"
+
+#~ msgid "Boot Menu"
+#~ msgstr "Boot meni"
+
+#~ msgid "Home"
+#~ msgstr "Dom"
+
+#~ msgid "Set as primary display"
+#~ msgstr "Nastavi kot primarni zaslon"
+
+#~ msgid "Identify"
+#~ msgstr "Prepoznajte"
+
+#~ msgid "Edit"
+#~ msgstr "Uredi"
+
+#~ msgid "Normal"
+#~ msgstr "Normalno"
+
+#~ msgid "Rotate Right"
+#~ msgstr "Zavrti desno"
+
+#~ msgid "Rotate Left"
+#~ msgstr "Zavrti levo"
+
+#~ msgid "Resolution"
+#~ msgstr "Ločljivost"
+
+#~ msgid "Rotation"
+#~ msgstr "Zasuk"
+
+#~ msgid "Brightness"
+#~ msgstr "Svetlost"
+
+#~ msgid "Wired Connection %1"
+#~ msgstr "Žična povezava %1"
+
+#, fuzzy
+#~ msgid "Wired Connection"
+#~ msgstr "Žična povezava %1"
+
+#~ msgid "Password: "
+#~ msgstr "Geslo:"
+
+#~ msgid "New Password"
+#~ msgstr "Novo geslo"
+
+#~ msgid "Repeat"
+#~ msgstr "Ponovitev"
+
+#~ msgid "Drag and drop an image to change background."
+#~ msgstr "Povleci in spusti sliko, da spremenite ozadje."
+
+#, fuzzy
+#~ msgid "Updating..."
+#~ msgstr "Skeniranje..."
+
+#~ msgid "None"
+#~ msgstr "Nihče"
+
+#~ msgid "Manual"
+#~ msgstr "Ročno"
+
+#~ msgid "Auto"
+#~ msgstr "Avtomatsko "
+
+#~ msgid "HTTP Proxy"
+#~ msgstr "HTTP Proxy"
+
+#~ msgid "HTTPS Proxy"
+#~ msgstr "HTTPS Proxy"
+
+#~ msgid "FTP Proxy"
+#~ msgstr "Proxy FTP"
+
+#, fuzzy
+#~ msgid "Socks Proxy"
+#~ msgstr "HTTPS Proxy"
+
+#~ msgid "Configuration URL"
+#~ msgstr "Konfiguracija URLja"
+
+#~ msgid "Reset successfully"
+#~ msgstr "Uspešna ponastavitev"
+
+#~ msgid "Reset"
+#~ msgstr "Ponastavi"
+
+#~ msgid "Disable"
+#~ msgstr "Onemogoči"
+
+#~ msgid "Please input new shortcut"
+#~ msgstr "Prosimo vpišite novo bližnjico"
+
+#~ msgid "The shortcut you set "
+#~ msgstr "Bljižnica nastavljena"
+
+#~ msgid "Do you want to replace it?"
+#~ msgstr "Ali jo želite zamenjati?"
+
+#~ msgid "Replace"
+#~ msgstr "Zamenjaj"
+
+#~ msgid "Preview Theme"
+#~ msgstr "Predogled teme"
+
+#~ msgid "Done"
+#~ msgstr "Končano"
+
+#~ msgid "Set"
+#~ msgstr "Nastavi"
+
+#~ msgid "Time zone"
+#~ msgstr "Časovni pas"
+
+#~ msgid "Touchpad"
+#~ msgstr "Sledilna ploščica"
+
+#~ msgid "Primary Button"
+#~ msgstr "Primarni gumb"
+
+#~ msgid "Left Button"
+#~ msgstr "Levi gumb"
+
+#~ msgid "Right Button"
+#~ msgstr "Desni gumb"
+
+#~ msgid "Pointer Speed"
+#~ msgstr "Hitrost kazalca"
+
+#~ msgid "Slow"
+#~ msgstr "Počasi"
+
+#~ msgid "Fast"
+#~ msgstr "Hitro"
+
+#~ msgid "Double-click Speed"
+#~ msgstr "Dvo-klikna hitrost"
+
+#~ msgid "Short"
+#~ msgstr "Kratek"
+
+#~ msgid "Long"
+#~ msgstr "Dolg"
+
+#~ msgid "Tap to click"
+#~ msgstr "Dotakni se za klik"
+
+#~ msgid "VPN Connections"
+#~ msgstr "VPN povezava"
+
+#~ msgid "Snapshot"
+#~ msgstr "Snapshot"
+
+#~ msgid "Again"
+#~ msgstr "Ponovno"
+
+#~ msgid "No camera found."
+#~ msgstr "Kamera ni bila najdena"
+
+#~ msgid "Edit Wi-Fi Hotspot"
+#~ msgstr "Uredi Wi-Fi vročo točko "
+
+#~ msgid "Create Wi-Fi Hotspot"
+#~ msgstr "Ustvari Wi-Fi vročo točko"
+
+#~ msgid "Create"
+#~ msgstr "Ustvari"
+
+#~ msgid "Password:"
+#~ msgstr "Geslo:"
+
+#~ msgid "Wired Network"
+#~ msgstr "Žično omrežje"
+
+#~ msgid "Connect to hidden access point"
+#~ msgstr "Povežite se s skrito dostopno točko"
+
+#~ msgid "ON/OFF"
+#~ msgstr "Vklop/Izklop"
+
+#~ msgid "Devices nearby"
+#~ msgstr "Naprave v bližini"
+
+#~ msgid "Automatic date and time"
+#~ msgstr "Avtomatski datum in čas"
+
+#~ msgid "Use 24-hour clock"
+#~ msgstr "Uporabi 24-urni zapis"
+
+#~ msgid "Date"
+#~ msgstr "Datum"
+
+#~ msgid "Set Date"
+#~ msgstr "Nastavi datum"
+
+#~ msgid "Browser"
+#~ msgstr "Brskalnik"
+
+#~ msgid "Mail"
+#~ msgstr "Pošta"
+
+#~ msgid "Text"
+#~ msgstr "Besedilo"
+
+#~ msgid "Music"
+#~ msgstr "Glasba"
+
+#~ msgid "Video"
+#~ msgstr "Videovsebina"
+
+#~ msgid "Picture"
+#~ msgstr "Slika"
+
+#~ msgid "Terminal"
+#~ msgstr "Terminal"
+
+#~ msgid "AutoPlay"
+#~ msgstr "Samodejno predvajaj"
+
+#~ msgid "CD Audio"
+#~ msgstr "CD audio"
+
+#~ msgid "DVD Video"
+#~ msgstr "DVD video "
+
+#~ msgid "Music Player"
+#~ msgstr "Glasbeni predvajalnik"
+
+#~ msgid "Camera"
+#~ msgstr "Kamera"
+
+#~ msgid "Software"
+#~ msgstr "Programska oprema"
+
+#~ msgid "Primary Monitor: "
+#~ msgstr "Primarni zaslon:"
+
+#~ msgid "Monitor"
+#~ msgstr "Zaslon"
+
+#~ msgid "Apply"
+#~ msgstr "Uporabi"
+
+#~ msgid "Default Startup"
+#~ msgstr "Privizetni zagon"
+
+#~ msgid "Boot delay"
+#~ msgstr "Boot zamuda"
+
+#~ msgid "Text Color"
+#~ msgstr "Barva besedila"
+
+#~ msgid "Selected Text Color"
+#~ msgstr "Izbrana barva besedila"
+
+#~ msgid "Repeat Delay"
+#~ msgstr "Zamuda pred ponovitvijo"
+
+#~ msgid "Repeat Rate"
+#~ msgstr "Ponovite oceno"
+
+#~ msgid "Test Area"
+#~ msgstr "Besedilno območje"
+
+#~ msgid "Keyboard Layout"
+#~ msgstr "Tipkovnični razpored"
+
+#~ msgid "No result"
+#~ msgstr "Ni rezultatov"
+
+#~ msgid "Caps Lock prompt"
+#~ msgstr "Caps Lock poziv"
+
+#~ msgid "Theme"
+#~ msgstr "Tema"
+
+#~ msgid "Window"
+#~ msgstr "Okno"
+
+#~ msgid "Icon"
+#~ msgstr "Ikona"
+
+#~ msgid "Wallpaper"
+#~ msgstr "Ozadje"
+
+#~ msgid "Fonts"
+#~ msgstr "Pisave"
+
+#~ msgid "Never"
+#~ msgstr "Nikoli"
+
+#~ msgid "1 minute"
+#~ msgstr "1 minuta"
+
+#~ msgid "5 minutes"
+#~ msgstr "5 minut"
+
+#~ msgid "10 minutes"
+#~ msgstr "10 minut"
+
+#~ msgid "15 minutes"
+#~ msgstr "15 minut"
+
+#~ msgid "30 minutes"
+#~ msgstr "30 minut"
+
+#~ msgid "1 hour"
+#~ msgstr "1 ura"
+
+#~ msgid "When I press the power button"
+#~ msgstr "Ko pritisnem gumb za vklop"
+
+#~ msgid "Shutdown"
+#~ msgstr "Ugasni"
+
+#~ msgid "Suspend"
+#~ msgstr "V mirovanje"
+
+#~ msgid "Ask"
+#~ msgstr "Vprašaj"
+
+#~ msgid "When I close the lid"
+#~ msgstr "Ko zaprem pokrov"
+
+#~ msgid "Nothing"
+#~ msgstr "Nič"
+
+#~ msgid "Password required to wake up"
+#~ msgstr "Za zbujanje, je potrebno geslo"
+
+#~ msgid "Plugged in"
+#~ msgstr "Priključen na električno omrežje"
+
+#~ msgid "On battery"
+#~ msgstr "Na baterijo"
+
+#~ msgid "Turn off the display"
+#~ msgstr "Ugasni zaslon"
+
+#~ msgid "Custom Options"
+#~ msgstr "Možnosti po meri"
+
+#~ msgid "System"
+#~ msgstr "Sistem"
+
+#~ msgid "Workspace"
+#~ msgstr "Delovna površina"
+
+#~ msgid "Speaker"
+#~ msgstr "Zvočnik"
+
+#~ msgid "Output Volume"
+#~ msgstr "Izhodna glasnost"
+
+#~ msgid "Balance"
+#~ msgstr "Ravnotežje"
+
+#~ msgid "Left"
+#~ msgstr "Levo"
+
+#~ msgid "Right"
+#~ msgstr "Desno"
+
+#~ msgid "Microphone"
+#~ msgstr "Mikrofon"
+
+#~ msgid "Input Volume"
+#~ msgstr "Vhodna glasnost"
+
+#~ msgid "Input Feedback"
+#~ msgstr "Vhod Feedback"
+
+#~ msgid "Output Port"
+#~ msgstr "Izhodna vrata"
+
+#~ msgid "No port exists in this device."
+#~ msgstr "Izhodi ne obstajajo v tej napravi"
+
+#~ msgid "Output device"
+#~ msgstr "Izhodna naprave"
+
+#~ msgid "Input Port"
+#~ msgstr "Vhodna vrata"
+
+#~ msgid "Input device"
+#~ msgstr "Izhodne naprave"
+
+#~ msgid "Hide Advanced..."
+#~ msgstr "Skrij dodatno..."
+
+#~ msgid "Show Advanced..."
+#~ msgstr "Pokaži Napredno..."
+
+#~ msgid "Copyright (c) 2011-2014 Wuhan Deepin Technology Co.,Ltd."
+#~ msgstr "Copyright (c) 2011-2014 Wuhan Deepin Technology Co.,Ltd."
+
+#~ msgid "Deepin Edition"
+#~ msgstr "Deepin verzija"
+
+#~ msgid "System Type"
+#~ msgstr "Vrsta naprave"
+
+#~ msgid "bit"
+#~ msgstr "bitov"
+
+#~ msgid "Processor"
+#~ msgstr "Procesor"
+
+#~ msgid "Memory"
+#~ msgstr "Spomin"
+
+#~ msgid "Disk"
+#~ msgstr "Disk"
+
+#~ msgid "GNU GENERAL PUBLIC LICENSE"
+#~ msgstr "GNU General Public License"
+
+#~ msgid "Unknown"
+#~ msgstr "Neznan"
+
+#~ msgid "Wired"
+#~ msgstr "Žično"
+
+#~ msgid "Wireless"
+#~ msgstr "Brezžično"
+
+#~ msgid "OLPC mesh"
+#~ msgstr "OLPC očesa"
+
+#~ msgid "WiMax"
+#~ msgstr "WiMax"
+
+#~ msgid "Modem"
+#~ msgstr "Modem"
+
+#~ msgid "VLAN"
+#~ msgstr "VLAN"
+
+#~ msgid "ADSL"
+#~ msgstr "ADSL"
+
+#~ msgid "Bridge"
+#~ msgstr "Most"
+
+#, fuzzy
+#~ msgid "802.11 WiFi Hotspot"
+#~ msgstr "Uredi Wi-Fi vročo točko "
+
+#, fuzzy
+#~ msgid "Mobile GSM"
+#~ msgstr "Mobilno"
+
+#, fuzzy
+#~ msgid "Mobile CDMA"
+#~ msgstr "Mobilno"
+
+#, fuzzy
+#~ msgid "VPN L2TP"
+#~ msgstr "L2TP"
+
+#, fuzzy
+#~ msgid "VPN PPTP"
+#~ msgstr "PPTP"
+
+#, fuzzy
+#~ msgid "VPN VPNC"
+#~ msgstr "VPNC"
+
+#, fuzzy
+#~ msgid "VPN OpenVPN"
+#~ msgstr "OdprtiVPN"
+
+#, fuzzy
+#~ msgid "VPN OpenConnect"
+#~ msgstr "OpenConnect"
+
+#, fuzzy
+#~ msgid "Ternary DNS"
+#~ msgstr "Prednostni DNS"
+
+#~ msgid "January"
+#~ msgstr "Januar"
+
+#~ msgid "February"
+#~ msgstr "Februar "
+
+#~ msgid "March"
+#~ msgstr "Marec"
+
+#~ msgid "April"
+#~ msgstr "April"
+
+#~ msgid "May"
+#~ msgstr "Maj"
+
+#~ msgid "June"
+#~ msgstr "Junij"
+
+#~ msgid "July"
+#~ msgstr "Julij"
+
+#~ msgid "August"
+#~ msgstr "August"
+
+#~ msgid "September"
+#~ msgstr "September"
+
+#~ msgid "October"
+#~ msgstr "Oktober"
+
+#~ msgid "November"
+#~ msgstr "November"
+
+#~ msgid "December"
+#~ msgstr "December"
+
+#~ msgid "Keyboard"
+#~ msgstr "Tipkovnica"
+
+#, fuzzy
+#~ msgid "Advanced"
+#~ msgstr "VPN Napredno"
+
+#, fuzzy
+#~ msgid "Custom Resolution"
+#~ msgstr "Ločljivost"
+
+#~ msgid "Default"
+#~ msgstr "Privzeto"
+
+#~ msgid "General"
+#~ msgstr "Splošno"
+
+#~ msgid "For All Users"
+#~ msgstr "Za vse uporabnike"
+
+#~ msgid "Background is changing, please reboot later..."
+#~ msgstr "Ozadje se spreminja, prosimo, ponovno zaženite kasneje ..."
+
+#~ msgid "Device Type"
+#~ msgstr "Vrsta naprave"
+
+#~ msgid "Addtional DNS"
+#~ msgstr "Nadomestni DNS"

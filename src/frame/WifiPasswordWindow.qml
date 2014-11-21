@@ -87,7 +87,7 @@ Window {
     property string devicePath : ""
 
     property var dssLocale: DLocale {
-        domain: "dde-control-center"
+        domain: "dde-dock-applet"
     }
 
     signal connect(string password)

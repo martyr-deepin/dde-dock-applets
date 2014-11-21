@@ -36,7 +36,7 @@ QtObject {
     property var dconstants: DConstants {}
     property var appletListModel: ListModel {}
     property var dssLocale: DLocale{
-        domain: "dde-control-center"
+        domain: "dde-dock-applet"
     }
 
     function dsTr(s){

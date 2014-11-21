@@ -1,0 +1,1393 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Translators:
+# Анатолий Валерианович <ffox909@mail.ru>, 2014
+# jvjey <justVolodya@gmail.com>, 2014
+# Serge Kukharski, 2014
+# Анатолий Валерианович <ffox909@mail.ru>, 2014
+msgid ""
+msgstr ""
+"Project-Id-Version: dde-control-center\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-11-21 10:55+0800\n"
+"PO-Revision-Date: 2014-11-18 03:08+0000\n"
+"Last-Translator: deepin_transifex <xiabin@linuxdeepin.com>\n"
+"Language-Team: Russian (http://www.transifex.com/projects/p/dde-control-"
+"center/language/ru/)\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#: ../src/frame/AppletSettingWindow.qml:100
+msgid "Notice Region Setting "
+msgstr ""
+
+#: ../plugins/date_time/AppletTray.qml:80
+msgid "_Switch to analog"
+msgstr "_Переключить на аналоговый"
+
+#: ../plugins/date_time/AppletTray.qml:81
+msgid "_Switch to digital"
+msgstr "_Переключить на цифровой"
+
+#: ../plugins/date_time/AppletTray.qml:178
+#: ../plugins/date_time/calendar_core.js:4
+msgid "Sun"
+msgstr "Вс"
+
+#: ../plugins/date_time/AppletTray.qml:179
+#: ../plugins/date_time/calendar_core.js:4
+msgid "Mon"
+msgstr "Пн"
+
+#: ../plugins/date_time/AppletTray.qml:180
+#: ../plugins/date_time/calendar_core.js:4
+msgid "Tue"
+msgstr "Вт"
+
+#: ../plugins/date_time/AppletTray.qml:181
+#: ../plugins/date_time/calendar_core.js:4
+msgid "Wed"
+msgstr "Ср"
+
+#: ../plugins/date_time/AppletTray.qml:182
+#: ../plugins/date_time/calendar_core.js:4
+msgid "Thu"
+msgstr "Чт"
+
+#: ../plugins/date_time/AppletTray.qml:183
+#: ../plugins/date_time/calendar_core.js:4
+msgid "Fri"
+msgstr "Пт"
+
+#: ../plugins/date_time/AppletTray.qml:184
+#: ../plugins/date_time/calendar_core.js:4
+msgid "Sat"
+msgstr "Сб"
+
+#: ../plugins/network/AppletTray.qml:35
+msgid "Network Connected"
+msgstr ""
+
+#: ../plugins/network/AppletTray.qml:35
+msgid "Network Not Connected"
+msgstr ""
+
+#: ../plugins/network/AppletTray.qml:305
+#: ../plugins/network/bluetooth/AppletTray.qml:78
+#: ../plugins/network/vpn/AppletTray.qml:70
+#: ../plugins/network/wifi/AppletTray.qml:126
+#: ../plugins/power/AppletTray.qml:99 ../plugins/sound/AppletTray.qml:173
+msgid "_Run"
+msgstr "Запуск"
+
+#: ../plugins/network/AppletTray.qml:306
+#: ../plugins/network/bluetooth/AppletTray.qml:79
+#: ../plugins/network/vpn/AppletTray.qml:71
+#: ../plugins/network/wifi/AppletTray.qml:127
+#: ../plugins/power/AppletTray.qml:106 ../plugins/sound/AppletTray.qml:174
+msgid "_Undock"
+msgstr "_Разблокировать"
+
+#: ../plugins/network/bluetooth/AppletTray.qml:118
+#: ../plugins/network/bluetooth/main.qml:33
+msgid "Bluetooth"
+msgstr "Bluetooth"
+
+#: ../plugins/network/vpn/AppletTray.qml:110
+#: ../plugins/network/vpn/main.qml:33
+msgid "VPN"
+msgstr "VPN"
+
+#: ../plugins/network/wifi/AppletTray.qml:168
+#: ../plugins/network/WirelessNetwork.qml:50
+#: ../plugins/network/wifi/main.qml:33
+msgid "Wireless Network"
+msgstr "Беспроводная сеть"
+
+#: ../plugins/power/AppletTray.qml:34
+msgid "On Charging"
+msgstr "При зарядке"
+
+#: ../plugins/power/AppletTray.qml:46
+msgid "Custom"
+msgstr "Собстенный"
+
+#: ../plugins/power/AppletTray.qml:47
+msgid "Power saver"
+msgstr "Экономичный"
+
+#: ../plugins/power/AppletTray.qml:48
+msgid "Balanced"
+msgstr "Сбалансированный"
+
+#: ../plugins/power/AppletTray.qml:49
+msgid "High performance"
+msgstr "Высокая производительность"
+
+#: ../plugins/sound/AppletTray.qml:218
+msgid "Device"
+msgstr "Устройство"
+
+#: ../plugins/sound/AppletTray.qml:318
+msgid "Applications"
+msgstr "Приложения"
+
+#: ../plugins/disk_mount/DiskItem.qml:124
+msgid "Unmount failed!"
+msgstr "Отмонтирование неудачно!"
+
+#: ../src/frame/WifiPasswordWindow.qml:150
+#, fuzzy, qt-format
+msgid "Please enter the password of  <font color=\"#faca57\">%1</font>"
+msgstr ""
+"Для доступа к Wi-Fi-сети <font color=\"#faca57\">%1</font> требуются пароли "
+"или ключи шифрования"
+
+#: ../src/frame/WifiPasswordWindow.qml:172
+msgid "Password"
+msgstr "Пароль"
+
+#: ../src/frame/WifiPasswordWindow.qml:180
+#, fuzzy
+msgid "Auto-connect"
+msgstr "Соединятся втоматически"
+
+#: ../src/frame/WifiPasswordWindow.qml:195
+msgid "Cancel"
+msgstr "Отмена"
+
+#: ../src/frame/WifiPasswordWindow.qml:202
+msgid "Connect"
+msgstr "Соединение"
+
+#: ../plugins/network/WirelessApList.qml:95
+msgid "Scanning..."
+msgstr "Сканирование…"
+
+#: ../plugins/network/WirelessNetwork.qml:50
+#, qt-format
+msgid "Wireless Network %1"
+msgstr "Беспроводная сеть %1"
+
+#: ../plugins/date_time/main.qml:32
+msgid "Date and Time"
+msgstr "Дата и время"
+
+#: ../plugins/disk_mount/main.qml:33
+msgid "Disk Mount"
+msgstr "Монтирование диска"
+
+#: ../plugins/network/main.qml:32
+msgid "Network"
+msgstr "Сеть"
+
+#: ../plugins/power/main.qml:33
+msgid "Power"
+msgstr "Питание"
+
+#: ../plugins/sound/main.qml:32
+msgid "Sound"
+msgstr "Звук"
+
+#~ msgid "New PPPoE Connection"
+#~ msgstr "Новое PPPoE-соединение"
+
+#~ msgid "Name"
+#~ msgstr "Имя"
+
+#~ msgid "Username"
+#~ msgstr "Имя пользователя"
+
+#~ msgid "Service"
+#~ msgstr "Служба"
+
+#~ msgid "New Mobile Connection"
+#~ msgstr "Новое мобильное соединение"
+
+#~ msgid "Service Type"
+#~ msgstr "Тип службы"
+
+#~ msgid "APN"
+#~ msgstr "APN"
+
+#~ msgid "Number"
+#~ msgstr "Номер"
+
+#~ msgid "Add"
+#~ msgstr "Добавить"
+
+#~ msgid "Invalid password"
+#~ msgstr "Неверный пароль"
+
+#~ msgid "Nothing input"
+#~ msgstr "Не введено"
+
+#~ msgid "Different password"
+#~ msgstr "Пароли не совпадают"
+
+#~ msgid "Add User"
+#~ msgstr "Добавить пользователя"
+
+#~ msgid "New User"
+#~ msgstr "Новый пользователь"
+
+#~ msgid "Standard"
+#~ msgstr "Стандартный"
+
+#~ msgid "Administrator"
+#~ msgstr "Администратор"
+
+#~ msgid "Repeat Password"
+#~ msgstr "Повтор пароля"
+
+#~ msgid "Account Type"
+#~ msgstr "Тип аккаунта"
+
+#~ msgid "Auto-login"
+#~ msgstr "Автовход"
+
+#~ msgid "Confirm"
+#~ msgstr "Подтвердить"
+
+#~ msgid "VPN Type"
+#~ msgstr "Тип VPN"
+
+#~ msgid "L2TP"
+#~ msgstr "L2TP"
+
+#~ msgid "PPTP"
+#~ msgstr "PPTP"
+
+#~ msgid "OpenVPN"
+#~ msgstr "OpenVPN"
+
+#~ msgid "OpenConnect"
+#~ msgstr "OpenConnect"
+
+#~ msgid "VPNC"
+#~ msgstr "VPNC"
+
+#~ msgid "Basic Information"
+#~ msgstr "Основная информация"
+
+#~ msgid "Need VPN Plugin"
+#~ msgstr "Нужен VPN-плагин"
+
+#~ msgid "Gateway"
+#~ msgstr "Шлюз"
+
+#~ msgid "Ask for Pwd"
+#~ msgstr "Запрос пароля"
+
+#~ msgid "CA Cert"
+#~ msgstr "CA Сертификат"
+
+#~ msgid "Proxy"
+#~ msgstr "Прокси"
+
+#~ msgid "Allow Cisco Secure Desktop Trojan"
+#~ msgstr "Разрешить троян Cisco Secure Desktop"
+
+#~ msgid "Customize Key Direction"
+#~ msgstr "Настроить ключевое направление"
+
+#~ msgid "Private Key"
+#~ msgstr "Личный ключ"
+
+#~ msgid "Auth Type"
+#~ msgstr "Тип аутентификации"
+
+#~ msgid "User Cert"
+#~ msgstr "Сертификат пользователя"
+
+#~ msgid "CSD Script"
+#~ msgstr "CSD-скрипт"
+
+#~ msgid "Use FSID for Key Passphrase"
+#~ msgstr "Используйте FSID для ключевой фразы"
+
+#~ msgid "Private Pwd"
+#~ msgstr "Личный пароль"
+
+#~ msgid "Static Key"
+#~ msgstr "Статический ключ"
+
+#~ msgid "Key Direction"
+#~ msgstr "Ключевое направление"
+
+#~ msgid "Remote IP"
+#~ msgstr "Удаленный IP"
+
+#~ msgid "Local IP"
+#~ msgstr "Локальный IP"
+
+#~ msgid "User Pwd"
+#~ msgstr "Пароль пользователя"
+
+#~ msgid "Group Name"
+#~ msgstr "Имя группы"
+
+#~ msgid "Group Pwd"
+#~ msgstr "Пароль группы"
+
+#~ msgid "Use Hybrid Authentication"
+#~ msgstr "Использовать гибридную аутентификацию"
+
+#~ msgid "CA File"
+#~ msgstr "Файл сертификата"
+
+#~ msgid "Enable IPsec"
+#~ msgstr "Влючить IPsec"
+
+#~ msgid "Group ID"
+#~ msgstr "ID группы"
+
+#~ msgid "Pre-Shared Key"
+#~ msgstr "Pre-Shared ключ"
+
+#~ msgid "Use MPPE"
+#~ msgstr "Использовать MPPE"
+
+#~ msgid "Connect to wireless"
+#~ msgstr "Соединиться беспроводно"
+
+#~ msgid "SSID"
+#~ msgstr "SSID"
+
+#~ msgid "Security"
+#~ msgstr "Безопасность"
+
+#~ msgid "Key"
+#~ msgstr "Ключ"
+
+#~ msgid "EAP Auth"
+#~ msgstr "EAP-аутентификация"
+
+#~ msgid "Identity"
+#~ msgstr "Подлинность"
+
+#~ msgid "Anonymous ID"
+#~ msgstr "Анонимный ID"
+
+#~ msgid "Provisioning"
+#~ msgstr "Резервирование"
+
+#~ msgid "PAC file"
+#~ msgstr "PAC-файл"
+
+#~ msgid "PEAP Version"
+#~ msgstr "Версия PEAP"
+
+#~ msgid "Inner Auth"
+#~ msgstr "Внутренняя аутентификация"
+
+#~ msgid "Dock Applet Enabled"
+#~ msgstr "Док-апплет включён"
+
+#~ msgid "Choose a new picture for your Avatar"
+#~ msgstr "Выбирать новый рисунок для аватара"
+
+#~ msgid "Recently Used"
+#~ msgstr "Недавно использованные"
+
+#~ msgid "Avatar"
+#~ msgstr "Аватар"
+
+#~ msgid "Webcam"
+#~ msgstr "Веб-камера"
+
+#~ msgid "Left/Right Balance"
+#~ msgstr "Баланс Левый/Правый "
+
+#~ msgid "Left"
+#~ msgstr "Левый"
+
+#~ msgid "Right"
+#~ msgstr "Правый"
+
+#~ msgid "Today"
+#~ msgstr "Сегодня"
+
+#~ msgid "New Network"
+#~ msgstr "Новая сеть"
+
+#~ msgid "PPPoE"
+#~ msgstr "PPPoE"
+
+#~ msgid "Next"
+#~ msgstr "Следующий"
+
+#~ msgid "Delete this network"
+#~ msgstr "Удалить эту сеть"
+
+#~ msgid "Are you sure you want to delete this network?"
+#~ msgstr "Вы действительно желаете удалить эту сеть?"
+
+#~ msgid "Save"
+#~ msgstr "Сохранить"
+
+#~ msgid "Close"
+#~ msgstr "Закрыть"
+
+#~ msgid "Delete"
+#~ msgstr "Удалить"
+
+#~ msgid "Command"
+#~ msgstr "Команда"
+
+#~ msgid "Keep user's files"
+#~ msgstr "Оставить файлы пользователя"
+
+#~ msgid "Delete user's files"
+#~ msgstr "Удалить файлы пользователя"
+
+#~ msgid "PPPoE Connections"
+#~ msgstr "PPPoE-соединения"
+
+#~ msgid "Current system lacks component for %1"
+#~ msgstr "Текущей системе не хватает компонента для %1"
+
+#~ msgid "Click to install"
+#~ msgstr "Нажать для установки"
+
+#~ msgid "Ethernet"
+#~ msgstr "Ethernet"
+
+#~ msgid "Device MAC Addr"
+#~ msgstr "MAC-адрес устройства"
+
+#~ msgid "Cloned MAC Addr"
+#~ msgstr "Клонированный MAC-адрес"
+
+#~ msgid "Customize MTU"
+#~ msgstr "Настроить MTU"
+
+#~ msgid "MTU"
+#~ msgstr "MTU"
+
+#~ msgid "IPv4"
+#~ msgstr "IPv4"
+
+#~ msgid "Method"
+#~ msgstr "Метод"
+
+#~ msgid "IP Address"
+#~ msgstr "IP-адрес"
+
+#~ msgid "Netmask"
+#~ msgstr "Маска сети"
+
+#~ msgid "DNS Server"
+#~ msgstr "DNS-сервер"
+
+#~ msgid "IPv6"
+#~ msgstr "IPv6"
+
+#~ msgid "Prefix"
+#~ msgstr "Префикс"
+
+#~ msgid "Mobile"
+#~ msgstr "Мобильная"
+
+#~ msgid "Network ID"
+#~ msgstr "ID сети"
+
+#~ msgid "Type"
+#~ msgstr "Тип"
+
+#~ msgid "Home Network Only"
+#~ msgstr "Только домашняя сеть"
+
+#~ msgid "PIN"
+#~ msgstr "PIN"
+
+#~ msgid "PPP"
+#~ msgstr "PPP"
+
+#~ msgid "128-bit MPPE"
+#~ msgstr "128-бит. MPPE"
+
+#~ msgid "Stateful MPPE"
+#~ msgstr "MPPE с сохранением"
+
+#~ msgid "Refuse EAP Authentication"
+#~ msgstr "Отвергать аутентификацию EAP"
+
+#~ msgid "Refuse PAP Authentication"
+#~ msgstr "Отвергать аутентификацию PAP"
+
+#~ msgid "Refuse CHAP Authentication"
+#~ msgstr "Отвергать аутентификацию CHAP"
+
+#~ msgid "Refuse MSCHAP Authentication"
+#~ msgstr "Отвергать аутентификацию MSCHAP"
+
+#~ msgid "Refuse MSCHAPv2 Authentication"
+#~ msgstr "Отвергать аутентификацию MSCHAPv2"
+
+#~ msgid "No BSD Data Compression"
+#~ msgstr "Нет сжатия данных BSD"
+
+#~ msgid "No Deflate Data Compression"
+#~ msgstr "Нет сжатия данных Deflate"
+
+#~ msgid "No TCP Header Compression"
+#~ msgstr "Нет сжатия TCP-заголовков"
+
+#~ msgid "Send PPP Echo Packets"
+#~ msgstr "Отправка эхо-пакетов PPP"
+
+#~ msgid "Security Required"
+#~ msgstr "Требование безопасности"
+
+#~ msgid "NT Domain"
+#~ msgstr "NT-домен"
+
+#~ msgid "VPN IPsec"
+#~ msgstr "VPN IPsec"
+
+#~ msgid "VPN PPP"
+#~ msgstr "VPN PPP"
+
+#~ msgid "No Protocol Field Compression"
+#~ msgstr "Без протокола полевого сжатия"
+
+#~ msgid "No Address/Control Compression"
+#~ msgstr "Без адреса/Управление сжатием"
+
+#~ msgid "VPN Advanced"
+#~ msgstr "Расширенный VPN"
+
+#~ msgid "Gateway Port"
+#~ msgstr "Порт шлюза"
+
+#~ msgid "Customize Gateway Port"
+#~ msgstr "Настройка порта шлюза"
+
+#~ msgid "Customize Renegotiation Interval"
+#~ msgstr "Настроить Интервал Пересмотра"
+
+#~ msgid "Renegotiation Interval"
+#~ msgstr "Интервал повторного согласования"
+
+#~ msgid "Use LZO data compression"
+#~ msgstr "Использовать LZO-сжатие"
+
+#~ msgid "Use TCP connection"
+#~ msgstr "Использовать TCP-соединение"
+
+#~ msgid "Use TAP device"
+#~ msgstr "Использовать TAP-устройство"
+
+#~ msgid "Customize Tunnel MTU"
+#~ msgstr "Настроить туннель MTU"
+
+#~ msgid "Customize UDP Fragment Size"
+#~ msgstr "Настройте размер фрагмента UDP"
+
+#~ msgid "UDP Fragment Size"
+#~ msgstr "Размер фрагмента UDP"
+
+#~ msgid "Restrict Tunnel TCP MSS"
+#~ msgstr "Ограничить туннель TCP MSS"
+
+#~ msgid "Randomize Remote Hosts"
+#~ msgstr "Перемешать удаленные хосты"
+
+#~ msgid "VPN Proxies"
+#~ msgstr "VPN-прокси"
+
+#~ msgid "Proxy Type"
+#~ msgstr "Тип прокси"
+
+#~ msgid "Server IP"
+#~ msgstr "IP сервера"
+
+#~ msgid "Port"
+#~ msgstr "Порт"
+
+#~ msgid "Retry Indefinitely When Failed"
+#~ msgstr "Повторять бесконечно при неудаче"
+
+#~ msgid "VPN Security"
+#~ msgstr "Безопасность VPN"
+
+#~ msgid "Cipher"
+#~ msgstr "Шифр"
+
+#~ msgid "HMAC Auth"
+#~ msgstr "Аутентификация HMAC"
+
+#~ msgid "VPN TLS Authentication"
+#~ msgstr "Айтентификация VPN TLS"
+
+#~ msgid "Subject Match"
+#~ msgstr "Тема беседы"
+
+#~ msgid "Remote Cert Type"
+#~ msgstr "Удаленный тип сертификата"
+
+#~ msgid "Key File"
+#~ msgstr "Файл ключа"
+
+#~ msgid "Domain"
+#~ msgstr "Домен"
+
+#~ msgid "Vendor"
+#~ msgstr "Поставщик"
+
+#~ msgid "Version"
+#~ msgstr "Версия"
+
+#~ msgid "Encryption"
+#~ msgstr "Шифрование"
+
+#~ msgid "NAT Traversal"
+#~ msgstr "NAT-обход"
+
+#~ msgid "IKE DH Group"
+#~ msgstr "Группа IKE DH"
+
+#~ msgid "Forward Secrecy"
+#~ msgstr "Прямая секретность"
+
+#~ msgid "Local Port"
+#~ msgstr "Локальный порт"
+
+#~ msgid "Disable Dead Peer Detection"
+#~ msgstr "Отключить обнаружение мертвых пиров"
+
+#~ msgid "Wi-Fi"
+#~ msgstr "Wi-Fi"
+
+#~ msgid "Mode"
+#~ msgstr "Режим"
+
+#~ msgid "Band"
+#~ msgstr "Диапазон"
+
+#~ msgid "Channel"
+#~ msgstr "Канал"
+
+#~ msgid "Enable"
+#~ msgstr "Включить"
+
+#~ msgid "Front/Rear Balance"
+#~ msgstr "Баланс Передний/Задний"
+
+#~ msgid "Front"
+#~ msgstr "Передний"
+
+#~ msgid "Rear"
+#~ msgstr "Задний"
+
+#~ msgid "Size"
+#~ msgstr "Размер"
+
+#~ msgid "Font %1"
+#~ msgstr "Шрифт %1"
+
+#~ msgid "Guest"
+#~ msgstr "Гость"
+
+#~ msgid "Enabled"
+#~ msgstr "Включено"
+
+#~ msgid "Activated Connections"
+#~ msgstr "Доступные подключения"
+
+#~ msgid "None Activated Connection"
+#~ msgstr "Без активных подключений"
+
+#~ msgid "(default)"
+#~ msgstr "(по умолчанию)"
+
+#~ msgid "Interface"
+#~ msgstr "Интерфейс"
+
+#~ msgid "Device Addr"
+#~ msgstr "Адрес устройства"
+
+#~ msgid "Subnet Mask"
+#~ msgstr "Маска подсети"
+
+#~ msgid "Route Addr"
+#~ msgstr "Адрес Маршрута"
+
+#~ msgid "Primary DNS"
+#~ msgstr "Основной DNS"
+
+#~ msgid "Secondary DNS"
+#~ msgstr "Вторичный DNS"
+
+#~ msgid "Third DNS"
+#~ msgstr "Третий DNS"
+
+#~ msgid "Device Speed"
+#~ msgstr "Скорость устройства"
+
+#~ msgid "Language"
+#~ msgstr "Язык"
+
+#~ msgid "Do you want to keep these display settings?"
+#~ msgstr "Желаете оставить эти настройки дисплея?"
+
+#~ msgid ""
+#~ "Reverting to previous display settings in <font color='#F48914'>%1</font> "
+#~ "seconds."
+#~ msgstr ""
+#~ "Возврат к прежним настройкам дисплея через <font color='#F48914'>%1</"
+#~ "font> сек."
+
+#~ msgid "Keep Changes"
+#~ msgstr "Оставить изменения"
+
+#~ msgid "Revert"
+#~ msgstr "Вернуться"
+
+#~ msgid "Power Management"
+#~ msgstr "Управление питанием"
+
+#~ msgid "More Settings"
+#~ msgstr "Ещё настройки"
+
+#~ msgid "Display"
+#~ msgstr "Дисплей"
+
+#~ msgid "Desktop"
+#~ msgstr "Рабочий стол"
+
+#~ msgid "Personalization"
+#~ msgstr "Персонализация"
+
+#~ msgid "Keyboard Shortcuts"
+#~ msgstr "Cочетания клавиш"
+
+#~ msgid "Keyboard and Language"
+#~ msgstr "Язык и раскладка"
+
+#~ msgid "Tablet"
+#~ msgstr "Планшет"
+
+#~ msgid "Mouse and Touchpad"
+#~ msgstr "Мышь и Тачпад"
+
+#~ msgid "Mouse"
+#~ msgstr "Мышь"
+
+#~ msgid "User Accounts"
+#~ msgstr "Учетные записи"
+
+#~ msgid "Default Applications"
+#~ msgstr "Приложения по умолчанию"
+
+#~ msgid "System Information"
+#~ msgstr "Информация о системе"
+
+#~ msgid "Boot Menu"
+#~ msgstr "Меню загрузки"
+
+#~ msgid "Home"
+#~ msgstr "Домашняя"
+
+#~ msgid "Split"
+#~ msgstr "Сплит"
+
+#~ msgid "Set as primary display"
+#~ msgstr "Установить как главный дисплей"
+
+#~ msgid "Identify"
+#~ msgstr "Идентификация"
+
+#~ msgid "Edit"
+#~ msgstr "Редактировать"
+
+#~ msgid "Normal"
+#~ msgstr "Нормальный"
+
+#~ msgid "Rotate Right"
+#~ msgstr "Повернуть вправо"
+
+#~ msgid "Upside Down"
+#~ msgstr "Перевернуть"
+
+#~ msgid "Rotate Left"
+#~ msgstr "Повернуть влево"
+
+#~ msgid "Resolution"
+#~ msgstr "Разрешение"
+
+#~ msgid "Rotation"
+#~ msgstr "Вращение"
+
+#~ msgid "Brightness"
+#~ msgstr "Яркость"
+
+#~ msgid "Wired Connection %1"
+#~ msgstr "Проводная сеть %1"
+
+#~ msgid "Wired Connection"
+#~ msgstr "Проводное соединение"
+
+#~ msgid "not managed"
+#~ msgstr "не управляемый"
+
+#~ msgid "Password: "
+#~ msgstr "Пароль:"
+
+#~ msgid "New Password"
+#~ msgstr "Новый пароль"
+
+#~ msgid "Repeat"
+#~ msgstr "Повторить"
+
+#~ msgid "Drag and drop an image to change background."
+#~ msgstr "Перетащите изображение для смены фона"
+
+#~ msgid "Image format not supported"
+#~ msgstr "Неподдерживаемый формат образа"
+
+#~ msgid "Updating..."
+#~ msgstr "Обновление..."
+
+#~ msgid "Successfully updated, reboot to view."
+#~ msgstr "Успешное обновление, перезагрузите чтобы увидеть."
+
+#~ msgid "None"
+#~ msgstr "Ничего"
+
+#~ msgid "Manual"
+#~ msgstr "Руководство"
+
+#~ msgid "Auto"
+#~ msgstr "Авто"
+
+#~ msgid "HTTP Proxy"
+#~ msgstr "HTTP-прокси"
+
+#~ msgid "HTTPS Proxy"
+#~ msgstr "HTTPS-прокси"
+
+#~ msgid "FTP Proxy"
+#~ msgstr "FTP-прокси"
+
+#~ msgid "Socks Proxy"
+#~ msgstr "Socks прокси"
+
+#~ msgid "Configuration URL"
+#~ msgstr "URL конфигурации"
+
+#~ msgid "Apply system wide"
+#~ msgstr "Применить для всей системы"
+
+#~ msgid "System Proxy"
+#~ msgstr "Системный прокси"
+
+#~ msgid "Reset successfully"
+#~ msgstr "Успешный сброс"
+
+#~ msgid "Reset"
+#~ msgstr "Сброс"
+
+#~ msgid "Disable"
+#~ msgstr "Отключить"
+
+#~ msgid "Please input new shortcut"
+#~ msgstr "Пожалуйста, введите новые сочетания клавиш"
+
+#~ msgid "Shortcut \"%1\" is invalid, please retype new shortcut."
+#~ msgstr "Сочетание «%1» некорректно, попробуйте новое."
+
+#~ msgid "The shortcut you set "
+#~ msgstr "Установленные вами сочетания"
+
+#~ msgid "conflicts with the one used for \"%2\" in the \"%1\" category."
+#~ msgstr "конфликты с используемым для \"%2\" в категории \"%1\""
+
+#~ msgid "Do you want to replace it?"
+#~ msgstr "Желаете заменить?"
+
+#~ msgid "Replace"
+#~ msgstr "Заменить"
+
+#~ msgid "Preview Theme"
+#~ msgstr "Предпросмотр темы"
+
+#~ msgid "Done"
+#~ msgstr "Выполнено"
+
+#~ msgid "Double-click the above digits to change your time."
+#~ msgstr "Двойной клик по цифрам выше для изменения времени"
+
+#~ msgid "Set"
+#~ msgstr "Установить"
+
+#~ msgid "Time zone"
+#~ msgstr "Часовой пояс"
+
+#~ msgid "Touchpad"
+#~ msgstr "Тачпад"
+
+#~ msgid "Primary Button"
+#~ msgstr "Основная кнопка"
+
+#~ msgid "Left Button"
+#~ msgstr "Левая кнопка"
+
+#~ msgid "Right Button"
+#~ msgstr "Правая кнопка"
+
+#~ msgid "Pointer Speed"
+#~ msgstr "Скорость указателя"
+
+#~ msgid "Slow"
+#~ msgstr "Медленнее"
+
+#~ msgid "Fast"
+#~ msgstr "Быстрее"
+
+#~ msgid "Double-click Speed"
+#~ msgstr "Скорость двойного клика"
+
+#~ msgid "Drag Threshold"
+#~ msgstr "Порог перетаскивания"
+
+#~ msgid "Short"
+#~ msgstr "Короче"
+
+#~ msgid "Long"
+#~ msgstr "Длиннее"
+
+#~ msgid "Natural Scrolling"
+#~ msgstr "Натуральная прокрутка"
+
+#~ msgid "Tap to click"
+#~ msgstr "Коснитесь для клика"
+
+#~ msgid "Two-finger scrolling"
+#~ msgstr "Прокрутка двумя пальцами"
+
+#~ msgid "Edge scrolling"
+#~ msgstr "Прокрутка у края"
+
+#~ msgid "VPN Connections"
+#~ msgstr "VPN-соединения"
+
+#~ msgid "Snapshot"
+#~ msgstr "Снимок"
+
+#~ msgid "Again"
+#~ msgstr "Снова"
+
+#~ msgid "No camera found."
+#~ msgstr "Камера не найдена."
+
+#~ msgid "Edit Wi-Fi Hotspot"
+#~ msgstr "Редактировать Wi-Fi хот-спот"
+
+#~ msgid "Create Wi-Fi Hotspot"
+#~ msgstr "Создать Wi-Fi хот-спот"
+
+#~ msgid "Create"
+#~ msgstr "Создать"
+
+#~ msgid "Authentication required by Wi-Fi network"
+#~ msgstr "Требуется аутентификация для Wi-Fi-сети"
+
+#~ msgid "Password:"
+#~ msgstr "Пароль:"
+
+#~ msgid "Wired Network"
+#~ msgstr "Проводная сеть"
+
+#~ msgid ""
+#~ "Wireless network is unable to be connected maybe due to the following "
+#~ "reasons:\n"
+#~ "\n"
+#~ "1. The hardware switch of wireless network card is off\n"
+#~ "2. Incorrect network configuration in /etc/network/interface\n"
+#~ "3. Incorrect driver of network hardware"
+#~ msgstr ""
+#~ "Беспроводная сеть не может быть подключена, вероятные причины:\n"
+#~ "\n"
+#~ "1. Отключён аппаратный ключ беспроводной карты\n"
+#~ "2. Неверная конфигурация сети в /etc/network/interface\n"
+#~ "3. Некорректный драйвер сетевого оборудования"
+
+#~ msgid "Connect to hidden access point"
+#~ msgstr "Подключение к скрытой точке доступа"
+
+#~ msgid "ON/OFF"
+#~ msgstr "Вкл/Выкл"
+
+#~ msgid "Devices nearby"
+#~ msgstr "Устройства поблизости"
+
+#~ msgid "Automatic date and time"
+#~ msgstr "Дата и время автоматически"
+
+#~ msgid "Use 24-hour clock"
+#~ msgstr "24-часовой формат"
+
+#~ msgid "Date"
+#~ msgstr "Дата"
+
+#~ msgid "Set Date"
+#~ msgstr "Установить дату"
+
+#~ msgid "Browser"
+#~ msgstr "Браузер"
+
+#~ msgid "Mail"
+#~ msgstr "Почта"
+
+#~ msgid "Text"
+#~ msgstr "Текст"
+
+#~ msgid "Music"
+#~ msgstr "Музыка"
+
+#~ msgid "Video"
+#~ msgstr "Видео"
+
+#~ msgid "Picture"
+#~ msgstr "Изображения"
+
+#~ msgid "Terminal"
+#~ msgstr "Терминал"
+
+#~ msgid "AutoPlay"
+#~ msgstr "Автозапуск"
+
+#~ msgid "CD Audio"
+#~ msgstr "CD-аудио"
+
+#~ msgid "DVD Video"
+#~ msgstr "DVD-видео"
+
+#~ msgid "Music Player"
+#~ msgstr "Аудиоплеер"
+
+#~ msgid "Camera"
+#~ msgstr "Камера"
+
+#~ msgid "Software"
+#~ msgstr "Программное обеспечение"
+
+#~ msgid "Primary Monitor: "
+#~ msgstr "Главный монитор:"
+
+#~ msgid "Monitor"
+#~ msgstr "Монитор"
+
+#~ msgid "Apply"
+#~ msgstr "Применить"
+
+#~ msgid "Default Startup"
+#~ msgstr "Запускаемые по умолчанию"
+
+#~ msgid "Boot delay"
+#~ msgstr "Задержка загрузки"
+
+#~ msgid "Text Color"
+#~ msgstr "Цвет текста"
+
+#~ msgid "Selected Text Color"
+#~ msgstr "Выбор цвета текста"
+
+#~ msgid "Repeat Delay"
+#~ msgstr "Задержка повторения"
+
+#~ msgid "Repeat Rate"
+#~ msgstr "Скорость повтора"
+
+#~ msgid "Cursor Blink Rate"
+#~ msgstr "Частота мигания курсора"
+
+#~ msgid "Test Area"
+#~ msgstr "Полигон"
+
+#~ msgid "Keyboard Layout"
+#~ msgstr "Раскладка клавиатуры"
+
+#~ msgid "No result"
+#~ msgstr "Нет результата"
+
+#~ msgid "Caps Lock prompt"
+#~ msgstr "Индикатор Caps Lock"
+
+#~ msgid "Disable the touchpad when inserting the mouse"
+#~ msgstr "Отключать тачпад при подключении мыши"
+
+#~ msgid "Theme"
+#~ msgstr "Тема"
+
+#~ msgid "Window"
+#~ msgstr "Окно"
+
+#~ msgid "Icon"
+#~ msgstr "Значёк"
+
+#~ msgid "Cursor"
+#~ msgstr "Курсор"
+
+#~ msgid "Wallpaper"
+#~ msgstr "Обои"
+
+#~ msgid "Fonts"
+#~ msgstr "Шрифты"
+
+#~ msgid "Never"
+#~ msgstr "Никогда"
+
+#~ msgid "1 minute"
+#~ msgstr "1 минута"
+
+#~ msgid "5 minutes"
+#~ msgstr "5 минут"
+
+#~ msgid "10 minutes"
+#~ msgstr "10 минут"
+
+#~ msgid "15 minutes"
+#~ msgstr "15 минут"
+
+#~ msgid "30 minutes"
+#~ msgstr "30 минут"
+
+#~ msgid "1 hour"
+#~ msgstr "1 час"
+
+#~ msgid "When I press the power button"
+#~ msgstr "При нажатии кнопки питания"
+
+#~ msgid "Shutdown"
+#~ msgstr "Выключить"
+
+#~ msgid "Suspend"
+#~ msgstr "Остановить"
+
+#~ msgid "Ask"
+#~ msgstr "Спросить"
+
+#~ msgid "When I close the lid"
+#~ msgstr "При закрытии крышки"
+
+#~ msgid "Nothing"
+#~ msgstr "Ничего"
+
+#~ msgid "Password required to wake up"
+#~ msgstr "Требовать пароль для пробуждения"
+
+#~ msgid "Plugged in"
+#~ msgstr "Подключен"
+
+#~ msgid "On battery"
+#~ msgstr "От батареи"
+
+#~ msgid "Turn off the display"
+#~ msgstr "Выключить дисплей"
+
+#~ msgid "Custom Options"
+#~ msgstr "Пользовательские параметры"
+
+#~ msgid "System"
+#~ msgstr "Система"
+
+#~ msgid "Workspace"
+#~ msgstr "Рабочий стол"
+
+#~ msgid "Speaker"
+#~ msgstr "Динамик"
+
+#~ msgid "Output Volume"
+#~ msgstr "Выходной уровень"
+
+#~ msgid "Microphone"
+#~ msgstr "Микрофон"
+
+#~ msgid "Input Volume"
+#~ msgstr "Входной уровень"
+
+#~ msgid "Input Feedback"
+#~ msgstr "Обратная связь входа"
+
+#~ msgid "Output Port"
+#~ msgstr "Выходной порт"
+
+#~ msgid "No port exists in this device."
+#~ msgstr "Порт не существует на этом устройстве."
+
+#~ msgid "Output device"
+#~ msgstr "Устройство вывода"
+
+#~ msgid "Input Port"
+#~ msgstr "Входной порт"
+
+#~ msgid "Input device"
+#~ msgstr "Устройство ввода"
+
+#~ msgid "Hide Advanced..."
+#~ msgstr "Скрыть экспертные…"
+
+#~ msgid "Show Advanced..."
+#~ msgstr "Показать экспертные…"
+
+#~ msgid "Copyright (c) 2011-2014 Wuhan Deepin Technology Co.,Ltd."
+#~ msgstr "Правообладатель © 2011-2014 Wuhan Deepin Technology Co,Ltd."
+
+#~ msgid "Deepin Edition"
+#~ msgstr "Deepin-редакция"
+
+#~ msgid "System Type"
+#~ msgstr "Тип системы"
+
+#~ msgid "bit"
+#~ msgstr "бит"
+
+#~ msgid "Processor"
+#~ msgstr "Процессор"
+
+#~ msgid "Memory"
+#~ msgstr "Память"
+
+#~ msgid "Disk"
+#~ msgstr "Диск"
+
+#~ msgid "GNU GENERAL PUBLIC LICENSE"
+#~ msgstr "GNU GENERAL PUBLIC LICENSE"
+
+#~ msgid "Unknown"
+#~ msgstr "Неизвестный"
+
+#~ msgid "Wired"
+#~ msgstr "Проводной"
+
+#~ msgid "Wireless"
+#~ msgstr "Беспроводной"
+
+#~ msgid "Unused1"
+#~ msgstr "Неиспольз.1"
+
+#~ msgid "Unused2"
+#~ msgstr "Неиспольз.2"
+
+#~ msgid "OLPC mesh"
+#~ msgstr "OLPC mesh"
+
+#~ msgid "WiMax"
+#~ msgstr "WiMax"
+
+#~ msgid "Modem"
+#~ msgstr "Модем"
+
+#~ msgid "InfiniBand"
+#~ msgstr "InfiniBand"
+
+#~ msgid "Bond"
+#~ msgstr "Связь"
+
+#~ msgid "VLAN"
+#~ msgstr "VLAN"
+
+#~ msgid "ADSL"
+#~ msgstr "ADSL"
+
+#~ msgid "Bridge"
+#~ msgstr "Мост"
+
+#~ msgid "802.11 WiFi"
+#~ msgstr "802.11 WiFi"
+
+#~ msgid "802.11 WiFi AdHoc"
+#~ msgstr "802.11 WiFi AdHoc"
+
+#~ msgid "802.11 WiFi Hotspot"
+#~ msgstr "802.11 WiFi Хот-спот"
+
+#~ msgid "Mobile GSM"
+#~ msgstr "Мобильный GSM"
+
+#~ msgid "Mobile CDMA"
+#~ msgstr "Мобильный CDMA"
+
+#~ msgid "VPN L2TP"
+#~ msgstr "VPN L2TP"
+
+#~ msgid "VPN PPTP"
+#~ msgstr "VPN PPTP"
+
+#~ msgid "VPN VPNC"
+#~ msgstr "VPN VPNC"
+
+#~ msgid "VPN OpenVPN"
+#~ msgstr "VPN OpenVPN"
+
+#~ msgid "VPN OpenConnect"
+#~ msgstr "VPN OpenConnect"
+
+#~ msgid "User List"
+#~ msgstr "Список пользователей"
+
+#~ msgid "Page Up"
+#~ msgstr "Страницу вверх"
+
+#~ msgid "Page Down"
+#~ msgstr "Страницу вниз"
+
+#~ msgid "Left Click"
+#~ msgstr "Левый клик"
+
+#~ msgid "Right Click"
+#~ msgstr "Правый клик"
+
+#~ msgid "Middle Click"
+#~ msgstr "Средний клик"
+
+#~ msgid "Tablet Orientation"
+#~ msgstr "Ориентация планшета"
+
+#~ msgid "Left Hand"
+#~ msgstr "Левая рука"
+
+#~ msgid "Right Hand"
+#~ msgstr "Правая рука"
+
+#~ msgid "Digital Pen Modes"
+#~ msgstr "Режим цифровой ручки"
+
+#~ msgid "Pen Mode"
+#~ msgstr "Режим ручки"
+
+#~ msgid "Mouse Mode"
+#~ msgstr "Режим мыши"
+
+#~ msgid "Down Key"
+#~ msgstr "Кнопка вниз"
+
+#~ msgid "Up Key"
+#~ msgstr "Кнопка вверх"
+
+#~ msgid "Pressure"
+#~ msgstr "Нажим"
+
+#~ msgid "Soft"
+#~ msgstr "Мягко"
+
+#~ msgid "Hard"
+#~ msgstr "Жестко"
+
+#~ msgid "Double-click Space"
+#~ msgstr "Двойной клик по пустому месту"
+
+#~ msgid "Narrow"
+#~ msgstr "Узкий"
+
+#~ msgid "Wide"
+#~ msgstr "Широкий"
