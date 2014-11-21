@@ -26,6 +26,17 @@ void DockQuickWindow::handleScreenChanged(QScreen* s)
     }
 }
 
+void DockQuickWindow::show()
+{
+    const QScreen * pScreen = this->screen();
+    // TODO: Bugfix, remove when qt fix this bug
+    if (NULL == pScreen) {
+        qDebug() << "Warning: We can't show DockQuickWindow caused invalid QScreen";
+        return;
+    }
+    QWindow::show();
+}
+
 bool DockQuickWindow::nativeEvent(const QByteArray &eventType, void *message, long *result)
 {
     Q_UNUSED(result);

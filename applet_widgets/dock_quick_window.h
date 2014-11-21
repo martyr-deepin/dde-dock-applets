@@ -41,6 +41,8 @@ public:
     DockQuickWindow(QQuickWindow *parent = 0);
     ~DockQuickWindow();
 
+    void show();
+
     // when x window destroy. emit this
     Q_SIGNAL void nativeWindowDestroyed();
     //This signal just for Qt5 double screen switch bug
