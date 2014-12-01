@@ -37,7 +37,7 @@ DockApplet{
 
     property int xEdgePadding: 2
     property int titleSpacing: 10
-    property int rootWidth: 180
+    property int rootWidth: 200
 
     property var vpnEnable:dbusNetwork.vpnEnabled
     readonly property var nmActiveConnectionStateActivating: 1
@@ -55,7 +55,6 @@ DockApplet{
         var value = JSON.parse(valueJSON)
         return value
     }
-
 
     function showNetwork(id){
         dbusControlCenter.ShowModule("network")
@@ -92,19 +91,21 @@ DockApplet{
             mainObject.restartDockApplet()
         }
 
-        Item {
+        Rectangle {
             width: parent.width
             height: content.height
             anchors.centerIn: parent
+            color: "transparent"
 
             Column {
                 id: content
                 width: parent.width
-                spacing: 10
 
                 DBaseLine {
                     height: 30
                     width: parent.width
+                    leftMargin: 10
+                    rightMargin: 10
                     color: "transparent"
                     leftLoader.sourceComponent: DssH2 {
                         text: dsTr("VPN")
@@ -134,10 +135,15 @@ DockApplet{
                     ListView {
                         id: vpnConnectlist
                         width: parent.width
-                        height: childrenRect.height
+                        height: Math.min(childrenRect.height, 235)
                         boundsBehavior: Flickable.StopAtBounds
                         model: vpnConnectionNumber
                         delegate: ConnectItem {}
+                        clip: true
+
+                        DScrollBar {
+                            flickable: parent
+                        }
                     }
                 }
             }

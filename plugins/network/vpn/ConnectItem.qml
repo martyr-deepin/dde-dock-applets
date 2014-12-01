@@ -25,7 +25,6 @@ import QtQuick.Controls 1.0
 import QtQuick.Layouts 1.0
 import Deepin.Widgets 1.0
 import Deepin.DockAppletWidgets 1.0
-import Deepin.DockAppletWidgets 1.0
 
 Item {
     id: vpnItem
@@ -65,13 +64,12 @@ Item {
         return uuids
     }
 
-    DImageButton {
+
+    AppletConnectButton {
         id: checkImg
         width: 14
         height: 14
         anchors {verticalCenter: parent.verticalCenter; left: parent.left; leftMargin: 10}
-        normal_image: getIconUrl("bluetooth/connected.png")
-        hover_image: getIconUrl("bluetooth/disconnect.png")
         visible: isConnected
         onClicked: {
             dbusNetwork.DeactivateConnection(infos.Uuid)
@@ -87,7 +85,7 @@ Item {
     DssH2 {
         id:deviceText
         text: infos.Id
-        width: text.length
+        width: parent.width - checkImg.width - 5
         height: parent.height
         color: "#bcbcbc"
 

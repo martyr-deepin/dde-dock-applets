@@ -26,7 +26,6 @@ import QtQuick 2.0
 import QtQuick.Window 2.1
 import Deepin.Widgets 1.0
 import Deepin.DockAppletWidgets 1.0
-import Deepin.DockAppletWidgets 1.0
 import DBus.Com.Deepin.Daemon.Network 1.0
 
 DockApplet{
@@ -38,7 +37,7 @@ DockApplet{
 
     property int xEdgePadding: 2
     property int titleSpacing: 10
-    property int rootWidth: 180
+    property int rootWidth: 200
     property int deviceIndex: {
         for (var i = 0; i < wirelessDevices.length; i++){
             if (wirelessDevices[i].Vendor == appletId){
@@ -156,15 +155,17 @@ DockApplet{
             Column {
                 id: content
                 width: parent.width
-                spacing: 10
 
                 DBaseLine {
                     height: 30
                     width: parent.width
-                    color: "transparent"
+                    leftMargin: 10
+                    rightMargin: 10
+//                    color: "#000000"
+                    color:"transparent"
                     leftLoader.sourceComponent: DssH2 {
                         elide:Text.ElideRight
-                        width:80
+                        width:130
                         text: wirelessDevices.length > 1 ? wirelessDevices[deviceIndex].Vendor : dsTr("Wireless Network")
                         color: "#ffffff"
                     }
@@ -193,7 +194,7 @@ DockApplet{
                         target: dbusNetwork
                         onAccessPointAdded:{
                             if(arg0 == devicePath){
-                                print("onAccessPointAdded:", arg0, arg1)
+//                                print("onAccessPointAdded:", arg0, arg1)
                                 var apObj = unmarshalJSON(arg1)
                                 var index = accessPointsModel.getIndexByApPath(apObj.Path)
                                 if(index == -1){
@@ -213,7 +214,7 @@ DockApplet{
 
                         onAccessPointRemoved: {
                             if(arg0 == devicePath){
-                                print("onAccessPointRemoved:", arg0, arg1)
+//                                print("onAccessPointRemoved:", arg0, arg1)
                                 var apObj = unmarshalJSON(arg1)
                                 var index = accessPointsModel.getIndexByApPath(apObj.Path)
                                 if(index != -1){
@@ -317,7 +318,6 @@ DockApplet{
                         }
                     }
 
-
                     function sortModel()
                     {
                         var n;
@@ -331,15 +331,6 @@ DockApplet{
                             }
                         }
                     }
-                }
-
-                DssH3 {
-                    text:vendor
-                    width: parent.width
-                    height: 18
-                    visible: false
-                    verticalAlignment: Text.AlignVCenter
-                    horizontalAlignment: Text.AlignHCenter
                 }
             }
         }

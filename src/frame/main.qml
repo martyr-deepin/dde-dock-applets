@@ -29,6 +29,7 @@ import Deepin.DockAppletWidgets 1.0
 import DBus.Com.Deepin.Dde.ControlCenter 1.0
 import DBus.Com.Deepin.Daemon.Network 1.0
 import DBus.Com.Deepin.Daemon.Dock 1.0
+import DBus.Com.Deepin.Daemon.ThemeManager 1.0
 
 QtObject {
     id: root
@@ -43,6 +44,31 @@ QtObject {
         return dssLocale.dsTr(s)
     }
 
+    // icon theme
+    property var dbusThemeManager: ThemeManager{}
+    property var themeObjectList: {
+        var themeComponent = Qt.createComponent("ThemeComponent.qml")
+        var themes = []
+        var themeList = dbusThemeManager.themeList
+        for(var i in themeList){
+            var themeObj = themeComponent.createObject(root, { path: themeList[i] })
+            themes.push(themeObj)
+        }
+        return themes
+    }
+    property var currentThemeObject: {
+        for(var i in themeObjectList){
+            var obj = themeObjectList[i]
+            if(obj.name == dbusThemeManager.currentTheme){
+                return obj
+            }
+        }
+        return themeObjectList[0]
+    }
+
+    property string iconThemeName: currentThemeObject.iconTheme
+    // icon theme
+
     function getIconUrl(path){
         return mainObject.getIconUrl(path)
     }
@@ -56,7 +82,6 @@ QtObject {
         if (!valueJSON) {
             print("==> [ERROR] unmarshalJSON", valueJSON)
         }
-        print("==> [DEBUG] JSON parse value:", valueJSON)
         var value = JSON.parse(valueJSON)
         return value
     }
@@ -139,13 +164,16 @@ QtObject {
 
     function showSettingWindow(mouseX) {
         appletSettingWindow.item.mouseX = mouseX
-        appletSettingWindow.item.show()
+        appletSettingWindow.item.showWindow()
     }
 
     // init dock setting
     property var dbusDockSetting: DockSetting {
         path: "/dde/dock/DockSetting"
         onDisplayModeChanged: {
+            if(root.dockDisplayMode == 0 || arg0 == 0){
+                mainObject.restartDockApplet()
+            }
             root.dockDisplayMode = arg0
         }
     }
@@ -167,7 +195,7 @@ QtObject {
 
     property var appletSettingWindow: Loader {
         sourceComponent: AppletSettingWindow {
-            switchList:appletInfos
+            switchList: appletInfos
             onItemClicked: {
                 root.setAppletState(switchTitle,switchState)
             }
@@ -200,99 +228,3 @@ QtObject {
         initAppletListModel()
     }
 }
-
-/*****
-QtObject {
-    property var appletNames: {
-        "network": dsTr("Network"),
-        "sound": dsTr("Sound"),
-        "power": dsTr("Power"),
-        "disk_mount": dsTr("Disk Mount"),
-        "date_time": dsTr("Date and Time")
-    }
-
-    property var undockableApplet: {
-        var a = new Array()
-        a.push("network")
-        a.push("sound")
-        a.push("power")
-        return a
-    }
-
-    //property var lastStateInfos: mainObject.getAppletVisibleFromConfig()
-
-
-
-
-    function getIndexFromArray(s, a){
-        for(var i in a){
-            if(a[i] == s){
-                return i
-            }
-        }
-        return -1
-    }
-
-
-
-
-    function update_applet_list(name, add){
-//        var i = getAppletIndex(name)
-//        if(add){
-//            if (i == "-1"){
-//                appletListModel.append({
-//                    "applet_id": name
-//                })
-//            }
-//        }
-//        else{
-//            if (i != "-1"){
-//                appletListModel.remove(i, 1)
-//            }
-//        }
-//        print("==> [info] Status Changed:", name, add)
-//        root.appletInfosChanged()
-    }
-
-    function set_hide_applet(name){
-        print("set_hide_applet: " + name)
-        var i = getAppletIndex(name)
-        if(i != "-1"){
-            //repeater.itemAt(i).hide()
-            //root.appletInfosChanged()
-        }
-        else{
-            print("Unknown applet name: " + name)
-        }
-        //mainObject.setAppletVisibleToConfig(get_applet_infos())
-    }
-
-    function set_show_applet(name){
-        print("set_show_applet: " + name)
-        var i = getAppletIndex(name)
-        if(i != "-1"){
-            //repeater.itemAt(i).show()
-            //root.appletInfosChanged()
-        }
-        else{
-            print("Unknown applet name: " + name)
-        }
-        //mainObject.setAppletVisibleToConfig(get_applet_infos())
-    }
-
-    function toggle_applet(applet_id){
-        for(var i=0; i<appletListModel.count; i++){
-            var id = appletListModel.get(i).applet_id
-            if(id == applet_id){
-                var appletItem = repeater.itemAt(i)
-                // appletItem.setAppletState(!appletItem.show)
-                // root.appletInfosChanged()
-            }
-        }
-        // mainObject.setAppletVisibleToConfig(get_applet_infos())
-    }
-
-
-
-}
-****/

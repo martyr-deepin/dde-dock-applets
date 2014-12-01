@@ -30,26 +30,15 @@ import Deepin.Widgets 1.0
 
 DockApplet{
     id: bluetoothApplet
-    title: "Bluetooth"
-    appid: "AppletBluetooth"
-    icon: dbus_bluetooth.powered ? getIconUrl("bluetooth/bluetooth-enable.png") : getIconUrl("bluetooth/bluetooth-disable.png")
+    title: adapterAlias
+    appid: adapterPath
+    icon: adapterConnected ? getIconUrl("bluetooth/bluetooth-enable.png") : getIconUrl("bluetooth/bluetooth-disable.png")
 
     property int xEdgePadding: 2
     property int titleSpacing: 10
-    property int rootWidth: 180
+    property int rootWidth: 200
 
-    property var adapters: unmarshalJSON(dbus_bluetooth.adapters)
-    property var devices: unmarshalJSON(dbus_bluetooth.devices)
-    property bool deviceConnected: dbus_bluetooth.powered
-    property var connectedDevicePaths: {
-        var paths = []
-        for (var i = 0; i< devices.length; i++) {
-            if (devices[i].Connected == true) {
-                paths.push(devices[i].Path)
-            }
-        }
-        return paths
-    }
+    property bool adapterConnected: adapterPowered
 
 
     // helper functions
@@ -104,6 +93,7 @@ DockApplet{
             width: parent.width
             height: content.height
             anchors.centerIn: parent
+            anchors.bottomMargin: 4
 
             Column {
                 id: content
@@ -113,47 +103,65 @@ DockApplet{
                 DBaseLine {
                     height: 30
                     width: parent.width
+                    leftMargin: 10
+                    rightMargin: 10
                     color: "transparent"
                     leftLoader.sourceComponent: DssH2 {
-                        text: dsTr("Bluetooth")
+                        elide: Text.ElideRight
+                        width: 130
+                        text: adapterAlias
                         color: "#ffffff"
                     }
 
                     rightLoader.sourceComponent: DSwitchButton {
                         Connections {
                             target: bluetoothApplet
-                            onDeviceConnectedChanged: {
-                                check = deviceConnected
+                            onAdapterConnectedChanged: {
+                                checked = adapterConnected
                             }
                         }
 
-                        checked: deviceConnected
-                        onClicked: dbus_bluetooth.powered = checked
+                        checked: adapterConnected
+                        onClicked: dbus_bluetooth.SetAdapterPowered(adapterPath, checked)
                     }
                 }
 
                 Rectangle {
                     width: rootWidth
-                    height: nearby_devices_list.height
-                    visible: dbus_bluetooth.powered
+                    height: nearbyDeviceList.height
+                    visible: adapterConnected
                     color: "transparent"
 
                     ListView{
-                        id: nearby_devices_list
+                        id: nearbyDeviceList
                         width: parent.width
-                        height: childrenRect.height
+                        height: Math.min(childrenRect.height, 235)
+                        clip: true
+
+                        DScrollBar {
+                            flickable: parent
+                        }
+
+                        Timer {
+                            id:delayInitTimer
+                            repeat: false
+                            running: false
+                            interval: 1000
+                            onTriggered: {
+                                var devInfos = unmarshalJSON(dbus_bluetooth.GetDevices(adapterPath))
+                                deviceModel.clear()
+                                for(var i in devInfos){
+                                    deviceModel.addOrUpdateDevice(devInfos[i])
+                                }
+                            }
+                        }
 
                         model: ListModel {
                             id: deviceModel
                             Component.onCompleted: {
-                                var devInfos = unmarshalJSON(dbus_bluetooth.GetDevices())
-                                clear()
-                                for(var i in devInfos){
-                                    addOrUpdateDevice(devInfos[i])
-                                }
+                                delayInitTimer.start()
                             }
                             function addOrUpdateDevice(devInfo) {
-                                print("-> addOrUpdateDevice", marshalJSON(devInfo)) // TODO
                                 if (isDeviceExists(devInfo)) {
                                     updateDevice(devInfo)
                                 } else {
@@ -162,16 +170,20 @@ DockApplet{
                             }
                             function addDevice(devInfo) {
                                 var insertIndex = getInsertIndex(devInfo)
-                                print("-> addDevice", insertIndex)
+                                print("-> addBluetoothDevice", insertIndex)
                                 insert(insertIndex, {
                                     "devInfo": devInfo,
+                                    "adapter_path": devInfo.AdapterPath,
                                     "item_id": devInfo.Path,
                                     "item_name": devInfo.Alias,
+                                    "item_state":devInfo.State
                                 })
                             }
                             function updateDevice(devInfo) {
                                 var i = getDeviceIndex(devInfo)
                                 get(i).devInfo = devInfo
+                                get(i).item_name = devInfo.Alias
+                                get(i).item_state = devInfo.State
                                 sortModel()
                             }
                             function removeDevice(devInfo) {
@@ -214,6 +226,7 @@ DockApplet{
                                     }
                                 }
                             }
+
                         }
 
                         delegate: DeviceItem {
@@ -230,33 +243,27 @@ DockApplet{
                                     console.log("Connect device, id:",id)
                                 }
                             }
-
-                            Connections {
-                                target: bluetoothApplet
-                                onDevicesChanged: {
-                                    for (var i=0; i<bluetoothApplet.devices.length; i++) {
-                                        if (devInfo.Path == bluetoothApplet.devices[i].Path) {
-                                            // print("-> update device properties", bluetooth.devices[i].Alias) // TODO test
-                                            itemName = bluetoothApplet.devices[i].Alias
-                                            isConnected = bluetoothApplet.devices[i].Connected
-                                            console.log(itemName,isConnected)
-                                        }
-                                    }
-                                }
-                            }
                         }
 
                         Connections {
                             target: dbus_bluetooth
                             onDeviceAdded: {
-                                print("-> onDeviceAdded", arg0)
                                 var devInfo = unmarshalJSON(arg0)
+                                if (devInfo.AdapterPath != adapterPath)
+                                    return
                                 deviceModel.addOrUpdateDevice(devInfo)
                             }
                             onDeviceRemoved: {
-                                print("-> onDeviceRemoved", arg0)
                                 var devInfo = unmarshalJSON(arg0)
+                                if (devInfo.AdapterPath != adapterPath)
+                                    return
                                 deviceModel.removeDevice(devInfo)
+                            }
+                            onDevicePropertiesChanged: {
+                                var devInfo = unmarshalJSON(arg0)
+                                if (devInfo.AdapterPath != adapterPath)
+                                    return
+                                deviceModel.addOrUpdateDevice(devInfo)
                             }
                         }
                     }

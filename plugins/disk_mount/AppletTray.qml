@@ -29,7 +29,7 @@ import Deepin.DockAppletWidgets 1.0
 DockApplet{
     title: "Disk Mount"
     appid: "AppletDiskMount"
-    icon: dockDisplayMode == 0 ? getIconUrl("disk_mount/icon.png") : getIconUrl("disk_mount/icon_16.png")
+    icon: "dock-usb"
     property int windowWidth: 224
     property int xEdgePadding: 12
 
@@ -89,15 +89,15 @@ DockApplet{
         height: diskListView.height + xEdgePadding * 2
         color: "transparent"
 
-		onNativeWindowDestroyed: {
-			toggleAppletState("disk_mount")
-			toggleAppletState("disk_mount")
-		}
+        onNativeWindowDestroyed: {
+            print("@@@@@@@@@@@ rebuild disk mount window...")
+            mainObject.restartDockApplet()
+        }
 
-		onQt5ScreenDestroyed: {
-			console.log("Recive onQt5ScreenDestroyed")
-			mainObject.restartDockApplet()
-		}
+        onQt5ScreenDestroyed: {
+            console.log("Recive onQt5ScreenDestroyed")
+            mainObject.restartDockApplet()
+        }
 
         ListView {
             id: diskListView

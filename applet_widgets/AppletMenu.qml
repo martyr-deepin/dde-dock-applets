@@ -22,7 +22,7 @@
 ****************************************************************************/
 
 import QtQuick 2.0
-import Deepin.DockApplet 1.0
+import Deepin.DockAppletWidgets 1.0
 
 DockMenu {
     content: getMenuContent()
@@ -36,7 +36,7 @@ DockMenu {
         var valueJSON = JSON.stringify(value);
         return valueJSON
     }
-    
+
     function unmarshalJSON(valueJSON) {
         var value = JSON.parse(valueJSON)
         return value

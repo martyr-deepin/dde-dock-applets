@@ -30,21 +30,46 @@ AppletPlugin {
 
     managed: true
     show: true
-    name: dsTr("Bluetooth")
+    name:  appletName == "" ? appletId : appletName
     iconPath:getIconUrl("bluetooth/bluetooth-enable.png")
 
-    Bluetooth { id: dbus_bluetooth }
-    property var dockMode: dockDisplayMode
-    property var adapters: unmarshalJSON(dbus_bluetooth.adapters)
-    property var adaptersCount: {
-        if (adapters)
-            return adapters.length
-        else
-            return 0
+    Bluetooth {
+        id: dbus_bluetooth
+        onAdapterPropertiesChanged: {
+            var tmpAdapter = unmarshalJSON(arg0)
+            for (var i= 0; i < appletInfos.count; i ++){
+                if (appletInfos.get(i).applet_id == tmpAdapter.Path){
+                    appletInfos.get(i).applet_name = tmpAdapter.Alias
+                    break
+                }
+            }
+            if (tmpAdapter.Path == appletId){
+                adapterAlias = tmpAdapter.Alias
+                adapterPowered = tmpAdapter.Powered
+
+            }
+        }
     }
+    property bool adapterPowered: false
+    property string adapterAlias: ""
+    property string adapterPath: ""
+
+    property var dockMode: dockDisplayMode
 
     appletTrayLoader: Loader {
         sourceComponent: AppletTray{}
-        active:adaptersCount > 0 && appletItem.show && dockMode != 0//not mac mode
+        active:blueToothAdaptersCount > 0 && appletItem.show && dockMode != 0//not mac mode
+    }
+
+    Component.onCompleted:{
+        var tmpAdapters = unmarshalJSON(dbusBluetooth.GetAdapters())
+        for (var i = 0; i < tmpAdapters.length; i ++){
+            if (tmpAdapters[i].Path == appletId){
+                adapterPath = tmpAdapters[i].Path
+                adapterAlias = tmpAdapters[i].Alias
+                adapterPowered = tmpAdapters[i].Powered
+                break
+            }
+        }
     }
 }

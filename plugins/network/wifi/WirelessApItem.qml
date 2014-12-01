@@ -26,7 +26,6 @@ import QtQuick.Controls 1.0
 import QtQuick.Layouts 1.0
 import Deepin.Widgets 1.0
 import Deepin.DockAppletWidgets 1.0
-import Deepin.DockAppletWidgets 1.0
 import DBus.Com.Deepin.Daemon.Network 1.0
 
 Item {
@@ -58,12 +57,11 @@ Item {
         height: parent.height
         width: parent.width
 
-        DImageButton {
-            anchors.right: nameLabel.left
-            anchors.rightMargin: 4
+        AppletConnectButton {
+            id:checkImg
+            anchors.left: parent.left
+            anchors.leftMargin: 10
             anchors.verticalCenter: parent.verticalCenter
-            normal_image: getIconUrl("bluetooth/connected.png")
-            hover_image: getIconUrl("bluetooth/disconnect.png")
             visible: apConnected
             onClicked: {
                 dbusNetwork.DisconnectDevice(devicePath)
@@ -71,21 +69,20 @@ Item {
         }
 
         AppletWaitingImage {
-            anchors.right: nameLabel.left
-            anchors.rightMargin: 4
+            anchors.left: checkImg.left
             anchors.verticalCenter: parent.verticalCenter
             on: apPath == activeAp && deviceStatus != 100
         }
 
         DLabel {
             id: nameLabel
-            anchors.left: parent.left
-            anchors.leftMargin: 24
+            anchors.left: checkImg.right
+            anchors.leftMargin: 4
             anchors.verticalCenter: parent.verticalCenter
             verticalAlignment: Text.AlignVCenter
             text: apName
             elide: Text.ElideRight
-            width: parent.width - anchors.leftMargin - signalImage.width - signalImage.anchors.rightMargin
+            width: parent.width - anchors.leftMargin - checkImg.width - signalImage.width - signalImage.anchors.rightMargin
             font.pixelSize: 12
             color: {
                 if(selected){

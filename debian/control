@@ -3,7 +3,6 @@ Section: admin
 Priority: optional
 Maintainer: Mellon Xie <xielingyun@linuxdeepin.com>
 Build-Depends: debhelper (>= 9.0.0),
- python (>= 2.6.3~),
  pkg-config,
  libx11-dev,
  libxtst-dev,
@@ -12,6 +11,7 @@ Build-Depends: debhelper (>= 9.0.0),
  qtdeclarative5-dev,
  libqt5webkit5-dev,
  deepin-gettext-tools,
+ libgtk2.0-dev,
 Standards-Version: 3.9.5
 Homepage: https://gitcafe.com/Deepin/dde-dock-applets
 

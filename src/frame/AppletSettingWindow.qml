@@ -5,20 +5,12 @@ import DBus.Com.Deepin.Api.XMouseArea 1.0
 import DBus.Com.Deepin.Daemon.Display 1.0
 import DBus.Com.Deepin.Daemon.Dock 1.0
 
-Window {
+DWindow {
     id: root
     flags: Qt.Dialog | Qt.FramelessWindowHint | Qt.Popup | Qt.WindowStaysOnTopHint
-    width: 180
+    width: titleLine.width
     height: switchListView.height + titleLine.height
-    x: {
-        if (mouseX < displayId.primaryRect[0] + width / 2)
-            return displayId.primaryRect[0]
-        else if (mouseX > displayId.primaryRect[2] - width / 2)
-            return displayId.primaryRect[2] - width
-        else
-            return mouseX - width / 2
-    }
-
+    x: 0
     y: displayId.primaryRect[3] - height - dockHeight - 10
     color: "transparent"
 
@@ -27,12 +19,6 @@ Window {
     property var switchList: ListModel {}
     property int mouseX:0
     property var dockRegion: DockRegion {}
-    property var dbusDockSetting: DockSetting {
-        path: "/dde/dock/DockSetting"
-        onDisplayModeChanged: {
-            updateTimer.start()
-        }
-    }
     property int dockDisplayMode: dbusDockSetting.GetDisplayMode()
     property int dockHeight:70
 
@@ -42,26 +28,46 @@ Window {
     function updateRootY(){
         var regionValue = dockRegion.GetDockRegion()
         if (regionValue){
-            if (dockHeight == regionValue[3])
-                updateTimer.start()
-            else
-                dockHeight = regionValue[3]
+            dockHeight = regionValue[3]
         }
         else
             dockHeight = 70
 
-        root.y = displayId.primaryRect[3] - switchList.count * 30 - titleLine.height - dockHeight - 10
+        root.y = displayId.primaryRect[3] - getVisibleSwitchCount() * 30 - titleLine.height - dockHeight - 10
     }
 
-    Component.onCompleted: updateTimer.start()
+    function getLegalX(mouseX){
+        if (mouseX < displayId.primaryRect[0] + width/2)
+            x = displayId.primaryRect[0] + width/2
+        else if (mouseX > displayId.primaryRect[2] - width/2)
+            x = displayId.primaryRect[2] - width/2
+        else
+            x = mouseX
+        return x - width/2
+    }
 
-    Timer {
-        id:updateTimer
-        repeat: false
-        interval: 500
-        onTriggered: {
-            updateRootY()
+    function getLegalY(mouseY){
+        if (mouseY > displayId.primaryRect[3] - titleLine.height - dockHeight)
+            return displayId.primaryRect[3] - titleLine.height - dockHeight
+        else
+            return mouseY
+    }
+
+    function getVisibleSwitchCount(){
+        var visibleCount = 0
+        for(var i=0;i<switchList.count;i++){
+            var tmpInfo = switchList.get(i)
+            if(tmpInfo.setting_enable == true){
+                visibleCount ++
+            }
         }
+        return visibleCount
+    }
+
+    function showWindow(){
+        root.x = getLegalX(root.mouseX)
+        updateRootY()
+        root.show()
     }
 
     XMouseArea {
@@ -77,7 +83,7 @@ Window {
 
     Rectangle {
         anchors.fill: parent
-        radius: 6
+        radius: 2
         color: "#000000"
         opacity: 0.8
 
@@ -92,50 +98,35 @@ Window {
         Rectangle {
             id:titleLine
             height: 30
-            width: parent.width
+            width: contentWidth < 180 ? 180 : contentWidth
             color: "transparent"
+
+            property int contentWidth: titleText.width + closeButton.width + 50
 
             Text {
                 id:titleText
-                text:dsTr("Notice Region Setting ")
+                text: dsTr("Notification Area Settings")
                 color: "#ffffff"
-                font.pixelSize: 11
+                font.pixelSize: 14
                 anchors.centerIn: parent
                 verticalAlignment: Text.AlignVCenter
             }
 
-            DImageButton {
-                id:closeButton
-                width: 11
-                height: 8
+            DDragableArea {
+                anchors.fill: parent
+                window: root
+            }
+
+            DImageButton{
+                id: closeButton
                 anchors.right: parent.right
-                anchors.rightMargin: 8
+                anchors.rightMargin: 4
                 anchors.verticalCenter: parent.verticalCenter
+                onClicked: root.hide()
+
                 normal_image: "images/close_normal.png"
                 hover_image: "images/close_hover.png"
                 press_image: "images/close_press.png"
-                onClicked: root.hide()
-            }
-
-            MouseArea {
-                property bool isPress:false
-                property int oldX:0
-                property int oldY:0
-                anchors.fill: parent
-                anchors.rightMargin: closeButton.width + 8
-                onPressed: {
-                    isPress = true
-                    oldX = mouseX
-                    oldY = mouseY
-                }
-
-                onReleased: isPress = false
-                onPositionChanged: {
-                    if (isPress){
-                        root.x = mX - oldX
-                        root.y = mY - oldY
-                    }
-                }
             }
 
             DSeparatorHorizontal{
@@ -152,6 +143,7 @@ Window {
             height: childrenRect.height
             width: parent.width
             model: switchList
+            boundsBehavior: Flickable.StopAtBounds
             delegate: AppletSwitchLine{
                 height: setting_enable ? 30 : 0
                 onClicked: root.itemClicked(switchTitle,switchState)

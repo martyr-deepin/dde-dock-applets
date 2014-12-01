@@ -27,6 +27,7 @@ import Deepin.Locale 1.0
 import Deepin.Widgets 1.0
 import DBus.Com.Deepin.Daemon.Display 1.0
 import DBus.Com.Deepin.Daemon.Network 1.0
+import Deepin.Locale 1.0
 
 Window {
     id: messageBox
