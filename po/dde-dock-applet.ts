@@ -4,25 +4,15 @@
 <context>
     <name>AppletSettingWindow</name>
     <message>
-        <location filename="../src/frame/AppletSettingWindow.qml" line="+100"/>
-        <source>Notice Region Setting </source>
+        <location filename="../src/frame/AppletSettingWindow.qml" line="+108"/>
+        <source>Notification Area Settings</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>AppletTray</name>
     <message>
-        <location filename="../plugins/date_time/AppletTray.qml" line="+80"/>
-        <source>_Switch to analog</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>_Switch to digital</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+97"/>
+        <location filename="../plugins/date_time/AppletTray.qml" line="+148"/>
         <source>Sun</source>
         <translation type="unfinished"></translation>
     </message>
@@ -67,12 +57,12 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+270"/>
-        <location filename="../plugins/network/bluetooth/AppletTray.qml" line="+78"/>
-        <location filename="../plugins/network/vpn/AppletTray.qml" line="+70"/>
-        <location filename="../plugins/network/wifi/AppletTray.qml" line="+126"/>
-        <location filename="../plugins/power/AppletTray.qml" line="+99"/>
-        <location filename="../plugins/sound/AppletTray.qml" line="+173"/>
+        <location line="+293"/>
+        <location filename="../plugins/network/bluetooth/AppletTray.qml" line="+67"/>
+        <location filename="../plugins/network/vpn/AppletTray.qml" line="+69"/>
+        <location filename="../plugins/network/wifi/AppletTray.qml" line="+125"/>
+        <location filename="../plugins/power/AppletTray.qml" line="+98"/>
+        <location filename="../plugins/sound/AppletTray.qml" line="+172"/>
         <source>_Run</source>
         <translation type="unfinished"></translation>
     </message>
@@ -87,17 +77,12 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../plugins/network/bluetooth/AppletTray.qml" line="+39"/>
-        <source>Bluetooth</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../plugins/network/vpn/AppletTray.qml" line="+39"/>
+        <location filename="../plugins/network/vpn/AppletTray.qml" line="+41"/>
         <source>VPN</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../plugins/network/wifi/AppletTray.qml" line="+41"/>
+        <location filename="../plugins/network/wifi/AppletTray.qml" line="+43"/>
         <source>Wireless Network</source>
         <translation type="unfinished"></translation>
     </message>
@@ -148,7 +133,7 @@
 <context>
     <name>WifiPasswordWindow</name>
     <message>
-        <location filename="../src/frame/WifiPasswordWindow.qml" line="+150"/>
+        <location filename="../src/frame/WifiPasswordWindow.qml" line="+151"/>
         <source>Please enter the password of  &lt;font color=&quot;#faca57&quot;&gt;%1&lt;/font&gt;</source>
         <translation type="unfinished"></translation>
     </message>
@@ -242,11 +227,6 @@
     <message>
         <location filename="../plugins/disk_mount/main.qml" line="+33"/>
         <source>Disk Mount</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../plugins/network/bluetooth/main.qml" line="+33"/>
-        <source>Bluetooth</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

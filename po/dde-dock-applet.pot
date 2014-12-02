@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-21 10:55+0800\n"
+"POT-Creation-Date: 2014-12-02 09:53+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,49 +17,41 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../src/frame/AppletSettingWindow.qml:100
-msgid "Notice Region Setting "
+#: ../src/frame/AppletSettingWindow.qml:108
+msgid "Notification Area Settings"
 msgstr ""
 
-#: ../plugins/date_time/AppletTray.qml:80
-msgid "_Switch to analog"
-msgstr ""
-
-#: ../plugins/date_time/AppletTray.qml:81
-msgid "_Switch to digital"
-msgstr ""
-
-#: ../plugins/date_time/AppletTray.qml:178
+#: ../plugins/date_time/AppletTray.qml:148
 #: ../plugins/date_time/calendar_core.js:4
 msgid "Sun"
 msgstr ""
 
-#: ../plugins/date_time/AppletTray.qml:179
+#: ../plugins/date_time/AppletTray.qml:149
 #: ../plugins/date_time/calendar_core.js:4
 msgid "Mon"
 msgstr ""
 
-#: ../plugins/date_time/AppletTray.qml:180
+#: ../plugins/date_time/AppletTray.qml:150
 #: ../plugins/date_time/calendar_core.js:4
 msgid "Tue"
 msgstr ""
 
-#: ../plugins/date_time/AppletTray.qml:181
+#: ../plugins/date_time/AppletTray.qml:151
 #: ../plugins/date_time/calendar_core.js:4
 msgid "Wed"
 msgstr ""
 
-#: ../plugins/date_time/AppletTray.qml:182
+#: ../plugins/date_time/AppletTray.qml:152
 #: ../plugins/date_time/calendar_core.js:4
 msgid "Thu"
 msgstr ""
 
-#: ../plugins/date_time/AppletTray.qml:183
+#: ../plugins/date_time/AppletTray.qml:153
 #: ../plugins/date_time/calendar_core.js:4
 msgid "Fri"
 msgstr ""
 
-#: ../plugins/date_time/AppletTray.qml:184
+#: ../plugins/date_time/AppletTray.qml:154
 #: ../plugins/date_time/calendar_core.js:4
 msgid "Sat"
 msgstr ""
@@ -72,63 +64,58 @@ msgstr ""
 msgid "Network Not Connected"
 msgstr ""
 
-#: ../plugins/network/AppletTray.qml:305
-#: ../plugins/network/bluetooth/AppletTray.qml:78
-#: ../plugins/network/vpn/AppletTray.qml:70
-#: ../plugins/network/wifi/AppletTray.qml:126
-#: ../plugins/power/AppletTray.qml:99 ../plugins/sound/AppletTray.qml:173
+#: ../plugins/network/AppletTray.qml:328
+#: ../plugins/network/bluetooth/AppletTray.qml:67
+#: ../plugins/network/vpn/AppletTray.qml:69
+#: ../plugins/network/wifi/AppletTray.qml:125
+#: ../plugins/power/AppletTray.qml:98 ../plugins/sound/AppletTray.qml:172
 msgid "_Run"
 msgstr ""
 
-#: ../plugins/network/AppletTray.qml:306
-#: ../plugins/network/bluetooth/AppletTray.qml:79
-#: ../plugins/network/vpn/AppletTray.qml:71
-#: ../plugins/network/wifi/AppletTray.qml:127
-#: ../plugins/power/AppletTray.qml:106 ../plugins/sound/AppletTray.qml:174
+#: ../plugins/network/AppletTray.qml:329
+#: ../plugins/network/bluetooth/AppletTray.qml:68
+#: ../plugins/network/vpn/AppletTray.qml:70
+#: ../plugins/network/wifi/AppletTray.qml:126
+#: ../plugins/power/AppletTray.qml:105 ../plugins/sound/AppletTray.qml:173
 msgid "_Undock"
 msgstr ""
 
-#: ../plugins/network/bluetooth/AppletTray.qml:118
-#: ../plugins/network/bluetooth/main.qml:33
-msgid "Bluetooth"
-msgstr ""
-
-#: ../plugins/network/vpn/AppletTray.qml:110
+#: ../plugins/network/vpn/AppletTray.qml:111
 #: ../plugins/network/vpn/main.qml:33
 msgid "VPN"
 msgstr ""
 
-#: ../plugins/network/wifi/AppletTray.qml:168
+#: ../plugins/network/wifi/AppletTray.qml:169
 #: ../plugins/network/WirelessNetwork.qml:50
 #: ../plugins/network/wifi/main.qml:33
 msgid "Wireless Network"
 msgstr ""
 
-#: ../plugins/power/AppletTray.qml:34
+#: ../plugins/power/AppletTray.qml:33
 msgid "On Charging"
 msgstr ""
 
-#: ../plugins/power/AppletTray.qml:46
+#: ../plugins/power/AppletTray.qml:45
 msgid "Custom"
 msgstr ""
 
-#: ../plugins/power/AppletTray.qml:47
+#: ../plugins/power/AppletTray.qml:46
 msgid "Power saver"
 msgstr ""
 
-#: ../plugins/power/AppletTray.qml:48
+#: ../plugins/power/AppletTray.qml:47
 msgid "Balanced"
 msgstr ""
 
-#: ../plugins/power/AppletTray.qml:49
+#: ../plugins/power/AppletTray.qml:48
 msgid "High performance"
 msgstr ""
 
-#: ../plugins/sound/AppletTray.qml:218
+#: ../plugins/sound/AppletTray.qml:217
 msgid "Device"
 msgstr ""
 
-#: ../plugins/sound/AppletTray.qml:318
+#: ../plugins/sound/AppletTray.qml:317
 msgid "Applications"
 msgstr ""
 
@@ -136,24 +123,24 @@ msgstr ""
 msgid "Unmount failed!"
 msgstr ""
 
-#: ../src/frame/WifiPasswordWindow.qml:150
+#: ../src/frame/WifiPasswordWindow.qml:151
 #, qt-format
 msgid "Please enter the password of  <font color=\"#faca57\">%1</font>"
 msgstr ""
 
-#: ../src/frame/WifiPasswordWindow.qml:172
+#: ../src/frame/WifiPasswordWindow.qml:173
 msgid "Password"
 msgstr ""
 
-#: ../src/frame/WifiPasswordWindow.qml:180
+#: ../src/frame/WifiPasswordWindow.qml:181
 msgid "Auto-connect"
 msgstr ""
 
-#: ../src/frame/WifiPasswordWindow.qml:195
+#: ../src/frame/WifiPasswordWindow.qml:196
 msgid "Cancel"
 msgstr ""
 
-#: ../src/frame/WifiPasswordWindow.qml:202
+#: ../src/frame/WifiPasswordWindow.qml:203
 msgid "Connect"
 msgstr ""
 

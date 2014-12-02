@@ -68,17 +68,8 @@ DockApplet{
         }
     }
 
-    Component.onCompleted: {
-        setData("clockType", currentClockType)
-    }
-
     onActivate: {
         showDateTime(0)
-    }
-
-    property var typeNames: {
-        "digital": dsTr("_Switch to analog"),
-        "analog": dsTr("_Switch to digital")
     }
 
     function showDateTime(id){
@@ -88,26 +79,6 @@ DockApplet{
     function hideDateTime(id){
         set_hide_applet("date_time")
     }
-
-    function switchClockType(id){
-        if(currentClockType == "digital"){
-            currentClockType = "analog"
-        }
-        else{
-            currentClockType = "digital"
-        }
-        var content_obj = unmarshalJSON(menu.content)
-        content_obj.menuItems[id].itemText = typeNames[currentClockType]
-        menu.content = marshalJSON(content_obj)
-        print(id, currentClockType)
-    }
-
-    //menu: AppletMenu{
-        //Component.onCompleted: {
-            //addItem(dsTr("_Run"), showDateTime);
-            //addItem(typeNames[currentClockType], switchClockType);
-        //}
-    //}
 
     property int itemWidth: 37
     property int itemHeight: 36
@@ -127,7 +98,6 @@ DockApplet{
             console.log("Recive onQt5ScreenDestroyed")
             mainObject.restartDockApplet()
         }
-
 
         Column {
             id: contentColumn
@@ -223,8 +193,6 @@ DockApplet{
                 width: parent.width
                 height: (rootWidth - parent.width)/2
             }
-
         }
-
     }
 }
