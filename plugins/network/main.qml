@@ -30,7 +30,7 @@ AppletPlugin {
     managed: true
     show: true
     name: dsTr("Network")
-    iconPath: getIconUrl("network/small/wired_on.png")
+    iconPath: "network-wired-symbolic"
 
     property var activeConnections: unmarshalJSON(dbusNetwork.activeConnections)
     property var activeConnectionsCount: {
@@ -63,47 +63,36 @@ AppletPlugin {
     property int stateConnected: 2
 
     Connections {
-        target:root
+        target: root
         onDockDisplayModeChanged:{
-            if (dockDisplayMode == 0){
-                updateWiredSettingItem(true)
-            }
-            else{
-                updateWiredSettingItem(false)
-            }
+            updateWiredSettingItem(dockDisplayMode == 0)
         }
     }
 
     Timer {
-        id:delayUpdateTimer
+        id: delayUpdateTimer
         repeat: false
         running: true
         interval: 1000
         onTriggered: {
-            if (dockDisplayMode == 0){
-                updateWiredSettingItem(true)
-            }
-            else{
-                updateWiredSettingItem(false)
-            }
+            updateWiredSettingItem(dockDisplayMode == 0)
         }
     }
 
     function updateWiredSettingItem(showFlag){
         for (var i = 0; i < appletInfos.count; i ++){
-            if (appletInfos.get(i).applet_icon.indexOf("network") > 0){
+            if (appletInfos.get(i).applet_id == "network"){
                 appletInfos.get(i).setting_enable = showFlag
             }
         }
     }
-
 
     appletTrayLoader: Loader {
         sourceComponent: AppletTray{}
         active: appletItem.show && ((hasWiredDevices && !hasWirelessDevices && activeConnectionsCount == 0 && dockDisplayMode != 0) || dockDisplayMode == 0)
     }
 
-    onSubAppletStateChanged:{
+    onSubAppletStateChanged: {
         subAppletManager.updateAppletState(subAppletId, subAppletState)
     }
 

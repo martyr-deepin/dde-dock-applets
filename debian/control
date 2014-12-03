@@ -18,10 +18,10 @@ Homepage: https://gitcafe.com/Deepin/dde-dock-applets
 Package: dde-dock-applets
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends},
- dde-control-center,
  dde-daemon,
  dde-api,
  dde-qml-dbus-factory,
+ deepin-icon-theme,
  deepin-artwork-themes,
  deepin-qml-widgets,
  qt5-extra,

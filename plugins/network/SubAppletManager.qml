@@ -38,7 +38,7 @@ Item {
     property var nmDevices: JSON.parse(dbusNetwork.devices)
     property var wiredDevices:nmDevices["wired"] == undefined ? [] : nmDevices["wired"]
     property var vpnConnections: nmConnections[nmConnectionTypeVpn]
-    property var vpnConnectionsCount:{
+    property var vpnConnectionsCount: {
         if (vpnConnections)
             return vpnConnections.length
         else
@@ -116,8 +116,7 @@ Item {
     }
 
     Timer {
-        id:delayUpdateVPNInfosTimer
-        repeat: false
+        id: delayUpdateVPNInfosTimer
         interval: 1000
         running: true
         onTriggered: {
@@ -138,7 +137,7 @@ Item {
     function updateWirelessApplet(){
         if (getParentAppletPathHead() == "")
             return
-        print("==> [Info] Updating Wifi applet....................")
+        print("==> [Info] Updating Wifi applet...")
         clearWirelessAppletInfos()
         wirelessListModel.clear()
 
@@ -184,12 +183,12 @@ Item {
 
         //not exist ,insert new one
         appletInfos.append({
-                   "applet_id": "vpn",
-                   "applet_name": vpnLoader.item.name,
-                   "applet_visible": vpnLoader.item.show,
-                   "applet_icon":vpnLoader.item.iconPath,
-                   "setting_enable":true
-               })
+            "applet_id": "vpn",
+            "applet_name": vpnLoader.item.name,
+            "applet_visible": vpnLoader.item.show,
+            "applet_icon": vpnLoader.item.iconPath,
+            "setting_enable":true
+        })
     }
 
     function updateBluetoothAdaperts(){
@@ -217,7 +216,7 @@ Item {
         }
     }
 
-    function updateAppletState(applet_id,new_state){
+    function updateAppletState(applet_id, new_state){
         print ("==> Update applet state...",applet_id,new_state)
         if (applet_id == "vpn")
             vpnLoader.item.setAppletState(new_state)
@@ -258,9 +257,9 @@ Item {
     }
 
     SubAppletItemLoader {
-        id:vpnLoader
-        appletId:"vpn"
-        qmlPath:getParentAppletPathHead() + "vpn/main.qml"
+        id: vpnLoader
+        appletId: "vpn"
+        qmlPath: getParentAppletPathHead() + "vpn/main.qml"
     }
 
     Repeater {
@@ -270,8 +269,8 @@ Item {
     }
 
     Repeater {
-        id:bluetoothRepeater
-        model:bluetoothListModel
+        id: bluetoothRepeater
+        model: bluetoothListModel
         delegate: SubAppletItemLoader {}
     }
 

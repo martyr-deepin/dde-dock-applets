@@ -36,6 +36,18 @@ Item {
 
     signal subAppletStateChanged(string subAppletId,bool subAppletState)
 
+    function getAbsolutePath(path){
+        // return absolute path from the plugin folder with a relative path
+        var parentFolder = mainObject.getParentFolder(applet_path)
+        if(parentFolder.slice(-1) == "/"){
+            parentFolder = parentFolder.slice(0, -1)
+        }
+        if (path.slice(0, 1) == "/"){
+            path = path.slice(1)
+        }
+        return parentFolder + "/" + path
+    }
+
     function setAppletPath(applet_path){
         appletItem.appletPath = applet_path
     }

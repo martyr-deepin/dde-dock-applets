@@ -58,10 +58,13 @@ QmlLoader::~QmlLoader()
     delete this->engine;
 }
 
-QString QmlLoader::getIconUrl(QString path)
+QString QmlLoader::getParentFolder(QString path)
 {
-    QString iconPath = "file://"DOCKAPPLETSDIR"/icons/" + path;
-    return iconPath;
+    if(path.startsWith("file://")){
+        path = path.replace("file://", "");
+    }
+    QFileInfo info(path);
+    return info.absoluteDir().absolutePath();
 }
 
 void QmlLoader::xdgOpen(QString path)
@@ -97,7 +100,7 @@ QString QmlLoader::iconNameToPath(QString qname, int size)
     char* pic_name = g_strndup(name, pic_name_len);
     GtkIconTheme* them = gtk_icon_theme_get_default();
 
-    GtkIconInfo* info = gtk_icon_theme_lookup_icon(them, pic_name, size, GTK_ICON_LOOKUP_GENERIC_FALLBACK);
+    GtkIconInfo* info = gtk_icon_theme_lookup_icon(them, pic_name, size, GTK_ICON_LOOKUP_NO_SVG);
     g_free(pic_name);
     if (info) {
         char* path = g_strdup(gtk_icon_info_get_filename(info));

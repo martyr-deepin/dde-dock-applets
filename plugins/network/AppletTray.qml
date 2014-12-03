@@ -34,7 +34,10 @@ DockApplet{
     id:networkApplet
     title: activeConnectionsCount > 0 ? dsTr("Network Connected") : dsTr("Network Not Connected")
     appid: "AppletNetwork"
-    icon: dockDisplayMode == 0 ? macIconUri : winIconUri
+    icon: getIcon()
+
+    property var dconstants: DConstants {}
+    property string currentIconName: ""
 
     Connections{
         target: root
@@ -47,23 +50,19 @@ DockApplet{
         id: updateIconTimer
         interval: 500
         onTriggered: {
-            macIconUri = getFashionIcon()
+            // refresh the icon theme
+            currentIconName = root.iconThemeName
         }
     }
-
-
-    property var dconstants: DConstants {}
-    property string macIconUri: getFashionIcon()
-    property string winIconUri: mainObject.iconNameToPath("dock-wired-on", 16)
 
     // Graphic
     property var dbusGraphic: Graphic {}
     function getIconBgDataUri() {
         if(dbusNetwork.state == 70){
-            var path = mainObject.iconNameToPath("dock-network-on", 48)
+            var path = mainObject.iconNameToPath("network-online", 48)
         }
         else{
-            var path = mainObject.iconNameToPath("dock-network-off", 48)
+            var path = mainObject.iconNameToPath("network-offline", 48)
         }
         return getIconDataUri(path)
     }
@@ -91,27 +90,32 @@ DockApplet{
     function getWinIcon(){
     }
 
-    function getFashionIcon(){
-        var iconDataUri = getIconBgDataUri()
-        for(var i=0; i<subImageList.count; i++){
-            var imageInfo = subImageList.get(i)
-            iconDataUri = dbusGraphic.CompositeImageUri(
-                        iconDataUri,
-                        getIconDataUri(imageInfo.imagePath),
-                        imageInfo.x,
-                        imageInfo.y,
-                        "png"
-                        )
-        }
+    function getIcon(){
+        // do not delete this line, currentIconName change to emit icon update
+        print("==> [info] network icon update:", currentIconName)
 
-        if(activeWiredDevice){
-            winIconUri = mainObject.iconNameToPath("dock-wired-on", 16)
+        if(dockDisplayMode == 0){
+            var iconDataUri = getIconBgDataUri()
+            for(var i=0; i<subImageList.count; i++){
+                var imageInfo = subImageList.get(i)
+                iconDataUri = dbusGraphic.CompositeImageUri(
+                            iconDataUri,
+                            getIconDataUri(imageInfo.imagePath),
+                            imageInfo.x,
+                            imageInfo.y,
+                            "png"
+                            )
+            }
+            return iconDataUri
         }
         else{
-            winIconUri = mainObject.iconNameToPath("dock-wired-off", 16)
+            if(activeWiredDevice){
+                return "network-wired-symbolic"
+            }
+            else{
+                return "network-offline-symbolic"
+            }
         }
-        print("==> [info] network icon update...")
-        return iconDataUri
     }
 
     function getIconDataUri(path){
@@ -235,7 +239,7 @@ DockApplet{
                 }
             }
         }
-        var imagePath = mainObject.iconNameToPath("fashion-wifi-%1".arg(image_id), 16)
+        var imagePath = getAbsolutePath("emblems-images/wifi-%1.png".arg(image_id))
         updateState("wifi", show, imagePath)
     }
 
@@ -245,10 +249,10 @@ DockApplet{
         var vpnShow = vpnConnections ? vpnConnections.length > 0 : false
         var vpnEnabled = dbusNetwork.vpnEnabled
         if(vpnEnabled){
-            var imagePath = mainObject.iconNameToPath("fashion-vpn-on", 16)
+            var imagePath = getAbsolutePath("emblems-images/vpn-on.png")
         }
         else{
-            var imagePath = mainObject.iconNameToPath("fashion-vpn-off", 16)
+            var imagePath = getAbsolutePath("emblems-images/vpn-off.png")
         }
         updateState("vpn", vpnShow, imagePath)
     }
@@ -281,10 +285,10 @@ DockApplet{
         var enabled = bluetoothState == stateConnected
 
         if(enabled){
-            var imagePath = mainObject.iconNameToPath("fashion-bluetooth-on", 16)
+            var imagePath = getAbsolutePath("emblems-images/bluetooth-on.png")
         }
         else{
-            var imagePath = mainObject.iconNameToPath("fashion-bluetooth-off", 16)
+            var imagePath = getAbsolutePath("emblems-images/bluetooth-off.png")
         }
         updateState("bluetooth", show, imagePath)
     }

@@ -73,51 +73,60 @@ DockApplet{
     }
 
     function getIcon(){
-        var step = 10
-        var winStep = 3
-        if(typeof(defaultSink.volume) != "undefined"){
-            var vol = getVolume()
-            if(vol < 1){
-                step = 0
-            }
-            else if(vol < 10){
-                step = 1
-            }
-            else if(vol > 100){
-                step = 10
+        if(typeof(defaultSink.volume) == "undefined"){
+            if (dockDisplayMode == 0){
+                return "audio-volume-000-muted"
             }
             else{
-                step = parseInt(getVolume()/10)
-            }
-
-            if(vol < 1){
-                winStep = 0
-            }
-            else if(vol < 33){
-                winStep = 1
-            }
-            else if(vol < 66){
-                winStep = 2
-            }
-            else{
-                winStep = 3
+                return "audio-volume-muted-symbolic"
             }
         }
 
-        if(defaultSink.mute){
-            if(dockDisplayMode == 0){
-                return "dock-sound-mute-%1".arg(step)
+        if (dockDisplayMode == 0){
+            if(defaultSink.mute){
+                var iconName = "audio-volume-%1-muted"
             }
-            else {
-                return "dock-sound-mute"
+            else{
+                var iconName = "audio-volume-%1"
+            }
+            var vol = getVolume()
+            if(vol < 10){
+                return iconName.arg("000")
+            }
+            else if (vol <= 90){
+                var tmp = parseInt(vol/10) * 10
+                return iconName.arg("0" + String(tmp))
+            }
+            else{
+                return iconName.arg("100")
             }
         }
         else{
-            if(dockDisplayMode == 0){
-                return "dock-sound-%1".arg(step)
+            return getSymbolicIcon()
+        }
+    }
+
+    function getSymbolicIcon(){
+        if(defaultSink.mute){
+            return "audio-volume-muted-symbolic"
+        }
+        else{
+            var vol = getVolume()
+            if(typeof(vol) == "undefined"){
+                return "audio-volume-high-symbolic"
+            }
+
+            if(vol==0){
+                return "audio-volume-muted-symbolic"
+            }
+            else if(vol < 33){
+                return "audio-volume-low-symbolic"
+            }
+            else if(vol < 66){
+                return "audio-volume-medium-symbolic"
             }
             else{
-                return "dock-sound-%1".arg(winStep)
+                return "audio-volume-high-symbolic"
             }
         }
     }
@@ -181,7 +190,6 @@ DockApplet{
         color: "transparent"
 
         onNativeWindowDestroyed: {
-            print("@@@@@@@@@@@ rebuild sound window...")
             mainObject.restartDockApplet()
         }
         onQt5ScreenDestroyed: {
@@ -230,35 +238,15 @@ DockApplet{
                     height: 40
                     width: parent.width
 
-                    Image {
+                    DIcon {
                         id: soundImage
                         width: 24
                         height: 24
                         anchors.left: parent.left
                         anchors.leftMargin: 10
                         anchors.verticalCenter: parent.verticalCenter
-                        source: {
-                            if (defaultSink.mute){
-                                return "images/volume-mute.png"
-                            }
-                            else{
-                                var step = 100
-                                var volume = getVolume()
-                                if(volume == 0){
-                                    step = 0
-                                }
-                                else if(volume < 33){
-                                    step = 33
-                                }
-                                else if(volume < 66){
-                                    step = 66
-                                }
-                                else(
-                                    step = 100
-                                )
-                                return "images/volume-%1.png".arg(step)
-                            }
-                        }
+                        theme: "Deepin"
+                        icon: getSymbolicIcon()
 
                         MouseArea {
                             anchors.fill: parent
@@ -267,7 +255,6 @@ DockApplet{
                             }
                         }
                     }
-
 
                     AppletWhiteSlider{
                         id: soundSlider

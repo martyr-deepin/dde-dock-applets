@@ -31,9 +31,7 @@ AppletPlugin {
     managed: true
     show: true
     name: wirelessDevices.length > 1 ? appletId : dsTr("Wireless Network")
-    iconPath: getIconUrl("wifi/ap-signal-100.png")
-
-    property var dockMode: dockDisplayMode
+    iconPath: "network-wireless-signal-excellent-symbolic"
 
     property var dbusNetwork: NetworkManager{}
     property var nmDevices: JSON.parse(dbusNetwork.devices)
@@ -47,6 +45,6 @@ AppletPlugin {
 
     appletTrayLoader: Loader {
         sourceComponent: AppletTray{}
-        active:  appletItem.show && dockMode != 0
+        active:  appletItem.show && dockDisplayMode != 0
     }
 }

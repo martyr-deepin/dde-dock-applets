@@ -33,7 +33,11 @@ DockApplet{
     title: "Wireless Network"
     appid: wirelessDevices[deviceIndex].Vendor
 
-    icon: getIconUrl("wifi/ap-notconnect.png")
+    icon: ""
+
+    Component.onCompleted: {
+        updateDockIcon()
+    }
 
     property int xEdgePadding: 2
     property int titleSpacing: 10
@@ -65,43 +69,41 @@ DockApplet{
     }
 
     function updateDockIcon() {
-        if (!wirelessEnabled  || activeAp == "/")
-        {
-            wifiApplet.icon = getIconUrl("wifi/ap-notconnect.png")
+        if(!wirelessEnabled) {
+            wifiApplet.icon = "network-wireless-signal-none-symbolic"
             return
         }
 
-        if (dbusNetwork.state != 70)
-        {
-            wifiApplet.icon = getIconUrl("wifi/ap-nonetwork.png")
-            return
-        }
+        if(activeAp == "/") {
+            wifiApplet.icon = "network-wirelss-no-route-symbolic"
+        } else if (dbusNetwork.state >= 50 && dbusNetwork.state <= 60) {
+            wifiApplet.icon = "network-wireless-offline-symbolic"
+        } else {
+            if(accessPointsModel.count == 0){
+                contantRec.initModel()
+            }
+            for (var i = 0; i < accessPointsModel.count; i ++) {
+                if (accessPointsModel.get(i).apPath == activeAp) {
+                    var apPower = accessPointsModel.get(i).apSignal
 
-        var apPower = 100
-        for (var i = 0; i < accessPointsModel.count; i ++)
-        {
-            if (accessPointsModel.get(i).apPath == activeAp)
-            {
-                apPower = accessPointsModel.get(i).apSignal
-
-                if (apPower < 5)
-                    apPower = 0
-                else if (apPower <= 25)
-                    apPower = 25
-                else if (apPower <= 50)
-                    apPower = 50
-                else if (apPower <= 75)
-                    apPower = 75
-                else
-                    apPower = 100
-
-                wifiApplet.icon = getIconUrl("wifi/ap-signal-%1.png".arg(apPower))
-
-                return
+                    if (apPower < 5)
+                        wifiApplet.icon = "network-wireless-signal-none-symbolic"
+                    else if (apPower <= 25)
+                        wifiApplet.icon = "network-wireless-signal-weak-symbolic"
+                    else if (apPower <= 50)
+                        wifiApplet.icon = "network-wireless-signal-ok-symbolic"
+                    else if (apPower <= 75)
+                        wifiApplet.icon = "network-wireless-signal-good-symbolic"
+                    else
+                        wifiApplet.icon = "network-wireless-signal-excellent-symbolic"
+                    break
+                }
+            }
+            if (wifiApplet.icon == ""){
+                wifiApplet.icon = "network-wireless-signal-none-symbolic"
             }
         }
 
-        wifiApplet.icon = getIconUrl("wifi/ap-notconnect.png")
     }
 
     function unmarshalJSON(valueJSON) {
@@ -184,7 +186,7 @@ DockApplet{
                 }
 
                 Rectangle {
-                    id:contantRec
+                    id: contantRec
                     width: rootWidth
                     height: apListView.height
                     visible: wirelessEnabled
@@ -285,28 +287,23 @@ DockApplet{
                         }
                     }
 
-                    Timer {
-                        id: scanTimer
-                        interval: 100
-                        running: true
-                        onTriggered: {
-                            var accessPoints = unmarshalJSON(dbusNetwork.GetAccessPoints(devicePath))
-                            accessPointsModel.clear()
+                    function initModel(){
+                        var accessPoints = unmarshalJSON(dbusNetwork.GetAccessPoints(devicePath))
+                        accessPointsModel.clear()
 
-                            for(var i in accessPoints){
-                                // TODO ap
-                                var apObj = accessPoints[i]
-                                accessPointsModel.append({
-                                    "apName": apObj.Ssid,
-                                    "apSecured": apObj.Secured,
-                                    "apSecuredInEap": apObj.SecuredInEap,
-                                    "apSignal": apObj.Strength,
-                                    "apPath": apObj.Path
-                                })
-                            }
-                            contantRec.sortModel()
-                            sortModelTimer.start()
+                        for(var i in accessPoints){
+                            // TODO ap
+                            var apObj = accessPoints[i]
+                            accessPointsModel.append({
+                                "apName": apObj.Ssid,
+                                "apSecured": apObj.Secured,
+                                "apSecuredInEap": apObj.SecuredInEap,
+                                "apSignal": apObj.Strength,
+                                "apPath": apObj.Path
+                            })
                         }
+                        contantRec.sortModel()
+                        sortModelTimer.start()
                     }
 
                     Timer {
