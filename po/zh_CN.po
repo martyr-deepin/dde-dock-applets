@@ -1,0 +1,177 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Catherinelin <linhongxia@linuxdeepin.com>, 2014
+# Paris Qian Sen <qiansen1386@gmail.com>, 2014
+# szd_liufei <liufei@linuxdeepin.com>, 2014
+msgid ""
+msgstr ""
+"Project-Id-Version: dde-dock-applet\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-12-02 09:53+0800\n"
+"PO-Revision-Date: 2014-12-02 09:50+0000\n"
+"Last-Translator: szd_liufei <liufei@linuxdeepin.com>\n"
+"Language-Team: Chinese (China) (http://www.transifex.com/projects/p/dde-dock-applet/language/zh_CN/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../src/frame/AppletSettingWindow.qml:108
+msgid "Notification Area Settings"
+msgstr "通知区域设置"
+
+#: ../plugins/date_time/AppletTray.qml:148
+#: ../plugins/date_time/calendar_core.js:4
+msgid "Sun"
+msgstr "日"
+
+#: ../plugins/date_time/AppletTray.qml:149
+#: ../plugins/date_time/calendar_core.js:4
+msgid "Mon"
+msgstr "一"
+
+#: ../plugins/date_time/AppletTray.qml:150
+#: ../plugins/date_time/calendar_core.js:4
+msgid "Tue"
+msgstr "二"
+
+#: ../plugins/date_time/AppletTray.qml:151
+#: ../plugins/date_time/calendar_core.js:4
+msgid "Wed"
+msgstr "三"
+
+#: ../plugins/date_time/AppletTray.qml:152
+#: ../plugins/date_time/calendar_core.js:4
+msgid "Thu"
+msgstr "四"
+
+#: ../plugins/date_time/AppletTray.qml:153
+#: ../plugins/date_time/calendar_core.js:4
+msgid "Fri"
+msgstr "五"
+
+#: ../plugins/date_time/AppletTray.qml:154
+#: ../plugins/date_time/calendar_core.js:4
+msgid "Sat"
+msgstr "六"
+
+#: ../plugins/network/AppletTray.qml:35
+msgid "Network Connected"
+msgstr "网络已连接"
+
+#: ../plugins/network/AppletTray.qml:35
+msgid "Network Not Connected"
+msgstr "网络未连接"
+
+#: ../plugins/network/AppletTray.qml:328
+#: ../plugins/network/bluetooth/AppletTray.qml:67
+#: ../plugins/network/vpn/AppletTray.qml:69
+#: ../plugins/network/wifi/AppletTray.qml:125
+#: ../plugins/power/AppletTray.qml:98 ../plugins/sound/AppletTray.qml:172
+msgid "_Run"
+msgstr "运行(_R)"
+
+#: ../plugins/network/AppletTray.qml:329
+#: ../plugins/network/bluetooth/AppletTray.qml:68
+#: ../plugins/network/vpn/AppletTray.qml:70
+#: ../plugins/network/wifi/AppletTray.qml:126
+#: ../plugins/power/AppletTray.qml:105 ../plugins/sound/AppletTray.qml:173
+msgid "_Undock"
+msgstr "移除驻留(_U)"
+
+#: ../plugins/network/vpn/AppletTray.qml:111
+#: ../plugins/network/vpn/main.qml:33
+msgid "VPN"
+msgstr "VPN"
+
+#: ../plugins/network/wifi/AppletTray.qml:169
+#: ../plugins/network/WirelessNetwork.qml:50
+#: ../plugins/network/wifi/main.qml:33
+msgid "Wireless Network"
+msgstr "无线网络"
+
+#: ../plugins/power/AppletTray.qml:33
+msgid "On Charging"
+msgstr "正在充电"
+
+#: ../plugins/power/AppletTray.qml:45
+msgid "Custom"
+msgstr "自定义"
+
+#: ../plugins/power/AppletTray.qml:46
+msgid "Power saver"
+msgstr "节能"
+
+#: ../plugins/power/AppletTray.qml:47
+msgid "Balanced"
+msgstr "均衡"
+
+#: ../plugins/power/AppletTray.qml:48
+msgid "High performance"
+msgstr "高性能"
+
+#: ../plugins/sound/AppletTray.qml:217
+msgid "Device"
+msgstr "设备"
+
+#: ../plugins/sound/AppletTray.qml:317
+msgid "Applications"
+msgstr "程序"
+
+#: ../plugins/disk_mount/DiskItem.qml:124
+msgid "Unmount failed!"
+msgstr "卸载失败"
+
+#: ../src/frame/WifiPasswordWindow.qml:151
+#, qt-format
+msgid "Please enter the password of  <font color=\"#faca57\">%1</font>"
+msgstr "请输入<font color=\"#faca57\">%1</font>的密码"
+
+#: ../src/frame/WifiPasswordWindow.qml:173
+msgid "Password"
+msgstr "密码"
+
+#: ../src/frame/WifiPasswordWindow.qml:181
+msgid "Auto-connect"
+msgstr "自动连接"
+
+#: ../src/frame/WifiPasswordWindow.qml:196
+msgid "Cancel"
+msgstr "取消"
+
+#: ../src/frame/WifiPasswordWindow.qml:203
+msgid "Connect"
+msgstr "连接"
+
+#: ../plugins/network/WirelessApList.qml:95
+msgid "Scanning..."
+msgstr "扫描中..."
+
+#: ../plugins/network/WirelessNetwork.qml:50
+#, qt-format
+msgid "Wireless Network %1"
+msgstr "无线网络 %1"
+
+#: ../plugins/date_time/main.qml:32
+msgid "Date and Time"
+msgstr "日期和时间"
+
+#: ../plugins/disk_mount/main.qml:33
+msgid "Disk Mount"
+msgstr "磁盘挂载"
+
+#: ../plugins/network/main.qml:32
+msgid "Network"
+msgstr "网络"
+
+#: ../plugins/power/main.qml:33
+msgid "Power"
+msgstr "电源"
+
+#: ../plugins/sound/main.qml:32
+msgid "Sound"
+msgstr "声音"

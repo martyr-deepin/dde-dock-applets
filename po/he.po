@@ -1,0 +1,175 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Yuval Bar-On <hyuvii@gmail.com>, 2014
+msgid ""
+msgstr ""
+"Project-Id-Version: dde-dock-applet\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-12-02 09:53+0800\n"
+"PO-Revision-Date: 2014-12-03 06:43+0000\n"
+"Last-Translator: szd_liufei <liufei@linuxdeepin.com>\n"
+"Language-Team: Hebrew (http://www.transifex.com/projects/p/dde-dock-applet/language/he/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: he\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../src/frame/AppletSettingWindow.qml:108
+msgid "Notification Area Settings"
+msgstr ""
+
+#: ../plugins/date_time/AppletTray.qml:148
+#: ../plugins/date_time/calendar_core.js:4
+msgid "Sun"
+msgstr "ראשון"
+
+#: ../plugins/date_time/AppletTray.qml:149
+#: ../plugins/date_time/calendar_core.js:4
+msgid "Mon"
+msgstr "שני"
+
+#: ../plugins/date_time/AppletTray.qml:150
+#: ../plugins/date_time/calendar_core.js:4
+msgid "Tue"
+msgstr "שלישי"
+
+#: ../plugins/date_time/AppletTray.qml:151
+#: ../plugins/date_time/calendar_core.js:4
+msgid "Wed"
+msgstr "רביעי"
+
+#: ../plugins/date_time/AppletTray.qml:152
+#: ../plugins/date_time/calendar_core.js:4
+msgid "Thu"
+msgstr "חמישי"
+
+#: ../plugins/date_time/AppletTray.qml:153
+#: ../plugins/date_time/calendar_core.js:4
+msgid "Fri"
+msgstr "שישי"
+
+#: ../plugins/date_time/AppletTray.qml:154
+#: ../plugins/date_time/calendar_core.js:4
+msgid "Sat"
+msgstr "שבת"
+
+#: ../plugins/network/AppletTray.qml:35
+msgid "Network Connected"
+msgstr ""
+
+#: ../plugins/network/AppletTray.qml:35
+msgid "Network Not Connected"
+msgstr ""
+
+#: ../plugins/network/AppletTray.qml:328
+#: ../plugins/network/bluetooth/AppletTray.qml:67
+#: ../plugins/network/vpn/AppletTray.qml:69
+#: ../plugins/network/wifi/AppletTray.qml:125
+#: ../plugins/power/AppletTray.qml:98 ../plugins/sound/AppletTray.qml:172
+msgid "_Run"
+msgstr "_Run"
+
+#: ../plugins/network/AppletTray.qml:329
+#: ../plugins/network/bluetooth/AppletTray.qml:68
+#: ../plugins/network/vpn/AppletTray.qml:70
+#: ../plugins/network/wifi/AppletTray.qml:126
+#: ../plugins/power/AppletTray.qml:105 ../plugins/sound/AppletTray.qml:173
+msgid "_Undock"
+msgstr "_Undock"
+
+#: ../plugins/network/vpn/AppletTray.qml:111
+#: ../plugins/network/vpn/main.qml:33
+msgid "VPN"
+msgstr "VPN"
+
+#: ../plugins/network/wifi/AppletTray.qml:169
+#: ../plugins/network/WirelessNetwork.qml:50
+#: ../plugins/network/wifi/main.qml:33
+msgid "Wireless Network"
+msgstr "רשת אלחוטית"
+
+#: ../plugins/power/AppletTray.qml:33
+msgid "On Charging"
+msgstr "בזמן הטענה"
+
+#: ../plugins/power/AppletTray.qml:45
+msgid "Custom"
+msgstr "מותאם אישית"
+
+#: ../plugins/power/AppletTray.qml:46
+msgid "Power saver"
+msgstr "חיסכון בצריכת חשמל"
+
+#: ../plugins/power/AppletTray.qml:47
+msgid "Balanced"
+msgstr "מאוזן"
+
+#: ../plugins/power/AppletTray.qml:48
+msgid "High performance"
+msgstr "ביצועים ברמה גבוהה"
+
+#: ../plugins/sound/AppletTray.qml:217
+msgid "Device"
+msgstr "מכשיר"
+
+#: ../plugins/sound/AppletTray.qml:317
+msgid "Applications"
+msgstr "תוכנות"
+
+#: ../plugins/disk_mount/DiskItem.qml:124
+msgid "Unmount failed!"
+msgstr "Unmount נכשל!"
+
+#: ../src/frame/WifiPasswordWindow.qml:151
+#, qt-format
+msgid "Please enter the password of  <font color=\"#faca57\">%1</font>"
+msgstr ""
+
+#: ../src/frame/WifiPasswordWindow.qml:173
+msgid "Password"
+msgstr "סיסמא"
+
+#: ../src/frame/WifiPasswordWindow.qml:181
+msgid "Auto-connect"
+msgstr ""
+
+#: ../src/frame/WifiPasswordWindow.qml:196
+msgid "Cancel"
+msgstr "ביטול"
+
+#: ../src/frame/WifiPasswordWindow.qml:203
+msgid "Connect"
+msgstr "התחבר"
+
+#: ../plugins/network/WirelessApList.qml:95
+msgid "Scanning..."
+msgstr "סורק..."
+
+#: ../plugins/network/WirelessNetwork.qml:50
+#, qt-format
+msgid "Wireless Network %1"
+msgstr "רשת אלחוטית %1"
+
+#: ../plugins/date_time/main.qml:32
+msgid "Date and Time"
+msgstr "תאריך ושעה"
+
+#: ../plugins/disk_mount/main.qml:33
+msgid "Disk Mount"
+msgstr "Mount של הדיסק"
+
+#: ../plugins/network/main.qml:32
+msgid "Network"
+msgstr "רשת"
+
+#: ../plugins/power/main.qml:33
+msgid "Power"
+msgstr "צריכת חשמל"
+
+#: ../plugins/sound/main.qml:32
+msgid "Sound"
+msgstr "שמע"
