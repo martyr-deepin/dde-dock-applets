@@ -5,13 +5,14 @@
 # Translators:
 # fasier <matus.ravas@outlook.com>, 2014
 # Microtus <hrabosmartin@gmail.com>, 2014
+# Microtus <hrabosmartin@gmail.com>, 2014
 msgid ""
 msgstr ""
 "Project-Id-Version: dde-dock-applet\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-12-02 09:53+0800\n"
-"PO-Revision-Date: 2014-12-03 06:47+0000\n"
-"Last-Translator: szd_liufei <liufei@linuxdeepin.com>\n"
+"PO-Revision-Date: 2014-12-03 20:51+0000\n"
+"Last-Translator: Microtus <hrabosmartin@gmail.com>\n"
 "Language-Team: Slovak (http://www.transifex.com/projects/p/dde-dock-applet/language/sk/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -21,7 +22,7 @@ msgstr ""
 
 #: ../src/frame/AppletSettingWindow.qml:108
 msgid "Notification Area Settings"
-msgstr ""
+msgstr "Nastavenia upozornení"
 
 #: ../plugins/date_time/AppletTray.qml:148
 #: ../plugins/date_time/calendar_core.js:4
@@ -60,11 +61,11 @@ msgstr "So"
 
 #: ../plugins/network/AppletTray.qml:35
 msgid "Network Connected"
-msgstr ""
+msgstr "Sieť pripojená"
 
 #: ../plugins/network/AppletTray.qml:35
 msgid "Network Not Connected"
-msgstr ""
+msgstr "Sieť nepripojená"
 
 #: ../plugins/network/AppletTray.qml:328
 #: ../plugins/network/bluetooth/AppletTray.qml:67
@@ -128,7 +129,7 @@ msgstr "Odpojenie zlyhalo!"
 #: ../src/frame/WifiPasswordWindow.qml:151
 #, qt-format
 msgid "Please enter the password of  <font color=\"#faca57\">%1</font>"
-msgstr ""
+msgstr "Prosím zadajte heslo pre <font color=\"#faca57\">%1</font>"
 
 #: ../src/frame/WifiPasswordWindow.qml:173
 msgid "Password"
@@ -136,7 +137,7 @@ msgstr "Heslo"
 
 #: ../src/frame/WifiPasswordWindow.qml:181
 msgid "Auto-connect"
-msgstr ""
+msgstr "Automaticky-pripojiť"
 
 #: ../src/frame/WifiPasswordWindow.qml:196
 msgid "Cancel"
@@ -144,7 +145,7 @@ msgstr "Zrušiť"
 
 #: ../src/frame/WifiPasswordWindow.qml:203
 msgid "Connect"
-msgstr "Spojiť"
+msgstr "Pripojiť"
 
 #: ../plugins/network/WirelessApList.qml:95
 msgid "Scanning..."
