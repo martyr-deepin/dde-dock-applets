@@ -30,11 +30,11 @@ AppletPlugin {
 
     managed: true
     show: true
-    name:  appletName == "" ? appletId : appletName
-    iconPath:getIconUrl("bluetooth/bluetooth-enable.png")
+    name: appletName == "" ? appletId : appletName
+    iconPath: "bluetooth-active-symbolic"
 
     Bluetooth {
-        id: dbus_bluetooth
+        id: dbusBluetooth
         onAdapterPropertiesChanged: {
             var tmpAdapter = unmarshalJSON(arg0)
             for (var i= 0; i < appletInfos.count; i ++){

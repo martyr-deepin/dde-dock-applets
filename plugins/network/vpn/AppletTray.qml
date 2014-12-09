@@ -33,7 +33,7 @@ DockApplet{
     id: vpnApplet
     title: "VPN"
     appid: "AppletVPN"
-    icon: vpnEnable ? getIconUrl("vpn/vpn-enable.png") : getIconUrl("vpn/vpn-disable.png")
+    icon: vpnEnable ? "network-vpn-active-symbolic" : "network-vpn-disable-symbolic"
 
     property int xEdgePadding: 2
     property int titleSpacing: 10

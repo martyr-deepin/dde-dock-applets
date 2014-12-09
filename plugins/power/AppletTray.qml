@@ -111,54 +111,54 @@ DockApplet {
         var percentage = parseInt(dbusPower.batteryPercentage)
         if(dockDisplayMode == 0){
             if (dbusPower.onBattery){
-                var path = "dock-battery-%1"
+                var iconName = "battery-%1"
             }
             else{
-                var path = "dock-battery-charge-%1"
+                var iconName = "battery-%1-plugged"
             }
 
             if(percentage <= 5){
-                return path.arg(0)
+                return iconName.arg("000")
             }
-            else if(percentage <= 18){
-                return path.arg(1)
+            else if(percentage <= 20){
+                return iconName.arg("020")
             }
-            else if(percentage <= 38){
-                return path.arg(2)
+            else if(percentage <= 40){
+                return iconName.arg("040")
             }
-            else if(percentage <= 62){
-                return path.arg(3)
+            else if(percentage <= 60){
+                return iconName.arg("060")
             }
-            else if(percentage <= 88){
-                return path.arg(4)
+            else if(percentage <= 80){
+                return iconName.arg("080")
             }
             else{
-                return path.arg(5)
+                return iconName.arg("100")
             }
         }
         else{
             if (!dbusPower.onBattery){
-                return "dock-battery-charge"
+                return "battery-charged-symbolic"
             }
             else {
-                var winPath = "dock-battery-%1"
+                var iconName = "battery-%1-symbolic"
                 if(percentage <= 5){
-                    return winPath.arg(0)
+                    return iconName.arg("000")
                 }
                 else if(percentage <= 20){
-                    return winPath.arg(1)
+                    return iconName.arg("020")
                 }
                 else if(percentage <= 40){
-                    return winPath.arg(2)
+                    return iconName.arg("040")
                 }
                 else if(percentage <= 60){
-                    return winPath.arg(3)
+                    return iconName.arg("060")
                 }
                 else if(percentage <= 80){
-                    return winPath.arg(4)
+                    return iconName.arg("080")
                 }
                 else{
-                    return winPath.arg(5)
+                    return iconName.arg("100")
                 }
             }
         }

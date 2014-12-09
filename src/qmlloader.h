@@ -52,7 +52,7 @@ public:
     Q_INVOKABLE bool getAppletState(int dockMode, QString appletId);
     Q_INVOKABLE void setAppletState(int dockMode, QString appletId, bool appletVisible);
 
-    Q_INVOKABLE QString getIconUrl(QString path);
+    Q_INVOKABLE QString getParentFolder(QString path);
     Q_INVOKABLE void xdgOpen(QString path);
     Q_INVOKABLE bool isPathExist(QString path);
     Q_INVOKABLE QString iconNameToPath(QString qname, int size);

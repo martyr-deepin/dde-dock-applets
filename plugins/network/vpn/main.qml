@@ -31,7 +31,7 @@ AppletPlugin {
     managed: true
     show: true
     name: dsTr("VPN")
-    iconPath: getIconUrl("vpn/vpn-enable.png")
+    iconPath: "network-vpn-active-symbolic"
 
     property var dockMode: dockDisplayMode
 

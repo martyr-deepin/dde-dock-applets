@@ -31,7 +31,7 @@ AppletPlugin {
     managed: false
     show: mountDiskList.length > 0
     name: dsTr("Disk Mount")
-    iconPath: "dock-usb"
+    iconPath: "drive-harddisk-usb-symbolic"
 
     // DiskMount
     property var dbusDiskMount: DiskMount {}

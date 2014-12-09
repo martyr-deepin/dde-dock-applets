@@ -98,24 +98,32 @@ Item {
         }
     }
 
-    Image {
+    DIcon {
         id: signalImage
+        width: 16
+        height: 16
         anchors.right: parent.right
         anchors.rightMargin: 15
         anchors.verticalCenter: parent.verticalCenter
-        source: {
+        theme: "Deepin"
+        icon: {
             var power = apSignal
-            var secure = apSecured ? "-secure": ""
+            if(apSecured){
+                var iconName = "network-wireless-signal-%1-secure-symbolic"
+            }
+            else{
+                var iconName = "network-wireless-signal-%1-symbolic"
+            }
             if (power <= 5)
-                return getIconUrl("wifi/ap-signal-0" + secure + ".png")
+                return iconName.arg("none")
             else if (power <= 25)
-                return getIconUrl("wifi/ap-signal-25" + secure + ".png")
+                return iconName.arg("weak")
             else if (power <= 50)
-                return getIconUrl("wifi/ap-signal-50" + secure + ".png")
+                return iconName.arg("ok")
             else if (power <= 75)
-                return getIconUrl("wifi/ap-signal-75" + secure + ".png")
-            else if (power <= 100)
-                return getIconUrl("wifi/ap-signal-100" + secure + ".png")
+                return iconName.arg("good")
+            else
+                return iconName.arg("excellent")
         }
     }
 

@@ -31,6 +31,19 @@ Loader {
     property string appletName: typeof(applet_name) == "undefined" ? "" : applet_name
     source: qmlPath
 
+    function getAbsolutePath(path){
+        // Return: absolute path from the plugin folder with a relative `path`
+        // NOTE: Please do not use it unless have to obtain an absolute path
+        var parentFolder = mainObject.getParentFolder(qmlPath)
+        if(parentFolder.slice(-1) == "/"){
+            parentFolder = parentFolder.slice(0, -1)
+        }
+        if (path.slice(0, 1) == "/"){
+            path = path.slice(1)
+        }
+        return parentFolder + "/" + path
+    }
+
     function setAppletState(newState){
         if(isItemValid()){
             item.setAppletState(newState)

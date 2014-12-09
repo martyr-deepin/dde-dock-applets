@@ -32,7 +32,7 @@ DockApplet{
     id: bluetoothApplet
     title: adapterAlias
     appid: adapterPath
-    icon: adapterConnected ? getIconUrl("bluetooth/bluetooth-enable.png") : getIconUrl("bluetooth/bluetooth-disable.png")
+    icon: adapterConnected ? "bluetooth-active-symbolic" : "bluetooth-disable-symbolic"
 
     property int xEdgePadding: 2
     property int titleSpacing: 10

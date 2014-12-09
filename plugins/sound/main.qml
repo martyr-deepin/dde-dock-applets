@@ -30,7 +30,7 @@ AppletPlugin {
     managed: true
     show: true
     name: dsTr("Sound")
-    iconPath: "dock-sound-3"
+    iconPath: "audio-volume-high-symbolic"
 
     appletTrayLoader: Loader {
         sourceComponent: AppletTray{}

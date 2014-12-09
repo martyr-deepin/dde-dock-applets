@@ -69,10 +69,6 @@ QtObject {
     property string iconThemeName: currentThemeObject.iconTheme
     // icon theme
 
-    function getIconUrl(path){
-        return mainObject.getIconUrl(path)
-    }
-
     function marshalJSON(value){
         var valueJSON = JSON.stringify(value);
         return valueJSON
