@@ -245,10 +245,22 @@ DockApplet{
 
     // vpn
     property var vpnConnections: nmConnections["vpn"]
-    onVpnConnectionsChanged: {
+    property var vpnActived:{
+        if (activeConnections){
+            for (var key in activeConnections){
+                if (activeConnections[key]["Vpn"])
+                    return true
+            }
+            return false
+        }
+        else
+            return false
+    }
+
+    onVpnActivedChanged: {
         var vpnShow = vpnConnections ? vpnConnections.length > 0 : false
         var vpnEnabled = dbusNetwork.vpnEnabled
-        if(vpnEnabled){
+        if(vpnActived){
             var imagePath = getAbsolutePath("emblems-images/vpn-on.png")
         }
         else{
