@@ -122,7 +122,7 @@ DockApplet{
                         }
 
                         checked: adapterConnected
-                        onClicked: dbus_bluetooth.SetAdapterPowered(adapterPath, checked)
+                        onClicked: dbusBluetooth.SetAdapterPowered(adapterPath, checked)
                     }
                 }
 
@@ -148,7 +148,7 @@ DockApplet{
                             running: false
                             interval: 1000
                             onTriggered: {
-                                var devInfos = unmarshalJSON(dbus_bluetooth.GetDevices(adapterPath))
+                                var devInfos = unmarshalJSON(dbusBluetooth.GetDevices(adapterPath))
                                 deviceModel.clear()
                                 for(var i in devInfos){
                                     deviceModel.addOrUpdateDevice(devInfos[i])
@@ -234,19 +234,19 @@ DockApplet{
                             onItemClicked: {
                                 if (state)
                                 {
-                                    dbus_bluetooth.DisconnectDevice(id)
+                                    dbusBluetooth.DisconnectDevice(id)
                                     console.log("Disconnect device, id:",id)
                                 }
                                 else
                                 {
-                                    dbus_bluetooth.ConnectDevice(id)
+                                    dbusBluetooth.ConnectDevice(id)
                                     console.log("Connect device, id:",id)
                                 }
                             }
                         }
 
                         Connections {
-                            target: dbus_bluetooth
+                            target: dbusBluetooth
                             onDeviceAdded: {
                                 var devInfo = unmarshalJSON(arg0)
                                 if (devInfo.AdapterPath != adapterPath)
