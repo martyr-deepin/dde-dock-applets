@@ -31,6 +31,7 @@ AppletPlugin {
     show: true
     name: dsTr("Network")
     iconPath: "network-wired-symbolic"
+    appletPath: qmlPath
 
     property var activeConnections: unmarshalJSON(dbusNetwork.activeConnections)
     property var activeConnectionsCount: {

@@ -33,6 +33,7 @@ AppletPlugin {
     name: wirelessDevices.length > 1 ? appletId : dsTr("Wireless Network")
     iconPath: "network-wireless-signal-excellent-symbolic"
 
+    property bool loaderActive: appletItem.show && dockDisplayMode != 0
     property var dbusNetwork: NetworkManager{}
     property var nmDevices: JSON.parse(dbusNetwork.devices)
     property var wirelessDevices: nmDevices["wireless"] == undefined ? [] : nmDevices["wireless"]
@@ -43,8 +44,21 @@ AppletPlugin {
             return 0
     }
 
+
+    Timer {
+        id:loaderDelayTimer
+        interval: 300
+        repeat: false
+        running: false
+        onTriggered: appletTrayLoader.active = loaderActive
+    }
+
+    onLoaderActiveChanged:{
+        loaderDelayTimer.start()
+    }
+
     appletTrayLoader: Loader {
         sourceComponent: AppletTray{}
-        active:  appletItem.show && dockDisplayMode != 0
+        active: false
     }
 }
