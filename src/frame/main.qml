@@ -51,7 +51,7 @@ QtObject {
         var themes = []
         var themeList = dbusThemeManager.themeList
         for(var i in themeList){
-            var themeObj = themeComponent.createObject(root, { path: themeList[i] })
+            var themeObj = themeComponent.createObject(null, { path: themeList[i] })
             themes.push(themeObj)
         }
         return themes

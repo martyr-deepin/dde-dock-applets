@@ -55,9 +55,6 @@ DockApplet{
         }
     }
 
-    property string macIconUri: getFashionIcon()
-    property string winIconUri: mainObject.iconNameToPath("dock-wired-on", 16)
-
     //Graphic
     property var dbusGraphic: Graphic {}
     function getIconBgDataUri() {
