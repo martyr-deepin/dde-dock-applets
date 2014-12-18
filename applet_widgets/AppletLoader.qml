@@ -21,6 +21,7 @@
 **
 ****************************************************************************/
 
+
 import QtQuick 2.0
 import QtQuick.Window 2.1
 
@@ -31,18 +32,7 @@ Loader {
     property string appletName: typeof(applet_name) == "undefined" ? "" : applet_name
     source: qmlPath
 
-    function getAbsolutePath(path){
-        // Return: absolute path from the plugin folder with a relative `path`
-        // NOTE: Please do not use it unless have to obtain an absolute path
-        var parentFolder = mainObject.getParentFolder(qmlPath)
-        if(parentFolder.slice(-1) == "/"){
-            parentFolder = parentFolder.slice(0, -1)
-        }
-        if (path.slice(0, 1) == "/"){
-            path = path.slice(1)
-        }
-        return parentFolder + "/" + path
-    }
+    signal showChanged(string appletId, string itemName, string itemShow, string itemIconPath)
 
     function setAppletState(newState){
         if(isItemValid()){
@@ -64,7 +54,7 @@ Loader {
         target: appletRootLoader.item
         onShowChanged: {
             if(appletRootLoader.isItemValid() && appletRootLoader.item.managed){
-                appletInfos.update(appletId, appletRootLoader.item.name, appletRootLoader.item.show, appletRootLoader.item.iconPath)
+                appletRootLoader.showChanged(appletId, appletRootLoader.item.name, appletRootLoader.item.show, appletRootLoader.item.iconPath)
             }
         }
     }
@@ -79,3 +69,4 @@ Loader {
         }
     }
 }
+

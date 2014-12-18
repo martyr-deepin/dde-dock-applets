@@ -33,6 +33,7 @@ AppletPlugin {
     name: dsTr("VPN")
     iconPath: "network-vpn-active-symbolic"
 
+    property bool loaderActive:vpnConnectionNumber > 0 && appletItem.show && dockMode != 0//not mac mode
     property var dockMode: dockDisplayMode
 
     property var dbusNetwork: NetworkManager{}
@@ -42,8 +43,21 @@ AppletPlugin {
     property var vpnConnections: nmConnections[nmConnectionTypeVpn]
     property int vpnConnectionNumber: vpnConnections ? vpnConnections.length : 0
 
+    Timer {
+        id:loaderDelayTimer
+        interval: 300
+        repeat: false
+        running: false
+        onTriggered: appletTrayLoader.active = loaderActive
+    }
+
+    onLoaderActiveChanged:{
+        loaderDelayTimer.start()
+    }
+
     appletTrayLoader: Loader {
         sourceComponent: AppletTray{}
-        active:vpnConnectionNumber > 0 && appletItem.show && dockMode != 0//not mac mode
+        active: false
     }
+
 }

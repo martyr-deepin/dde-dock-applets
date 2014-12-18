@@ -55,7 +55,10 @@ DockApplet{
         }
     }
 
-    // Graphic
+    property string macIconUri: getFashionIcon()
+    property string winIconUri: mainObject.iconNameToPath("dock-wired-on", 16)
+
+    //Graphic
     property var dbusGraphic: Graphic {}
     function getIconBgDataUri() {
         if(dbusNetwork.state == 70){
@@ -125,9 +128,9 @@ DockApplet{
 
     property var positions: {
         "vpn": [5, 5],
-        "bluetooth": [5, 26],
-        "3g": [26, 5],
-        "wifi": [26, 26]
+                "bluetooth": [5, 26],
+                "3g": [26, 5],
+                "wifi": [26, 26]
     }
 
     function updateState(type, show, imagePath){
@@ -135,11 +138,11 @@ DockApplet{
         if(show){
             if(index == -1){
                 subImageList.append({
-                    "type": type,
-                    "imagePath": imagePath,
-                    "x": positions[type][0],
-                    "y": positions[type][1]
-                })
+                                        "type": type,
+                                        "imagePath": imagePath,
+                                        "x": positions[type][0],
+                                        "y": positions[type][1]
+                                    })
             }
             else{
                 var info = subImageList.get(index)

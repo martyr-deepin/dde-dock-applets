@@ -76,7 +76,7 @@ DockApplet{
     window: DockQuickWindow {
         id: root
         width: rootWidth
-        height: content.height + xEdgePadding * 2
+        height: contentLoader.height + xEdgePadding * 2
         color: "transparent"
 
         onNativeWindowDestroyed: {
@@ -89,186 +89,191 @@ DockApplet{
             mainObject.restartDockApplet()
         }
 
-        Item {
+        Loader {
+            id:contentLoader
             width: parent.width
-            height: content.height
-            anchors.centerIn: parent
-            anchors.bottomMargin: 4
+            height: item ? item.height : 0
+            active:loaderActive
+            sourceComponent: Item {
+                height: content.height
+                anchors.centerIn: parent
+                anchors.bottomMargin: 4
 
-            Column {
-                id: content
-                width: parent.width
-                spacing: 10
-
-                DBaseLine {
-                    height: 30
+                Column {
+                    id: content
                     width: parent.width
-                    leftMargin: 10
-                    rightMargin: 10
-                    color: "transparent"
-                    leftLoader.sourceComponent: DssH2 {
-                        elide: Text.ElideRight
-                        width: 130
-                        text: adapterAlias
-                        color: "#ffffff"
-                    }
+                    spacing: 10
 
-                    rightLoader.sourceComponent: DSwitchButton {
-                        Connections {
-                            target: bluetoothApplet
-                            onAdapterConnectedChanged: {
-                                checked = adapterConnected
-                            }
-                        }
-
-                        checked: adapterConnected
-                        onClicked: dbusBluetooth.SetAdapterPowered(adapterPath, checked)
-                    }
-                }
-
-                Rectangle {
-                    width: rootWidth
-                    height: nearbyDeviceList.height
-                    visible: adapterConnected
-                    color: "transparent"
-
-                    ListView{
-                        id: nearbyDeviceList
+                    DBaseLine {
+                        height: 30
                         width: parent.width
-                        height: Math.min(childrenRect.height, 235)
-                        clip: true
-
-                        DScrollBar {
-                            flickable: parent
+                        leftMargin: 10
+                        rightMargin: 10
+                        color: "transparent"
+                        leftLoader.sourceComponent: DssH2 {
+                            elide: Text.ElideRight
+                            width: 130
+                            text: adapterAlias
+                            color: "#ffffff"
                         }
 
-                        Timer {
-                            id:delayInitTimer
-                            repeat: false
-                            running: false
-                            interval: 1000
-                            onTriggered: {
-                                var devInfos = unmarshalJSON(dbusBluetooth.GetDevices(adapterPath))
-                                deviceModel.clear()
-                                for(var i in devInfos){
-                                    deviceModel.addOrUpdateDevice(devInfos[i])
+                        rightLoader.sourceComponent: DSwitchButton {
+                            Connections {
+                                target: bluetoothApplet
+                                onAdapterConnectedChanged: {
+                                    checked = adapterConnected
                                 }
                             }
-                        }
 
-                        model: ListModel {
-                            id: deviceModel
-                            Component.onCompleted: {
-                                delayInitTimer.start()
+                            checked: adapterConnected
+                            onClicked: dbusBluetooth.SetAdapterPowered(adapterPath, checked)
+                        }
+                    }
+
+                    Rectangle {
+                        width: rootWidth
+                        height: nearbyDeviceList.height
+                        visible: adapterConnected
+                        color: "transparent"
+
+                        ListView{
+                            id: nearbyDeviceList
+                            width: parent.width
+                            height: Math.min(childrenRect.height, 235)
+                            clip: true
+
+                            DScrollBar {
+                                flickable: parent
                             }
-                            function addOrUpdateDevice(devInfo) {
-                                if (isDeviceExists(devInfo)) {
-                                    updateDevice(devInfo)
-                                } else {
-                                    addDevice(devInfo)
+
+                            Timer {
+                                id:delayInitTimer
+                                repeat: false
+                                running: false
+                                interval: 1000
+                                onTriggered: {
+                                    var devInfos = unmarshalJSON(dbusBluetooth.GetDevices(adapterPath))
+                                    deviceModel.clear()
+                                    for(var i in devInfos){
+                                        deviceModel.addOrUpdateDevice(devInfos[i])
+                                    }
                                 }
                             }
-                            function addDevice(devInfo) {
-                                var insertIndex = getInsertIndex(devInfo)
-                                print("-> addBluetoothDevice", insertIndex)
-                                insert(insertIndex, {
-                                    "devInfo": devInfo,
-                                    "adapter_path": devInfo.AdapterPath,
-                                    "item_id": devInfo.Path,
-                                    "item_name": devInfo.Alias,
-                                    "item_state":devInfo.State
-                                })
-                            }
-                            function updateDevice(devInfo) {
-                                var i = getDeviceIndex(devInfo)
-                                get(i).devInfo = devInfo
-                                get(i).item_name = devInfo.Alias
-                                get(i).item_state = devInfo.State
-                                sortModel()
-                            }
-                            function removeDevice(devInfo) {
-                                if (isDeviceExists(devInfo)) {
+
+                            model: ListModel {
+                                id: deviceModel
+                                Component.onCompleted: {
+                                    delayInitTimer.start()
+                                }
+                                function addOrUpdateDevice(devInfo) {
+                                    if (isDeviceExists(devInfo)) {
+                                        updateDevice(devInfo)
+                                    } else {
+                                        addDevice(devInfo)
+                                    }
+                                }
+                                function addDevice(devInfo) {
+                                    var insertIndex = getInsertIndex(devInfo)
+                                    print("-> addBluetoothDevice", insertIndex)
+                                    insert(insertIndex, {
+                                               "devInfo": devInfo,
+                                               "adapter_path": devInfo.AdapterPath,
+                                               "item_id": devInfo.Path,
+                                               "item_name": devInfo.Alias,
+                                               "item_state":devInfo.State
+                                           })
+                                }
+                                function updateDevice(devInfo) {
                                     var i = getDeviceIndex(devInfo)
-                                    remove(i, 1)
+                                    get(i).devInfo = devInfo
+                                    get(i).item_name = devInfo.Alias
+                                    get(i).item_state = devInfo.State
+                                    sortModel()
                                 }
-                            }
-                            function isDeviceExists(devInfo) {
-                                if (getDeviceIndex(devInfo) != -1) {
-                                    return true
-                                }
-                                return false
-                            }
-                            function getDeviceIndex(devInfo) {
-                                for (var i=0; i<count; i++) {
-                                    if (get(i).devInfo.Path == devInfo.Path) {
-                                        return i
+                                function removeDevice(devInfo) {
+                                    if (isDeviceExists(devInfo)) {
+                                        var i = getDeviceIndex(devInfo)
+                                        remove(i, 1)
                                     }
                                 }
-                                return -1
-                            }
-                            function getInsertIndex(devInfo) {
-                                for (var i=0; i<count; i++) {
-                                    if (devInfo.RSSI >= get(i).devInfo.RSSI) {
-                                        return i
+                                function isDeviceExists(devInfo) {
+                                    if (getDeviceIndex(devInfo) != -1) {
+                                        return true
                                     }
+                                    return false
                                 }
-                                return count
-                            }
-                            function sortModel() {
-                                var n;
-                                var i;
-                                for (n=0; n<count; n++) {
-                                    for (i=n+1; i<count; i++) {
-                                        if (get(n).devInfo.RSSI+5 < get(i).devInfo.RSSI) {
-                                            move(i, n, 1);
-                                            n=0; // Repeat at start since I can't swap items i and n
+                                function getDeviceIndex(devInfo) {
+                                    for (var i=0; i<count; i++) {
+                                        if (get(i).devInfo.Path == devInfo.Path) {
+                                            return i
+                                        }
+                                    }
+                                    return -1
+                                }
+                                function getInsertIndex(devInfo) {
+                                    for (var i=0; i<count; i++) {
+                                        if (devInfo.RSSI >= get(i).devInfo.RSSI) {
+                                            return i
+                                        }
+                                    }
+                                    return count
+                                }
+                                function sortModel() {
+                                    var n;
+                                    var i;
+                                    for (n=0; n<count; n++) {
+                                        for (i=n+1; i<count; i++) {
+                                            if (get(n).devInfo.RSSI+5 < get(i).devInfo.RSSI) {
+                                                move(i, n, 1);
+                                                n=0; // Repeat at start since I can't swap items i and n
+                                            }
                                         }
                                     }
                                 }
+
                             }
 
-                        }
+                            delegate: DeviceItem {
 
-                        delegate: DeviceItem {
-
-                            onItemClicked: {
-                                if (state)
-                                {
-                                    dbusBluetooth.DisconnectDevice(id)
-                                    console.log("Disconnect device, id:",id)
+                                onItemClicked: {
+                                    if (state)
+                                    {
+                                        dbusBluetooth.DisconnectDevice(id)
+                                        console.log("Disconnect device, id:",id)
+                                    }
+                                    else
+                                    {
+                                        dbusBluetooth.ConnectDevice(id)
+                                        console.log("Connect device, id:",id)
+                                    }
                                 }
-                                else
-                                {
-                                    dbusBluetooth.ConnectDevice(id)
-                                    console.log("Connect device, id:",id)
-                                }
                             }
-                        }
 
-                        Connections {
-                            target: dbusBluetooth
-                            onDeviceAdded: {
-                                var devInfo = unmarshalJSON(arg0)
-                                if (devInfo.AdapterPath != adapterPath)
-                                    return
-                                deviceModel.addOrUpdateDevice(devInfo)
-                            }
-                            onDeviceRemoved: {
-                                var devInfo = unmarshalJSON(arg0)
-                                if (devInfo.AdapterPath != adapterPath)
-                                    return
-                                deviceModel.removeDevice(devInfo)
-                            }
-                            onDevicePropertiesChanged: {
-                                var devInfo = unmarshalJSON(arg0)
-                                if (devInfo.AdapterPath != adapterPath)
-                                    return
-                                deviceModel.addOrUpdateDevice(devInfo)
+                            Connections {
+                                target: dbusBluetooth
+                                onDeviceAdded: {
+                                    var devInfo = unmarshalJSON(arg0)
+                                    if (devInfo.AdapterPath != adapterPath)
+                                        return
+                                    deviceModel.addOrUpdateDevice(devInfo)
+                                }
+                                onDeviceRemoved: {
+                                    var devInfo = unmarshalJSON(arg0)
+                                    if (devInfo.AdapterPath != adapterPath)
+                                        return
+                                    deviceModel.removeDevice(devInfo)
+                                }
+                                onDevicePropertiesChanged: {
+                                    var devInfo = unmarshalJSON(arg0)
+                                    if (devInfo.AdapterPath != adapterPath)
+                                        return
+                                    deviceModel.addOrUpdateDevice(devInfo)
+                                }
                             }
                         }
                     }
-                }
 
+                }
             }
         }
     }
