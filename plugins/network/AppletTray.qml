@@ -248,7 +248,7 @@ DockApplet{
     property var vpnActived:{
         if (activeConnections){
             for (var key in activeConnections){
-                if (activeConnections[key]["Vpn"])
+                if (activeConnections[key]["Vpn"] && activeConnections[key]["State"] == 2)
                     return true
             }
             return false
