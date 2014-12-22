@@ -57,6 +57,7 @@ Item {
         id: dbusBluetooth
         onAdapterAdded:bluetoothAdapters = unmarshalJSON(dbusBluetooth.GetAdapters())
         onAdapterRemoved:bluetoothAdapters = unmarshalJSON(dbusBluetooth.GetAdapters())
+        onAdapterPropertiesChanged:bluetoothAdapters = unmarshalJSON(dbusBluetooth.GetAdapters())
     }
     property var bluetoothAdapters: unmarshalJSON(dbusBluetooth.GetAdapters())
     property var blueToothAdaptersCount: {
@@ -317,7 +318,8 @@ Item {
         model:bluetoothListModel
         delegate: AppletLoader {
             onShowChanged: {
-                appletInfos.update(appletId, itemName, itemShow, itemIconPath)
+                //bluetooth's itemName may change
+                appletInfos.update(appletId, bluetoothAdapters[index].Alias, itemShow, itemIconPath)
             }
         }
     }
