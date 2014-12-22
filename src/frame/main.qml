@@ -190,7 +190,7 @@ QtObject {
         sourceComponent: AppletSettingWindow {
             switchList: appletInfos
             onItemClicked: {
-                root.setAppletState(switchTitle,switchState)
+                root.setAppletState(switchId,switchState)
             }
         }
 

@@ -14,7 +14,7 @@ DWindow {
     y: displayId.primaryRect[3] - height - dockHeight - 10
     color: "transparent"
 
-    signal itemClicked(string switchTitle, bool switchState)
+    signal itemClicked(string switchId, bool switchState)
 
     property var switchList: ListModel {}
     property int mouseX:0
@@ -146,7 +146,7 @@ DWindow {
             boundsBehavior: Flickable.StopAtBounds
             delegate: AppletSwitchLine{
                 height: setting_enable ? 30 : 0
-                onClicked: root.itemClicked(switchTitle,switchState)
+                onClicked: root.itemClicked(switchId,switchState)
             }
         }
 
