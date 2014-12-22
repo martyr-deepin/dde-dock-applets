@@ -257,9 +257,11 @@ DockApplet{
             return false
     }
 
-    onVpnActivedChanged: {
+    onVpnConnectionsChanged: updateVpnState()
+    onVpnActivedChanged: updateVpnState()
+
+    function updateVpnState(){
         var vpnShow = vpnConnections ? vpnConnections.length > 0 : false
-        var vpnEnabled = dbusNetwork.vpnEnabled
         if(vpnActived){
             var imagePath = getAbsolutePath("emblems-images/vpn-on.png")
         }
