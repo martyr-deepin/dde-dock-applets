@@ -51,7 +51,7 @@ QtObject {
         var themes = []
         var themeList = dbusThemeManager.themeList
         for(var i in themeList){
-            var themeObj = themeComponent.createObject(root, { path: themeList[i] })
+            var themeObj = themeComponent.createObject(null, { path: themeList[i] })
             themes.push(themeObj)
         }
         return themes
@@ -167,9 +167,6 @@ QtObject {
     property var dbusDockSetting: DockSetting {
         path: "/dde/dock/DockSetting"
         onDisplayModeChanged: {
-            if(root.dockDisplayMode == 0 || arg0 == 0){
-                mainObject.restartDockApplet()
-            }
             root.dockDisplayMode = arg0
         }
     }
@@ -193,7 +190,7 @@ QtObject {
         sourceComponent: AppletSettingWindow {
             switchList: appletInfos
             onItemClicked: {
-                root.setAppletState(switchTitle,switchState)
+                root.setAppletState(switchId,switchState)
             }
         }
 

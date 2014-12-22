@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: dde-dock-applet\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-12-02 09:53+0800\n"
-"PO-Revision-Date: 2014-12-02 10:02+0000\n"
+"PO-Revision-Date: 2014-12-16 20:51+0000\n"
 "Last-Translator: Massimo Antonio Carofano <real.massimo@hotmail.it>\n"
 "Language-Team: Italian (http://www.transifex.com/projects/p/dde-dock-applet/language/it/)\n"
 "MIME-Version: 1.0\n"
@@ -20,7 +20,7 @@ msgstr ""
 
 #: ../src/frame/AppletSettingWindow.qml:108
 msgid "Notification Area Settings"
-msgstr "Impostazioni area notifica"
+msgstr "Indicatori su Dock"
 
 #: ../plugins/date_time/AppletTray.qml:148
 #: ../plugins/date_time/calendar_core.js:4
@@ -71,7 +71,7 @@ msgstr "Non connesso"
 #: ../plugins/network/wifi/AppletTray.qml:125
 #: ../plugins/power/AppletTray.qml:98 ../plugins/sound/AppletTray.qml:172
 msgid "_Run"
-msgstr "_Esegui"
+msgstr "_Apri"
 
 #: ../plugins/network/AppletTray.qml:329
 #: ../plugins/network/bluetooth/AppletTray.qml:68
@@ -90,7 +90,7 @@ msgstr "VPN"
 #: ../plugins/network/WirelessNetwork.qml:50
 #: ../plugins/network/wifi/main.qml:33
 msgid "Wireless Network"
-msgstr "Connessioni Wireless"
+msgstr "WiFi"
 
 #: ../plugins/power/AppletTray.qml:33
 msgid "On Charging"
@@ -122,7 +122,7 @@ msgstr "Applicazioni"
 
 #: ../plugins/disk_mount/DiskItem.qml:124
 msgid "Unmount failed!"
-msgstr "Smontaggio fallito!"
+msgstr "Unmount fallito!"
 
 #: ../src/frame/WifiPasswordWindow.qml:151
 #, qt-format
@@ -172,4 +172,4 @@ msgstr "Alimentazione"
 
 #: ../plugins/sound/main.qml:32
 msgid "Sound"
-msgstr "Suono"
+msgstr "Audio"

@@ -3,7 +3,7 @@ import Deepin.Widgets 1.0
 
 Item {
     id:rootItem
-    signal clicked(string switchTitle, bool switchState)
+    signal clicked(string switchId, bool switchState)
     property string switchId:applet_id
     property string switchTitle:applet_name
     property string switchIcon:applet_icon

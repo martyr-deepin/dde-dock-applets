@@ -53,12 +53,26 @@ AppletPlugin {
     property bool adapterPowered: false
     property string adapterAlias: ""
     property string adapterPath: ""
+    property bool loaderActive: blueToothAdaptersCount > 0 && appletItem.show && dockMode != 0//not mac mode
 
     property var dockMode: dockDisplayMode
 
+    Timer {
+        id:loaderDelayTimer
+        interval: 300
+        repeat: false
+        running: false
+        onTriggered: appletTrayLoader.active = loaderActive
+    }
+
+    onLoaderActiveChanged:{
+        loaderDelayTimer.start()
+    }
+
+
     appletTrayLoader: Loader {
         sourceComponent: AppletTray{}
-        active:blueToothAdaptersCount > 0 && appletItem.show && dockMode != 0//not mac mode
+        active: false
     }
 
     Component.onCompleted:{
