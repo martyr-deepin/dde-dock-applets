@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: dde-dock-applet\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-12-02 09:53+0800\n"
-"PO-Revision-Date: 2014-12-03 11:48+0000\n"
+"PO-Revision-Date: 2014-12-23 06:40+0000\n"
 "Last-Translator: szd_liufei <liufei@linuxdeepin.com>\n"
 "Language-Team: Hungarian (http://www.transifex.com/projects/p/dde-dock-applet/language/hu/)\n"
 "MIME-Version: 1.0\n"
@@ -25,7 +25,7 @@ msgstr ""
 
 #: ../src/frame/AppletSettingWindow.qml:108
 msgid "Notification Area Settings"
-msgstr ""
+msgstr "Értesítési terület beállítások"
 
 #: ../plugins/date_time/AppletTray.qml:148
 #: ../plugins/date_time/calendar_core.js:4
@@ -64,11 +64,11 @@ msgstr "Szo"
 
 #: ../plugins/network/AppletTray.qml:35
 msgid "Network Connected"
-msgstr ""
+msgstr "Hálózat csatlakoztatva"
 
 #: ../plugins/network/AppletTray.qml:35
 msgid "Network Not Connected"
-msgstr ""
+msgstr "Nincs csatlakoztatva hálózat"
 
 #: ../plugins/network/AppletTray.qml:328
 #: ../plugins/network/bluetooth/AppletTray.qml:67
@@ -132,7 +132,7 @@ msgstr "Sikertelen leválasztás!"
 #: ../src/frame/WifiPasswordWindow.qml:151
 #, qt-format
 msgid "Please enter the password of  <font color=\"#faca57\">%1</font>"
-msgstr ""
+msgstr "Kérjük adja meg a <font color=\"#faca57\">%1</font> jelszavát"
 
 #: ../src/frame/WifiPasswordWindow.qml:173
 msgid "Password"
@@ -140,7 +140,7 @@ msgstr "Jelszó"
 
 #: ../src/frame/WifiPasswordWindow.qml:181
 msgid "Auto-connect"
-msgstr ""
+msgstr "Automatikus csatlakozás"
 
 #: ../src/frame/WifiPasswordWindow.qml:196
 msgid "Cancel"
