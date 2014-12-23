@@ -7,7 +7,10 @@ Item {
     property string switchId:applet_id
     property string switchTitle:applet_name
     property string switchIcon:applet_icon
-    property bool switchState:applet_visible
+    property bool switchState: applet_visible
+    onSwitchStateChanged: {
+        switchButton.checked = switchState
+    }
 
     visible: setting_enable
 
@@ -38,7 +41,8 @@ Item {
     }
 
     DSwitchButton {
-        checked: switchState
+        id:switchButton
+        checked: applet_visible
         onClicked:rootItem.clicked(switchId,checked)
         anchors {right: parent.right; rightMargin: 5; verticalCenter: parent.verticalCenter}
     }

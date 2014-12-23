@@ -16,7 +16,6 @@ DWindow {
 
     signal itemClicked(string switchId, bool switchState)
 
-    property var switchList: ListModel {}
     property int mouseX:0
     property var dockRegion: DockRegion {}
     property int dockDisplayMode: dbusDockSetting.GetDisplayMode()
@@ -55,8 +54,8 @@ DWindow {
 
     function getVisibleSwitchCount(){
         var visibleCount = 0
-        for(var i=0;i<switchList.count;i++){
-            var tmpInfo = switchList.get(i)
+        for(var i=0;i<appletInfos.count;i++){
+            var tmpInfo = appletInfos.get(i)
             if(tmpInfo.setting_enable == true){
                 visibleCount ++
             }
@@ -142,7 +141,7 @@ DWindow {
             clip: true
             height: childrenRect.height
             width: parent.width
-            model: switchList
+            model: appletInfos
             boundsBehavior: Flickable.StopAtBounds
             delegate: AppletSwitchLine{
                 height: setting_enable ? 30 : 0

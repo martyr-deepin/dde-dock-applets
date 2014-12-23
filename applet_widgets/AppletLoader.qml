@@ -32,7 +32,7 @@ Loader {
     property string appletName: typeof(applet_name) == "undefined" ? "" : applet_name
     source: qmlPath
 
-    signal showChanged(string appletId, string itemName, string itemShow, string itemIconPath)
+    signal showChanged(string appletId, string itemName, bool itemShow, string itemIconPath)
 
     function setAppletState(newState){
         if(isItemValid()){
@@ -59,6 +59,7 @@ Loader {
         }
     }
 
+
     Connections {
         target: root
         onDockDisplayModeChanged: {
@@ -68,5 +69,6 @@ Loader {
             }
         }
     }
+
 }
 
