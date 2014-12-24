@@ -38,8 +38,8 @@ DWindow {
     function getLegalX(mouseX){
         if (mouseX < displayId.primaryRect[0] + width/2)
             x = displayId.primaryRect[0] + width/2
-        else if (mouseX > displayId.primaryRect[2] - width/2)
-            x = displayId.primaryRect[2] - width/2
+        else if (mouseX > displayId.primaryRect[0] + displayId.primaryRect[2] - width/2)
+            x = displayId.primaryRect[0] + displayId.primaryRect[2] - width/2
         else
             x = mouseX
         return x - width/2
