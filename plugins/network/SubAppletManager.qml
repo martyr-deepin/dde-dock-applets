@@ -76,11 +76,11 @@ Item {
 
     onDockModeChanged: {
         print ("==> [Info] Dock display mode change...",dockMode)
-        if (dockMode == 0)
-            updateSettingItem(false)
-        else
-            updateSettingItem(true)
+
+        updateSettingItem(dockMode != 0)
     }
+
+    Component.onCompleted: updateSettingItem(dockMode != 0)
 
     onWirelessDevicesCountChanged: {
         //update wireless model
