@@ -32,7 +32,7 @@ DWindow {
         else
             dockHeight = 70
 
-        root.y = displayId.primaryRect[3] - getVisibleSwitchCount() * 30 - titleLine.height - dockHeight - 10
+        root.y = displayId.primaryRect[1] +  displayId.primaryRect[3] - getVisibleSwitchCount() * 30 - titleLine.height - dockHeight - 10
     }
 
     function getLegalX(mouseX){
@@ -43,13 +43,6 @@ DWindow {
         else
             x = mouseX
         return x - width/2
-    }
-
-    function getLegalY(mouseY){
-        if (mouseY > displayId.primaryRect[3] - titleLine.height - dockHeight)
-            return displayId.primaryRect[3] - titleLine.height - dockHeight
-        else
-            return mouseY
     }
 
     function getVisibleSwitchCount(){
