@@ -55,9 +55,9 @@ DockApplet{
     property string activeAp: typeof(wirelessDevice) != "undefined" ? wirelessDevices[deviceIndex].ActiveAp : "/"
     property string devicePath: typeof(wirelessDevice) != "undefined" ? wirelessDevices[deviceIndex].Path : "/"
     property var wirelessEnabled : typeof(wirelessDevice) != "undefined" ? dbusNetwork.IsDeviceEnabled(devicePath) : false
-    property int deviceStatus: wirelessDevices[deviceIndex].State
-    property string vendor: wirelessDevices[deviceIndex].Vendor
-    property string deviceHwAddress: wirelessDevices[deviceIndex].HwAddress
+    property int deviceStatus: typeof(wirelessDevice) != "undefined" ? wirelessDevices[deviceIndex].State : 0
+    property string vendor: typeof(wirelessDevice) != "undefined" ? wirelessDevices[deviceIndex].Vendor : ""
+    property string deviceHwAddress: typeof(wirelessDevice) != "undefined" ? wirelessDevices[deviceIndex].HwAddress : ""
 
     property var nmActiveConnections: unmarshalJSON(dbusNetwork.activeConnections)
     property var nmConnections: unmarshalJSON(dbusNetwork.connections)
@@ -65,7 +65,9 @@ DockApplet{
     Connections {
         target: dbusNetwork
         onDeviceEnabled:{
-            wirelessEnabled = dbusNetwork.IsDeviceEnabled(devicePath)
+            if (devicePath == arg0) {
+                wirelessEnabled = arg1
+            }
         }
     }
 
