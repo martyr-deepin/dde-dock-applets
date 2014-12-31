@@ -78,7 +78,7 @@ DockApplet{
     window: DockQuickWindow {
         id: root
         width: rootWidth
-        height: content.height + xEdgePadding * 2
+        height: contentLoader.height + xEdgePadding * 2
         color: "transparent"
 
         onNativeWindowDestroyed: {
@@ -91,58 +91,63 @@ DockApplet{
             mainObject.restartDockApplet()
         }
 
-        Rectangle {
+        Loader {
+            id:contentLoader
             width: parent.width
-            height: content.height
-            anchors.centerIn: parent
-            color: "transparent"
+            height: item ? item.height : 0
+            active: loaderActive
+            sourceComponent: Rectangle {
+                height: content.height
+                anchors.centerIn: parent
+                color: "transparent"
 
-            Column {
-                id: content
-                width: parent.width
-
-                DBaseLine {
-                    height: 30
+                Column {
+                    id: content
                     width: parent.width
-                    leftMargin: 10
-                    rightMargin: 10
-                    color: "transparent"
-                    leftLoader.sourceComponent: DssH2 {
-                        text: dsTr("VPN")
-                        color: "#ffffff"
-                    }
 
-                    rightLoader.sourceComponent: DSwitchButton {
-                        Connections {
-                            // TODO still need connections block here, but why?
-                            target: vpnApplet
-                            onVpnEnableChanged: {
-                                checked = vpnApplet.vpnEnable
-                            }
-                        }
-                        checked: vpnApplet.vpnEnable
-                        onClicked: dbusNetwork.vpnEnabled = checked
-                    }
-                }
-
-
-                Rectangle {
-                    width: rootWidth
-                    height: vpnConnectlist.height
-                    visible: vpnApplet.vpnEnable
-                    color: "transparent"
-
-                    ListView {
-                        id: vpnConnectlist
+                    DBaseLine {
+                        height: 30
                         width: parent.width
-                        height: Math.min(childrenRect.height, 235)
-                        boundsBehavior: Flickable.StopAtBounds
-                        model: vpnConnectionNumber
-                        delegate: ConnectItem {}
-                        clip: true
+                        leftMargin: 10
+                        rightMargin: 10
+                        color: "transparent"
+                        leftLoader.sourceComponent: DssH2 {
+                            text: dsTr("VPN")
+                            color: "#ffffff"
+                        }
 
-                        DScrollBar {
-                            flickable: parent
+                        rightLoader.sourceComponent: DSwitchButton {
+                            Connections {
+                                // TODO still need connections block here, but why?
+                                target: vpnApplet
+                                onVpnEnableChanged: {
+                                    checked = vpnApplet.vpnEnable
+                                }
+                            }
+                            checked: vpnApplet.vpnEnable
+                            onClicked: dbusNetwork.vpnEnabled = checked
+                        }
+                    }
+
+
+                    Rectangle {
+                        width: rootWidth
+                        height: vpnConnectlist.height
+                        visible: vpnApplet.vpnEnable
+                        color: "transparent"
+
+                        ListView {
+                            id: vpnConnectlist
+                            width: parent.width
+                            height: Math.min(childrenRect.height, 235)
+                            boundsBehavior: Flickable.StopAtBounds
+                            model: vpnConnectionNumber
+                            delegate: ConnectItem {}
+                            clip: true
+
+                            DScrollBar {
+                                flickable: parent
+                            }
                         }
                     }
                 }

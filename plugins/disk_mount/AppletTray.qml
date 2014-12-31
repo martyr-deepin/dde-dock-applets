@@ -29,7 +29,7 @@ import Deepin.DockAppletWidgets 1.0
 DockApplet{
     title: "Disk Mount"
     appid: "AppletDiskMount"
-    icon: dockDisplayMode == 0 ? "drive-harddisk-usb" : "drive-harddisk-usb-symbolic"
+    icon: dockDisplayMode == 0 ? "drive-removable-dock" : "drive-harddisk-usb-symbolic"
     property int windowWidth: 224
     property int xEdgePadding: 12
 

@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: dde-dock-applet\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-12-02 09:53+0800\n"
-"PO-Revision-Date: 2014-12-02 09:55+0000\n"
+"PO-Revision-Date: 2014-12-23 07:40+0000\n"
 "Last-Translator: szd_liufei <liufei@linuxdeepin.com>\n"
 "Language-Team: German (http://www.transifex.com/projects/p/dde-dock-applet/language/de/)\n"
 "MIME-Version: 1.0\n"
@@ -24,7 +24,7 @@ msgstr ""
 
 #: ../src/frame/AppletSettingWindow.qml:108
 msgid "Notification Area Settings"
-msgstr ""
+msgstr "Einstellungen Benachrichtigungsbereich"
 
 #: ../plugins/date_time/AppletTray.qml:148
 #: ../plugins/date_time/calendar_core.js:4
@@ -131,7 +131,7 @@ msgstr "Aushängen fehlgeschlagen!"
 #: ../src/frame/WifiPasswordWindow.qml:151
 #, qt-format
 msgid "Please enter the password of  <font color=\"#faca57\">%1</font>"
-msgstr ""
+msgstr "Bitte geben Sie das Passwort von <font color=\"#faca57\">%1</font> ein."
 
 #: ../src/frame/WifiPasswordWindow.qml:173
 msgid "Password"
@@ -139,7 +139,7 @@ msgstr "Passwort"
 
 #: ../src/frame/WifiPasswordWindow.qml:181
 msgid "Auto-connect"
-msgstr ""
+msgstr "Automatisch verbinden"
 
 #: ../src/frame/WifiPasswordWindow.qml:196
 msgid "Cancel"

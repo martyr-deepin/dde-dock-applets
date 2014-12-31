@@ -14,9 +14,8 @@ DWindow {
     y: displayId.primaryRect[3] - height - dockHeight - 10
     color: "transparent"
 
-    signal itemClicked(string switchTitle, bool switchState)
+    signal itemClicked(string switchId, bool switchState)
 
-    property var switchList: ListModel {}
     property int mouseX:0
     property var dockRegion: DockRegion {}
     property int dockDisplayMode: dbusDockSetting.GetDisplayMode()
@@ -33,30 +32,23 @@ DWindow {
         else
             dockHeight = 70
 
-        root.y = displayId.primaryRect[3] - getVisibleSwitchCount() * 30 - titleLine.height - dockHeight - 10
+        root.y = displayId.primaryRect[1] +  displayId.primaryRect[3] - getVisibleSwitchCount() * 30 - titleLine.height - dockHeight - 10
     }
 
     function getLegalX(mouseX){
         if (mouseX < displayId.primaryRect[0] + width/2)
             x = displayId.primaryRect[0] + width/2
-        else if (mouseX > displayId.primaryRect[2] - width/2)
-            x = displayId.primaryRect[2] - width/2
+        else if (mouseX > displayId.primaryRect[0] + displayId.primaryRect[2] - width/2)
+            x = displayId.primaryRect[0] + displayId.primaryRect[2] - width/2
         else
             x = mouseX
         return x - width/2
     }
 
-    function getLegalY(mouseY){
-        if (mouseY > displayId.primaryRect[3] - titleLine.height - dockHeight)
-            return displayId.primaryRect[3] - titleLine.height - dockHeight
-        else
-            return mouseY
-    }
-
     function getVisibleSwitchCount(){
         var visibleCount = 0
-        for(var i=0;i<switchList.count;i++){
-            var tmpInfo = switchList.get(i)
+        for(var i=0;i<appletInfos.count;i++){
+            var tmpInfo = appletInfos.get(i)
             if(tmpInfo.setting_enable == true){
                 visibleCount ++
             }
@@ -142,11 +134,11 @@ DWindow {
             clip: true
             height: childrenRect.height
             width: parent.width
-            model: switchList
+            model: appletInfos
             boundsBehavior: Flickable.StopAtBounds
             delegate: AppletSwitchLine{
                 height: setting_enable ? 30 : 0
-                onClicked: root.itemClicked(switchTitle,switchState)
+                onClicked: root.itemClicked(switchId,switchState)
             }
         }
 

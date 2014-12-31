@@ -55,7 +55,7 @@ DockApplet{
         }
     }
 
-    // Graphic
+    //Graphic
     property var dbusGraphic: Graphic {}
     function getIconBgDataUri() {
         if(dbusNetwork.state == 70){
@@ -125,9 +125,9 @@ DockApplet{
 
     property var positions: {
         "vpn": [5, 5],
-        "bluetooth": [5, 26],
-        "3g": [26, 5],
-        "wifi": [26, 26]
+                "bluetooth": [5, 26],
+                "3g": [26, 5],
+                "wifi": [26, 26]
     }
 
     function updateState(type, show, imagePath){
@@ -135,11 +135,11 @@ DockApplet{
         if(show){
             if(index == -1){
                 subImageList.append({
-                    "type": type,
-                    "imagePath": imagePath,
-                    "x": positions[type][0],
-                    "y": positions[type][1]
-                })
+                                        "type": type,
+                                        "imagePath": imagePath,
+                                        "x": positions[type][0],
+                                        "y": positions[type][1]
+                                    })
             }
             else{
                 var info = subImageList.get(index)
@@ -248,7 +248,7 @@ DockApplet{
     property var vpnActived:{
         if (activeConnections){
             for (var key in activeConnections){
-                if (activeConnections[key]["Vpn"])
+                if (activeConnections[key]["Vpn"] && activeConnections[key]["State"] == 2)
                     return true
             }
             return false
@@ -257,9 +257,11 @@ DockApplet{
             return false
     }
 
-    onVpnActivedChanged: {
+    onVpnConnectionsChanged: updateVpnState()
+    onVpnActivedChanged: updateVpnState()
+
+    function updateVpnState(){
         var vpnShow = vpnConnections ? vpnConnections.length > 0 : false
-        var vpnEnabled = dbusNetwork.vpnEnabled
         if(vpnActived){
             var imagePath = getAbsolutePath("emblems-images/vpn-on.png")
         }

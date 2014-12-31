@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: dde-dock-applet\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-12-02 09:53+0800\n"
-"PO-Revision-Date: 2014-12-03 11:48+0000\n"
+"PO-Revision-Date: 2014-12-23 07:30+0000\n"
 "Last-Translator: szd_liufei <liufei@linuxdeepin.com>\n"
 "Language-Team: Indonesian (http://www.transifex.com/projects/p/dde-dock-applet/language/id/)\n"
 "MIME-Version: 1.0\n"
@@ -26,7 +26,7 @@ msgstr ""
 
 #: ../src/frame/AppletSettingWindow.qml:108
 msgid "Notification Area Settings"
-msgstr ""
+msgstr "Pengaturan Area Notifikasi"
 
 #: ../plugins/date_time/AppletTray.qml:148
 #: ../plugins/date_time/calendar_core.js:4
@@ -65,11 +65,11 @@ msgstr "Sab"
 
 #: ../plugins/network/AppletTray.qml:35
 msgid "Network Connected"
-msgstr ""
+msgstr "Jaringan Terhubung"
 
 #: ../plugins/network/AppletTray.qml:35
 msgid "Network Not Connected"
-msgstr ""
+msgstr "Jaringan Tidak Terhubung"
 
 #: ../plugins/network/AppletTray.qml:328
 #: ../plugins/network/bluetooth/AppletTray.qml:67
@@ -133,7 +133,7 @@ msgstr "Gagal melepaskan kait!"
 #: ../src/frame/WifiPasswordWindow.qml:151
 #, qt-format
 msgid "Please enter the password of  <font color=\"#faca57\">%1</font>"
-msgstr ""
+msgstr "Silakan masukkan kata sandi untuk <font color=\"#faca57\">%1</font>"
 
 #: ../src/frame/WifiPasswordWindow.qml:173
 msgid "Password"
@@ -141,7 +141,7 @@ msgstr "Kata Sandi"
 
 #: ../src/frame/WifiPasswordWindow.qml:181
 msgid "Auto-connect"
-msgstr ""
+msgstr "Hubungkan otomatis"
 
 #: ../src/frame/WifiPasswordWindow.qml:196
 msgid "Cancel"
