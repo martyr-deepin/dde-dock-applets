@@ -55,9 +55,9 @@ DockApplet{
     property string activeAp: typeof(wirelessDevice) != "undefined" ? wirelessDevices[deviceIndex].ActiveAp : "/"
     property string devicePath: typeof(wirelessDevice) != "undefined" ? wirelessDevices[deviceIndex].Path : "/"
     property var wirelessEnabled : typeof(wirelessDevice) != "undefined" ? dbusNetwork.IsDeviceEnabled(devicePath) : false
-    property int deviceStatus: wirelessDevices[deviceIndex].State
-    property string vendor: wirelessDevices[deviceIndex].Vendor
-    property string deviceHwAddress: wirelessDevices[deviceIndex].HwAddress
+    property int deviceStatus: typeof(wirelessDevice) != "undefined" ? wirelessDevices[deviceIndex].State : 0
+    property string vendor: typeof(wirelessDevice) != "undefined" ? wirelessDevices[deviceIndex].Vendor : ""
+    property string deviceHwAddress: typeof(wirelessDevice) != "undefined" ? wirelessDevices[deviceIndex].HwAddress : ""
 
     property var nmActiveConnections: unmarshalJSON(dbusNetwork.activeConnections)
     property var nmConnections: unmarshalJSON(dbusNetwork.connections)
@@ -65,7 +65,9 @@ DockApplet{
     Connections {
         target: dbusNetwork
         onDeviceEnabled:{
-            wirelessEnabled = dbusNetwork.IsDeviceEnabled(devicePath)
+            if (devicePath == arg0) {
+                wirelessEnabled = arg1
+            }
         }
     }
 
@@ -99,32 +101,38 @@ DockApplet{
             return
         }
 
-        if(activeAp == "/") {
-            wifiApplet.icon = "network-wirelss-no-route-symbolic"
-        } else if (dbusNetwork.state >= 50 && dbusNetwork.state <= 60) {
+        if (dbusNetwork.state >= 50 && dbusNetwork.state <= 60) {
             wifiApplet.icon = "network-wireless-offline-symbolic"
-        } else {
+        }
+        else {
             if(accessPointsModel.count == 0){
                 if (contentLoader.item)
                     contentLoader.item.initMode()
             }
-            for (var i = 0; i < accessPointsModel.count; i ++) {
-                if (accessPointsModel.get(i).apPath == activeAp) {
-                    var apPower = accessPointsModel.get(i).apSignal
 
-                    if (apPower < 5)
-                        wifiApplet.icon = "network-wireless-signal-none-symbolic"
-                    else if (apPower <= 25)
-                        wifiApplet.icon = "network-wireless-signal-weak-symbolic"
-                    else if (apPower <= 50)
-                        wifiApplet.icon = "network-wireless-signal-ok-symbolic"
-                    else if (apPower <= 75)
-                        wifiApplet.icon = "network-wireless-signal-good-symbolic"
-                    else
-                        wifiApplet.icon = "network-wireless-signal-excellent-symbolic"
-                    break
+            if(activeAp == "/") {
+                wifiApplet.icon = "network-wirelss-no-route-symbolic"
+            }
+            else{
+                for (var i = 0; i < accessPointsModel.count; i ++) {
+                    if (accessPointsModel.get(i).apPath == activeAp) {
+                        var apPower = accessPointsModel.get(i).apSignal
+
+                        if (apPower < 5)
+                            wifiApplet.icon = "network-wireless-signal-none-symbolic"
+                        else if (apPower <= 25)
+                            wifiApplet.icon = "network-wireless-signal-weak-symbolic"
+                        else if (apPower <= 50)
+                            wifiApplet.icon = "network-wireless-signal-ok-symbolic"
+                        else if (apPower <= 75)
+                            wifiApplet.icon = "network-wireless-signal-good-symbolic"
+                        else
+                            wifiApplet.icon = "network-wireless-signal-excellent-symbolic"
+                        break
+                    }
                 }
             }
+
             if (wifiApplet.icon == ""){
                 wifiApplet.icon = "network-wireless-signal-none-symbolic"
             }
@@ -279,6 +287,12 @@ DockApplet{
                                         apModelObj.apPath = apObj.Path
                                     }
 
+                                    updateDockIcon()
+                                }
+                            }
+
+                            onDeviceEnabled: {
+                                if (arg0 == devicePath){
                                     updateDockIcon()
                                 }
                             }

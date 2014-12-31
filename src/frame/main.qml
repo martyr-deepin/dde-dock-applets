@@ -92,10 +92,12 @@ QtObject {
             for(var i=0;i<count;i++){
                 var tmpInfo = get(i)
                 if(tmpInfo.applet_id == applet_id){
-                    get(i).applet_name = applet_name
-                    get(i).applet_visible = applet_visible
-                    get(i).applet_icon = applet_icon
+                    setProperty(i,"applet_name",applet_name)
+                    setProperty(i,"applet_visible",applet_visible)
+                    setProperty(i,"applet_icon",applet_icon)
+
                     mainObject.setAppletState(dockDisplayMode, applet_id, applet_visible)
+
                     return
                 }
             }
@@ -107,9 +109,6 @@ QtObject {
                        "applet_icon":applet_icon,
                        "setting_enable":true    //default all show in setting panel
                    })
-
-            mainObject.setAppletState(dockDisplayMode, applet_id, applet_visible)
-            return
         }
 
         function rmItem(applet_id){
@@ -188,7 +187,6 @@ QtObject {
 
     property var appletSettingWindow: Loader {
         sourceComponent: AppletSettingWindow {
-            switchList: appletInfos
             onItemClicked: {
                 root.setAppletState(switchId,switchState)
             }
@@ -201,7 +199,11 @@ QtObject {
         Repeater {
             id: repeater
             model: appletListModel
-            delegate: AppletLoader {}
+            delegate: AppletLoader {
+                onShowChanged: {
+                    appletInfos.update(appletId, itemName, itemShow, itemIconPath)
+                }
+            }
         }
     }
 
