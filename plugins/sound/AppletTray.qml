@@ -323,6 +323,7 @@ DockApplet{
                         id: appVolumeControlList
                         width: parent.width
                         height: childrenRect.height
+                        boundsBehavior: Flickable.StopAtBounds
 
                         function updateModel(){
                             if(sinkInputs.length>0){
