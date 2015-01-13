@@ -141,7 +141,7 @@ DockApplet{
         interval: 300
         onTriggered: {
             if(isOnWheel){
-                isOnWheel = true
+                isOnWheel = false
             }
         }
     }
@@ -166,6 +166,7 @@ DockApplet{
             }
         }
         onMousewheelTimer.restart()
+        defaultSink.SetMute(false)
     }
 
     function showSound(id){
@@ -267,6 +268,10 @@ DockApplet{
 
                         onValueChanged: {
                             if(pressed || hovered){
+                                if (defaultSink.mute){
+                                    defaultSink.SetMute(false)
+                                }
+
                                 setVolume(value, false)
                             }
                         }
@@ -393,6 +398,10 @@ DockApplet{
 
                                     onValueChanged: {
                                         if(pressed || hovered){
+                                            if (sinkInputObject.mute){
+                                                sinkInputObject.SetMute(false)
+                                            }
+
                                             sinkInputObject.SetVolume(value, false)
                                         }
                                     }
