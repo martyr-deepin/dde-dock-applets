@@ -33,7 +33,7 @@ DockApplet{
     id: vpnApplet
     title: "VPN"
     appid: "AppletVPN"
-    icon: vpnEnable ? "network-vpn-active-symbolic" : "network-vpn-disable-symbolic"
+    icon: isVpnConnected ? "network-vpn-active-symbolic" : "network-vpn-disable-symbolic"
 
     property int xEdgePadding: 2
     property int titleSpacing: 10
@@ -43,10 +43,22 @@ DockApplet{
     readonly property var nmActiveConnectionStateActivating: 1
     readonly property var nmActiveConnectionStateActivated: 2
     readonly property var nmConnectionTypeVpn: "vpn"
-    property var nmActiveConnections: unmarshalJSON(dbusNetwork.activeConnections)
     property var nmConnections: unmarshalJSON(dbusNetwork.connections)
     property var vpnConnections: nmConnections[nmConnectionTypeVpn]
     property int vpnConnectionNumber: vpnConnections ? vpnConnections.length : 0
+
+    property var nmActiveConnections: unmarshalJSON(dbusNetwork.activeConnections)
+    property var isVpnConnected: {
+        if (nmActiveConnections){
+            for (var key in nmActiveConnections){
+                if (nmActiveConnections[key]["Vpn"] && nmActiveConnections[key]["State"] == 2)
+                    return true
+            }
+            return false
+        }
+        else
+            return false
+    }
 
     function unmarshalJSON(valueJSON) {
         if (!valueJSON) {
@@ -139,15 +151,11 @@ DockApplet{
                         ListView {
                             id: vpnConnectlist
                             width: parent.width
-                            height: Math.min(childrenRect.height, 235)
+                            height: Math.min(childrenRect.height, 225)
                             boundsBehavior: Flickable.StopAtBounds
                             model: vpnConnectionNumber
                             delegate: ConnectItem {}
                             clip: true
-
-                            DScrollBar {
-                                flickable: parent
-                            }
                         }
                     }
                 }
