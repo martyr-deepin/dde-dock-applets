@@ -265,6 +265,7 @@ DockApplet{
                         minimumValue: 0
                         maximumValue: 100
                         stepSize: 1
+                        handleOpacity: defaultSink.mute ? 0.4 : 1
 
                         onValueChanged: {
                             if(pressed || hovered){
@@ -395,6 +396,7 @@ DockApplet{
                                     minimumValue: 0
                                     maximumValue: 1.0
                                     stepSize: 0.01
+                                    handleOpacity: sinkInputObject.mute ? 0.4 : 1
 
                                     onValueChanged: {
                                         if(pressed || hovered){
