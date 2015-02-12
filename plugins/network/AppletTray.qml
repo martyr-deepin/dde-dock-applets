@@ -36,6 +36,9 @@ DockApplet{
     appid: "AppletNetwork"
     icon: getIcon()
 
+    // device state
+    readonly property var nmDeviceStateActivated: 100
+
     property var dconstants: DConstants {}
     property string currentIconName: ""
 
@@ -184,6 +187,20 @@ DockApplet{
         }
     }
     property var activeWirelessDevice: getActiveWirelessDevice()
+    property bool wirelessDevicesActivating: {//for load connecting animation,include all device
+        if (wirelessDevices){
+            for (var i = 0; i < wirelessDevices.length; i ++){
+                if (wirelessDevices[i].State != nmDeviceStateActivated && wirelessDevices[i].ActiveAp != "/"){
+                    return true
+                }
+            }
+
+            return false
+        }
+        else
+            return false
+    }
+
     property var wirelessListModel: ListModel {}
     onActiveWirelessDeviceChanged: {
         if(activeWirelessDevice){
@@ -205,6 +222,20 @@ DockApplet{
         }
     }
     onWirelessDevicesCountChanged: buttonRow.updateWirelessApplet()
+    onWirelessDevicesActivatingChanged: {
+        if (wirelessDevicesActivating)
+            connectingIconTimer.start()
+        else{
+            connectingIconTimer.stop()
+            if(hasWirelessDevices){
+                updateWifiState(true, null)
+            }
+            else {
+                updateWifiState(false, null)
+            }
+            connectingIconTimer.signalLevel = 1
+        }
+    }
 
     Connections{
         target: dbusNetwork
@@ -216,6 +247,29 @@ DockApplet{
                 }
             }
         }
+    }
+
+
+    Timer {
+        id: connectingIconTimer
+        interval: 100
+        repeat: true
+
+        property int signalLevel: 1
+
+        onTriggered: {
+            if (signalLevel == 5)
+                signalLevel = 1
+            else
+                signalLevel ++
+
+            updateConnectingWifiState(signalLevel)
+        }
+    }
+
+    function updateConnectingWifiState(signalLevel){
+        var imagePath = getAbsolutePath("emblems-images/wifi-%1.png".arg(signalLevel))
+        updateState("wifi", show, imagePath)
     }
 
     function updateWifiState(show, apInfo){
