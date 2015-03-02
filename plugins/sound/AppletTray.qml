@@ -141,7 +141,7 @@ DockApplet{
         interval: 300
         onTriggered: {
             if(isOnWheel){
-                isOnWheel = true
+                isOnWheel = false
             }
         }
     }
@@ -166,6 +166,7 @@ DockApplet{
             }
         }
         onMousewheelTimer.restart()
+        defaultSink.SetMute(false)
     }
 
     function showSound(id){
@@ -264,9 +265,14 @@ DockApplet{
                         minimumValue: 0
                         maximumValue: 100
                         stepSize: 1
+                        handleOpacity: defaultSink.mute ? 0.4 : 1
 
                         onValueChanged: {
                             if(pressed || hovered){
+                                if (defaultSink.mute){
+                                    defaultSink.SetMute(false)
+                                }
+
                                 setVolume(value, false)
                             }
                         }
@@ -323,6 +329,7 @@ DockApplet{
                         id: appVolumeControlList
                         width: parent.width
                         height: childrenRect.height
+                        boundsBehavior: Flickable.StopAtBounds
 
                         function updateModel(){
                             if(sinkInputs.length>0){
@@ -389,9 +396,14 @@ DockApplet{
                                     minimumValue: 0
                                     maximumValue: 1.0
                                     stepSize: 0.01
+                                    handleOpacity: sinkInputObject.mute ? 0.4 : 1
 
                                     onValueChanged: {
                                         if(pressed || hovered){
+                                            if (sinkInputObject.mute){
+                                                sinkInputObject.SetMute(false)
+                                            }
+
                                             sinkInputObject.SetVolume(value, false)
                                         }
                                     }

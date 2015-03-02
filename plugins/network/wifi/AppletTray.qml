@@ -39,6 +39,9 @@ DockApplet{
         updateDockIcon()
     }
 
+    // device state
+    readonly property var nmDeviceStateActivated: 100
+
     property int xEdgePadding: 2
     property int titleSpacing: 10
     property int rootWidth: 200
@@ -58,9 +61,47 @@ DockApplet{
     property int deviceStatus: typeof(wirelessDevice) != "undefined" ? wirelessDevices[deviceIndex].State : 0
     property string vendor: typeof(wirelessDevice) != "undefined" ? wirelessDevices[deviceIndex].Vendor : ""
     property string deviceHwAddress: typeof(wirelessDevice) != "undefined" ? wirelessDevices[deviceIndex].HwAddress : ""
-
     property var nmActiveConnections: unmarshalJSON(dbusNetwork.activeConnections)
     property var nmConnections: unmarshalJSON(dbusNetwork.connections)
+    property bool deviceActivating: {//for load connecting animation,single device
+        if (deviceStatus != nmDeviceStateActivated && activeAp != "/" ){
+            return true
+        }
+        else{
+            return false
+        }
+    }
+
+    onDeviceStatusChanged: {
+        if (!deviceActivating)
+            updateDockIcon()
+    }
+
+    onDeviceActivatingChanged: {
+        if (deviceActivating)
+            connectingIconTimer.start()
+        else{
+            connectingIconTimer.stop()
+            connectingIconTimer.signalLevel = 1
+        }
+    }
+
+    Timer {
+        id: connectingIconTimer
+        interval: 100
+        repeat: true
+
+        property int signalLevel: 1
+
+        onTriggered: {
+            if (signalLevel == 5)
+                signalLevel = 1
+            else
+                signalLevel ++
+
+            updateConnectingDockIcon(signalLevel)
+        }
+    }
 
     Connections {
         target: dbusNetwork
@@ -93,6 +134,19 @@ DockApplet{
             }
             return count
         }
+    }
+
+    function updateConnectingDockIcon(level){
+        if (level == 1)
+            wifiApplet.icon = "network-wireless-signal-none-symbolic"
+        else if (level == 2)
+            wifiApplet.icon = "network-wireless-signal-weak-symbolic"
+        else if (level == 3)
+            wifiApplet.icon = "network-wireless-signal-ok-symbolic"
+        else if (level == 4)
+            wifiApplet.icon = "network-wireless-signal-good-symbolic"
+        else
+            wifiApplet.icon = "network-wireless-signal-excellent-symbolic"
     }
 
     function updateDockIcon() {
@@ -166,8 +220,6 @@ DockApplet{
     onActivate:{
         showNetwork(0)
     }
-
-
 
     window: DockQuickWindow {
         id: rootWindow
