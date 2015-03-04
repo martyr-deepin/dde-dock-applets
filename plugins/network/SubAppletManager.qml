@@ -36,7 +36,9 @@ Item {
     property var nmConnections: unmarshalJSON(dbusNetwork.connections)
     property var activeConnections: unmarshalJSON(dbusNetwork.activeConnections)
     property var nmDevices: JSON.parse(dbusNetwork.devices)
+
     property var wiredDevices:nmDevices["wired"] == undefined ? [] : nmDevices["wired"]
+
     property var vpnConnections: nmConnections[nmConnectionTypeVpn]
     property var vpnConnectionsCount: {
         if (vpnConnections)
@@ -49,6 +51,14 @@ Item {
     property var wirelessDevicesCount:{
         if (wirelessDevices)
             return wirelessDevices.length
+        else
+            return 0
+    }
+
+    property var mobileDevices: nmDevices["modem"] == undefined ? [] : nmDevices["modem"]
+    property int mobileDeviceCount: {
+        if (mobileDevices)
+            return mobileDevices.length
         else
             return 0
     }
@@ -66,13 +76,16 @@ Item {
         else
             return 0
     }
-    property int oldBluetoothAdapterCount: 0
 
     property var wirelessListModel: ListModel {}
+    property var mobileListModel: ListModel {}
     property var bluetoothListModel: ListModel {}
 
     property var dockMode:dockDisplayMode
+
     property int oldWirelessDeviceCount:0
+    property int oldMobileDeviceCount: 0
+    property int oldBluetoothAdapterCount: 0
 
     onDockModeChanged: {
         print ("==> [Info] Dock display mode change...",dockMode)
@@ -91,6 +104,19 @@ Item {
             deleteWirelessApplet()
         }
         oldWirelessDeviceCount = wirelessDevicesCount
+
+        updateSettingItem(dockDisplayMode != 0)
+    }
+
+    onMobileDeviceCountChanged: {
+        //update mobile model
+        if (oldMobileDeviceCount < mobileDeviceCount){
+            addMobileApplet()
+        }
+        else{
+            deleteMobileApplet()
+        }
+        oldMobileDeviceCount = mobileDeviceCount
 
         updateSettingItem(dockDisplayMode != 0)
     }
@@ -141,6 +167,22 @@ Item {
     function getIndexFromWirelessMode(id){
         for (var i = 0; i < wirelessListModel.count; i ++){
             if (wirelessListModel.get(i).applet_id == id)
+                return i
+        }
+        return -1
+    }
+
+    function isInMobileList(id){
+        for (var i = 0; i < mobileDeviceCount; i ++){
+            if (mobileDevices[i].Path == id)
+                return true
+        }
+        return false
+    }
+
+    function getIndexFromMobileModel(id){
+        for (var i = 0; i < mobileListModel.count; i ++){
+            if (mobileListModel.get(i).applet_id == id)
                 return i
         }
         return -1
@@ -199,7 +241,44 @@ Item {
         }
 
         if (wirelessListModel.count == 1){
-            appletInfos.get(0).applet_name = dsTr("Wireless Network")
+            var tmpAppletId = wirelessListModel.get(0).applet_id
+            for (var i = 0; i < appletInfos.count; i ++){
+                if (appletInfos.get(i).applet_id == tmpAppletId){
+                    appletInfos.get(i).applet_name = dsTr("Wireless Network")
+                    return
+                }
+            }
+        }
+    }
+
+    function addMobileApplet(){
+        if (getParentAppletPathHead() == "")
+            return
+        print("==> [Info] Adding Mobile applet...")
+
+        for (var i = 0; i < mobileDeviceCount; i ++){
+            var devicePath = mobileDevices[i].Path
+            if (getIndexFromMobileModel(devicePath) == -1){//not in mode, add it
+                mobileListModel.append({
+                                             "applet_id": devicePath,
+                                             "applet_name":mobileDevices[i].Vendor,
+                                             "applet_path": getParentAppletPathHead() + "mobile/main.qml"
+                                         })
+            }
+        }
+    }
+
+    function deleteMobileApplet(){
+        var oldIdArray = new Array()
+        for (var i = 0; i < mobileListModel.count; i ++){//get invalid one,prepare to delete
+            if (!isInMobileList(mobileListModel.get(i).applet_id)){
+                oldIdArray.push(mobileListModel.get(i).applet_id)
+            }
+        }
+
+        for (i = 0; i < oldIdArray.length; i ++){//delete invalid from mode
+            appletInfos.remove(getIndexFromAppletInfos(oldIdArray[i]))
+            mobileListModel.remove(getIndexFromMobileModel(oldIdArray[i]))
         }
     }
 
@@ -275,8 +354,16 @@ Item {
                     return
                 }
             }
+            //try mobile devices applet
+            for (var i = 0; i < mobileRepeater.count; i ++){
+                print("mobile...:",mobileRepeater.itemAt(i).item.appletId)
+                if(mobileListModel.get(i).applet_id == applet_id){
+                    mobileRepeater.itemAt(i).item.setAppletState(new_state)
+                    return
+                }
+            }
             //try bluetooth device applet
-            for (i = 0; i < bluetoothRepeater.count; i ++){
+            for (var i = 0; i < bluetoothRepeater.count; i ++){
                 if (bluetoothListModel.get(i).applet_id == applet_id){
                     bluetoothRepeater.itemAt(i).item.setAppletState(new_state)
                 }
@@ -286,9 +373,11 @@ Item {
 
     function updateSettingItem(showFlag){
         for (var i = 0; i < appletInfos.count; i ++){
-            if (appletInfos.get(i).applet_id == "vpn" ||
-                    isInWirelessList(appletInfos.get(i).applet_id) ||
-                    isInBluetoothList(appletInfos.get(i).applet_id)){
+            var tmpId = appletInfos.get(i).applet_id
+            if (tmpId == "vpn" ||
+                    isInWirelessList(tmpId) ||
+                    isInBluetoothList(tmpId) ||
+                    isInMobileList(tmpId)){
                 appletInfos.get(i).setting_enable = showFlag
             }
         }
@@ -306,6 +395,16 @@ Item {
     Repeater {
         id: wirelessRepeater
         model: wirelessListModel
+        delegate: AppletLoader {
+            onShowChanged: {
+                appletInfos.update(appletId, itemName, itemShow, itemIconPath)
+            }
+        }
+    }
+
+    Repeater {
+        id: mobileRepeater
+        model: mobileListModel
         delegate: AppletLoader {
             onShowChanged: {
                 appletInfos.update(appletId, itemName, itemShow, itemIconPath)

@@ -243,6 +243,49 @@ DockApplet{
         updateState("wifi", show, imagePath)
     }
 
+    //mobile
+    property var mobileDevices: nmDevices["modem"] == undefined ? [] : nmDevices["modem"]
+    property var mobileListmodel: ListModel {}
+    onMobileDevicesChanged: {
+        var gotActiveDevice = false
+        var maxNetworkLevel = 0
+        var maxConnectedNetworkLevel = 0
+        for (var i = 0; i < mobileDevices.length; i ++){
+            var networkLevel = 0
+            if (mobileDevices[i].MobileNetworkType == "Unknown")
+                networkLevel = 0
+            else if (mobileDevices[i].MobileNetworkType == "2G")
+                networkLevel = 2
+            else if (mobileDevices[i].MobileNetworkType == "3G")
+                networkLevel = 3
+            else
+                networkLevel = 4
+
+            if (mobileDevices[i].State == 100){
+                maxConnectedNetworkLevel = networkLevel > maxConnectedNetworkLevel ? networkLevel : maxConnectedNetworkLevel
+                gotActiveDevice = true
+            }
+
+            maxNetworkLevel = networkLevel > maxNetworkLevel ? networkLevel : maxNetworkLevel
+        }
+
+        //update composite icon
+        updateMobileState(mobileDevices.length > 0, gotActiveDevice, maxConnectedNetworkLevel > 0 ? maxConnectedNetworkLevel : maxNetworkLevel)
+
+        //uodate dock window icons
+        if (mobileDevices.length > mobileListmodel.count)
+            mobileRepeater.addMobileApplet()
+        else
+            mobileRepeater.deleteMobileApplet()
+
+        mobileRepeater.updateMobileApplet()
+    }
+
+    function updateMobileState(show,deviceActived, mobileNetworkLevel){
+        var imagePath = getAbsolutePath("emblems-images/%1g-%2.png".arg(mobileNetworkLevel).arg(deviceActived ? "on" : "off"))
+        updateState("3g", show, imagePath)
+    }
+
     // vpn
     property var vpnConnections: nmConnections["vpn"]
     property var vpnActived:{
@@ -354,7 +397,7 @@ DockApplet{
     DockQuickWindow {
         id: rootWindow
         width: buttonRow.width > 130 ? buttonRow.width + 30 : 130
-        height: contentColumn.height + xEdgePadding * 2
+        height: buttonRow.height
         color: "transparent"
 
         onNativeWindowDestroyed: {
@@ -369,116 +412,203 @@ DockApplet{
         Item {
             anchors.centerIn: parent
             width: parent.width - xEdgePadding * 2
-            height: parent.height - xEdgePadding * 2
+            height: buttonRow.height
             visible: dockDisplayMode == 0
 
-            Column {
-                id: contentColumn
-                width: parent.width
-                spacing: 20
+            Row {
+                id: buttonRow
+                spacing: 16
+                anchors.horizontalCenter: parent.horizontalCenter
 
-                Row {
-                    id: buttonRow
-                    spacing: 16
-                    anchors.horizontalCenter: parent.horizontalCenter
-
-                    function updateWirelessApplet(){
-                        wirelessListModel.clear()
-                        for (var i = 0; i < wirelessDevicesCount; i ++){
-                            wirelessListModel.append({
-                                                         "devicePath": wirelessDevices[i].Path,
-                                                         "devicesCount":wirelessDevicesCount,
-                                                         "deviceState":wirelessDevices[i].State
-                                                     })
-                        }
+                function updateWirelessApplet(){
+                    wirelessListModel.clear()
+                    for (var i = 0; i < wirelessDevicesCount; i ++){
+                        wirelessListModel.append({
+                                                     "devicePath": wirelessDevices[i].Path,
+                                                     "devicesCount":wirelessDevicesCount,
+                                                     "deviceState":wirelessDevices[i].State
+                                                 })
                     }
+                }
 
-                    function updateBluetoothApplet(){
-                        bluetoothListmodel.clear()
-                        for (var i = 0; i < blueToothAdaptersCount; i ++){
-                            bluetoothListmodel.append({
-                                                          "adapterPath": bluetoothAdapters[i].Path,
-                                                          "adapterCount":blueToothAdaptersCount,
-                                                          "adapterPowered":bluetoothAdapters[i].Powered
-                                                      })
-                        }
+                function updateBluetoothApplet(){
+                    bluetoothListmodel.clear()
+                    for (var i = 0; i < blueToothAdaptersCount; i ++){
+                        bluetoothListmodel.append({
+                                                      "adapterPath": bluetoothAdapters[i].Path,
+                                                      "adapterCount":blueToothAdaptersCount,
+                                                      "adapterPowered":bluetoothAdapters[i].Powered
+                                                  })
                     }
+                }
 
-                    Repeater {
-                        id: wirelessRepeater
-                        model: wirelessListModel
-                        delegate: CheckButton{
-                            id: wirelessCheckButton
-                            onImage: "images/wifi_on.png"
-                            offImage: "images/wifi_off.png"
-                            visible: true
-                            property var pDeviceCount: devicesCount
-                            property var pDeviceState: deviceState
-                            onPDeviceStateChanged: wirelessCheckButton.active = dbusNetwork.IsDeviceEnabled(devicePath)
-                            onPDeviceCountChanged: deviceIndex = pDeviceCount > 1 ? index + 1 : ""
-
-                            onClicked: {
-                                if (!dbusNetwork.IsDeviceEnabled(devicePath)){
-                                    print ("==> [Info] Enable wireless device...")
-                                    dbusNetwork.EnableDevice(devicePath,true)
-                                }
-                                else{
-                                    dbusNetwork.EnableDevice(devicePath,false)
-                                }
-                            }
-                        }
-                    }
-
-                    // TODO
-                    CheckButton{
-                        id: vpnButton
-                        visible: vpnConnections ? vpnConnections.length > 0 : false
-                        onImage: "images/vpn_on.png"
-                        offImage: "images/vpn_off.png"
-                        active: dbusNetwork.vpnEnabled
+                Repeater {
+                    id: wirelessRepeater
+                    model: wirelessListModel
+                    delegate: CheckButton{
+                        id: wirelessCheckButton
+                        onImage: "images/wifi_on.png"
+                        offImage: "images/wifi_off.png"
+                        visible: true
+                        property var pDeviceCount: devicesCount
+                        property var pDeviceState: deviceState
+                        onPDeviceStateChanged: wirelessCheckButton.active = dbusNetwork.IsDeviceEnabled(devicePath)
+                        onPDeviceCountChanged: deviceIndex = pDeviceCount > 1 ? index + 1 : ""
 
                         onClicked: {
-                            dbusNetwork.vpnEnabled = active
-                        }
-
-                        Connections{
-                            target: dbusNetwork
-                            onVpnEnabledChanged:{
-                                if(!vpnButton.pressed){
-                                    vpnButton.active = dbusNetwork.vpnEnabled
-                                }
+                            if (!dbusNetwork.IsDeviceEnabled(devicePath)){
+                                print ("==> [Info] Enable wireless device...")
+                                dbusNetwork.EnableDevice(devicePath,true)
                             }
-                        }
-
-                        Timer{
-                            running: true
-                            interval: 100
-                            onTriggered: {
-                                // parent.active = parent.vpnActive
-                                parent.active = dbusNetwork.vpnEnabled
+                            else{
+                                dbusNetwork.EnableDevice(devicePath,false)
                             }
-                        }
-                    }
-
-                    Repeater {
-                        id:bluetoothRepeater
-                        model: bluetoothListmodel
-                        delegate: CheckButton {
-                            id: bluetoothButton
-                            visible: true
-                            onImage: "images/bluetooth_on.png"
-                            offImage: "images/bluetooth_off.png"
-                            active: adapterPowered
-                            deviceIndex: adapterCount > 1 ? index + 1 : ""
-
-                            onClicked: {
-                                dbusBluetooth.SetAdapterPowered(adapterPath, !adapterPowered)
-                            }
-
                         }
                     }
                 }
 
+                Repeater {
+                    id: mobileRepeater
+
+                    function updateMobileApplet(){
+                        for (var i = 0; i < mobileListmodel.count; i ++){
+                            mobileListmodel.set(i, {
+                                                    "mobileNetworkType": mobileDevices[i].MobileNetworkType,
+                                                    "deviceState":mobileDevices[i].State,
+                                                    "devicesCount":mobileDevices.length
+                                                })
+                        }
+                    }
+
+                    function addMobileApplet(){
+                        for (var i = 0; i < mobileDevices.length; i ++){
+                            var tmpPath = mobileDevices[i].Path
+                            if (getIndexFromMobileListModel(tmpPath) == -1){//not in model,add it
+                                mobileListmodel.append({
+                                                           "devicesCount":mobileDevices.length,
+                                                           "devicePath": mobileDevices[i].Path,
+                                                           "mobileNetworkType": mobileDevices[i].MobileNetworkType,
+                                                           "deviceState":mobileDevices[i].State
+                                                       })
+                            }
+                        }
+                    }
+
+                    function deleteMobileApplet(){
+                        var oldDeviceArray = new Array()
+                        for (var i = 0; i < mobileListmodel.count; i ++){
+                            var tmpPath = mobileListmodel.get(i).devicePath
+                            if (getIndexFromMobileDevices(tmpPath) == -1){//not exit,storage it for delete
+                                oldDeviceArray.push(tmpPath)
+                            }
+                        }
+
+                        for (var i = 0; i < oldDeviceArray.length; i ++){
+                            mobileListmodel.remove(getIndexFromMobileListModel(oldDeviceArray[i]))
+                        }
+                    }
+
+                    function getIndexFromMobileListModel(devicePath){
+                        for (var i = 0; i < mobileListmodel.count; i++){
+                            if (mobileListmodel.get(i).devicePath == devicePath)
+                                return i
+                        }
+
+                        return -1
+                    }
+
+                    function getIndexFromMobileDevices(devicepath){
+                        for (var i = 0; i < mobileDevices.length; i ++){
+                            if (mobileDevices[i].Path == devicepath){
+                                return i
+                            }
+                        }
+
+                        return -1
+                    }
+
+                    model: mobileListmodel
+                    delegate: CheckButton{
+                        id: mobileCheckButton
+                        onImage: "images/%1g-on.png".arg(pMobileNetworkType)
+                        offImage: "images/%1g-off.png".arg(pMobileNetworkType)
+                        visible: true
+                        property var pDeviceCount: devicesCount
+                        property var pDeviceState: deviceState
+                        property var pMobileNetworkType:{
+                            if (mobileNetworkType == "Unknown")
+                                return 0
+                            else if (mobileNetworkType == "2G")
+                                return 2
+                            else if (mobileNetworkType == "3G")
+                                return 3
+                            else
+                                return 4
+                        }
+
+                        onPDeviceStateChanged: mobileCheckButton.active = dbusNetwork.IsDeviceEnabled(devicePath)
+                        onPDeviceCountChanged: deviceIndex = pDeviceCount > 1 ? index + 1 : ""
+
+                        onClicked: {
+                            if (!dbusNetwork.IsDeviceEnabled(devicePath)){
+                                print ("==> [Info] Enable mobile device...")
+                                dbusNetwork.EnableDevice(devicePath,true)
+                            }
+                            else{
+                                dbusNetwork.EnableDevice(devicePath,false)
+                            }
+                        }
+                    }
+                }
+
+                // TODO
+                CheckButton{
+                    id: vpnButton
+                    visible: vpnConnections ? vpnConnections.length > 0 : false
+                    onImage: "images/vpn_on.png"
+                    offImage: "images/vpn_off.png"
+                    active: dbusNetwork.vpnEnabled
+
+                    onClicked: {
+                        dbusNetwork.vpnEnabled = active
+                    }
+
+                    Connections{
+                        target: dbusNetwork
+                        onVpnEnabledChanged:{
+                            if(!vpnButton.pressed){
+                                vpnButton.active = dbusNetwork.vpnEnabled
+                            }
+                        }
+                    }
+
+                    Timer{
+                        running: true
+                        interval: 100
+                        onTriggered: {
+                            // parent.active = parent.vpnActive
+                            parent.active = dbusNetwork.vpnEnabled
+                        }
+                    }
+                }
+
+                Repeater {
+                    id:bluetoothRepeater
+                    model: bluetoothListmodel
+                    delegate: CheckButton {
+                        id: bluetoothButton
+                        visible: true
+                        onImage: "images/bluetooth_on.png"
+                        offImage: "images/bluetooth_off.png"
+                        active: adapterPowered
+                        deviceIndex: adapterCount > 1 ? index + 1 : ""
+
+                        onClicked: {
+                            dbusBluetooth.SetAdapterPowered(adapterPath, !adapterPowered)
+                        }
+
+                    }
+                }
             }
         }
 
