@@ -72,7 +72,7 @@ DWindow {
 
     Column {
         anchors.fill: parent
-        width: parent.width - 4
+        width: titleLine.width - 4
         height: switchListView.height + titleLine.height
         spacing: 0
 
@@ -132,4 +132,24 @@ DWindow {
         }
 
     }
+
+    /////////////////////////////////////////Work Around///////////////////////////////////////////////////////
+    //AppletPlugin-appletTrayLoader,when appletTrayLoader's property "active" change to false from true(eg:sudo
+    //service network-manager restart) will cause app crash,unknown reason
+    //but,if AppletSettingWindow ONCE SHOWED,Even if the AppletSettingWindow's content is blank,app work well
+    Timer {
+        id:initDelayhideTimer
+        interval: 50
+        onTriggered: {
+            root.hide()
+            root.width = titleLine.width
+        }
+    }
+
+    Component.onCompleted: {
+        root.width = 0
+        root.show()
+        initDelayhideTimer.start()
+    }
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 }
