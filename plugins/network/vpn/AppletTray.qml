@@ -40,14 +40,9 @@ DockApplet{
     property int rootWidth: 200
 
     property var vpnEnable:dbusNetwork.vpnEnabled
-    readonly property var nmActiveConnectionStateActivating: 1
-    readonly property var nmActiveConnectionStateActivated: 2
-    readonly property var nmConnectionTypeVpn: "vpn"
-    property var nmConnections: unmarshalJSON(dbusNetwork.connections)
     property var vpnConnections: nmConnections[nmConnectionTypeVpn]
     property int vpnConnectionNumber: vpnConnections ? vpnConnections.length : 0
 
-    property var nmActiveConnections: unmarshalJSON(dbusNetwork.activeConnections)
     property var isVpnConnected: {
         if (nmActiveConnections){
             for (var key in nmActiveConnections){
@@ -58,14 +53,6 @@ DockApplet{
         }
         else
             return false
-    }
-
-    function unmarshalJSON(valueJSON) {
-        if (!valueJSON) {
-            print("==> [ERROR] unmarshalJSON", valueJSON)
-        }
-        var value = JSON.parse(valueJSON)
-        return value
     }
 
     function showNetwork(id){

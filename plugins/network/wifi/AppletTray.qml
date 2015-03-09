@@ -31,7 +31,7 @@ import DBus.Com.Deepin.Daemon.Network 1.0
 DockApplet{
     id: wifiApplet
     title: "Wireless Network"
-    appid: vendor
+    appid: devicePath
 
     icon: ""
 
@@ -39,15 +39,12 @@ DockApplet{
         updateDockIcon()
     }
 
-    // device state
-    readonly property var nmDeviceStateActivated: 100
-
     property int xEdgePadding: 2
     property int titleSpacing: 10
     property int rootWidth: 200
     property int deviceIndex: {
         for (var i = 0; i < wirelessDevices.length; i++){
-            if (wirelessDevices[i].Vendor == appletId){
+            if (wirelessDevices[i].Path == appletId){
                 return i
             }
         }
@@ -194,14 +191,6 @@ DockApplet{
 
     }
 
-    function unmarshalJSON(valueJSON) {
-        if (!valueJSON) {
-            print("==> [ERROR] unmarshalJSON", valueJSON)
-        }
-        var value = JSON.parse(valueJSON)
-        return value
-    }
-
     function showNetwork(id){
         dbusControlCenter.ShowModule("network")
     }
@@ -264,7 +253,6 @@ DockApplet{
                         width: parent.width
                         leftMargin: 10
                         rightMargin: 10
-                        //                    color: "#000000"
                         color:"transparent"
                         leftLoader.sourceComponent: DssH2 {
                             elide:Text.ElideRight

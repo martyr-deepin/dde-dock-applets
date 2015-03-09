@@ -32,12 +32,12 @@ DImageCheckButton{
 
 //    anchors.verticalCenter: parent.verticalCenter
     inactivatedNormalImage: offImage
-    inactivatedHoverImage: inactivatedNormalImage
-    inactivatedPressImage: inactivatedNormalImage
+    inactivatedHoverImage: offImage
+    inactivatedPressImage: offImage
 
     activatedNormalImage: onImage
-    activatedHoverImage: activatedNormalImage
-    activatedPressImage: activatedNormalImage
+    activatedHoverImage: onImage
+    activatedPressImage: onImage
 
 
 

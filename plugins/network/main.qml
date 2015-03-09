@@ -22,10 +22,11 @@
 ****************************************************************************/
 
 import QtQuick 2.1
+import DBus.Com.Deepin.Daemon.Network 1.0
 import Deepin.DockAppletWidgets 1.0
 
 AppletPlugin {
-    id: appletItem
+    id: mainNetworkAppletItem
 
     managed: true
     show: true
@@ -33,7 +34,52 @@ AppletPlugin {
     iconPath: "network-wired-symbolic"
     appletPath: qmlPath
 
+
+    // device state
+    readonly property var nmDeviceStateUnknown: 0
+    readonly property var nmDeviceStateUnmanaged: 10
+    readonly property var nmDeviceStateUnavailable: 20
+    readonly property var nmDeviceStateDisconnected: 30
+    readonly property var nmDeviceStatePrepare: 40
+    readonly property var nmDeviceStateConfig: 50
+    readonly property var nmDeviceStateNeedAuth: 60
+    readonly property var nmDeviceStateIpConfig: 70
+    readonly property var nmDeviceStateIpCheck: 80
+    readonly property var nmDeviceStateSecondaries: 90
+    readonly property var nmDeviceStateActivated: 100
+    readonly property var nmDeviceStateDeactivating: 110
+    readonly property var nmDeviceStateFailed: 120
+
+    // active connection state
+    readonly property var nmActiveConnectionStateUnknown: 0
+    readonly property var nmActiveConnectionStateActivating: 1
+    readonly property var nmActiveConnectionStateActivated: 2
+    readonly property var nmActiveConnectionStateDeactivating: 3
+    readonly property var nmActiveConnectionStateDeactivate: 4
+
+    // connection type
+    readonly property var nmConnectionTypeWired: "wired"
+    readonly property var nmConnectionTypeWireless: "wireless"
+    readonly property var nmConnectionTypeWirelessAdhoc: "wireless-adhoc"
+    readonly property var nmConnectionTypeWirelessHotspot: "wireless-hotspot"
+    readonly property var nmConnectionTypePppoe: "pppoe"
+    readonly property var nmConnectionTypeMobile: "mobile"
+    readonly property var nmConnectionTypeMobileGsm: "mobile-gsm"
+    readonly property var nmConnectionTypeMobileCdma: "mobile-cdma"
+    readonly property var nmConnectionTypeVpn: "vpn"
+    readonly property var nmConnectionTypeVpnL2tp: "vpn-l2tp"
+    readonly property var nmConnectionTypeVpnPptp: "vpn-pptp"
+    readonly property var nmConnectionTypeVpnVpnc: "vpn-vpnc"
+    readonly property var nmConnectionTypeVpnOpenvpn: "vpn-openvpn"
+    readonly property var nmConnectionTypeVpnOpenconnect: "vpn-openconnect"
+
+    property var dbusNetwork: NetworkManager{}
+    property var nmDevices: JSON.parse(dbusNetwork.devices)
+    property var wiredDevices: nmDevices["wired"] == undefined ? [] : nmDevices["wired"]
+    property var wirelessDevices: nmDevices["wireless"] == undefined ? [] : nmDevices["wireless"]
+    property var nmConnections: unmarshalJSON(dbusNetwork.connections)
     property var activeConnections: unmarshalJSON(dbusNetwork.activeConnections)
+
     property var activeConnectionsCount: {
         if (activeConnections)
             return  Object.keys(activeConnections).length
@@ -81,16 +127,14 @@ AppletPlugin {
     }
 
     function updateWiredSettingItem(showFlag){
-        for (var i = 0; i < appletInfos.count; i ++){
-            if (appletInfos.get(i).applet_id == "network"){
-                appletInfos.get(i).setting_enable = showFlag
-            }
-        }
+        var tmpIndex = appletInfos.indexOf("network")
+        if (tmpIndex != -1)
+            appletInfos.updateSettingEnable(tmpIndex,showFlag)
     }
 
     appletTrayLoader: Loader {
         sourceComponent: AppletTray{}
-        active: appletItem.show && ((hasWiredDevices && !hasWirelessDevices && activeConnectionsCount == 0 && dockDisplayMode != 0) || dockDisplayMode == 0)
+        active: mainNetworkAppletItem.show && ((hasWiredDevices && !hasWirelessDevices && activeConnectionsCount == 0 && dockDisplayMode != 0) || dockDisplayMode == 0)
     }
 
     onSubAppletStateChanged: {
@@ -99,6 +143,6 @@ AppletPlugin {
 
     SubAppletManager {
         id:subAppletManager
-        parentAppletPath: appletItem.appletPath
+        parentAppletPath: mainNetworkAppletItem.appletPath
     }
 }

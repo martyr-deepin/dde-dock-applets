@@ -32,7 +32,7 @@ DWindow {
         else
             dockHeight = 70
 
-        root.y = displayId.primaryRect[1] +  displayId.primaryRect[3] - getVisibleSwitchCount() * 30 - titleLine.height - dockHeight - 10
+        root.y = displayId.primaryRect[1] +  displayId.primaryRect[3] - appletInfos.getVisibleSwitchCount() * 30 - titleLine.height - dockHeight - 10
     }
 
     function getLegalX(mouseX){
@@ -43,17 +43,6 @@ DWindow {
         else
             x = mouseX
         return x - width/2
-    }
-
-    function getVisibleSwitchCount(){
-        var visibleCount = 0
-        for(var i=0;i<appletInfos.count;i++){
-            var tmpInfo = appletInfos.get(i)
-            if(tmpInfo.setting_enable == true){
-                visibleCount ++
-            }
-        }
-        return visibleCount
     }
 
     function showWindow(){
