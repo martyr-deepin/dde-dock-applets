@@ -33,27 +33,26 @@ DockApplet{
     id: vpnApplet
     title: "VPN"
     appid: "AppletVPN"
-    icon: vpnEnable ? "network-vpn-active-symbolic" : "network-vpn-disable-symbolic"
+    icon: isVpnConnected ? "network-vpn-active-symbolic" : "network-vpn-disable-symbolic"
 
     property int xEdgePadding: 2
     property int titleSpacing: 10
     property int rootWidth: 200
 
     property var vpnEnable:dbusNetwork.vpnEnabled
-    readonly property var nmActiveConnectionStateActivating: 1
-    readonly property var nmActiveConnectionStateActivated: 2
-    readonly property var nmConnectionTypeVpn: "vpn"
-    property var nmActiveConnections: unmarshalJSON(dbusNetwork.activeConnections)
-    property var nmConnections: unmarshalJSON(dbusNetwork.connections)
     property var vpnConnections: nmConnections[nmConnectionTypeVpn]
     property int vpnConnectionNumber: vpnConnections ? vpnConnections.length : 0
 
-    function unmarshalJSON(valueJSON) {
-        if (!valueJSON) {
-            print("==> [ERROR] unmarshalJSON", valueJSON)
+    property var isVpnConnected: {
+        if (nmActiveConnections){
+            for (var key in nmActiveConnections){
+                if (nmActiveConnections[key]["Vpn"] && nmActiveConnections[key]["State"] == 2)
+                    return true
+            }
+            return false
         }
-        var value = JSON.parse(valueJSON)
-        return value
+        else
+            return false
     }
 
     function showNetwork(id){
@@ -139,15 +138,11 @@ DockApplet{
                         ListView {
                             id: vpnConnectlist
                             width: parent.width
-                            height: Math.min(childrenRect.height, 235)
+                            height: Math.min(childrenRect.height, 225)
                             boundsBehavior: Flickable.StopAtBounds
                             model: vpnConnectionNumber
                             delegate: ConnectItem {}
                             clip: true
-
-                            DScrollBar {
-                                flickable: parent
-                            }
                         }
                     }
                 }

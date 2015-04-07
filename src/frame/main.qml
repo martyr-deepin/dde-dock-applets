@@ -27,7 +27,6 @@ import QtQuick.Window 2.1
 import Deepin.Locale 1.0
 import Deepin.DockAppletWidgets 1.0
 import DBus.Com.Deepin.Dde.ControlCenter 1.0
-import DBus.Com.Deepin.Daemon.Network 1.0
 import DBus.Com.Deepin.Daemon.Dock 1.0
 import DBus.Com.Deepin.Daemon.ThemeManager 1.0
 
@@ -88,7 +87,7 @@ QtObject {
 
     property var appletInfos: ListModel {
         function update(applet_id, applet_name, applet_visible,applet_icon){
-            print("==> [info] update applet info:", applet_id)
+            print("==> [info] update applet info:", applet_id,applet_name)
             for(var i=0;i<count;i++){
                 var tmpInfo = get(i)
                 if(tmpInfo.applet_id == applet_id){
@@ -113,14 +112,37 @@ QtObject {
 
         function rmItem(applet_id){
             print("==> [info] remove item from appletInfos:", applet_id)
-            for(var i=0;i<count;i++){
-                var tmpInfo = get(i)
-                if(tmpInfo.applet_id == applet_id){
-                    root.setAppletState(applet_id, false)
-                    remove(i)
-                    return
+            var tmpindex = indexOf(applet_id)
+            if (tmpindex != -1){
+                root.setAppletState(applet_id, false)
+                remove(tmpindex)
+            }
+        }
+
+        function indexOf(applet_id){
+            for (var i = 0; i < appletInfos.count; i ++){
+                if (appletInfos.get(i).applet_id == applet_id)
+                    return i
+            }
+            return -1
+        }
+
+        function getVisibleSwitchCount(){
+            var visibleCount = 0
+            for(var i = 0;i < appletInfos.count; i ++){
+                if(appletInfos.get(i).setting_enable == true){
+                    visibleCount ++
                 }
             }
+            return visibleCount
+        }
+
+        function updateAppletName(index,newName){
+            appletInfos.setProperty(index,"applet_name",newName)
+        }
+
+        function updateSettingEnable(index, newState){
+            appletInfos.setProperty(index,"setting_enable",newState)
         }
     }
 
@@ -175,15 +197,7 @@ QtObject {
     // ControlCenter
     property var dbusControlCenter: ControlCenter{}
 
-    property var dbusNetwork: NetworkManager{}
-    property var nmDevices: JSON.parse(dbusNetwork.devices)
-    property var wiredDevices: nmDevices["wired"] == undefined ? [] : nmDevices["wired"]
-    property var wirelessDevices: nmDevices["wireless"] == undefined ? [] : nmDevices["wireless"]
-
-    property var passwordWindow: Loader {
-        sourceComponent: WifiPasswordWindow {}
-        active: wirelessDevices.length > 0
-    }
+    property var passwordWindow: WifiPasswordWindow {}
 
     property var appletSettingWindow: Loader {
         sourceComponent: AppletSettingWindow {

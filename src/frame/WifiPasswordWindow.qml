@@ -120,6 +120,7 @@ Window {
     DWindowFrame {
         id: window
         anchors.fill: parent
+        layer.enabled: true //optimization,make message's text refresh in time
 
         MouseArea {
             anchors.fill: parent
@@ -160,6 +161,12 @@ Window {
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.top: message.bottom
             anchors.topMargin: 9
+            Keys.onPressed: {
+                if (event.key == Qt.Key_Enter || event.key == Qt.Key_Return)
+                    connectAction()
+                else if (event.key == Qt.Key_Escape)
+                    cancelAction()
+            }
 
             Text {
                 anchors.left: parent.left
@@ -173,6 +180,8 @@ Window {
                 text: dsTr("Password")
                 visible: passwordInput.text == ""
             }
+
+            Component.onCompleted:forceActiveFocus()
         }
 
 
@@ -196,6 +205,7 @@ Window {
                 text: dsTr("Cancel")
                 onClicked: {
                     cancelAction()
+                    passwordInput.text = ""
                 }
             }
 
@@ -203,6 +213,7 @@ Window {
                 text: dsTr("Connect")
                 onClicked: {
                     connectAction()
+                    passwordInput.text = ""
                 }
             }
         }

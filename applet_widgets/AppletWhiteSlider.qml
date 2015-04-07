@@ -31,6 +31,7 @@ Slider {
     property int grooveWidth: width - handleWidth
     property int grooveHeight: 8
     property int handleWidth: 12
+    property double handleOpacity: 1
 
     property int _buttonWidth: 0
 
@@ -51,6 +52,7 @@ Slider {
             width: handleWidth
             height: handleWidth
             radius: handleWidth/2
+            opacity: handleOpacity
         }
     }
 

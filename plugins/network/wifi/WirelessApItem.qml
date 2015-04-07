@@ -35,7 +35,7 @@ Item {
 
     property string connectionPath
     property string uuid
-    property bool apConnected: apPath == activeAp && deviceStatus == 100
+    property bool apConnected: apPath == activeAp && deviceStatus == nmDeviceStateActivated
 
     property bool hovered: false
     property bool selected: false
@@ -71,7 +71,7 @@ Item {
         AppletWaitingImage {
             anchors.left: checkImg.left
             anchors.verticalCenter: parent.verticalCenter
-            on: apPath == activeAp && deviceStatus != 100
+            on: apPath == activeAp && deviceActivating
         }
 
         DLabel {

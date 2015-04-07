@@ -31,7 +31,7 @@ import DBus.Com.Deepin.Daemon.Network 1.0
 DockApplet{
     id: wifiApplet
     title: "Wireless Network"
-    appid: vendor
+    appid: devicePath
 
     icon: ""
 
@@ -44,7 +44,7 @@ DockApplet{
     property int rootWidth: 200
     property int deviceIndex: {
         for (var i = 0; i < wirelessDevices.length; i++){
-            if (wirelessDevices[i].Vendor == appletId){
+            if (wirelessDevices[i].Path == appletId){
                 return i
             }
         }
@@ -58,9 +58,47 @@ DockApplet{
     property int deviceStatus: typeof(wirelessDevice) != "undefined" ? wirelessDevices[deviceIndex].State : 0
     property string vendor: typeof(wirelessDevice) != "undefined" ? wirelessDevices[deviceIndex].Vendor : ""
     property string deviceHwAddress: typeof(wirelessDevice) != "undefined" ? wirelessDevices[deviceIndex].HwAddress : ""
-
     property var nmActiveConnections: unmarshalJSON(dbusNetwork.activeConnections)
     property var nmConnections: unmarshalJSON(dbusNetwork.connections)
+    property bool deviceActivating: {//for load connecting animation,single device
+        if (deviceStatus != nmDeviceStateActivated && activeAp != "/" ){
+            return true
+        }
+        else{
+            return false
+        }
+    }
+
+    onDeviceStatusChanged: {
+        if (!deviceActivating)
+            updateDockIcon()
+    }
+
+    onDeviceActivatingChanged: {
+        if (deviceActivating)
+            connectingIconTimer.start()
+        else{
+            connectingIconTimer.stop()
+            connectingIconTimer.signalLevel = 1
+        }
+    }
+
+    Timer {
+        id: connectingIconTimer
+        interval: 100
+        repeat: true
+
+        property int signalLevel: 1
+
+        onTriggered: {
+            if (signalLevel == 5)
+                signalLevel = 1
+            else
+                signalLevel ++
+
+            updateConnectingDockIcon(signalLevel)
+        }
+    }
 
     Connections {
         target: dbusNetwork
@@ -93,6 +131,19 @@ DockApplet{
             }
             return count
         }
+    }
+
+    function updateConnectingDockIcon(level){
+        if (level == 1)
+            wifiApplet.icon = "network-wireless-signal-none-symbolic"
+        else if (level == 2)
+            wifiApplet.icon = "network-wireless-signal-weak-symbolic"
+        else if (level == 3)
+            wifiApplet.icon = "network-wireless-signal-ok-symbolic"
+        else if (level == 4)
+            wifiApplet.icon = "network-wireless-signal-good-symbolic"
+        else
+            wifiApplet.icon = "network-wireless-signal-excellent-symbolic"
     }
 
     function updateDockIcon() {
@@ -140,14 +191,6 @@ DockApplet{
 
     }
 
-    function unmarshalJSON(valueJSON) {
-        if (!valueJSON) {
-            print("==> [ERROR] unmarshalJSON", valueJSON)
-        }
-        var value = JSON.parse(valueJSON)
-        return value
-    }
-
     function showNetwork(id){
         dbusControlCenter.ShowModule("network")
     }
@@ -166,8 +209,6 @@ DockApplet{
     onActivate:{
         showNetwork(0)
     }
-
-
 
     window: DockQuickWindow {
         id: rootWindow
@@ -212,7 +253,6 @@ DockApplet{
                         width: parent.width
                         leftMargin: 10
                         rightMargin: 10
-                        //                    color: "#000000"
                         color:"transparent"
                         leftLoader.sourceComponent: DssH2 {
                             elide:Text.ElideRight
