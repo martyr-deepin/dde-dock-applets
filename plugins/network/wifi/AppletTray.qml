@@ -276,9 +276,24 @@ DockApplet{
 
                     Rectangle {
                         id: contantRec
+
+                        property bool itemVisible: false
+
                         width: rootWidth
-                        height: apListView.height
-                        visible: wirelessEnabled
+                        height: wirelessEnabled ? apListView.height : 0
+                        Behavior on height {
+                            NumberAnimation {
+                                duration: 100;
+                                easing.type: Easing.OutBack
+                            }
+                        }
+                        onHeightChanged: {
+                            if (height == apListView.height)
+                                contantRec.itemVisible = true
+                            else
+                                contantRec.itemVisible = false
+                        }
+
                         color: "transparent"
 
                         Connections {
@@ -345,9 +360,11 @@ DockApplet{
                         ListView {
                             id:apListView
                             width: parent.width
-                            height: Math.min(childrenRect.height, 235)
+                            height: Math.min(model.count * 30, 235)
                             model: accessPointsModel
-                            delegate: WirelessApItem {}
+                            delegate: WirelessApItem {
+                                visible: contantRec.itemVisible
+                            }
                             visible: accessPointsModel.count > 0
                             clip: true
 
