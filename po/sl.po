@@ -4,13 +4,14 @@
 # 
 # Translators:
 # andrej55 <andrej.marsetic@gmail.com>, 2014
+# Sasa Batistic <sasa.batistic@gmail.com>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: dde-dock-applet\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-12-02 09:53+0800\n"
-"PO-Revision-Date: 2014-12-03 11:48+0000\n"
-"Last-Translator: szd_liufei <liufei@linuxdeepin.com>\n"
+"PO-Revision-Date: 2015-03-28 19:11+0000\n"
+"Last-Translator: Sasa Batistic <sasa.batistic@gmail.com>\n"
 "Language-Team: Slovenian (http://www.transifex.com/projects/p/dde-dock-applet/language/sl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,7 +21,7 @@ msgstr ""
 
 #: ../src/frame/AppletSettingWindow.qml:108
 msgid "Notification Area Settings"
-msgstr ""
+msgstr "Nastavitve obvestilnega področja"
 
 #: ../plugins/date_time/AppletTray.qml:148
 #: ../plugins/date_time/calendar_core.js:4
@@ -59,11 +60,11 @@ msgstr "Sob"
 
 #: ../plugins/network/AppletTray.qml:35
 msgid "Network Connected"
-msgstr ""
+msgstr "Omrežna povezava je povezana"
 
 #: ../plugins/network/AppletTray.qml:35
 msgid "Network Not Connected"
-msgstr ""
+msgstr "Omrežna povezava ni povezana"
 
 #: ../plugins/network/AppletTray.qml:328
 #: ../plugins/network/bluetooth/AppletTray.qml:67
@@ -127,7 +128,7 @@ msgstr "Izpenjanje ni uspelo!"
 #: ../src/frame/WifiPasswordWindow.qml:151
 #, qt-format
 msgid "Please enter the password of  <font color=\"#faca57\">%1</font>"
-msgstr ""
+msgstr "Vnesite geslo za  <font color=\"#faca57\">%1</font>"
 
 #: ../src/frame/WifiPasswordWindow.qml:173
 msgid "Password"
@@ -135,7 +136,7 @@ msgstr "Geslo"
 
 #: ../src/frame/WifiPasswordWindow.qml:181
 msgid "Auto-connect"
-msgstr ""
+msgstr "Samodejno poveži"
 
 #: ../src/frame/WifiPasswordWindow.qml:196
 msgid "Cancel"
@@ -160,7 +161,7 @@ msgstr "Datum in čas"
 
 #: ../plugins/disk_mount/main.qml:33
 msgid "Disk Mount"
-msgstr ""
+msgstr "Priklop diska"
 
 #: ../plugins/network/main.qml:32
 msgid "Network"
