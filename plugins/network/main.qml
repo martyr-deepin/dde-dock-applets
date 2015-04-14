@@ -116,6 +116,30 @@ AppletPlugin {
         }
     }
 
+    // wired 
+    property var activeWiredDevice: getActiveWiredDevice()
+    function getActiveWiredDevice(){
+        for(var i in wiredDevices){
+            var info = wiredDevices[i]
+            if(info.State == 100){
+                return info
+            }
+        }
+        return null
+    }
+
+    // wireless
+    property var activeWirelessDevice: getActiveWirelessDevice()
+    function getActiveWirelessDevice(){
+        for(var i in wirelessDevices){
+            var info = wirelessDevices[i]
+            if(info.ActiveAp != "/" && info.State == 100){
+                return info
+            }
+        }
+        return null
+    }
+
     Timer {
         id: delayUpdateTimer
         repeat: false
@@ -134,7 +158,7 @@ AppletPlugin {
 
     appletTrayLoader: Loader {
         sourceComponent: AppletTray{}
-        active: mainNetworkAppletItem.show && ((hasWiredDevices && !hasWirelessDevices && activeConnectionsCount == 0 && dockDisplayMode != 0) || dockDisplayMode == 0)
+        active: mainNetworkAppletItem.show && ((hasWiredDevices && !hasWirelessDevices) || (activeWiredDevice && !activeWirelessDevice))
     }
 
     onSubAppletStateChanged: {
