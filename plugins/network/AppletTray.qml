@@ -105,8 +105,6 @@ DockApplet{
             return true
         }
     }
-    function getWinIcon(){
-    }
 
     function getIcon(){
         // do not delete this line, currentIconName change to emit icon update
@@ -240,6 +238,12 @@ DockApplet{
             wirelessRepeater.addWirelessApplet()
         else if (wirelessDevicesCount < wirelessListModel.count)
             wirelessRepeater.deleteWirelessApplet()
+
+        //update main icon during initialization
+        if (wirelessDevicesCount > 0)
+            updateWifiState(true,null)
+        else
+            updateWifiState(false,null)
     }
     onWirelessDevicesActivatingChanged: {
         if (wirelessDevicesActivating)
@@ -375,12 +379,13 @@ DockApplet{
     function updateBluetoothState(){
         var show = blueToothAdaptersCount > 0
         var enabled = bluetoothState == stateConnected
+        var imagePath = ""
 
         if(enabled){
-            var imagePath = getAbsolutePath("emblems-images/bluetooth-on.png")
+            imagePath = getAbsolutePath("emblems-images/bluetooth-on.png")
         }
         else{
-            var imagePath = getAbsolutePath("emblems-images/bluetooth-off.png")
+            imagePath = getAbsolutePath("emblems-images/bluetooth-off.png")
         }
         updateState("bluetooth", show, imagePath)
     }

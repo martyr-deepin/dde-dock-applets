@@ -73,6 +73,23 @@ AppletPlugin {
     readonly property var nmConnectionTypeVpnOpenvpn: "vpn-openvpn"
     readonly property var nmConnectionTypeVpnOpenconnect: "vpn-openconnect"
 
+    property bool shouldActive: {
+        if (mainNetworkAppletItem.show){
+            if (dockDisplayMode == 0){
+                return true
+            }
+            else if ((hasWiredDevices && !hasWirelessDevices) || (activeWiredDevice && !activeWirelessDevice)){
+                return true
+            }
+            else{
+                return false
+            }
+        }
+        else{
+            return false
+        }
+    }
+
     property var dbusNetwork: NetworkManager{}
     property var nmDevices: JSON.parse(dbusNetwork.devices)
     property var wiredDevices: nmDevices["wired"] == undefined ? [] : nmDevices["wired"]
@@ -158,7 +175,7 @@ AppletPlugin {
 
     appletTrayLoader: Loader {
         sourceComponent: AppletTray{}
-        active: mainNetworkAppletItem.show && ((hasWiredDevices && !hasWirelessDevices) || (activeWiredDevice && !activeWirelessDevice))
+        active: shouldActive
     }
 
     onSubAppletStateChanged: {
