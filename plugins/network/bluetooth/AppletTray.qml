@@ -131,15 +131,30 @@ DockApplet{
                     }
 
                     Rectangle {
+                        id: contantRec
+
+                        property bool itemVisible: false
+
                         width: rootWidth
-                        height: nearbyDeviceList.height
-                        visible: adapterConnected
+                        height: adapterConnected ? nearbyDeviceList.height : 0
+                        Behavior on height {
+                            NumberAnimation {
+                                duration: 100;
+                                easing.type: Easing.OutBack
+                            }
+                        }
+                        onHeightChanged: {
+                            if (height == nearbyDeviceList.height)
+                                contantRec.itemVisible = true
+                            else
+                                contantRec.itemVisible = false
+                        }
                         color: "transparent"
 
                         ListView{
                             id: nearbyDeviceList
                             width: parent.width
-                            height: Math.min(childrenRect.height, 235)
+                            height: Math.min(model.count * 30, 235)
                             clip: true
 
                             DScrollBar {
@@ -234,6 +249,7 @@ DockApplet{
                             }
 
                             delegate: DeviceItem {
+                                visible: contantRec.itemVisible
 
                                 onItemClicked: {
                                     if (state)

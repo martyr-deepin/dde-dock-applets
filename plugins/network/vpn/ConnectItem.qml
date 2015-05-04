@@ -31,10 +31,6 @@ Item {
     width: parent.width
     height: 30
 
-    Behavior on height {
-        PropertyAnimation { duration: 100 }
-    }
-
     property int connectionStatus: 100
 
     property var infos: vpnConnections[index]

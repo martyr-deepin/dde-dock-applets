@@ -32,10 +32,25 @@ import Deepin.DockAppletWidgets 1.0
 
 DockApplet{
     id:networkApplet
-    title: activeConnectionsCount > 0 ? dsTr("Network Connected") : dsTr("Network Not Connected")
+    title: activeConnectionsCount > 0 ? getWiredIp() : dsTr("Network Not Connected")
     appid: "AppletNetwork"
     icon: getIcon()
 
+    function getWiredIp(){
+        var json = dbusNetwork.GetActiveConnectionInfo()
+        if (json) {
+            var conns = unmarshalJSON(json)
+            for(var i in conns){
+                var conn = conns[i]
+                if (conn.ConnectionType == "wired"){
+                    return conn.Ip4.Address
+                }
+            }
+        }
+        return ""
+    }
+
+    property var activeWirelessDevice: getActiveWirelessDevice()
     // device state
     readonly property var nmDeviceStateActivated: 100
 
@@ -89,8 +104,6 @@ DockApplet{
         else{
             return true
         }
-    }
-    function getWinIcon(){
     }
 
     function getIcon(){
@@ -160,7 +173,6 @@ DockApplet{
 
     // wired
     property var nmConnections: unmarshalJSON(dbusNetwork.connections)
-    property var activeWiredDevice: getActiveWiredDevice()
     property bool hasWiredDevices: {
         if(nmDevices["wired"] && nmDevices["wired"].length > 0){
             return true
@@ -185,7 +197,7 @@ DockApplet{
             return false
         }
     }
-    property var activeWirelessDevice: getActiveWirelessDevice()
+
     property bool wirelessDevicesActivating: {//for load connecting animation,include all device
         if (wirelessDevices){
             for (var i = 0; i < wirelessDevices.length; i ++){
@@ -226,6 +238,12 @@ DockApplet{
             wirelessRepeater.addWirelessApplet()
         else if (wirelessDevicesCount < wirelessListModel.count)
             wirelessRepeater.deleteWirelessApplet()
+
+        //update main icon during initialization
+        if (wirelessDevicesCount > 0)
+            updateWifiState(true,null)
+        else
+            updateWifiState(false,null)
     }
     onWirelessDevicesActivatingChanged: {
         if (wirelessDevicesActivating)
@@ -404,37 +422,18 @@ DockApplet{
     function updateBluetoothState(){
         var show = blueToothAdaptersCount > 0
         var enabled = bluetoothState == stateConnected
+        var imagePath = ""
 
         if(enabled){
-            var imagePath = getAbsolutePath("emblems-images/bluetooth-on.png")
+            imagePath = getAbsolutePath("emblems-images/bluetooth-on.png")
         }
         else{
-            var imagePath = getAbsolutePath("emblems-images/bluetooth-off.png")
+            imagePath = getAbsolutePath("emblems-images/bluetooth-off.png")
         }
         updateState("bluetooth", show, imagePath)
     }
 
     property int xEdgePadding: 10
-
-    function getActiveWirelessDevice(){
-        for(var i in wirelessDevices){
-            var info = wirelessDevices[i]
-            if(info.ActiveAp != "/" && info.State == 100){
-                return info
-            }
-        }
-        return null
-    }
-
-    function getActiveWiredDevice(){
-        for(var i in wiredDevices){
-            var info = wiredDevices[i]
-            if(info.State == 100){
-                return info
-            }
-        }
-        return null
-    }
 
     function showNetwork(id){
         dbusControlCenter.ShowModule("network")
@@ -456,7 +455,7 @@ DockApplet{
     }
 
     window: (dockDisplayMode == 0 && !hasWirelessDevices && !vpnButton.visible && blueToothAdaptersCount <=0) ||
-            (hasWiredDevices && !hasWirelessDevices && activeConnectionsCount == 0 && dockDisplayMode != 0) ? null : rootWindow
+            (hasWiredDevices && dockDisplayMode != 0) ? null : rootWindow
 
     DockQuickWindow {
         id: rootWindow

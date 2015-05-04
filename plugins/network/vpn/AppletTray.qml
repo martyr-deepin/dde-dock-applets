@@ -130,18 +130,35 @@ DockApplet{
 
 
                     Rectangle {
+                        id: contantRec
+
+                        property bool itemVisible: false
+
                         width: rootWidth
-                        height: vpnConnectlist.height
-                        visible: vpnApplet.vpnEnable
+                        height: vpnApplet.vpnEnable ? vpnConnectlist.height : 0
+                        Behavior on height {
+                            NumberAnimation {
+                                duration: 100;
+                                easing.type: Easing.OutBack
+                            }
+                        }
+                        onHeightChanged: {
+                            if (height == vpnConnectlist.height)
+                                contantRec.itemVisible = true
+                            else
+                                contantRec.itemVisible = false
+                        }
                         color: "transparent"
 
                         ListView {
                             id: vpnConnectlist
                             width: parent.width
-                            height: Math.min(childrenRect.height, 225)
+                            height: Math.min(vpnConnectionNumber * 30, 225)
                             boundsBehavior: Flickable.StopAtBounds
                             model: vpnConnectionNumber
-                            delegate: ConnectItem {}
+                            delegate: ConnectItem {
+                                visible: contantRec.itemVisible
+                            }
                             clip: true
                         }
                     }
