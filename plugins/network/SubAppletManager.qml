@@ -32,23 +32,10 @@ Item {
     property string parentAppletPath:""
 
     readonly property string nmConnectionTypeVpn: "vpn"
-    property var dbusNetwork: NetworkManager{}
-    property var nmConnections: unmarshalJSON(dbusNetwork.connections)
-    property var activeConnections: unmarshalJSON(dbusNetwork.activeConnections)
-    property var nmDevices: JSON.parse(dbusNetwork.devices)
-    property var wiredDevices:nmDevices["wired"] == undefined ? [] : nmDevices["wired"]
     property var vpnConnections: nmConnections[nmConnectionTypeVpn]
     property var vpnConnectionsCount: {
         if (vpnConnections)
             return vpnConnections.length
-        else
-            return 0
-    }
-
-    property var wirelessDevices: nmDevices["wireless"] == undefined ? [] : nmDevices["wireless"]
-    property var wirelessDevicesCount:{
-        if (wirelessDevices)
-            return wirelessDevices.length
         else
             return 0
     }
@@ -72,11 +59,12 @@ Item {
     property var bluetoothListModel: ListModel {}
 
     property var dockMode:dockDisplayMode
+
+    property var wirelessDevicesCount:wirelessDevices.length
     property int oldWirelessDeviceCount:0
 
     onDockModeChanged: {
         print ("==> [Info] Dock display mode change...",dockMode)
-
         updateSettingItem(dockMode != 0)
     }
 
@@ -122,17 +110,9 @@ Item {
             return ""
     }
 
-    function getIndexFromAppletInfos(id){
-        for (var i = 0; i < appletInfos.count; i ++){
-            if (appletInfos.get(i).applet_id == id)
-                return i
-        }
-        return -1
-    }
-
     function isInWirelessList(id){
         for (var i = 0; i < wirelessDevicesCount; i ++){
-            if (wirelessDevices[i].Vendor == id)
+            if (wirelessDevices[i].Path == id)
                 return true
         }
         return false
@@ -168,21 +148,21 @@ Item {
         print("==> [Info] Adding Wifi applet...")
 
         for (var i = 0; i < wirelessDevicesCount; i ++){
-            var vendor = wirelessDevices[i].Vendor
-            if (getIndexFromWirelessMode(vendor) == -1){//not in mode, add it
+            var devicePath = wirelessDevices[i].Path
+            if (getIndexFromWirelessMode(devicePath) == -1){//not in mode, add it
                 wirelessListModel.append({
-                                             "applet_id": vendor,
+                                             "applet_id": devicePath,
+                                             "applet_name":wirelessDevices[i].Vendor,
                                              "applet_path": getParentAppletPathHead() + "wifi/main.qml"
                                          })
             }
             if (wirelessDevicesCount > 1){
-                var infoIndex = getIndexFromAppletInfos(vendor)
+                var infoIndex = appletInfos.indexOf(devicePath)
                 if (infoIndex != -1)
-                    appletInfos.get(infoIndex).applet_name = vendor
+                    appletInfos.updateAppletName(infoIndex,wirelessDevices[i].Vendor)
             }
 
         }
-
     }
 
     function deleteWirelessApplet(){
@@ -194,7 +174,7 @@ Item {
         }
 
         for (i = 0; i < oldIdArray.length; i ++){//delete invalid from mode
-            appletInfos.remove(getIndexFromAppletInfos(oldIdArray[i]))
+            appletInfos.rmItem(oldIdArray[i])
             wirelessListModel.remove(getIndexFromWirelessMode(oldIdArray[i]))
         }
 
@@ -204,31 +184,15 @@ Item {
     }
 
     function addVpnApplet() {
-        if (!vpnLoader.item)
+        if (!vpnLoader.item || appletInfos.indexOf("vpn") != -1)
             return
 
-        for (var i = 0; i < appletInfos.count; i ++){
-            if (appletInfos.get(i).applet_id == "vpn"){
-                return
-            }
-        }
-
         //not exist ,insert new one
-        appletInfos.append({
-            "applet_id": "vpn",
-            "applet_name": vpnLoader.item.name,
-            "applet_visible": vpnLoader.item.show,
-            "applet_icon": vpnLoader.item.iconPath,
-            "setting_enable":true
-        })
+        appletInfos.update("vpn", vpnLoader.item.name, vpnLoader.item.show,vpnLoader.item.iconPath)
     }
 
     function deleteVpnApplet(){
-        for (var i = 0; i < appletInfos.count; i ++){
-            if (appletInfos.get(i).applet_id == "vpn"){
-                appletInfos.remove(i)
-            }
-        }
+        appletInfos.rmItem("vpn")
     }
 
     function addBluetoothApplet(){
@@ -257,7 +221,7 @@ Item {
         }
 
         for (i = 0; i < oldIdArray.length; i ++){//delete invalid from mode
-            appletInfos.remove(getIndexFromAppletInfos(oldIdArray[i]))
+            appletInfos.rmItem(oldIdArray[i])
             bluetoothListModel.remove(getIndexFromBluetoothMode(oldIdArray[i]))
         }
     }
@@ -284,12 +248,13 @@ Item {
         }
     }
 
+    //some applet should not show in mac mode
     function updateSettingItem(showFlag){
         for (var i = 0; i < appletInfos.count; i ++){
             if (appletInfos.get(i).applet_id == "vpn" ||
                     isInWirelessList(appletInfos.get(i).applet_id) ||
                     isInBluetoothList(appletInfos.get(i).applet_id)){
-                appletInfos.get(i).setting_enable = showFlag
+                appletInfos.updateSettingEnable(i,showFlag)
             }
         }
     }

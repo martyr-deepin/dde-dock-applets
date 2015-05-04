@@ -32,10 +32,25 @@ import Deepin.DockAppletWidgets 1.0
 
 DockApplet{
     id:networkApplet
-    title: activeConnectionsCount > 0 ? dsTr("Network Connected") : dsTr("Network Not Connected")
+    title: activeConnectionsCount > 0 ? getWiredIp() : dsTr("Network Not Connected")
     appid: "AppletNetwork"
     icon: getIcon()
 
+    function getWiredIp(){
+        var json = dbusNetwork.GetActiveConnectionInfo()
+        if (json) {
+            var conns = unmarshalJSON(json)
+            for(var i in conns){
+                var conn = conns[i]
+                if (conn.ConnectionType == "wired"){
+                    return conn.Ip4.Address
+                }
+            }
+        }
+        return ""
+    }
+
+    property var activeWirelessDevice: getActiveWirelessDevice()
     // device state
     readonly property var nmDeviceStateActivated: 100
 
@@ -89,8 +104,6 @@ DockApplet{
         else{
             return true
         }
-    }
-    function getWinIcon(){
     }
 
     function getIcon(){
@@ -160,7 +173,6 @@ DockApplet{
 
     // wired
     property var nmConnections: unmarshalJSON(dbusNetwork.connections)
-    property var activeWiredDevice: getActiveWiredDevice()
     property bool hasWiredDevices: {
         if(nmDevices["wired"] && nmDevices["wired"].length > 0){
             return true
@@ -171,7 +183,6 @@ DockApplet{
     }
 
     // wifi    property var nmDevices: JSON.parse(dbusNetwork.devices)
-    property var wirelessDevices: nmDevices["wireless"] == undefined ? [] : nmDevices["wireless"]
     property var wirelessDevicesCount: {
         if (wirelessDevices)
             return wirelessDevices.length
@@ -186,7 +197,7 @@ DockApplet{
             return false
         }
     }
-    property var activeWirelessDevice: getActiveWirelessDevice()
+
     property bool wirelessDevicesActivating: {//for load connecting animation,include all device
         if (wirelessDevices){
             for (var i = 0; i < wirelessDevices.length; i ++){
@@ -202,6 +213,7 @@ DockApplet{
     }
 
     property var wirelessListModel: ListModel {}
+
     onActiveWirelessDeviceChanged: {
         if(activeWirelessDevice){
             var allAp = JSON.parse(dbusNetwork.GetAccessPoints(activeWirelessDevice.Path))
@@ -221,7 +233,18 @@ DockApplet{
             }
         }
     }
-    onWirelessDevicesCountChanged: buttonRow.updateWirelessApplet()
+    onWirelessDevicesCountChanged:{
+        if (wirelessDevicesCount > wirelessListModel.count)
+            wirelessRepeater.addWirelessApplet()
+        else if (wirelessDevicesCount < wirelessListModel.count)
+            wirelessRepeater.deleteWirelessApplet()
+
+        //update main icon during initialization
+        if (wirelessDevicesCount > 0)
+            updateWifiState(true,null)
+        else
+            updateWifiState(false,null)
+    }
     onWirelessDevicesActivatingChanged: {
         if (wirelessDevicesActivating)
             connectingIconTimer.start()
@@ -248,7 +271,6 @@ DockApplet{
             }
         }
     }
-
 
     Timer {
         id: connectingIconTimer
@@ -341,47 +363,34 @@ DockApplet{
     }
     property var bluetoothListmodel: ListModel{}
     property var bluetoothState: dbusBluetooth.state
-    onBluetoothStateChanged: updateBluetoothState()
-    onBlueToothAdaptersCountChanged: {
-        buttonRow.updateBluetoothApplet()
+    onBluetoothStateChanged: {
+        bluetoothRepeater.updateBluetoothApplet()
         updateBluetoothState()
     }
-    onBluetoothAdaptersChanged: updateBluetoothState()
+    onBlueToothAdaptersCountChanged: {
+        bluetoothRepeater.updateBluetoothApplet()
+        updateBluetoothState()
+    }
+    onBluetoothAdaptersChanged: {
+        bluetoothRepeater.updateBluetoothApplet()
+        updateBluetoothState()
+    }
 
     function updateBluetoothState(){
         var show = blueToothAdaptersCount > 0
         var enabled = bluetoothState == stateConnected
+        var imagePath = ""
 
         if(enabled){
-            var imagePath = getAbsolutePath("emblems-images/bluetooth-on.png")
+            imagePath = getAbsolutePath("emblems-images/bluetooth-on.png")
         }
         else{
-            var imagePath = getAbsolutePath("emblems-images/bluetooth-off.png")
+            imagePath = getAbsolutePath("emblems-images/bluetooth-off.png")
         }
         updateState("bluetooth", show, imagePath)
     }
 
     property int xEdgePadding: 10
-
-    function getActiveWirelessDevice(){
-        for(var i in wirelessDevices){
-            var info = wirelessDevices[i]
-            if(info.ActiveAp != "/" && info.State == 100){
-                return info
-            }
-        }
-        return null
-    }
-
-    function getActiveWiredDevice(){
-        for(var i in wiredDevices){
-            var info = wiredDevices[i]
-            if(info.State == 100){
-                return info
-            }
-        }
-        return null
-    }
 
     function showNetwork(id){
         dbusControlCenter.ShowModule("network")
@@ -403,7 +412,7 @@ DockApplet{
     }
 
     window: (dockDisplayMode == 0 && !hasWirelessDevices && !vpnButton.visible && blueToothAdaptersCount <=0) ||
-            (hasWiredDevices && !hasWirelessDevices && activeConnectionsCount == 0 && dockDisplayMode != 0) ? null : rootWindow
+            (hasWiredDevices && dockDisplayMode != 0) ? null : rootWindow
 
     DockQuickWindow {
         id: rootWindow
@@ -436,54 +445,85 @@ DockApplet{
                     spacing: 16
                     anchors.horizontalCenter: parent.horizontalCenter
 
-                    function updateWirelessApplet(){
-                        wirelessListModel.clear()
-                        for (var i = 0; i < wirelessDevicesCount; i ++){
-                            wirelessListModel.append({
-                                                         "devicePath": wirelessDevices[i].Path,
-                                                         "devicesCount":wirelessDevicesCount,
-                                                         "deviceState":wirelessDevices[i].State
-                                                     })
-                        }
-                    }
-
-                    function updateBluetoothApplet(){
-                        bluetoothListmodel.clear()
-                        for (var i = 0; i < blueToothAdaptersCount; i ++){
-                            bluetoothListmodel.append({
-                                                          "adapterPath": bluetoothAdapters[i].Path,
-                                                          "adapterCount":blueToothAdaptersCount,
-                                                          "adapterPowered":bluetoothAdapters[i].Powered
-                                                      })
-                        }
-                    }
-
                     Repeater {
                         id: wirelessRepeater
+
+                        function addWirelessApplet(){
+                            for (var i = 0; i < wirelessDevices.length; i ++){
+                                var tmpPath = wirelessDevices[i].Path
+                                if (getIndexFromWirelessListModel(tmpPath) == -1){//not in model,add it
+                                    wirelessListModel.append({"wirelessPath": wirelessDevices[i].Path})
+                                }
+                            }
+                        }
+
+                        function deleteWirelessApplet(){
+                            var oldDeviceArray = new Array()
+                            for (var i = 0; i < wirelessListModel.count; i ++){
+                                var tmpPath = wirelessListModel.get(i).wirelessPath
+                                if (getIndexFromWirelessDevices(tmpPath) == -1){//not exit,storage it for delete
+                                    oldDeviceArray.push(tmpPath)
+                                }
+                            }
+
+                            for (var i = 0; i < oldDeviceArray.length; i ++){
+                                wirelessListModel.remove(getIndexFromWirelessListModel(oldDeviceArray[i]))
+                            }
+                        }
+
+                        function getIndexFromWirelessListModel(devicePath){
+                            for (var i = 0; i < wirelessListModel.count; i++){
+                                if (wirelessListModel.get(i).wirelessPath == devicePath)
+                                    return i
+                            }
+
+                            return -1
+                        }
+
+                        function getIndexFromWirelessDevices(devicepath){
+                            for (var i = 0; i < wirelessDevices.length; i ++){
+                                if (wirelessDevices[i].Path == devicepath){
+                                    return i
+                                }
+                            }
+
+                            return -1
+                        }
+
                         model: wirelessListModel
                         delegate: CheckButton{
                             id: wirelessCheckButton
+
+                            property var pDevicePath: wirelessPath
+                            property var pDeviceCount: wirelessDevicesCount
+
                             onImage: "images/wifi_on.png"
                             offImage: "images/wifi_off.png"
                             visible: true
-                            property var pDeviceCount: devicesCount
-                            property var pDeviceState: deviceState
-                            onPDeviceStateChanged: wirelessCheckButton.active = dbusNetwork.IsDeviceEnabled(devicePath)
+                            active: dbusNetwork.IsDeviceEnabled(pDevicePath)
+
                             onPDeviceCountChanged: deviceIndex = pDeviceCount > 1 ? index + 1 : ""
 
                             onClicked: {
-                                if (!dbusNetwork.IsDeviceEnabled(devicePath)){
+                                if (!dbusNetwork.IsDeviceEnabled(pDevicePath)){
                                     print ("==> [Info] Enable wireless device...")
-                                    dbusNetwork.EnableDevice(devicePath,true)
+                                    dbusNetwork.EnableDevice(pDevicePath,true)
                                 }
                                 else{
-                                    dbusNetwork.EnableDevice(devicePath,false)
+                                    dbusNetwork.EnableDevice(pDevicePath,false)
+                                }
+                            }
+
+                            Connections {
+                                target: dbusNetwork
+                                onDeviceEnabled:{
+                                    if (arg0 == wirelessPath)
+                                        wirelessCheckButton.active = arg1
                                 }
                             }
                         }
                     }
 
-                    // TODO
                     CheckButton{
                         id: vpnButton
                         visible: vpnConnections ? vpnConnections.length > 0 : false
@@ -516,17 +556,88 @@ DockApplet{
 
                     Repeater {
                         id:bluetoothRepeater
+
+                        function updateBluetoothApplet(){
+                            if (blueToothAdaptersCount > bluetoothListmodel.count)
+                                bluetoothRepeater.addBluetoothApplet()
+                            else if (blueToothAdaptersCount < bluetoothListmodel.count)
+                                bluetoothRepeater.deleteBluetoothApplet()
+
+                            //update data too on add or remove adapter
+                            for (var i = 0; i < bluetoothAdapters.length; i ++){
+                                var tmpPath = bluetoothAdapters[i].Path
+                                var tmpIndex = getIndexFromBluetoothListModel(tmpPath)
+                                if (tmpIndex != -1){
+                                    bluetoothListmodel.setProperty(tmpIndex,"adapterPower", bluetoothAdapters[i].Powered)
+                                }
+
+                            }
+                        }
+
+                        function addBluetoothApplet(){
+                            for (var i = 0; i < bluetoothAdapters.length; i ++){
+                                var tmpPath = bluetoothAdapters[i].Path
+                                if (getIndexFromBluetoothListModel(tmpPath) == -1){//not in model,add it
+                                    bluetoothListmodel.append({
+                                                                  "adapterPath": bluetoothAdapters[i].Path,
+                                                                  "adapterPower":bluetoothAdapters[i].Powered
+                                                              })
+                                }
+                            }
+                        }
+
+                        function deleteBluetoothApplet(){
+                            var oldDeviceArray = new Array()
+                            for (var i = 0; i < bluetoothListmodel.count; i ++){
+                                var tmpPath = bluetoothListmodel.get(i).adapterPath
+                                if (getIndexFromBluetoothAdapters(tmpPath) == -1){//not exit,storage it for delete
+                                    oldDeviceArray.push(tmpPath)
+                                }
+                            }
+
+                            for (var i = 0; i < oldDeviceArray.length; i ++){
+                                bluetoothListmodel.remove(getIndexFromBluetoothListModel(oldDeviceArray[i]))
+                            }
+                        }
+
+                        function getIndexFromBluetoothListModel(devicePath){
+                            for (var i = 0; i < bluetoothListmodel.count; i++){
+                                if (bluetoothListmodel.get(i).adapterPath == devicePath)
+                                    return i
+                            }
+
+                            return -1
+                        }
+
+                        function getIndexFromBluetoothAdapters(devicepath){
+                            for (var i = 0; i < bluetoothAdapters.length; i ++){
+                                if (bluetoothAdapters[i].Path == devicepath){
+                                    return i
+                                }
+                            }
+
+                            return -1
+                        }
+
                         model: bluetoothListmodel
                         delegate: CheckButton {
-                            id: bluetoothButton
+                            id: bluetoothButton                            
+
+                            property var pAdapterPath: adapterPath
+                            property var pAdapterPowered: adapterPower
+                            property var pAdapterCount: blueToothAdaptersCount
+
                             visible: true
                             onImage: "images/bluetooth_on.png"
                             offImage: "images/bluetooth_off.png"
-                            active: adapterPowered
-                            deviceIndex: adapterCount > 1 ? index + 1 : ""
+                            active: pAdapterPowered
+                            deviceIndex: pAdapterCount > 1 ? index + 1 : ""
+                            onPAdapterPoweredChanged: {
+                                active = pAdapterPowered
+                            }
 
                             onClicked: {
-                                dbusBluetooth.SetAdapterPowered(adapterPath, !adapterPowered)
+                                dbusBluetooth.SetAdapterPowered(pAdapterPath, pAdapterPowered ? 0 : 1)
                             }
 
                         }

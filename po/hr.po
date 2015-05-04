@@ -3,67 +3,68 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# RAFAEL GAUNA <rafaelgt.mbin@gmail.com>, 2014
+# gogo <trebelnik2@gmail.com>, 2014
+# Ivica  Kolić <ikoli@yahoo.com>, 2014-2015
 msgid ""
 msgstr ""
 "Project-Id-Version: dde-dock-applet\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-12-02 09:53+0800\n"
-"PO-Revision-Date: 2015-03-23 12:15+0000\n"
-"Last-Translator: RAFAEL GAUNA <rafaelgt.mbin@gmail.com>\n"
-"Language-Team: Portuguese (Brazil) (http://www.transifex.com/projects/p/dde-dock-applet/language/pt_BR/)\n"
+"PO-Revision-Date: 2015-03-24 00:13+0000\n"
+"Last-Translator: Ivica  Kolić <ikoli@yahoo.com>\n"
+"Language-Team: Croatian (http://www.transifex.com/projects/p/dde-dock-applet/language/hr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: pt_BR\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Language: hr\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 
 #: ../src/frame/AppletSettingWindow.qml:108
 msgid "Notification Area Settings"
-msgstr "Configurações da Área de Notificação"
+msgstr "Postavke područja obavijesti"
 
 #: ../plugins/date_time/AppletTray.qml:148
 #: ../plugins/date_time/calendar_core.js:4
 msgid "Sun"
-msgstr "Dom"
+msgstr "Ned"
 
 #: ../plugins/date_time/AppletTray.qml:149
 #: ../plugins/date_time/calendar_core.js:4
 msgid "Mon"
-msgstr "Seg"
+msgstr "Pon"
 
 #: ../plugins/date_time/AppletTray.qml:150
 #: ../plugins/date_time/calendar_core.js:4
 msgid "Tue"
-msgstr "Ter"
+msgstr "Uto"
 
 #: ../plugins/date_time/AppletTray.qml:151
 #: ../plugins/date_time/calendar_core.js:4
 msgid "Wed"
-msgstr "Qua"
+msgstr "Sri"
 
 #: ../plugins/date_time/AppletTray.qml:152
 #: ../plugins/date_time/calendar_core.js:4
 msgid "Thu"
-msgstr "Qui"
+msgstr "Čet"
 
 #: ../plugins/date_time/AppletTray.qml:153
 #: ../plugins/date_time/calendar_core.js:4
 msgid "Fri"
-msgstr "Sex"
+msgstr "Pet"
 
 #: ../plugins/date_time/AppletTray.qml:154
 #: ../plugins/date_time/calendar_core.js:4
 msgid "Sat"
-msgstr "Sáb"
+msgstr "Sub"
 
 #: ../plugins/network/AppletTray.qml:35
 msgid "Network Connected"
-msgstr "Conectado à Rede"
+msgstr "Mreža je spojena"
 
 #: ../plugins/network/AppletTray.qml:35
 msgid "Network Not Connected"
-msgstr "Não Conectado à Rede"
+msgstr "Mreža nije spojena"
 
 #: ../plugins/network/AppletTray.qml:328
 #: ../plugins/network/bluetooth/AppletTray.qml:67
@@ -71,7 +72,7 @@ msgstr "Não Conectado à Rede"
 #: ../plugins/network/wifi/AppletTray.qml:125
 #: ../plugins/power/AppletTray.qml:98 ../plugins/sound/AppletTray.qml:172
 msgid "_Run"
-msgstr "Executa_r"
+msgstr "_Pokreni"
 
 #: ../plugins/network/AppletTray.qml:329
 #: ../plugins/network/bluetooth/AppletTray.qml:68
@@ -79,7 +80,7 @@ msgstr "Executa_r"
 #: ../plugins/network/wifi/AppletTray.qml:126
 #: ../plugins/power/AppletTray.qml:105 ../plugins/sound/AppletTray.qml:173
 msgid "_Undock"
-msgstr "Remover da Barra"
+msgstr "_Ukloni"
 
 #: ../plugins/network/vpn/AppletTray.qml:111
 #: ../plugins/network/vpn/main.qml:33
@@ -90,86 +91,86 @@ msgstr "VPN"
 #: ../plugins/network/WirelessNetwork.qml:50
 #: ../plugins/network/wifi/main.qml:33
 msgid "Wireless Network"
-msgstr "Rede Sem Fio"
+msgstr "Bežična mreža"
 
 #: ../plugins/power/AppletTray.qml:33
 msgid "On Charging"
-msgstr "Carregando"
+msgstr "Na punjenju"
 
 #: ../plugins/power/AppletTray.qml:45
 msgid "Custom"
-msgstr "Personalizar"
+msgstr "Prilagođeno"
 
 #: ../plugins/power/AppletTray.qml:46
 msgid "Power saver"
-msgstr "Economia de Energia"
+msgstr "Štednja energije"
 
 #: ../plugins/power/AppletTray.qml:47
 msgid "Balanced"
-msgstr "Balanceado"
+msgstr "Uravnoteženo"
 
 #: ../plugins/power/AppletTray.qml:48
 msgid "High performance"
-msgstr "Alta Performance"
+msgstr "Visoke performanse"
 
 #: ../plugins/sound/AppletTray.qml:217
 msgid "Device"
-msgstr "Dispositivo"
+msgstr "Uređaj"
 
 #: ../plugins/sound/AppletTray.qml:317
 msgid "Applications"
-msgstr "Aplicações"
+msgstr "Programi"
 
 #: ../plugins/disk_mount/DiskItem.qml:124
 msgid "Unmount failed!"
-msgstr "Falha ao desmontar!"
+msgstr "Neuspješno odmontiranje!"
 
 #: ../src/frame/WifiPasswordWindow.qml:151
 #, qt-format
 msgid "Please enter the password of  <font color=\"#faca57\">%1</font>"
-msgstr "Por favor insira a senha de  <font color=\"#faca57\">%1</font>"
+msgstr "Molim unesite lozinku za <font color=\"#faca57\">%1</font> "
 
 #: ../src/frame/WifiPasswordWindow.qml:173
 msgid "Password"
-msgstr "Senha"
+msgstr "Lozinka"
 
 #: ../src/frame/WifiPasswordWindow.qml:181
 msgid "Auto-connect"
-msgstr "Auto-conectar"
+msgstr "Automatsko povezivanje"
 
 #: ../src/frame/WifiPasswordWindow.qml:196
 msgid "Cancel"
-msgstr "Cancelar"
+msgstr "Poništi"
 
 #: ../src/frame/WifiPasswordWindow.qml:203
 msgid "Connect"
-msgstr "Conectar"
+msgstr "Poveži"
 
 #: ../plugins/network/WirelessApList.qml:95
 msgid "Scanning..."
-msgstr "Escaneando..."
+msgstr "Skeniram..."
 
 #: ../plugins/network/WirelessNetwork.qml:50
 #, qt-format
 msgid "Wireless Network %1"
-msgstr "Rede Sem Fio %1"
+msgstr "Bežična mreža %1"
 
 #: ../plugins/date_time/main.qml:32
 msgid "Date and Time"
-msgstr "Data e Hora"
+msgstr "Datum i vrijeme"
 
 #: ../plugins/disk_mount/main.qml:33
 msgid "Disk Mount"
-msgstr "Montagem de Disco"
+msgstr "Montiranje diskova"
 
 #: ../plugins/network/main.qml:32
 msgid "Network"
-msgstr "Rede"
+msgstr "Mreža"
 
 #: ../plugins/power/main.qml:33
 msgid "Power"
-msgstr "Energia"
+msgstr "Isključivanje"
 
 #: ../plugins/sound/main.qml:32
 msgid "Sound"
-msgstr "Som"
+msgstr "Zvuk"

@@ -120,6 +120,7 @@ Window {
     DWindowFrame {
         id: window
         anchors.fill: parent
+        layer.enabled: true //optimization,make message's text refresh in time
 
         MouseArea {
             anchors.fill: parent

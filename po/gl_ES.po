@@ -3,24 +3,24 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# RAFAEL GAUNA <rafaelgt.mbin@gmail.com>, 2014
+# Xurxo Guerra Perez <xguerrap@gmail.com>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: dde-dock-applet\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-12-02 09:53+0800\n"
-"PO-Revision-Date: 2015-03-23 12:15+0000\n"
-"Last-Translator: RAFAEL GAUNA <rafaelgt.mbin@gmail.com>\n"
-"Language-Team: Portuguese (Brazil) (http://www.transifex.com/projects/p/dde-dock-applet/language/pt_BR/)\n"
+"PO-Revision-Date: 2015-03-22 13:08+0000\n"
+"Last-Translator: Xurxo Guerra Perez <xguerrap@gmail.com>\n"
+"Language-Team: Galician (Spain) (http://www.transifex.com/projects/p/dde-dock-applet/language/gl_ES/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: pt_BR\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Language: gl_ES\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../src/frame/AppletSettingWindow.qml:108
 msgid "Notification Area Settings"
-msgstr "Configurações da Área de Notificação"
+msgstr "Configuración da Área de Notificacións"
 
 #: ../plugins/date_time/AppletTray.qml:148
 #: ../plugins/date_time/calendar_core.js:4
@@ -30,27 +30,27 @@ msgstr "Dom"
 #: ../plugins/date_time/AppletTray.qml:149
 #: ../plugins/date_time/calendar_core.js:4
 msgid "Mon"
-msgstr "Seg"
+msgstr "Lun"
 
 #: ../plugins/date_time/AppletTray.qml:150
 #: ../plugins/date_time/calendar_core.js:4
 msgid "Tue"
-msgstr "Ter"
+msgstr "Mar"
 
 #: ../plugins/date_time/AppletTray.qml:151
 #: ../plugins/date_time/calendar_core.js:4
 msgid "Wed"
-msgstr "Qua"
+msgstr "Mér"
 
 #: ../plugins/date_time/AppletTray.qml:152
 #: ../plugins/date_time/calendar_core.js:4
 msgid "Thu"
-msgstr "Qui"
+msgstr "Xov"
 
 #: ../plugins/date_time/AppletTray.qml:153
 #: ../plugins/date_time/calendar_core.js:4
 msgid "Fri"
-msgstr "Sex"
+msgstr "Ven"
 
 #: ../plugins/date_time/AppletTray.qml:154
 #: ../plugins/date_time/calendar_core.js:4
@@ -59,11 +59,11 @@ msgstr "Sáb"
 
 #: ../plugins/network/AppletTray.qml:35
 msgid "Network Connected"
-msgstr "Conectado à Rede"
+msgstr "Rede conectada"
 
 #: ../plugins/network/AppletTray.qml:35
 msgid "Network Not Connected"
-msgstr "Não Conectado à Rede"
+msgstr "Rede desconectada"
 
 #: ../plugins/network/AppletTray.qml:328
 #: ../plugins/network/bluetooth/AppletTray.qml:67
@@ -71,7 +71,7 @@ msgstr "Não Conectado à Rede"
 #: ../plugins/network/wifi/AppletTray.qml:125
 #: ../plugins/power/AppletTray.qml:98 ../plugins/sound/AppletTray.qml:172
 msgid "_Run"
-msgstr "Executa_r"
+msgstr "_Executar"
 
 #: ../plugins/network/AppletTray.qml:329
 #: ../plugins/network/bluetooth/AppletTray.qml:68
@@ -79,7 +79,7 @@ msgstr "Executa_r"
 #: ../plugins/network/wifi/AppletTray.qml:126
 #: ../plugins/power/AppletTray.qml:105 ../plugins/sound/AppletTray.qml:173
 msgid "_Undock"
-msgstr "Remover da Barra"
+msgstr "Eliminar da _Doca"
 
 #: ../plugins/network/vpn/AppletTray.qml:111
 #: ../plugins/network/vpn/main.qml:33
@@ -90,27 +90,27 @@ msgstr "VPN"
 #: ../plugins/network/WirelessNetwork.qml:50
 #: ../plugins/network/wifi/main.qml:33
 msgid "Wireless Network"
-msgstr "Rede Sem Fio"
+msgstr "Rede sen fíos"
 
 #: ../plugins/power/AppletTray.qml:33
 msgid "On Charging"
-msgstr "Carregando"
+msgstr "Cargando"
 
 #: ../plugins/power/AppletTray.qml:45
 msgid "Custom"
-msgstr "Personalizar"
+msgstr "Personalizado"
 
 #: ../plugins/power/AppletTray.qml:46
 msgid "Power saver"
-msgstr "Economia de Energia"
+msgstr "Aforro de enerxía"
 
 #: ../plugins/power/AppletTray.qml:47
 msgid "Balanced"
-msgstr "Balanceado"
+msgstr "Equilibrado"
 
 #: ../plugins/power/AppletTray.qml:48
 msgid "High performance"
-msgstr "Alta Performance"
+msgstr "Alto rendemento"
 
 #: ../plugins/sound/AppletTray.qml:217
 msgid "Device"
@@ -118,24 +118,24 @@ msgstr "Dispositivo"
 
 #: ../plugins/sound/AppletTray.qml:317
 msgid "Applications"
-msgstr "Aplicações"
+msgstr "Aplicacións"
 
 #: ../plugins/disk_mount/DiskItem.qml:124
 msgid "Unmount failed!"
-msgstr "Falha ao desmontar!"
+msgstr "Fallou ao desmontar!"
 
 #: ../src/frame/WifiPasswordWindow.qml:151
 #, qt-format
 msgid "Please enter the password of  <font color=\"#faca57\">%1</font>"
-msgstr "Por favor insira a senha de  <font color=\"#faca57\">%1</font>"
+msgstr "Por favor insire o contrasinal para  <font color=\"#faca57\">%1</font>"
 
 #: ../src/frame/WifiPasswordWindow.qml:173
 msgid "Password"
-msgstr "Senha"
+msgstr "Contrasinal"
 
 #: ../src/frame/WifiPasswordWindow.qml:181
 msgid "Auto-connect"
-msgstr "Auto-conectar"
+msgstr "Conectar automaticamente"
 
 #: ../src/frame/WifiPasswordWindow.qml:196
 msgid "Cancel"
@@ -147,12 +147,12 @@ msgstr "Conectar"
 
 #: ../plugins/network/WirelessApList.qml:95
 msgid "Scanning..."
-msgstr "Escaneando..."
+msgstr "Examinando..."
 
 #: ../plugins/network/WirelessNetwork.qml:50
 #, qt-format
 msgid "Wireless Network %1"
-msgstr "Rede Sem Fio %1"
+msgstr "Rede sen fíos %1"
 
 #: ../plugins/date_time/main.qml:32
 msgid "Date and Time"
@@ -160,7 +160,7 @@ msgstr "Data e Hora"
 
 #: ../plugins/disk_mount/main.qml:33
 msgid "Disk Mount"
-msgstr "Montagem de Disco"
+msgstr "Montar disco"
 
 #: ../plugins/network/main.qml:32
 msgid "Network"
@@ -168,8 +168,8 @@ msgstr "Rede"
 
 #: ../plugins/power/main.qml:33
 msgid "Power"
-msgstr "Energia"
+msgstr "Enerxía"
 
 #: ../plugins/sound/main.qml:32
 msgid "Sound"
-msgstr "Som"
+msgstr "Son"

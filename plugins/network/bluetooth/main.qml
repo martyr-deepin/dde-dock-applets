@@ -37,12 +37,9 @@ AppletPlugin {
         id: dbusBluetooth
         onAdapterPropertiesChanged: {
             var tmpAdapter = unmarshalJSON(arg0)
-            for (var i= 0; i < appletInfos.count; i ++){
-                if (appletInfos.get(i).applet_id == tmpAdapter.Path){
-                    appletInfos.get(i).applet_name = tmpAdapter.Alias
-                    break
-                }
-            }
+            var tmpIndex = appletInfos.indexOf(tmpAdapter.Path)
+            if (tmpIndex != -1)
+                appletInfos.updateAppletName(tmpIndex,tmpAdapter.Alias)
             if (tmpAdapter.Path == appletId){
                 adapterAlias = tmpAdapter.Alias
                 adapterPowered = tmpAdapter.Powered
