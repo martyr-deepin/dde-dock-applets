@@ -23,7 +23,6 @@ Depends: ${shlibs:Depends}, ${misc:Depends},
  dde-qml-dbus-factory,
  deepin-icon-theme,
  deepin-artwork-themes,
- deepin-qml-widgets,
- qt5-extra,
+ deepin-qml-widgets
 Description: Dock Applets of Deepin Desktop Environment
  Dock applets of deepin desktop environment.

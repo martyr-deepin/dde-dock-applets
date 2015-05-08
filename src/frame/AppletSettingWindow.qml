@@ -11,7 +11,7 @@ DWindow {
     width: titleLine.width
     height: switchListView.height + titleLine.height
     x: 0
-    y: displayId.primaryRect[3] - height - dockHeight - 10
+    y: screenSize.height - height - dockHeight - 10
     color: "transparent"
 
     signal itemClicked(string switchId, bool switchState)
@@ -23,6 +23,12 @@ DWindow {
 
     property int mX:0
     property int mY:0
+    property var screenSize: QtObject {
+        property int x: displayId.primaryRect[0]
+        property int y: displayId.primaryRect[1]
+        property int width: displayId.primaryRect[2]
+        property int height: displayId.primaryRect[3]
+    }
 
     function updateRootY(){
         var regionValue = dockRegion.GetDockRegion()
@@ -32,14 +38,14 @@ DWindow {
         else
             dockHeight = 70
 
-        root.y = displayId.primaryRect[1] +  displayId.primaryRect[3] - appletInfos.getVisibleSwitchCount() * 30 - titleLine.height - dockHeight - 10
+        root.y = screenSize.y +  screenSize.height - appletInfos.getVisibleSwitchCount() * 30 - titleLine.height - dockHeight - 10
     }
 
     function getLegalX(mouseX){
-        if (mouseX < displayId.primaryRect[0] + width/2)
-            x = displayId.primaryRect[0] + width/2
-        else if (mouseX > displayId.primaryRect[0] + displayId.primaryRect[2] - width/2)
-            x = displayId.primaryRect[0] + displayId.primaryRect[2] - width/2
+        if (mouseX < screenSize.x + width/2)
+            x = screenSize.x + width/2
+        else if (mouseX > screenSize.x + screenSize.width - width/2)
+            x = screenSize.x + screenSize.width - width/2
         else
             x = mouseX
         return x - width/2
@@ -51,11 +57,28 @@ DWindow {
         root.show()
     }
 
+    function isInsideWindow(mousex,mousey){
+        var width = root.width
+        var height = root.height
+        var x = root.x
+        var y = root.y
+
+        if (mousex > x + screenSize.x && mousex < x + screenSize.x + width
+                && mousey > y + screenSize.y && mousey < y +screenSize.y + height)
+            return true
+        else
+            return false
+    }
+
     XMouseArea {
         id:xmouseArea
         onCursorMove:{
             mX = arg0
             mY = arg1
+        }
+        onButtonPress: {
+            if (!isInsideWindow(arg1,arg2))
+                root.hide()
         }
     }
     Display {
