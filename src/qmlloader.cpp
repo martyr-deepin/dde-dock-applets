@@ -48,6 +48,7 @@ QmlLoader::QmlLoader(QObject *parent)
     component = new QQmlComponent(engine, this);
     rootContext = new QQmlContext(engine, this);
     this->m_dbus_proxyer = new AppletDBus(this);
+    gtk_init(NULL, NULL);
 }
 
 QmlLoader::~QmlLoader()
@@ -98,9 +99,9 @@ QString QmlLoader::iconNameToPath(QString qname, int size)
     }
 
     char* pic_name = g_strndup(name, pic_name_len);
-    GtkIconTheme* them = gtk_icon_theme_get_default();
+    GtkIconTheme* icon_theme = gtk_icon_theme_get_default();
 
-    GtkIconInfo* info = gtk_icon_theme_lookup_icon(them, pic_name, size, GTK_ICON_LOOKUP_NO_SVG);
+    GtkIconInfo* info = gtk_icon_theme_lookup_icon(icon_theme, pic_name, size, GTK_ICON_LOOKUP_NO_SVG);
     g_free(pic_name);
     if (info) {
         char* path = g_strdup(gtk_icon_info_get_filename(info));
