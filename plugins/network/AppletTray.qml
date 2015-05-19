@@ -53,8 +53,6 @@ DockApplet{
     property var activeWirelessDevice: getActiveWirelessDevice()
     // device state
     readonly property var nmDeviceStateActivated: 100
-
-    property var dconstants: DConstants {}
     property string currentIconName: ""
 
     Connections{

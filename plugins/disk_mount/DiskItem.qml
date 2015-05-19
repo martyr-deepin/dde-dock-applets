@@ -120,7 +120,7 @@ Item {
                         anchors.right: parent.right
                         anchors.rightMargin: 20
                         font.pixelSize: 11
-                        color: dconstants.tuhaoColor
+                        color: DConstants.tuhaoColor
                         text: dsTr("Unmount failed!")
                         visible: false
                     }
