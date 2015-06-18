@@ -353,10 +353,6 @@ DockApplet{
                             }
                         }
 
-                        DConstants {
-                            id:dContants
-                        }
-
                         ListView {
                             id:apListView
                             width: parent.width

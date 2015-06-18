@@ -86,13 +86,13 @@ Item {
             font.pixelSize: 12
             color: {
                 if(selected){
-                    return dconstants.activeColor
+                    return DConstants.activeColor
                 }
                 else if(hovered){
-                    return dconstants.hoverColor
+                    return DConstants.hoverColor
                 }
                 else{
-                    return dconstants.fgColor
+                    return DConstants.fgColor
                 }
             }
         }

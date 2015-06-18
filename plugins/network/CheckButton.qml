@@ -25,40 +25,38 @@ import QtQuick 2.0
 import Deepin.Widgets 1.0
 import QtGraphicalEffects 1.0
 
-DImageCheckButton{
+Item {
     property url onImage: ""
     property url offImage: ""
     property alias deviceIndex:indexText.text
+    property alias active: checkButton.active
 
-//    anchors.verticalCenter: parent.verticalCenter
-    inactivatedNormalImage: offImage
-    inactivatedHoverImage: offImage
-    inactivatedPressImage: offImage
+    width: checkButton.width
+    height: indexText.text == "" ? 40 : 60
+    signal clicked()
 
-    activatedNormalImage: onImage
-    activatedHoverImage: onImage
-    activatedPressImage: onImage
+    DImageCheckButton{
+        id: checkButton
+        anchors {horizontalCenter: parent.horizontalCenter;top: parent.top; topMargin: 8}
+        inactivatedNormalImage: offImage
+        inactivatedHoverImage: inactivatedNormalImage
+        inactivatedPressImage: inactivatedNormalImage
 
+        activatedNormalImage: onImage
+        activatedHoverImage: activatedNormalImage
+        activatedPressImage: activatedNormalImage
 
+        onClicked: parent.clicked()
+    }
 
     Text {
         id:indexText
-        anchors {right: parent.right; bottom: parent.bottom}
-        height: 9
-        width: 9
+        anchors {horizontalCenter: parent.horizontalCenter; top: checkButton.bottom; topMargin: 8}
+        height: contentHeight
+        width: contentWidth
         verticalAlignment: Text.AlignVCenter
         horizontalAlignment: Text.AlignHCenter
         color: "#ffffff"
-        font.bold: true
-        font.pixelSize: 9
+        font.pixelSize: 8
     }
-
-//    Glow {
-//        anchors.fill: indexText
-//        radius: 5
-//        samples: 16
-//        color: "#000"
-//        spread: 0.8
-//        source: indexText
-//    }
 }

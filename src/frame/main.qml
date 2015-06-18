@@ -32,8 +32,6 @@ import DBus.Com.Deepin.Daemon.ThemeManager 1.0
 
 QtObject {
     id: root
-
-    property var dconstants: DConstants {}
     property var appletListModel: ListModel {}
     property var dssLocale: DLocale{
         domain: "dde-dock-applet"
